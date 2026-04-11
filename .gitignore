@@ -1,5 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Rust
+/target/
+**/*.rs.bk
+
+# SQLite / datos locales
+*.db
+*.db-*
+
 # dependencies
 /node_modules
 /.pnp
@@ -24,8 +32,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# local env files (nunca subir secretos)
+.env
 .env*.local
+.env_example
 
 # vercel
 .vercel
@@ -33,4 +43,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
