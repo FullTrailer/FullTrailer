@@ -1,10 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import ME from 'this.me';
+import app from './app';
+import { mountApp } from './runtime';
+import 'this.gui/style.css';
+import './index.css';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const me = ME();
+
+mountApp({ me, app, target: '#root' });
