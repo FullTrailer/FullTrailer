@@ -48,6 +48,7 @@ const NAV_ITEMS = [
   { route: 'home', label: 'Inicio', icon: 'home' },
   { route: 'unidades', label: 'Unidades', icon: 'view_list' },
   { route: 'tractos', label: 'Tractos', icon: 'local_shipping' },
+  { route: 'operadores', label: 'Operadores', icon: 'badge' },
 ];
 
 /**

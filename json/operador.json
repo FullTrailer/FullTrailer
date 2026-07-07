@@ -1,1 +1,39 @@
-
+{
+  "_meta": {
+    "descripcion": "Catálogo de operadores — Transportes Ráfagas del Golfo S.A. de C.V.",
+    "fuente": "Datos de ejemplo",
+    "total": 30
+  },
+  "datos": [
+    { "Clave": "OP-001", "Nombre": "Juan Hernández García", "Licencia": "TAM-45210", "TipoLicencia": "Federal Tipo E", "Telefono": "833 210 4501", "Categoria": "FORÁNEO", "BaseOperacion": "TAMPICO", "Activo": 1, "FechaIngreso": "2014-03-11", "Status": null },
+    { "Clave": "OP-002", "Nombre": "Juan García López", "Licencia": "TAM-45211", "TipoLicencia": "Federal Tipo B", "Telefono": "833 210 4502", "Categoria": "LOCAL", "BaseOperacion": "ALTAMIRA", "Activo": 1, "FechaIngreso": "2015-06-22", "Status": null },
+    { "Clave": "OP-003", "Nombre": "Juan Martínez Sánchez", "Licencia": "TAM-45212", "TipoLicencia": "Federal Tipo E", "Telefono": "899 210 4503", "Categoria": "FORÁNEO", "BaseOperacion": "REYNOSA", "Activo": 1, "FechaIngreso": "2016-01-09", "Status": null },
+    { "Clave": "OP-004", "Nombre": "Juan López Rodríguez", "Licencia": "TAM-45213", "TipoLicencia": "Estatal", "Telefono": "834 210 4504", "Categoria": "LOCAL", "BaseOperacion": "CIUDAD VICTORIA", "Activo": 1, "FechaIngreso": "2012-11-05", "Status": null },
+    { "Clave": "OP-005", "Nombre": "Juan González Pérez", "Licencia": "TAM-45214", "TipoLicencia": "Federal Tipo E", "Telefono": "868 210 4505", "Categoria": "INTERNACIONAL", "BaseOperacion": "MATAMOROS", "Activo": 1, "FechaIngreso": "2018-04-17", "Status": null },
+    { "Clave": "OP-006", "Nombre": "Juan Pérez Ramírez", "Licencia": "TAM-45215", "TipoLicencia": "Federal Tipo B", "Telefono": "833 210 4506", "Categoria": "FORÁNEO", "BaseOperacion": "TAMPICO", "Activo": 0, "FechaIngreso": "2011-09-30", "Status": "Baja temporal" },
+    { "Clave": "OP-007", "Nombre": "Juan Rodríguez Torres", "Licencia": "TAM-45216", "TipoLicencia": "Federal Tipo E", "Telefono": "833 210 4507", "Categoria": "LOCAL", "BaseOperacion": "ALTAMIRA", "Activo": 1, "FechaIngreso": "2019-02-14", "Status": null },
+    { "Clave": "OP-008", "Nombre": "Juan Sánchez Flores", "Licencia": "TAM-45217", "TipoLicencia": "Estatal", "Telefono": "899 210 4508", "Categoria": "LOCAL", "BaseOperacion": "REYNOSA", "Activo": 1, "FechaIngreso": "2013-07-08", "Status": null },
+    { "Clave": "OP-009", "Nombre": "Juan Ramírez Cruz", "Licencia": "TAM-45218", "TipoLicencia": "Federal Tipo E", "Telefono": "834 210 4509", "Categoria": "FORÁNEO", "BaseOperacion": "CIUDAD VICTORIA", "Activo": 1, "FechaIngreso": "2020-05-19", "Status": null },
+    { "Clave": "OP-010", "Nombre": "Juan Flores Gómez", "Licencia": "TAM-45219", "TipoLicencia": "Federal Tipo B", "Telefono": "868 210 4510", "Categoria": "INTERNACIONAL", "BaseOperacion": "MATAMOROS", "Activo": 1, "FechaIngreso": "2017-10-27", "Status": null },
+    { "Clave": "OP-011", "Nombre": "Juan Torres Díaz", "Licencia": "TAM-45220", "TipoLicencia": "Federal Tipo E", "Telefono": "833 210 4511", "Categoria": "FORÁNEO", "BaseOperacion": "TAMPICO", "Activo": 1, "FechaIngreso": "2016-12-01", "Status": null },
+    { "Clave": "OP-012", "Nombre": "Juan Cruz Morales", "Licencia": "TAM-45221", "TipoLicencia": "Estatal", "Telefono": "833 210 4512", "Categoria": "LOCAL", "BaseOperacion": "ALTAMIRA", "Activo": 1, "FechaIngreso": "2014-08-13", "Status": null },
+    { "Clave": "OP-013", "Nombre": "Juan Gómez Reyes", "Licencia": "TAM-45222", "TipoLicencia": "Federal Tipo E", "Telefono": "899 210 4513", "Categoria": "FORÁNEO", "BaseOperacion": "REYNOSA", "Activo": 0, "FechaIngreso": "2010-01-25", "Status": "Baja temporal" },
+    { "Clave": "OP-014", "Nombre": "Juan Díaz Jiménez", "Licencia": "TAM-45223", "TipoLicencia": "Federal Tipo B", "Telefono": "834 210 4514", "Categoria": "LOCAL", "BaseOperacion": "CIUDAD VICTORIA", "Activo": 1, "FechaIngreso": "2021-03-02", "Status": null },
+    { "Clave": "OP-015", "Nombre": "Juan Morales Ortiz", "Licencia": "TAM-45224", "TipoLicencia": "Federal Tipo E", "Telefono": "868 210 4515", "Categoria": "INTERNACIONAL", "BaseOperacion": "MATAMOROS", "Activo": 1, "FechaIngreso": "2015-11-16", "Status": null },
+    { "Clave": "OP-016", "Nombre": "Juan Reyes Vázquez", "Licencia": "TAM-45225", "TipoLicencia": "Estatal", "Telefono": "833 210 4516", "Categoria": "LOCAL", "BaseOperacion": "TAMPICO", "Activo": 1, "FechaIngreso": "2018-09-07", "Status": null },
+    { "Clave": "OP-017", "Nombre": "Juan Jiménez Castillo", "Licencia": "TAM-45226", "TipoLicencia": "Federal Tipo E", "Telefono": "833 210 4517", "Categoria": "FORÁNEO", "BaseOperacion": "ALTAMIRA", "Activo": 1, "FechaIngreso": "2013-02-28", "Status": null },
+    { "Clave": "OP-018", "Nombre": "Juan Ortiz Romero", "Licencia": "TAM-45227", "TipoLicencia": "Federal Tipo B", "Telefono": "899 210 4518", "Categoria": "LOCAL", "BaseOperacion": "REYNOSA", "Activo": 1, "FechaIngreso": "2019-07-21", "Status": null },
+    { "Clave": "OP-019", "Nombre": "Juan Vázquez Álvarez", "Licencia": "TAM-45228", "TipoLicencia": "Federal Tipo E", "Telefono": "834 210 4519", "Categoria": "FORÁNEO", "BaseOperacion": "CIUDAD VICTORIA", "Activo": 1, "FechaIngreso": "2012-04-04", "Status": null },
+    { "Clave": "OP-020", "Nombre": "Juan Castillo Mendoza", "Licencia": "TAM-45229", "TipoLicencia": "Estatal", "Telefono": "868 210 4520", "Categoria": "LOCAL", "BaseOperacion": "MATAMOROS", "Activo": 0, "FechaIngreso": "2011-06-18", "Status": "Baja temporal" },
+    { "Clave": "OP-021", "Nombre": "Juan Romero Ruiz", "Licencia": "TAM-45230", "TipoLicencia": "Federal Tipo E", "Telefono": "833 210 4521", "Categoria": "INTERNACIONAL", "BaseOperacion": "TAMPICO", "Activo": 1, "FechaIngreso": "2020-10-12", "Status": null },
+    { "Clave": "OP-022", "Nombre": "Juan Álvarez Chávez", "Licencia": "TAM-45231", "TipoLicencia": "Federal Tipo B", "Telefono": "833 210 4522", "Categoria": "LOCAL", "BaseOperacion": "ALTAMIRA", "Activo": 1, "FechaIngreso": "2017-01-30", "Status": null },
+    { "Clave": "OP-023", "Nombre": "Juan Mendoza Herrera", "Licencia": "TAM-45232", "TipoLicencia": "Federal Tipo E", "Telefono": "899 210 4523", "Categoria": "FORÁNEO", "BaseOperacion": "REYNOSA", "Activo": 1, "FechaIngreso": "2016-05-23", "Status": null },
+    { "Clave": "OP-024", "Nombre": "Juan Ruiz Medina", "Licencia": "TAM-45233", "TipoLicencia": "Estatal", "Telefono": "834 210 4524", "Categoria": "LOCAL", "BaseOperacion": "CIUDAD VICTORIA", "Activo": 1, "FechaIngreso": "2014-12-09", "Status": null },
+    { "Clave": "OP-025", "Nombre": "Juan Chávez Aguilar", "Licencia": "TAM-45234", "TipoLicencia": "Federal Tipo E", "Telefono": "868 210 4525", "Categoria": "INTERNACIONAL", "BaseOperacion": "MATAMOROS", "Activo": 1, "FechaIngreso": "2019-08-15", "Status": null },
+    { "Clave": "OP-026", "Nombre": "Juan Herrera Vargas", "Licencia": "TAM-45235", "TipoLicencia": "Federal Tipo B", "Telefono": "833 210 4526", "Categoria": "FORÁNEO", "BaseOperacion": "TAMPICO", "Activo": 1, "FechaIngreso": "2013-10-03", "Status": null },
+    { "Clave": "OP-027", "Nombre": "Juan Medina Salazar", "Licencia": "TAM-45236", "TipoLicencia": "Federal Tipo E", "Telefono": "833 210 4527", "Categoria": "LOCAL", "BaseOperacion": "ALTAMIRA", "Activo": 1, "FechaIngreso": "2021-01-11", "Status": null },
+    { "Clave": "OP-028", "Nombre": "Juan Aguilar Ríos", "Licencia": "TAM-45237", "TipoLicencia": "Estatal", "Telefono": "899 210 4528", "Categoria": "LOCAL", "BaseOperacion": "REYNOSA", "Activo": 0, "FechaIngreso": "2010-07-27", "Status": "Baja temporal" },
+    { "Clave": "OP-029", "Nombre": "Juan Vargas Núñez", "Licencia": "TAM-45238", "TipoLicencia": "Federal Tipo E", "Telefono": "834 210 4529", "Categoria": "FORÁNEO", "BaseOperacion": "CIUDAD VICTORIA", "Activo": 1, "FechaIngreso": "2018-03-06", "Status": null },
+    { "Clave": "OP-030", "Nombre": "Juan Salazar Delgado", "Licencia": "TAM-45239", "TipoLicencia": "Federal Tipo B", "Telefono": "868 210 4530", "Categoria": "INTERNACIONAL", "BaseOperacion": "MATAMOROS", "Activo": 1, "FechaIngreso": "2015-04-20", "Status": null }
+  ]
+}
