@@ -1,4 +1,6 @@
 import Home from './views/Home';
+import UnitsConfig from './views/UnitsConfig';
+import Tractos from './views/Tractos';
 
 const app = {
   id: 'fulltrailer',
@@ -7,6 +9,8 @@ const app = {
   theme: 'neurons.me',
   views: {
     home: Home,
+    unidades: UnitsConfig,
+    tractos: Tractos,
   },
 };
 

@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #0E1113; }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: #0E1113; }
+    ::-webkit-scrollbar-thumb { background: #2C3238; border-radius: 6px; border: 2px solid #0E1113; }
+    ::-webkit-scrollbar-thumb:hover { background: #3A4148; }
+    select.rg-select {
+      -webkit-appearance: none; appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%238A939B' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>");
+      background-repeat: no-repeat; background-position: right 12px center;
+    }
+    @keyframes rgDrawer { from { transform: translateX(24px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes rgFade { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</helmet>
+<div style="display:flex;min-height:100vh;background:#0E1113;font-family:'Barlow',system-ui,sans-serif;color:#E8EBED;">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside style="width:236px;flex:0 0 236px;background:#141719;border-right:1px solid #23282C;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;">
+    <div style="padding:22px 20px 20px;border-bottom:1px solid #23282C;display:flex;align-items:center;gap:12px;">
+      <div style="width:40px;height:40px;flex:0 0 40px;background:#F2A413;border-radius:7px;display:flex;align-items:center;justify-content:center;transform:skewX(-9deg);box-shadow:0 3px 10px rgba(242,164,19,.28);">
+        <span style="font-family:'Barlow Condensed';font-weight:700;font-size:16px;color:#0E1113;transform:skewX(9deg);letter-spacing:-0.5px;">TRG</span>
+      </div>
+      <div style="line-height:1;">
+        <div style="font-family:'Barlow';font-weight:600;font-size:8.5px;letter-spacing:2.5px;color:#6E767D;margin-bottom:3px;">TRANSPORTES</div>
+        <div style="font-family:'Barlow Condensed';font-weight:700;font-size:19px;letter-spacing:.3px;">RÁFAGAS</div>
+        <div style="font-family:'Barlow Condensed';font-weight:500;font-size:12px;letter-spacing:3px;color:#F2A413;">DEL GOLFO</div>
+      </div>
+    </div>
+
+    <nav style="padding:14px 12px;display:flex;flex-direction:column;gap:2px;">
+      <div onClick="{{ onViewFlota }}" style="{{ navFlotaStyle }}">
+        <span style="{{ navFlotaDot }}"></span>Configuración de flota
+      </div>
+      <div onClick="{{ onViewEstatus }}" style="{{ navEstatusStyle }}">
+        <span style="{{ navEstatusDot }}"></span>Estatus de flota
+      </div>
+      <div onClick="{{ onViewOperadores }}" style="{{ navOperStyle }}">
+        <span style="{{ navOperDot }}"></span>Operadores
+      </div>
+      <div onClick="{{ onViewPrograma }}" style="{{ navProgStyle }}">
+        <span style="{{ navProgDot }}"></span>Programa
+      </div>
+      <div onClick="{{ onViewTrabajadores }}" style="{{ navTrabStyle }}">
+        <span style="{{ navTrabDot }}"></span>Personal de mantenimiento
+      </div>
+      <div onClick="{{ onViewMant }}" style="{{ navMantStyle }}">
+        <span style="{{ navMantDot }}"></span>Mantenimiento
+      </div>
+      <div onClick="{{ onViewInv }}" style="{{ navInvStyle }}">
+        <span style="{{ navInvDot }}"></span>Inventario
+      </div>
+    </nav>
+
+    <div style="margin-top:auto;padding:16px 18px;border-top:1px solid #23282C;">
+      <div style="font-family:'Barlow Condensed';font-weight:600;font-size:11px;letter-spacing:2px;color:#5E666D;margin-bottom:12px;">ESTATUS DE FLOTA</div>
+      <sc-for list="{{ legend }}" as="l" hint-placeholder-count="5">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:9px;">
+          <span style="{{ l.dotStyle }}"></span>
+          <span style="font-size:12.5px;color:#8A939B;flex:1;">{{ l.label }}</span>
+          <span style="font-family:'IBM Plex Mono';font-size:12px;color:#C5CBD0;font-weight:500;">{{ l.count }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN ===== -->
+  <main style="flex:1;min-width:0;display:flex;flex-direction:column;">
+    <sc-if value="{{ isFlota }}" hint-placeholder-val="{{ true }}">
+    <header style="padding:22px 28px 0;position:sticky;top:0;background:#0E1113;z-index:5;border-bottom:1px solid #1C2024;">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:.3px;line-height:1;">CONFIGURACIÓN DE UNIDADES</h1>
+          <p style="margin:6px 0 0;color:#8A939B;font-size:14px;">Arma conjuntos, asigna operadores y da seguimiento al estatus de la flota.</p>
+        </div>
+        <button onClick="{{ onNew }}" style="display:flex;align-items:center;gap:9px;background:#F2A413;color:#0E1113;border:none;border-radius:8px;padding:11px 18px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 3px 12px rgba(242,164,19,.25);" style-hover="background:#FFB733;">
+          <span style="font-size:18px;line-height:0;font-weight:700;">+</span> Nueva configuración
+        </button>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:14px;margin:20px 0 16px;flex-wrap:wrap;">
+        <div style="position:relative;flex:0 0 260px;">
+          <input value="{{ search }}" onInput="{{ onSearch }}" placeholder="Buscar eco, placa u operador…" style="width:100%;background:#181C1F;border:1px solid #2A3036;border-radius:8px;padding:9px 12px 9px 34px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;" style-focus="border-color:#F2A413;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" style="position:absolute;left:11px;top:50%;transform:translateY(-50%);"><circle cx="10.5" cy="10.5" r="7" stroke="#5E666D" stroke-width="2"></circle><path d="M20 20l-4-4" stroke="#5E666D" stroke-width="2" stroke-linecap="round"></path></svg>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <sc-for list="{{ filterChips }}" as="f" hint-placeholder-count="6">
+            <button onClick="{{ f.onClick }}" style="{{ f.style }}">
+              <sc-if value="{{ f.showDot }}" hint-placeholder-val="{{ true }}"><span style="{{ f.dotStyle }}"></span></sc-if>
+              {{ f.label }} <span style="font-family:'IBM Plex Mono';font-size:11.5px;opacity:.7;">{{ f.count }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;margin:0 0 16px;flex-wrap:wrap;">
+        <span style="font-family:'Barlow Condensed';font-weight:600;font-size:11px;letter-spacing:1.6px;color:#5E666D;flex:0 0 auto;">PROGRAMA</span>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <sc-for list="{{ cliFilterChips }}" as="f" hint-placeholder-count="4">
+            <button onClick="{{ f.onClick }}" style="{{ f.style }}">
+              <sc-if value="{{ f.showDot }}" hint-placeholder-val="{{ true }}"><span style="{{ f.dotStyle }}"></span></sc-if>
+              {{ f.label }} <span style="font-family:'IBM Plex Mono';font-size:11.5px;opacity:.7;">{{ f.count }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </header>
+
+    <div style="padding:22px 28px 40px;">
+      <sc-if value="{{ hasActivos }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:13px;">
+          <h2 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:16px;letter-spacing:1.4px;color:#E8EBED;"><span style="color:#35B36B;">●</span> OPERATIVAS · DISPONIBLES Y ACTIVAS</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(392px,1fr));gap:16px;margin-bottom:30px;">
+          <sc-for list="{{ shownActivos }}" as="u" hint-placeholder-count="4">
+            <div onClick="{{ u.onClick }}" style="background:#181C1F;border:1px solid #262C31;border-radius:12px;overflow:hidden;cursor:pointer;transition:border-color .15s,transform .15s,box-shadow .15s;" style-hover="border-color:#F2A413;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.35);">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 16px 12px;">
+                <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;">
+                  <span style="font-family:'Barlow Condensed';font-weight:700;font-size:23px;letter-spacing:.5px;line-height:1;">{{ u.eco }}</span>
+                  <span style="font-family:'Barlow';font-weight:600;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:#8A939B;border:1px solid #2A3036;border-radius:5px;padding:3px 7px;">{{ u.tipoLabel }}</span>
+                  <sc-if value="{{ u.hasCliente }}" hint-placeholder-val="{{ false }}"><span style="{{ u.clienteChipStyle }}">{{ u.clienteLabel }}</span></sc-if>
+                </div>
+                <span style="{{ u.badgeStyle }}"><span style="{{ u.dotStyle }}"></span>{{ u.statusLabel }}</span>
+              </div>
+              <div style="height:120px;margin:0 12px;background:#121618;border:1px solid #20262A;border-radius:9px;padding:6px 10px;">
+                <dc-import name="TruckDiagram" tipo="{{ u.tipo }}" hint-size="100%,108px"></dc-import>
+              </div>
+              <div style="display:flex;align-items:center;gap:11px;padding:13px 16px 10px;">
+                <div style="{{ u.avatarStyle }}">{{ u.opInitials }}</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ u.opNombre }}</div>
+                  <div style="font-size:11.5px;color:#8A939B;display:flex;align-items:center;gap:6px;">Lic. {{ u.opLicencia }} · <span style="{{ u.venceStyle }}">vence {{ u.opVence }}</span></div>
+                </div>
+                <div style="text-align:right;flex:0 0 auto;padding-left:8px;">
+                  <div style="font-family:'IBM Plex Mono';font-weight:600;font-size:15px;color:#E8EBED;line-height:1;">{{ u.km }}</div>
+                  <div style="font-family:'Barlow Condensed';font-weight:600;font-size:9.5px;letter-spacing:1.4px;color:#6E767D;margin-top:4px;">KM RECORRIDOS</div>
+                </div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 15px;">
+                <sc-for list="{{ u.parts }}" as="p" hint-placeholder-count="3">
+                  <span style="display:inline-flex;align-items:center;gap:6px;background:#121618;border:1px solid #23282C;border-radius:6px;padding:4px 9px;font-size:11px;">
+                    <span style="font-family:'Barlow Condensed';font-weight:600;letter-spacing:.8px;color:#6E767D;font-size:10px;">{{ p.tag }}</span>
+                    <span style="font-family:'IBM Plex Mono';font-weight:500;color:#C5CBD0;font-size:11px;">{{ p.placa }}</span>
+                  </span>
+                </sc-for>
+                <sc-if value="{{ u.hasGps }}" hint-placeholder-val="{{ false }}">
+                  <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(155,123,224,.12);border:1px solid rgba(155,123,224,.3);border-radius:6px;padding:4px 9px;font-size:11px;">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#9B7BE0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+                    <span style="font-family:'Barlow Condensed';font-weight:600;letter-spacing:.8px;color:#9B7BE0;font-size:10px;">SAMSARA</span>
+                    <span style="font-family:'IBM Plex Mono';font-weight:500;color:#C5CBD0;font-size:11px;">{{ u.gpsSerie }}</span>
+                  </span>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ hasMant }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:13px;">
+          <h2 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:16px;letter-spacing:1.4px;color:#E8EBED;"><span style="color:#E8792B;">●</span> FUERA DE OPERACIÓN</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(392px,1fr));gap:16px;">
+          <sc-for list="{{ shownMant }}" as="u" hint-placeholder-count="3">
+            <div onClick="{{ u.onClick }}" style="background:#181C1F;border:1px solid #33291C;border-radius:12px;overflow:hidden;cursor:pointer;transition:border-color .15s,transform .15s,box-shadow .15s;" style-hover="border-color:#F2A413;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.35);">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:15px 16px 12px;">
+                <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;">
+                  <span style="font-family:'Barlow Condensed';font-weight:700;font-size:23px;letter-spacing:.5px;line-height:1;">{{ u.eco }}</span>
+                  <span style="font-family:'Barlow';font-weight:600;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:#8A939B;border:1px solid #2A3036;border-radius:5px;padding:3px 7px;">{{ u.tipoLabel }}</span>
+                  <sc-if value="{{ u.hasCliente }}" hint-placeholder-val="{{ false }}"><span style="{{ u.clienteChipStyle }}">{{ u.clienteLabel }}</span></sc-if>
+                </div>
+                <span style="{{ u.badgeStyle }}"><span style="{{ u.dotStyle }}"></span>{{ u.statusLabel }}</span>
+              </div>
+              <div style="height:120px;margin:0 12px;background:#121618;border:1px solid #20262A;border-radius:9px;padding:6px 10px;">
+                <dc-import name="TruckDiagram" tipo="{{ u.tipo }}" hint-size="100%,108px"></dc-import>
+              </div>
+              <div style="margin:12px 12px 0;background:#121618;border:1px solid #23282C;border-radius:9px;padding:10px 12px;">
+                <div style="font-family:'Barlow Condensed';font-weight:600;font-size:10px;letter-spacing:1.2px;color:#6E767D;margin-bottom:8px;">MECÁNICOS ASIGNADOS</div>
+                <div style="display:flex;flex-wrap:wrap;gap:6px;">
+                  <sc-for list="{{ u.mecs }}" as="m" hint-placeholder-count="1"><span style="{{ m.style }}">{{ m.nombre }}</span></sc-for>
+                  <sc-if value="{{ u.sinMec }}" hint-placeholder-val="{{ false }}"><span style="font-size:12px;color:#6E767D;">Sin asignar — asignar en Mantenimiento</span></sc-if>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:11px;padding:13px 16px 10px;">
+                <div style="{{ u.avatarStyle }}">{{ u.opInitials }}</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-weight:600;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ u.opNombre }}</div>
+                  <div style="font-size:11.5px;color:#8A939B;display:flex;align-items:center;gap:6px;">Lic. {{ u.opLicencia }} · <span style="{{ u.venceStyle }}">vence {{ u.opVence }}</span></div>
+                </div>
+                <div style="text-align:right;flex:0 0 auto;padding-left:8px;">
+                  <div style="font-family:'IBM Plex Mono';font-weight:600;font-size:15px;color:#E8EBED;line-height:1;">{{ u.km }}</div>
+                  <div style="font-family:'Barlow Condensed';font-weight:600;font-size:9.5px;letter-spacing:1.4px;color:#6E767D;margin-top:4px;">KM RECORRIDOS</div>
+                </div>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 15px;">
+                <sc-for list="{{ u.parts }}" as="p" hint-placeholder-count="3">
+                  <span style="display:inline-flex;align-items:center;gap:6px;background:#121618;border:1px solid #23282C;border-radius:6px;padding:4px 9px;font-size:11px;">
+                    <span style="font-family:'Barlow Condensed';font-weight:600;letter-spacing:.8px;color:#6E767D;font-size:10px;">{{ p.tag }}</span>
+                    <span style="font-family:'IBM Plex Mono';font-weight:500;color:#C5CBD0;font-size:11px;">{{ p.placa }}</span>
+                  </span>
+                </sc-for>
+                <sc-if value="{{ u.hasGps }}" hint-placeholder-val="{{ false }}">
+                  <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(155,123,224,.12);border:1px solid rgba(155,123,224,.3);border-radius:6px;padding:4px 9px;font-size:11px;">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#9B7BE0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+                    <span style="font-family:'Barlow Condensed';font-weight:600;letter-spacing:.8px;color:#9B7BE0;font-size:10px;">SAMSARA</span>
+                    <span style="font-family:'IBM Plex Mono';font-weight:500;color:#C5CBD0;font-size:11px;">{{ u.gpsSerie }}</span>
+                  </span>
+                </sc-if>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:60px;text-align:center;color:#5E666D;font-size:15px;">Sin unidades para este filtro.</div>
+      </sc-if>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isOperadores }}" hint-placeholder-val="{{ false }}">
+    <header style="padding:22px 28px 0;position:sticky;top:0;background:#0E1113;z-index:5;border-bottom:1px solid #1C2024;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:.3px;line-height:1;">OPERADORES</h1>
+          <p style="margin:6px 0 0;color:#8A939B;font-size:14px;">Plantilla de conductores, vigencia de licencia y unidad asignada.</p>
+        </div>
+        <button onClick="{{ onNewOperador }}" style="display:flex;align-items:center;gap:9px;background:#F2A413;color:#0E1113;border:none;border-radius:8px;padding:11px 18px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 3px 12px rgba(242,164,19,.25);" style-hover="background:#FFB733;"><span style="font-size:18px;line-height:0;font-weight:700;">+</span> Nuevo operador</button>
+      </div>
+      <div style="display:flex;gap:14px;margin:20px 0 16px;flex-wrap:wrap;">
+        <sc-for list="{{ opsSummary }}" as="s" hint-placeholder-count="3">
+          <div style="flex:1;min-width:180px;background:#181C1F;border:1px solid #262C31;border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:14px;">
+            <span style="width:4px;height:40px;border-radius:3px;background:{{ s.color }};flex:0 0 4px;"></span>
+            <div>
+              <div style="font-family:'Barlow Condensed';font-weight:700;font-size:28px;line-height:1;color:#E8EBED;">{{ s.value }}</div>
+              <div style="font-size:12px;color:#8A939B;margin-top:3px;">{{ s.label }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </header>
+
+    <div style="padding:22px 28px 40px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(324px,1fr));gap:16px;">
+        <sc-for list="{{ opsList }}" as="o" hint-placeholder-count="8">
+          <div style="background:#181C1F;border:1px solid #262C31;border-radius:12px;padding:16px;">
+            <div style="display:flex;align-items:flex-start;gap:13px;">
+              <label style="{{ o.avatarStyle }}" title="Subir / cambiar foto">
+                {{ o.initials }}
+                <div style="position:absolute;left:0;right:0;bottom:0;height:16px;background:rgba(10,12,13,.72);display:flex;align-items:center;justify-content:center;">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#F2A413" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L18 8h2v11H4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+                </div>
+                <sc-if value="{{ o.hasFoto }}" hint-placeholder-val="{{ false }}"><button onClick="{{ o.onRemoveFoto }}" title="Quitar foto" style="position:absolute;top:2px;right:2px;width:17px;height:17px;border-radius:50%;background:rgba(10,12,13,.82);border:none;color:#E5484D;font-size:12px;line-height:1;cursor:pointer;z-index:2;padding:0;">×</button></sc-if>
+                <input type="file" accept="image/*" onChange="{{ o.onFoto }}" style="display:none;">
+              </label>
+              <div style="flex:1;min-width:0;">
+                <div style="font-family:'Barlow Condensed';font-weight:700;font-size:19px;line-height:1.1;">{{ o.nombre }}</div>
+                <div style="font-family:'IBM Plex Mono';font-size:12px;color:#8A939B;margin-top:4px;">{{ o.telefono }}</div>
+              </div>
+              <span style="{{ o.licStyle }}">{{ o.licLabel }}</span>
+            </div>
+
+            <div style="border-top:1px solid #23282C;margin:14px 0 0;padding-top:12px;display:flex;flex-direction:column;gap:8px;">
+              <div style="display:flex;align-items:center;justify-content:space-between;">
+                <span style="font-size:12.5px;color:#6E767D;">Licencia</span>
+                <span style="font-family:'IBM Plex Mono';font-size:13px;color:#C5CBD0;font-weight:500;">{{ o.licencia }}</span>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;">
+                <span style="font-size:12.5px;color:#6E767D;">Vence</span>
+                <span style="{{ o.venceStyle }}">{{ o.vence }}</span>
+              </div>
+            </div>
+
+            <div style="border-top:1px solid #23282C;margin-top:12px;padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:10px;">
+              <span style="font-family:'Barlow Condensed';font-weight:600;font-size:11px;letter-spacing:1.2px;color:#6E767D;">UNIDAD ASIGNADA</span>
+              <span style="{{ o.unidadStyle }}">{{ o.unidadLabel }}</span>
+            </div>
+            <button onClick="{{ o.onEdit }}" style="margin-top:12px;width:100%;background:#1E2327;border:1px solid #2A3036;color:#C5CBD0;border-radius:8px;padding:9px;font-family:'Barlow';font-weight:600;font-size:13px;cursor:pointer;" style-hover="border-color:#F2A413;color:#fff;">Editar operador</button>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isMantenimiento }}" hint-placeholder-val="{{ false }}">
+    <header style="padding:22px 28px 0;position:sticky;top:0;background:#0E1113;z-index:5;border-bottom:1px solid #1C2024;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:.3px;line-height:1;">MANTENIMIENTO</h1>
+          <p style="margin:6px 0 0;color:#8A939B;font-size:14px;">Órdenes de servicio activas y seguimiento de próximos preventivos por kilometraje.</p>
+        </div>
+        <button onClick="{{ onOpenMantForm }}" style="display:flex;align-items:center;gap:9px;background:#F2A413;color:#0E1113;border:none;border-radius:8px;padding:11px 18px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 3px 12px rgba(242,164,19,.25);" style-hover="background:#FFB733;"><span style="font-size:18px;line-height:0;font-weight:700;">+</span> Enviar a mantenimiento</button>
+      </div>
+      <div style="display:flex;gap:12px;margin:20px 0 16px;flex-wrap:wrap;">
+        <sc-for list="{{ mtStats }}" as="s" hint-placeholder-count="4">
+          <div style="flex:1;min-width:150px;background:#181C1F;border:1px solid #262C31;border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:13px;">
+            <span style="width:4px;height:38px;border-radius:3px;background:{{ s.color }};flex:0 0 4px;"></span>
+            <div>
+              <div style="font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;color:#E8EBED;">{{ s.value }}</div>
+              <div style="font-size:11.5px;color:#8A939B;margin-top:3px;">{{ s.label }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </header>
+
+    <div style="padding:22px 28px 40px;display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;">
+      <div style="flex:1;min-width:420px;">
+        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:13px;">
+          <h2 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:17px;letter-spacing:1.4px;">ÓRDENES ACTIVAS</h2>
+          <span style="font-family:'IBM Plex Mono';font-size:13px;color:#6E767D;">{{ mtTotal }} unidades fuera de servicio</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:11px;">
+          <sc-for list="{{ mtOrders }}" as="o" hint-placeholder-count="5">
+            <div style="display:flex;gap:14px;background:#181C1F;border:1px solid #262C31;border-radius:11px;padding:14px 16px;">
+              <span style="{{ o.barStyle }}"></span>
+              <div style="flex:1;min-width:0;">
+                <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                  <span style="font-family:'Barlow Condensed';font-weight:700;font-size:20px;line-height:1;">{{ o.eco }}</span>
+                  <span style="{{ o.tipoStyle }}"><span style="{{ o.tipoDot }}"></span>{{ o.tipoLabel }}</span>
+                  <span style="font-family:'IBM Plex Mono';font-size:11.5px;color:#6E767D;white-space:nowrap;">{{ o.folio }}</span>
+                </div>
+                <div style="font-size:13.5px;color:#C5CBD0;margin:8px 0 9px;">{{ o.desc }}</div>
+                <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12px;color:#8A939B;">
+                  <span>{{ o.taller }} <span style="{{ o.tallerStyle }}">· {{ o.tallerLabel }}</span></span>
+                  <span style="color:#5E666D;">Ingreso {{ o.ingreso }}</span>
+                  <span style="color:#5E666D;">Op. {{ o.operador }}</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:10px;">
+                  <span style="font-family:'Barlow Condensed';font-weight:600;font-size:10px;letter-spacing:1px;color:#6E767D;">MECÁNICOS:</span>
+                  <sc-for list="{{ o.mecs }}" as="m" hint-placeholder-count="1"><span style="{{ m.style }}">{{ m.nombre }}</span></sc-for>
+                  <sc-if value="{{ o.sinMec }}" hint-placeholder-val="{{ true }}"><span style="font-size:12px;color:#6E767D;">sin asignar</span></sc-if>
+                  <button onClick="{{ o.onAssign }}" style="background:#1E2327;border:1px solid #2A3036;color:#F2A413;border-radius:6px;padding:4px 10px;font-family:'Barlow';font-weight:600;font-size:11.5px;cursor:pointer;" style-hover="border-color:#F2A413;">Asignar</button>
+                </div>
+              </div>
+              <div style="text-align:right;flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-end;gap:10px;">
+                <div>
+                  <div style="{{ o.diasStyle }}">{{ o.dias }}</div>
+                  <div style="font-family:'Barlow Condensed';font-weight:600;font-size:9.5px;letter-spacing:1.2px;color:#6E767D;margin-top:4px;">DÍAS</div>
+                </div>
+                <button onClick="{{ o.onConcluir }}" style="background:rgba(53,179,107,.14);border:1px solid rgba(53,179,107,.34);color:#35B36B;border-radius:7px;padding:7px 12px;font-family:'Barlow';font-weight:600;font-size:12.5px;cursor:pointer;white-space:nowrap;" style-hover="background:rgba(53,179,107,.24);">Concluir</button>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="flex:0 0 340px;max-width:100%;">
+        <h2 style="margin:0 0 13px;font-family:'Barlow Condensed';font-weight:700;font-size:17px;letter-spacing:1.4px;">PRÓXIMO PREVENTIVO</h2>
+        <div style="background:#181C1F;border:1px solid #262C31;border-radius:11px;padding:6px 16px;">
+          <sc-for list="{{ prevList }}" as="p" hint-placeholder-count="4">
+            <div style="padding:13px 0;border-bottom:1px solid #23282C;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+                <span style="font-family:'Barlow Condensed';font-weight:700;font-size:17px;">{{ p.eco }}</span>
+                <span style="font-family:'IBM Plex Mono';font-size:11.5px;color:#6E767D;">{{ p.km }} km</span>
+              </div>
+              <div style="height:8px;background:#0E1113;border-radius:4px;overflow:hidden;border:1px solid #23282C;">
+                <div style="{{ p.barFill }}"></div>
+              </div>
+              <div style="margin-top:6px;font-size:11.5px;color:#8A939B;">Faltan <span style="{{ p.restStyle }}">{{ p.restante }} km</span> para servicio</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:0 28px 40px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:13px;flex-wrap:wrap;">
+        <h2 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:17px;letter-spacing:1.4px;">HISTORIAL DE MANTENIMIENTO</h2>
+        <select class="rg-select" value="{{ histEco }}" onChange="{{ onHistEco }}" style="background:#181C1F;border:1px solid #2A3036;border-radius:8px;padding:9px 34px 9px 12px;color:#E8EBED;font-family:'Barlow';font-size:13px;outline:none;cursor:pointer;min-width:220px;">
+          <sc-for list="{{ histEcoOptions }}" as="o" hint-placeholder-count="6"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+        </select>
+      </div>
+      <div style="background:#181C1F;border:1px solid #262C31;border-radius:12px;overflow:hidden;">
+        <sc-for list="{{ histList }}" as="h" hint-placeholder-count="4">
+          <div style="display:flex;gap:14px;padding:14px 18px;border-bottom:1px solid #1C2024;align-items:center;">
+            <span style="{{ h.barStyle }}"></span>
+            <div style="flex:0 0 96px;">
+              <div style="font-family:'Barlow Condensed';font-weight:700;font-size:17px;line-height:1;">{{ h.eco }}</div>
+              <div style="font-family:'IBM Plex Mono';font-size:10.5px;color:#6E767D;margin-top:3px;">{{ h.folio }}</div>
+            </div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:5px;">
+                <span style="{{ h.tipoStyle }}">{{ h.tipoLabel }}</span>
+                <span style="font-size:12px;color:#8A939B;">{{ h.taller }} · {{ h.tallerLabel }}</span>
+              </div>
+              <div style="font-size:13px;color:#C5CBD0;">{{ h.desc }}</div>
+            </div>
+            <div style="flex:0 0 auto;text-align:right;font-family:'IBM Plex Mono';font-size:11.5px;color:#8A939B;line-height:1.5;">
+              <div>Ing. {{ h.ingreso }}</div>
+              <div style="color:#35B36B;">Sal. {{ h.salida }}</div>
+            </div>
+          </div>
+        </sc-for>
+        <sc-if value="{{ histEmpty }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:40px;text-align:center;color:#5E666D;font-size:14px;">Sin mantenimientos registrados para este tracto.</div>
+        </sc-if>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isInventario }}" hint-placeholder-val="{{ false }}">
+    <header style="padding:22px 28px 0;position:sticky;top:0;background:#0E1113;z-index:5;border-bottom:1px solid #1C2024;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:.3px;line-height:1;">INVENTARIO DE EQUIPO</h1>
+          <p style="margin:6px 0 0;color:#8A939B;font-size:14px;">Tractocamiones, remolques y dollies · disponibilidad y unidad donde están montados.</p>
+        </div>
+        <button onClick="{{ onNewEquipo }}" style="display:flex;align-items:center;gap:9px;background:#F2A413;color:#0E1113;border:none;border-radius:8px;padding:11px 18px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 3px 12px rgba(242,164,19,.25);" style-hover="background:#FFB733;"><span style="font-size:18px;line-height:0;font-weight:700;">+</span> Nuevo equipo</button>
+      </div>
+      <div style="display:flex;gap:12px;margin:20px 0 16px;flex-wrap:wrap;">
+        <sc-for list="{{ invStats }}" as="s" hint-placeholder-count="4">
+          <div style="flex:1;min-width:160px;background:#181C1F;border:1px solid #262C31;border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:13px;">
+            <span style="width:4px;height:40px;border-radius:3px;background:{{ s.color }};flex:0 0 4px;"></span>
+            <div>
+              <div style="font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;color:#E8EBED;">{{ s.value }}</div>
+              <div style="font-size:12px;color:#8A939B;margin-top:3px;">{{ s.label }}</div>
+              <div style="font-family:'IBM Plex Mono';font-size:10.5px;color:#5E666D;margin-top:2px;">{{ s.sub }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;padding-bottom:16px;">
+        <sc-for list="{{ invChips }}" as="c" hint-placeholder-count="4">
+          <button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.label }} <span style="font-family:'IBM Plex Mono';font-size:11.5px;opacity:.7;">{{ c.count }}</span></button>
+        </sc-for>
+      </div>
+    </header>
+
+    <div style="padding:22px 28px 40px;">
+      <div style="background:#181C1F;border:1px solid #262C31;border-radius:12px;overflow:hidden;">
+        <div style="display:flex;align-items:center;gap:16px;padding:12px 18px;border-bottom:1px solid #262C31;font-family:'Barlow Condensed';font-weight:600;font-size:11.5px;letter-spacing:1.4px;color:#6E767D;">
+          <span style="flex:0 0 86px;">CLASE</span>
+          <span style="flex:0 0 104px;">ECONÓMICO</span>
+          <span style="flex:0 0 110px;">PLACA / SERIE</span>
+          <span style="flex:1;min-width:110px;">DETALLE</span>
+          <span style="flex:0 0 124px;">ESTADO</span>
+          <span style="flex:0 0 124px;text-align:right;">ASIGNADO A</span>
+          <span style="flex:0 0 60px;"></span>
+        </div>
+        <sc-for list="{{ invItems }}" as="i" hint-placeholder-count="10">
+          <div onClick="{{ i.onEdit }}" style="display:flex;align-items:center;gap:16px;padding:13px 18px;border-bottom:1px solid #1C2024;cursor:pointer;" style-hover="background:#1C2126;">
+            <span style="flex:0 0 86px;"><span style="{{ i.catStyle }}">{{ i.catLabel }}</span></span>
+            <span style="flex:0 0 104px;font-family:'IBM Plex Mono';font-weight:600;font-size:13.5px;color:#F2A413;">{{ i.eco }}</span>
+            <span style="flex:0 0 110px;font-family:'IBM Plex Mono';font-size:13px;color:#C5CBD0;">{{ i.placa }}</span>
+            <span style="flex:1;min-width:110px;font-size:13.5px;color:#C5CBD0;">{{ i.detalle }}</span>
+            <span style="flex:0 0 124px;"><span style="{{ i.estadoStyle }}"><span style="{{ i.estadoDot }}"></span>{{ i.estadoLabel }}</span></span>
+            <span style="flex:0 0 124px;text-align:right;font-family:'IBM Plex Mono';font-size:13px;color:#8A939B;">{{ i.asignado }}</span>
+            <span style="flex:0 0 60px;text-align:right;font-family:'Barlow';font-weight:600;font-size:12px;color:#6E767D;">Editar</span>
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ invEmpty }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:60px;text-align:center;color:#5E666D;font-size:15px;">Sin equipo en esta categoría.</div>
+      </sc-if>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isPrograma }}" hint-placeholder-val="{{ false }}">
+    <header style="padding:22px 28px 0;position:sticky;top:0;background:#0E1113;z-index:5;border-bottom:1px solid #1C2024;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:.3px;line-height:1;">PROGRAMA</h1>
+          <p style="margin:6px 0 0;color:#8A939B;font-size:14px;">Clientes y programas de transporte · unidades asignadas a cada cuenta.</p>
+        </div>
+        <button onClick="{{ onNewCliente }}" style="display:flex;align-items:center;gap:9px;background:#F2A413;color:#0E1113;border:none;border-radius:8px;padding:11px 18px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 3px 12px rgba(242,164,19,.25);" style-hover="background:#FFB733;"><span style="font-size:18px;line-height:0;font-weight:700;">+</span> Nuevo cliente</button>
+      </div>
+      <div style="display:flex;gap:12px;margin:20px 0 16px;flex-wrap:wrap;">
+        <sc-for list="{{ progStats }}" as="s" hint-placeholder-count="3">
+          <div style="flex:1;min-width:170px;background:#181C1F;border:1px solid #262C31;border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:13px;">
+            <span style="width:4px;height:40px;border-radius:3px;background:{{ s.color }};flex:0 0 4px;"></span>
+            <div>
+              <div style="font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;color:#E8EBED;">{{ s.value }}</div>
+              <div style="font-size:12px;color:#8A939B;margin-top:3px;">{{ s.label }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </header>
+
+    <div style="padding:22px 28px 40px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;">
+        <sc-for list="{{ programaList }}" as="c" hint-placeholder-count="5">
+          <div style="background:#181C1F;border:1px solid #262C31;border-radius:12px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:13px;">
+              <div style="{{ c.badgeStyle }}">{{ c.ini }}</div>
+              <div style="flex:1;min-width:0;">
+                <div style="font-family:'Barlow Condensed';font-weight:700;font-size:20px;line-height:1.1;">{{ c.nombre }}</div>
+                <div style="font-size:12px;color:#8A939B;margin-top:3px;">Programa de transporte</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-family:'Barlow Condensed';font-weight:700;font-size:24px;line-height:1;color:#E8EBED;">{{ c.count }}</div>
+                <div style="font-family:'Barlow Condensed';font-weight:600;font-size:9.5px;letter-spacing:1.2px;color:#6E767D;margin-top:3px;">UNIDADES</div>
+              </div>
+            </div>
+            <div style="border-top:1px solid #23282C;margin-top:14px;padding-top:13px;">
+              <div style="font-family:'Barlow Condensed';font-weight:600;font-size:10.5px;letter-spacing:1.2px;color:#6E767D;margin-bottom:9px;">UNIDADES ASIGNADAS</div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;">
+                <sc-for list="{{ c.ecoChips }}" as="e" hint-placeholder-count="2"><span style="{{ e.style }}">{{ e.eco }}</span></sc-for>
+                <sc-if value="{{ c.empty }}" hint-placeholder-val="{{ false }}"><span style="font-size:12.5px;color:#5E666D;">Sin unidades asignadas</span></sc-if>
+              </div>
+            </div>
+            <button onClick="{{ c.onEdit }}" style="margin-top:13px;width:100%;background:#1E2327;border:1px solid #2A3036;color:#C5CBD0;border-radius:8px;padding:9px;font-family:'Barlow';font-weight:600;font-size:13px;cursor:pointer;" style-hover="border-color:#F2A413;color:#fff;">Editar cliente</button>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isTrabajadores }}" hint-placeholder-val="{{ false }}">
+    <header style="padding:22px 28px 0;position:sticky;top:0;background:#0E1113;z-index:5;border-bottom:1px solid #1C2024;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+        <div>
+          <h1 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:.3px;line-height:1;">TRABAJADORES</h1>
+          <p style="margin:6px 0 0;color:#8A939B;font-size:14px;">Personal de taller · puesto y habilidades de cada trabajador.</p>
+        </div>
+        <button onClick="{{ onNewTrabajador }}" style="display:flex;align-items:center;gap:9px;background:#F2A413;color:#0E1113;border:none;border-radius:8px;padding:11px 18px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 3px 12px rgba(242,164,19,.25);" style-hover="background:#FFB733;"><span style="font-size:18px;line-height:0;font-weight:700;">+</span> Nuevo trabajador</button>
+      </div>
+      <div style="display:flex;gap:12px;margin:20px 0 16px;flex-wrap:wrap;">
+        <sc-for list="{{ trabStats }}" as="s" hint-placeholder-count="4">
+          <div style="flex:1;min-width:160px;background:#181C1F;border:1px solid #262C31;border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:13px;">
+            <span style="width:4px;height:40px;border-radius:3px;background:{{ s.color }};flex:0 0 4px;"></span>
+            <div>
+              <div style="font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;color:#E8EBED;">{{ s.value }}</div>
+              <div style="font-size:12px;color:#8A939B;margin-top:3px;">{{ s.label }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </header>
+
+    <div style="padding:22px 28px 40px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px;">
+        <sc-for list="{{ trabList }}" as="t" hint-placeholder-count="6">
+          <div style="background:#181C1F;border:1px solid #262C31;border-radius:12px;padding:16px;display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:13px;">
+              <div style="{{ t.avatarStyle }}">{{ t.ini }}</div>
+              <div style="flex:1;min-width:0;">
+                <div style="font-family:'Barlow Condensed';font-weight:700;font-size:19px;line-height:1.1;">{{ t.nombre }}</div>
+                <div style="margin-top:6px;"><span style="{{ t.rolStyle }}">{{ t.rolLabel }}</span></div>
+              </div>
+            </div>
+            <div style="border-top:1px solid #23282C;margin:14px 0 0;padding-top:13px;flex:1;">
+              <div style="font-family:'Barlow Condensed';font-weight:600;font-size:10.5px;letter-spacing:1.2px;color:#6E767D;margin-bottom:10px;">HABILIDADES</div>
+              <div style="display:flex;flex-direction:column;gap:7px;">
+                <sc-for list="{{ t.skills }}" as="sk" hint-placeholder-count="3">
+                  <div style="display:flex;align-items:flex-start;gap:9px;font-size:13px;color:#C5CBD0;line-height:1.35;">
+                    <span style="color:#F2A413;flex:0 0 auto;margin-top:1px;">▸</span><span>{{ sk }}</span>
+                  </div>
+                </sc-for>
+                <sc-if value="{{ t.noSkills }}" hint-placeholder-val="{{ false }}"><span style="font-size:12.5px;color:#5E666D;">Sin habilidades registradas</span></sc-if>
+              </div>
+            </div>
+            <sc-if value="{{ t.activo }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:13px;font-size:11.5px;color:#8A939B;"><span style="color:#E8792B;font-weight:600;">En orden activa:</span> {{ t.asignadasLabel }}</div>
+            </sc-if>
+            <button onClick="{{ t.onEdit }}" style="margin-top:14px;width:100%;background:#1E2327;border:1px solid #2A3036;color:#C5CBD0;border-radius:8px;padding:9px;font-family:'Barlow';font-weight:600;font-size:13px;cursor:pointer;" style-hover="border-color:#F2A413;color:#fff;">Editar trabajador</button>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isEstatus }}" hint-placeholder-val="{{ false }}">
+    <header style="padding:22px 28px 0;position:sticky;top:0;background:#0E1113;z-index:5;border-bottom:1px solid #1C2024;">
+      <div>
+        <h1 style="margin:0;font-family:'Barlow Condensed';font-weight:700;font-size:30px;letter-spacing:.3px;line-height:1;">ESTATUS DE FLOTA</h1>
+        <p style="margin:6px 0 0 0;color:#8A939B;font-size:14px;">Vista general de las {{ estatusTotal }} unidades de la flota, agrupadas por estatus. Haz clic en una unidad para configurarla.</p>
+      </div>
+      <div style="height:22px;"></div>
+    </header>
+    <div style="padding:22px 28px 40px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:16px;align-items:start;">
+        <sc-for list="{{ estatusBoard }}" as="g" hint-placeholder-count="6">
+          <div style="background:#181C1F;border:1px solid #262C31;border-radius:12px;overflow:hidden;">
+            <div style="{{ g.headStyle }}">
+              <span style="{{ g.dotStyle }}"></span>
+              <span style="font-family:'Barlow Condensed';font-weight:700;font-size:15px;letter-spacing:.6px;color:#E8EBED;">{{ g.label }}</span>
+              <span style="{{ g.countStyle }}">{{ g.count }}</span>
+            </div>
+            <div style="padding:8px;display:flex;flex-direction:column;gap:6px;">
+              <sc-for list="{{ g.units }}" as="u" hint-placeholder-count="3">
+                <div onClick="{{ u.onClick }}" style="background:#121618;border:1px solid #23282C;border-radius:8px;padding:10px 12px;cursor:pointer;transition:border-color .12s;" style-hover="border-color:#F2A413;">
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <span style="font-family:'Barlow Condensed';font-weight:700;font-size:16px;line-height:1;">{{ u.eco }}</span>
+                    <span style="font-family:'Barlow';font-weight:600;font-size:9.5px;letter-spacing:.8px;text-transform:uppercase;color:#6E767D;border:1px solid #2A3036;border-radius:4px;padding:2px 5px;">{{ u.tipoLabel }}</span>
+                    <sc-if value="{{ u.hasCliente }}" hint-placeholder-val="{{ false }}"><span style="{{ u.clienteStyle }}">{{ u.clienteLabel }}</span></sc-if>
+                  </div>
+                  <div style="margin-top:6px;font-size:12px;color:#8A939B;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ u.operador }}</div>
+                  <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;">
+                    <sc-for list="{{ u.parts }}" as="p" hint-placeholder-count="2">
+                      <span style="display:inline-flex;align-items:center;gap:5px;background:#181C1F;border:1px solid #262C31;border-radius:5px;padding:2px 6px;">
+                        <span style="font-family:'Barlow Condensed';font-weight:600;letter-spacing:.6px;color:#6E767D;font-size:8.5px;">{{ p.tag }}</span>
+                        <span style="font-family:'IBM Plex Mono';font-weight:500;color:#C5CBD0;font-size:10px;">{{ p.placa }}</span>
+                      </span>
+                    </sc-for>
+                    <sc-if value="{{ u.hasGps }}" hint-placeholder-val="{{ false }}">
+                      <span style="display:inline-flex;align-items:center;gap:4px;background:rgba(155,123,224,.12);border:1px solid rgba(155,123,224,.3);border-radius:5px;padding:2px 6px;">
+                        <span style="font-family:'Barlow Condensed';font-weight:600;letter-spacing:.6px;color:#9B7BE0;font-size:8.5px;">SAMSARA</span>
+                        <span style="font-family:'IBM Plex Mono';font-weight:500;color:#C5CBD0;font-size:10px;">{{ u.gpsSerie }}</span>
+                      </span>
+                    </sc-if>
+                  </div>
+                  <sc-if value="{{ u.inShop }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin-top:8px;padding-top:8px;border-top:1px dashed #23282C;">
+                      <div style="font-family:'Barlow Condensed';font-weight:600;font-size:8.5px;letter-spacing:1px;color:#6E767D;margin-bottom:5px;">MECÁNICOS</div>
+                      <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                        <sc-for list="{{ u.mecs }}" as="m" hint-placeholder-count="1"><span style="{{ m.style }}">{{ m.nombre }}</span></sc-for>
+                        <sc-if value="{{ u.sinMec }}" hint-placeholder-val="{{ false }}"><span style="font-size:11px;color:#6E767D;">Sin asignar</span></sc-if>
+                      </div>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-for>
+              <sc-if value="{{ g.empty }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:16px 8px;text-align:center;color:#4E555C;font-size:12.5px;">Sin unidades</div>
+              </sc-if>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </sc-if>
+  </main>
+
+  <!-- ===== DRAWER ===== -->
+  <sc-if value="{{ drawerOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;background:rgba(6,8,9,.62);z-index:40;animation:rgFade .18s ease;" onClick="{{ onClose }}"></div>
+    <section style="position:fixed;top:0;right:0;height:100vh;width:472px;max-width:94vw;background:#141719;border-left:1px solid #23282C;z-index:41;display:flex;flex-direction:column;box-shadow:-16px 0 48px rgba(0,0,0,.5);animation:rgDrawer .24s cubic-bezier(.22,1,.36,1);">
+      <div style="padding:20px 22px;border-bottom:1px solid #23282C;display:flex;align-items:flex-start;justify-content:space-between;">
+        <div>
+          <div style="font-family:'Barlow Condensed';font-weight:600;font-size:11px;letter-spacing:2px;color:#F2A413;">{{ draftHeaderKicker }}</div>
+          <h2 style="margin:3px 0 0;font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;">{{ draftHeaderTitle }}</h2>
+        </div>
+        <button onClick="{{ onClose }}" style="background:#1E2327;border:1px solid #2A3036;color:#8A939B;width:34px;height:34px;border-radius:8px;font-size:18px;cursor:pointer;line-height:1;" style-hover="color:#fff;border-color:#3A4148;">×</button>
+      </div>
+
+      <div style="flex:1;overflow-y:auto;padding:20px 22px 24px;">
+        <!-- diagram preview -->
+        <div style="height:132px;background:#121618;border:1px solid #20262A;border-radius:10px;padding:8px 12px;margin-bottom:22px;">
+          <dc-import name="TruckDiagram" tipo="{{ draft.tipo }}" hint-size="100%,116px"></dc-import>
+        </div>
+
+        <!-- eco + km -->
+        <div style="display:flex;gap:12px;margin-bottom:22px;">
+          <div style="flex:1;">
+            <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">NÚMERO ECONÓMICO</label>
+            <div style="width:100%;background:#0E1113;border:1px solid #23282C;border-radius:8px;padding:10px 12px;font-family:'IBM Plex Mono';font-size:14px;color:#E8EBED;min-height:41px;">{{ draft.eco }}</div>
+            <div style="font-size:10.5px;color:#5E666D;margin-top:5px;">Definido por el tractocamión</div>
+          </div>
+          <div style="flex:1;">
+            <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">KM RECORRIDOS</label>
+            <input value="{{ draft.km }}" onInput="{{ onKm }}" type="number" min="0" placeholder="0" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 12px;color:#E8EBED;font-family:'IBM Plex Mono';font-size:14px;outline:none;" style-focus="border-color:#F2A413;">
+          </div>
+        </div>
+
+        <!-- config type -->
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">TIPO DE CONFIGURACIÓN</label>
+        <div style="display:flex;gap:8px;margin-bottom:22px;">
+          <sc-for list="{{ typeOptions }}" as="t" hint-placeholder-count="2">
+            <button onClick="{{ t.onClick }}" style="{{ t.style }}">
+              <div style="font-family:'Barlow Condensed';font-weight:700;font-size:16px;letter-spacing:.5px;">{{ t.label }}</div>
+              <div style="font-size:11px;opacity:.72;margin-top:1px;">{{ t.sub }}</div>
+            </button>
+          </sc-for>
+        </div>
+
+        <!-- components -->
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:10px;">EQUIPO DEL CONJUNTO</label>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:22px;">
+          <div>
+            <div style="font-size:11px;color:#6E767D;margin-bottom:5px;font-family:'Barlow Condensed';font-weight:600;letter-spacing:1px;">TRACTOCAMIÓN</div>
+            <select class="rg-select" value="{{ draft.tractoPlaca }}" onChange="{{ onTracto }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;">
+              <option value="">— seleccionar —</option>
+              <sc-for list="{{ tractoOptions }}" as="o" hint-placeholder-count="4"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+            </select>
+          </div>
+          <sc-if value="{{ draftIsFull }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <div style="font-size:11px;color:#6E767D;margin-bottom:5px;font-family:'Barlow Condensed';font-weight:600;letter-spacing:1px;">REMOLQUE 1</div>
+              <select class="rg-select" value="{{ draft.rem1Placa }}" onChange="{{ onRem1 }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;">
+                <option value="">— seleccionar —</option>
+                <sc-for list="{{ remolqueOptions }}" as="o" hint-placeholder-count="4"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+              </select>
+            </div>
+            <div>
+              <div style="font-size:11px;color:#6E767D;margin-bottom:5px;font-family:'Barlow Condensed';font-weight:600;letter-spacing:1px;">DOLLY (CONVERTIDOR)</div>
+              <select class="rg-select" value="{{ draft.dollyPlaca }}" onChange="{{ onDolly }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;">
+                <option value="">— seleccionar —</option>
+                <sc-for list="{{ dollyOptions }}" as="o" hint-placeholder-count="3"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+              </select>
+            </div>
+            <div>
+              <div style="font-size:11px;color:#6E767D;margin-bottom:5px;font-family:'Barlow Condensed';font-weight:600;letter-spacing:1px;">REMOLQUE 2</div>
+              <select class="rg-select" value="{{ draft.rem2Placa }}" onChange="{{ onRem2 }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;">
+                <option value="">— seleccionar —</option>
+                <sc-for list="{{ remolqueOptions }}" as="o" hint-placeholder-count="4"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+              </select>
+            </div>
+          </sc-if>
+          <sc-if value="{{ draftIsSencillo }}" hint-placeholder-val="{{ true }}">
+            <div>
+              <div style="font-size:11px;color:#6E767D;margin-bottom:5px;font-family:'Barlow Condensed';font-weight:600;letter-spacing:1px;">REMOLQUE</div>
+              <select class="rg-select" value="{{ draft.rem1Placa }}" onChange="{{ onRem1 }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;">
+                <option value="">— seleccionar —</option>
+                <sc-for list="{{ remolqueOptions }}" as="o" hint-placeholder-count="4"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+              </select>
+            </div>
+          </sc-if>
+        </div>
+
+        <!-- operator -->
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:10px;">OPERADOR ASIGNADO</label>
+        <select class="rg-select" value="{{ draft.operadorId }}" onChange="{{ onOperador }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;margin-bottom:11px;">
+          <option value="">— sin asignar —</option>
+          <sc-for list="{{ operadorOptions }}" as="o" hint-placeholder-count="5"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+        </select>
+        <sc-if value="{{ draftHasOp }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;align-items:center;gap:13px;background:#0E1113;border:1px solid #23282C;border-radius:10px;padding:13px 15px;margin-bottom:22px;">
+            <div style="{{ draftOpAvatar }}">{{ draftOpInitials }}</div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-weight:600;font-size:15px;">{{ draftOpNombre }}</div>
+              <div style="font-size:12px;color:#8A939B;font-family:'IBM Plex Mono';margin-top:2px;">Lic. {{ draftOpLicencia }} · vence {{ draftOpVence }}</div>
+              <div style="font-size:12px;color:#8A939B;font-family:'IBM Plex Mono';">Tel. {{ draftOpTel }}</div>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ draftNoOp }}" hint-placeholder-val="{{ true }}"><div style="margin-bottom:22px;"></div></sc-if>
+
+        <!-- programa / cliente -->
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:10px;">PROGRAMA / CLIENTE</label>
+        <select class="rg-select" value="{{ draft.clienteId }}" onChange="{{ onCliente }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;margin-bottom:22px;">
+          <option value="">— sin programa —</option>
+          <sc-for list="{{ clienteOptions }}" as="o" hint-placeholder-count="5"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+        </select>
+
+        <!-- gps samsara -->
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">GPS SAMSARA · NÚMERO DE SERIE</label>
+        <div style="position:relative;margin-bottom:22px;">
+          <input value="{{ draft.gpsSerie }}" onInput="{{ onGps }}" placeholder="G7X-0000AA" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 12px 10px 38px;color:#E8EBED;font-family:'IBM Plex Mono';font-size:14px;outline:none;" style-focus="border-color:#F2A413;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5E666D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+        </div>
+
+        <!-- status -->
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:10px;">ESTATUS</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <sc-for list="{{ statusChips }}" as="s" hint-placeholder-count="5">
+            <button onClick="{{ s.onClick }}" style="{{ s.style }}">
+              <span style="{{ s.dotStyle }}"></span>{{ s.label }}
+            </button>
+          </sc-for>
+        </div>
+        <sc-if value="{{ draftCanDelete }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ onDeleteUnit }}" style="margin-top:26px;width:100%;background:rgba(229,72,77,.1);border:1px solid rgba(229,72,77,.32);color:#E5484D;border-radius:8px;padding:11px;font-family:'Barlow';font-weight:600;font-size:13.5px;cursor:pointer;" style-hover="background:rgba(229,72,77,.2);">Eliminar unidad</button>
+        </sc-if>
+      </div>
+
+      <div style="padding:16px 22px;border-top:1px solid #23282C;display:flex;gap:10px;">
+        <button onClick="{{ onClose }}" style="flex:0 0 auto;background:#1E2327;border:1px solid #2A3036;color:#C5CBD0;border-radius:8px;padding:12px 20px;font-family:'Barlow';font-weight:600;font-size:14px;cursor:pointer;" style-hover="border-color:#3A4148;color:#fff;">Cancelar</button>
+        <button onClick="{{ onSave }}" style="flex:1;background:#F2A413;border:none;color:#0E1113;border-radius:8px;padding:12px 20px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;" style-hover="background:#FFB733;">{{ saveLabel }}</button>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- ===== DRAWER: ENVIAR A MANTENIMIENTO ===== -->
+  <sc-if value="{{ mantOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;background:rgba(6,8,9,.62);z-index:40;animation:rgFade .18s ease;" onClick="{{ onMantClose }}"></div>
+    <section style="position:fixed;top:0;right:0;height:100vh;width:440px;max-width:94vw;background:#141719;border-left:1px solid #23282C;z-index:41;display:flex;flex-direction:column;box-shadow:-16px 0 48px rgba(0,0,0,.5);animation:rgDrawer .24s cubic-bezier(.22,1,.36,1);">
+      <div style="padding:20px 22px;border-bottom:1px solid #23282C;display:flex;align-items:flex-start;justify-content:space-between;">
+        <div>
+          <div style="font-family:'Barlow Condensed';font-weight:600;font-size:11px;letter-spacing:2px;color:#F2A413;">ORDEN DE SERVICIO</div>
+          <h2 style="margin:3px 0 0;font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;">Enviar a mantenimiento</h2>
+        </div>
+        <button onClick="{{ onMantClose }}" style="background:#1E2327;border:1px solid #2A3036;color:#8A939B;width:34px;height:34px;border-radius:8px;font-size:18px;cursor:pointer;line-height:1;" style-hover="color:#fff;border-color:#3A4148;">×</button>
+      </div>
+      <div style="flex:1;overflow-y:auto;padding:20px 22px 24px;">
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">TRACTOCAMIÓN</label>
+        <select class="rg-select" value="{{ mantForm.eco }}" onChange="{{ onMantEco }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;margin-bottom:22px;">
+          <option value="">— seleccionar tracto —</option>
+          <sc-for list="{{ mantTractoOptions }}" as="o" hint-placeholder-count="6"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+        </select>
+
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:10px;">TIPO DE MANTENIMIENTO</label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
+          <sc-for list="{{ mantTipoBtns }}" as="t" hint-placeholder-count="4">
+            <button onClick="{{ t.onClick }}" style="{{ t.style }}"><span style="{{ t.dotStyle }}"></span>{{ t.label }}</button>
+          </sc-for>
+        </div>
+
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">DESCRIPCIÓN DEL TRABAJO</label>
+        <textarea value="{{ mantForm.desc }}" onInput="{{ onMantDesc }}" placeholder="Detalle del servicio o falla…" style="width:100%;min-height:76px;resize:vertical;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;margin-bottom:22px;" style-focus="border-color:#F2A413;"></textarea>
+
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">TALLER</label>
+        <input value="{{ mantForm.taller }}" onInput="{{ onMantTaller }}" placeholder="Taller Central RG" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;margin-bottom:14px;" style-focus="border-color:#F2A413;">
+        <button onClick="{{ onMantExterno }}" style="{{ mantExternoStyle }}border-radius:8px;padding:9px 14px;font-family:'Barlow';font-weight:600;font-size:13px;cursor:pointer;">Taller externo</button>
+
+        <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin:22px 0 10px;">MECÁNICOS ASIGNADOS</label>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <sc-for list="{{ mantMecList }}" as="m" hint-placeholder-count="4">
+            <div onClick="{{ m.onClick }}" style="{{ m.rowStyle }}">
+              <div style="{{ m.avatarStyle }}">{{ m.ini }}</div>
+              <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:13.5px;">{{ m.nombre }}</div><div style="font-size:11px;color:#8A939B;">{{ m.rolLabel }}</div></div>
+              <span style="{{ m.checkStyle }}">{{ m.check }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="padding:16px 22px;border-top:1px solid #23282C;display:flex;gap:10px;">
+        <button onClick="{{ onMantClose }}" style="flex:0 0 auto;background:#1E2327;border:1px solid #2A3036;color:#C5CBD0;border-radius:8px;padding:12px 20px;font-family:'Barlow';font-weight:600;font-size:14px;cursor:pointer;" style-hover="border-color:#3A4148;color:#fff;">Cancelar</button>
+        <button onClick="{{ onMantSave }}" style="flex:1;background:#F2A413;border:none;color:#0E1113;border-radius:8px;padding:12px 20px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;" style-hover="background:#FFB733;">Crear orden</button>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- ===== DRAWER: ASIGNAR MECÁNICOS ===== -->
+  <sc-if value="{{ assignOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;background:rgba(6,8,9,.62);z-index:44;animation:rgFade .18s ease;" onClick="{{ onAssignClose }}"></div>
+    <section style="position:fixed;top:0;right:0;height:100vh;width:400px;max-width:94vw;background:#141719;border-left:1px solid #23282C;z-index:45;display:flex;flex-direction:column;box-shadow:-16px 0 48px rgba(0,0,0,.5);animation:rgDrawer .24s cubic-bezier(.22,1,.36,1);">
+      <div style="padding:20px 22px;border-bottom:1px solid #23282C;display:flex;align-items:flex-start;justify-content:space-between;">
+        <div>
+          <div style="font-family:'Barlow Condensed';font-weight:600;font-size:11px;letter-spacing:2px;color:#F2A413;">{{ assignEco }} · {{ assignFolio }}</div>
+          <h2 style="margin:3px 0 0;font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;">Asignar mecánicos</h2>
+        </div>
+        <button onClick="{{ onAssignClose }}" style="background:#1E2327;border:1px solid #2A3036;color:#8A939B;width:34px;height:34px;border-radius:8px;font-size:18px;cursor:pointer;line-height:1;" style-hover="color:#fff;border-color:#3A4148;">×</button>
+      </div>
+      <div style="flex:1;overflow-y:auto;padding:16px 22px 24px;display:flex;flex-direction:column;gap:8px;">
+        <sc-for list="{{ assignList }}" as="m" hint-placeholder-count="6">
+          <div onClick="{{ m.onClick }}" style="{{ m.rowStyle }}">
+            <div style="{{ m.avatarStyle }}">{{ m.ini }}</div>
+            <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:14px;">{{ m.nombre }}</div><div style="font-size:11.5px;color:#8A939B;">{{ m.rolLabel }}</div></div>
+            <span style="{{ m.checkStyle }}">{{ m.check }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="padding:16px 22px;border-top:1px solid #23282C;">
+        <button onClick="{{ onAssignClose }}" style="width:100%;background:#F2A413;border:none;color:#0E1113;border-radius:8px;padding:12px 20px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;" style-hover="background:#FFB733;">Listo</button>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- ===== DRAWER: EDITOR GENÉRICO ===== -->
+  <sc-if value="{{ editOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;background:rgba(6,8,9,.62);z-index:42;animation:rgFade .18s ease;" onClick="{{ onEditClose }}"></div>
+    <section style="position:fixed;top:0;right:0;height:100vh;width:420px;max-width:94vw;background:#141719;border-left:1px solid #23282C;z-index:43;display:flex;flex-direction:column;box-shadow:-16px 0 48px rgba(0,0,0,.5);animation:rgDrawer .24s cubic-bezier(.22,1,.36,1);">
+      <div style="padding:20px 22px;border-bottom:1px solid #23282C;display:flex;align-items:flex-start;justify-content:space-between;">
+        <div>
+          <div style="font-family:'Barlow Condensed';font-weight:600;font-size:11px;letter-spacing:2px;color:#F2A413;">{{ editKicker }}</div>
+          <h2 style="margin:3px 0 0;font-family:'Barlow Condensed';font-weight:700;font-size:26px;line-height:1;">{{ editTitle }}</h2>
+        </div>
+        <button onClick="{{ onEditClose }}" style="background:#1E2327;border:1px solid #2A3036;color:#8A939B;width:34px;height:34px;border-radius:8px;font-size:18px;cursor:pointer;line-height:1;" style-hover="color:#fff;border-color:#3A4148;">×</button>
+      </div>
+      <div style="flex:1;overflow-y:auto;padding:20px 22px 24px;">
+        <sc-if value="{{ editIsEquipo }}" hint-placeholder-val="{{ false }}">
+          <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">CLASE DE EQUIPO</label>
+          <div style="display:flex;gap:8px;margin-bottom:20px;">
+            <sc-for list="{{ editCatBtns }}" as="c" hint-placeholder-count="3"><button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.label }}</button></sc-for>
+          </div>
+        </sc-if>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <sc-for list="{{ editFields }}" as="f" hint-placeholder-count="4">
+            <div>
+              <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">{{ f.label }}</label>
+              <input value="{{ f.value }}" onInput="{{ f.onInput }}" placeholder="{{ f.ph }}" style="{{ f.inputStyle }}" style-focus="border-color:#F2A413;">
+            </div>
+          </sc-for>
+          <sc-if value="{{ editCatIsRem }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">TIPO DE REMOLQUE</label>
+              <select class="rg-select" value="{{ editRemTipo }}" onChange="{{ onEditRemTipo }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;">
+                <sc-for list="{{ editRemTipos }}" as="o" hint-placeholder-count="5"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+              </select>
+            </div>
+          </sc-if>
+          <sc-if value="{{ editIsCliente }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:10px;">COLOR DE ETIQUETA</label>
+              <div style="display:flex;flex-wrap:wrap;gap:9px;">
+                <sc-for list="{{ editColorOptions }}" as="c" hint-placeholder-count="8"><button onClick="{{ c.onClick }}" style="{{ c.style }}"></button></sc-for>
+              </div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ editIsTrabajador }}" hint-placeholder-val="{{ false }}">
+            <div>
+              <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">PUESTO / ROL</label>
+              <select class="rg-select" value="{{ editRolValue }}" onChange="{{ onEditRol }}" style="width:100%;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 34px 10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;outline:none;cursor:pointer;">
+                <sc-for list="{{ editRolOptions }}" as="o" hint-placeholder-count="6"><option value="{{ o.value }}">{{ o.label }}</option></sc-for>
+              </select>
+            </div>
+            <div>
+              <label style="display:block;font-family:'Barlow Condensed';font-weight:600;font-size:12px;letter-spacing:1.5px;color:#8A939B;margin-bottom:8px;">HABILIDADES</label>
+              <textarea value="{{ editSkills }}" onInput="{{ onEditSkills }}" placeholder="Una habilidad por línea, ej.&#10;Cambio de balatas&#10;Soldar ejes&#10;Arreglar quintas" style="width:100%;min-height:120px;resize:vertical;background:#0E1113;border:1px solid #2A3036;border-radius:8px;padding:10px 12px;color:#E8EBED;font-family:'Barlow';font-size:13.5px;line-height:1.5;outline:none;" style-focus="border-color:#F2A413;"></textarea>
+              <div style="font-size:10.5px;color:#5E666D;margin-top:5px;">Una habilidad por línea — se muestran como lista.</div>
+            </div>
+          </sc-if>
+        </div>
+        <sc-if value="{{ editCanDelete }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ onEditDelete }}" style="margin-top:26px;width:100%;background:rgba(229,72,77,.1);border:1px solid rgba(229,72,77,.32);color:#E5484D;border-radius:8px;padding:11px;font-family:'Barlow';font-weight:600;font-size:13.5px;cursor:pointer;" style-hover="background:rgba(229,72,77,.2);">Eliminar</button>
+        </sc-if>
+      </div>
+      <div style="padding:16px 22px;border-top:1px solid #23282C;display:flex;gap:10px;">
+        <button onClick="{{ onEditClose }}" style="flex:0 0 auto;background:#1E2327;border:1px solid #2A3036;color:#C5CBD0;border-radius:8px;padding:12px 20px;font-family:'Barlow';font-weight:600;font-size:14px;cursor:pointer;" style-hover="border-color:#3A4148;color:#fff;">Cancelar</button>
+        <button onClick="{{ onEditSave }}" style="flex:1;background:#F2A413;border:none;color:#0E1113;border-radius:8px;padding:12px 20px;font-family:'Barlow';font-weight:700;font-size:14px;cursor:pointer;" style-hover="background:#FFB733;">{{ editSaveLabel }}</button>
+      </div>
+    </section>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.STATUS = {
+      disponible:  { label: 'Disponible',            short: 'Disponible', color: '#35B36B' },
+      activo:      { label: 'Activo / En ruta',      short: 'Activo',     color: '#2FB8C6' },
+      preventivo:  { label: 'Mant. preventivo',      short: 'Preventivo', color: '#3B8EE6' },
+      correctivo:  { label: 'Mant. correctivo',      short: 'Correctivo', color: '#E8792B' },
+      accidentado: { label: 'Accidentado',           short: 'Accidentado',color: '#E5484D' },
+      taller:      { label: 'Taller externo',        short: 'T. externo', color: '#9B7BE0' },
+      rezago:      { label: 'Rezago',                short: 'Rezago',     color: '#7C8390' },
+    };
+    this.operadores = [
+      { id: 'o1', nombre: 'Marco A. Peña',      licencia: 'A-44718', vence: '11/2027', tel: '229-114-2280' },
+      { id: 'o2', nombre: 'J. Refugio Salas',   licencia: 'A-39902', vence: '08/2026', tel: '229-330-9915' },
+      { id: 'o3', nombre: 'Ernesto Villareal',  licencia: 'A-51043', vence: '03/2028', tel: '833-207-4471' },
+      { id: 'o4', nombre: 'Ramiro Cázares',     licencia: 'A-40877', vence: '07/2026', tel: '229-556-1203' },
+      { id: 'o5', nombre: 'Hugo Domínguez',     licencia: 'A-48219', vence: '01/2028', tel: '938-441-7756' },
+      { id: 'o6', nombre: 'Saúl Mendoza',       licencia: 'A-42660', vence: '05/2027', tel: '229-802-3390' },
+      { id: 'o7', nombre: 'Fidel Aguilar',      licencia: 'A-53318', vence: '10/2027', tel: '833-119-6642' },
+      { id: 'o8', nombre: 'Beto Carranza',      licencia: 'A-37155', vence: '09/2026', tel: '229-447-8801' },
+    ];
+    this.tractos = [
+      { eco: 'TRG-001', placa: '84-AH-7K', modelo: 'Kenworth T680' },
+      { eco: 'TRG-002', placa: '91-BC-2M', modelo: 'Freightliner Cascadia' },
+      { eco: 'TRG-003', placa: '77-DG-5P', modelo: 'International LT' },
+      { eco: 'TRG-004', placa: '63-FR-9T', modelo: 'Volvo VNL 760' },
+      { eco: 'TRG-005', placa: '58-KL-3R', modelo: 'Kenworth T880' },
+      { eco: 'TRG-006', placa: '42-MN-8W', modelo: 'Freightliner Cascadia' },
+      { eco: 'TRG-007', placa: '95-PQ-1X', modelo: 'Scania R500' },
+      { eco: 'TRG-008', placa: '31-TR-6V', modelo: 'Kenworth T680' },
+      { eco: 'TRG-009', placa: '19-WX-4Y', modelo: 'International LT' },
+      { eco: 'TRG-026', placa: '07-BG-2H', modelo: 'International 9200 (2009)' },
+      { eco: 'TRG-027', placa: '04-CJ-8K', modelo: 'Kenworth T600 (2007)' },
+    ];
+    this.remolques = [
+      { eco: 'TRG-010', placa: '3AH-7742', tipo: 'Caja seca 53"' },
+      { eco: 'TRG-011', placa: '3BC-1180', tipo: 'Caja seca 53"' },
+      { eco: 'TRG-012', placa: '3DG-9053', tipo: 'Plataforma' },
+      { eco: 'TRG-013', placa: '3FR-4471', tipo: 'Caja refrigerada' },
+      { eco: 'TRG-014', placa: '3KL-6628', tipo: 'Caja seca 48"' },
+      { eco: 'TRG-015', placa: '3MN-3319', tipo: 'Tolva' },
+      { eco: 'TRG-016', placa: '3PQ-8890', tipo: 'Caja seca 53"' },
+      { eco: 'TRG-017', placa: '3RS-2207', tipo: 'Plataforma' },
+      { eco: 'TRG-018', placa: '3TV-5501', tipo: 'Caja seca 53"' },
+      { eco: 'TRG-019', placa: '3WX-7788', tipo: 'Plataforma' },
+      { eco: 'TRG-020', placa: '3YZ-9016', tipo: 'Caja refrigerada' },
+    ];
+    this.dollies = [
+      { eco: 'TRG-021', placa: 'DLY-101' }, { eco: 'TRG-022', placa: 'DLY-102' }, { eco: 'TRG-023', placa: 'DLY-103' }, { eco: 'TRG-024', placa: 'DLY-104' }, { eco: 'TRG-025', placa: 'DLY-105' },
+    ];
+    this.ordenes = [
+      { folio: 'OS-2041', eco: 'TRG-003', tipo: 'preventivo',  desc: 'Servicio 400,000 km · aceite, filtros y ajuste de frenos', taller: 'Taller Central RG', externo: false, ingreso: '28/06/2026', mecanicos: ['t4'] },
+      { folio: 'OS-2042', eco: 'TRG-004', tipo: 'correctivo',  desc: 'Falla en sistema de frenos, eje 3 · reemplazo de balatas', taller: 'Taller Central RG', externo: false, ingreso: '30/06/2026', mecanicos: ['t1', 't3'] },
+      { folio: 'OS-2043', eco: 'TRG-005', tipo: 'accidentado', desc: 'Colisión lateral · evaluación de chasis y peritaje',       taller: 'Peritaje aseguradora', externo: true, ingreso: '25/06/2026', mecanicos: [] },
+      { folio: 'OS-2044', eco: 'TRG-006', tipo: 'taller',      desc: 'Reparación mayor de motor · rectificación',                taller: 'Diésel del Golfo S.A.', externo: true, ingreso: '20/06/2026', mecanicos: ['t2'] },
+      { folio: 'OS-2045', eco: 'TRG-008', tipo: 'preventivo',  desc: 'Inspección DOT + rotación de llantas',                     taller: 'Taller Central RG', externo: false, ingreso: '01/07/2026', mecanicos: ['t4'] },
+    ];
+    this.HOY = new Date(2026, 6, 3);
+    this.SERVICIO_KM = 40000;
+    this.clientes = [
+      { id: 'c1', nombre: 'ASFK', etiqueta: 'ASFK', color: '#3B8EE6' },
+      { id: 'c2', nombre: 'AB Mauri', etiqueta: 'AB Mauri', color: '#E8792B' },
+      { id: 'c3', nombre: 'Grupo Sigma', etiqueta: 'Sigma', color: '#35B36B' },
+      { id: 'c4', nombre: 'Cemex', etiqueta: 'Cemex', color: '#9B7BE0' },
+      { id: 'c5', nombre: 'Bachoco', etiqueta: 'Bachoco', color: '#D4A017' },
+    ];
+    this.ROLES = {
+      mecanicoA:  { label: 'Mecánico A',  color: '#E8792B' },
+      mecanicoB:  { label: 'Mecánico B',  color: '#E8792B' },
+      mecanicoC:  { label: 'Mecánico C',  color: '#E8792B' },
+      fibrero:    { label: 'Fibrero',     color: '#35B36B' },
+      pintor:     { label: 'Pintor',      color: '#9B7BE0' },
+      electricoA: { label: 'Eléctrico A', color: '#3B8EE6' },
+      electricoB: { label: 'Eléctrico B', color: '#3B8EE6' },
+      electricoC: { label: 'Eléctrico C', color: '#3B8EE6' },
+      muellero:   { label: 'Muellero / Suspensionista', color: '#4AA6A0' },
+      lavador:    { label: 'Lavador',     color: '#D4A017' },
+      movedor:    { label: 'Movedor',     color: '#B0577C' },
+    };
+    this.trabajadores = [
+      { id: 't1', nombre: 'Rubén Ortega',      rol: 'mecanicoA', skills: 'Cambio de balatas y tambores\nRectificación de frenos de aire\nDiagnóstico de motor diésel\nReparación de quintas ruedas' },
+      { id: 't2', nombre: 'Carlos Jiménez',    rol: 'mecanicoA', skills: 'Overhaul de motor\nSincronización y afinación mayor\nSistema de inyección common rail' },
+      { id: 't3', nombre: 'Ángel Torres',      rol: 'mecanicoB', skills: 'Cambio de embrague\nReparación de transmisión\nMantenimiento de diferenciales' },
+      { id: 't4', nombre: 'Iván Morales',      rol: 'mecanicoC', skills: 'Servicios preventivos\nCambio de aceite y filtros\nRotación e inspección de llantas' },
+      { id: 't5', nombre: 'Luis Fernández',    rol: 'electricoA', skills: 'Diagnóstico con scanner\nReparación de arneses\nSistema de luces y ABS\nAlternadores y marchas' },
+      { id: 't6', nombre: 'Óscar Ramírez',     rol: 'electricoB', skills: 'Instalación de faros y estrobos\nSensores y cableado\nReparación de tableros' },
+      { id: 't7', nombre: 'Pedro Solís',       rol: 'fibrero',   skills: 'Reparación de fibra de vidrio\nDefensas y cofres\nParabrisas y molduras' },
+      { id: 't8', nombre: 'Martín Vega',       rol: 'pintor',    skills: 'Pintura automotriz completa\nRotulación e imagen de flota\nPreparación y enmascarado' },
+      { id: 't9', nombre: 'Jorge Campos',      rol: 'muellero',  skills: 'Cambio de muelles y hojas\nSuspensión de aire\nAmortiguadores y bujes\nSoldadura de ejes' },
+      { id: 't10', nombre: 'Raúl Núñez',       rol: 'lavador',   skills: 'Lavado exterior e interior\nDetallado de cabina\nEngrasado general' },
+      { id: 't11', nombre: 'Tomás Reyes',      rol: 'movedor',   skills: 'Movimiento de unidades en patio\nAcomodo de remolques\nEnganche y desenganche' },
+    ];
+    this.state = {
+      units: [
+        { id: 'u1', clienteId: 'c1', eco: 'TRG-001', tipo: 'full',     tractoPlaca: '84-AH-7K', rem1Placa: '3AH-7742', dollyPlaca: 'DLY-101', rem2Placa: '3BC-1180', operadorId: 'o1', estatus: 'activo',      km: 284530, gpsSerie: 'G7X-4021AA' },
+        { id: 'u2', clienteId: 'c2', eco: 'TRG-002', tipo: 'sencillo', tractoPlaca: '91-BC-2M', rem1Placa: '3DG-9053', dollyPlaca: '',        rem2Placa: '',         operadorId: 'o2', estatus: 'activo',      km: 156880, gpsSerie: 'G7X-3388BC' },
+        { id: 'u3', clienteId: 'c3', eco: 'TRG-003', tipo: 'sencillo', tractoPlaca: '77-DG-5P', rem1Placa: '3FR-4471', dollyPlaca: '',        rem2Placa: '',         operadorId: 'o3', estatus: 'preventivo',  km: 402115, gpsSerie: 'G7X-9915DG' },
+        { id: 'u4', clienteId: 'c1', eco: 'TRG-004', tipo: 'full',     tractoPlaca: '63-FR-9T', rem1Placa: '3KL-6628', dollyPlaca: 'DLY-102', rem2Placa: '3PQ-8890', operadorId: 'o4', estatus: 'correctivo',  km: 331470, gpsSerie: 'G7X-6642FR' },
+        { id: 'u5', clienteId: '', eco: 'TRG-005', tipo: 'sencillo', tractoPlaca: '58-KL-3R', rem1Placa: '3MN-3319', dollyPlaca: '',        rem2Placa: '',         operadorId: 'o5', estatus: 'accidentado', km: 98240, gpsSerie: 'G7X-1180KL' },
+        { id: 'u6', clienteId: 'c4', eco: 'TRG-006', tipo: 'sencillo', tractoPlaca: '42-MN-8W', rem1Placa: '3RS-2207', dollyPlaca: '',        rem2Placa: '',         operadorId: 'o6', estatus: 'taller',      km: 512900, gpsSerie: 'G7X-5507MN' },
+        { id: 'u7', clienteId: 'c2', eco: 'TRG-007', tipo: 'full',     tractoPlaca: '95-PQ-1X', rem1Placa: '3AH-7742', dollyPlaca: 'DLY-103', rem2Placa: '3KL-6628', operadorId: 'o7', estatus: 'disponible',  km: 210665, gpsSerie: 'G7X-8830PQ' },
+        { id: 'u8', clienteId: 'c5', eco: 'TRG-008', tipo: 'sencillo', tractoPlaca: '31-TR-6V', rem1Placa: '3BC-1180', dollyPlaca: '',        rem2Placa: '',         operadorId: 'o8', estatus: 'preventivo',  km: 377050, gpsSerie: 'G7X-2274TR' },
+        { id: 'u9', clienteId: '', eco: 'TRG-009', tipo: 'sencillo', tractoPlaca: '19-WX-4Y', rem1Placa: '3PQ-8890', dollyPlaca: '',        rem2Placa: '',         operadorId: '',   estatus: 'disponible',  km: 44120, gpsSerie: 'G7X-7761WX' },
+        { id: 'u10', clienteId: '', eco: 'TRG-026', tipo: 'sencillo', tractoPlaca: '07-BG-2H', rem1Placa: '',         dollyPlaca: '',        rem2Placa: '',         operadorId: '',   estatus: 'rezago',      km: 1284000, gpsSerie: '' },
+        { id: 'u11', clienteId: '', eco: 'TRG-027', tipo: 'sencillo', tractoPlaca: '04-CJ-8K', rem1Placa: '',         dollyPlaca: '',        rem2Placa: '',         operadorId: '',   estatus: 'rezago',      km: 1502300, gpsSerie: '' },
+      ],
+      operadores: this.operadores,
+      clientes: this.clientes,
+      trabajadores: this.trabajadores,
+      tractos: this.tractos,
+      remolques: this.remolques,
+      dollies: this.dollies,
+      ordenes: this.ordenes,
+      historial: [
+        { folio: 'OS-1990', eco: 'TRG-001', tipo: 'preventivo', desc: 'Servicio 240,000 km · aceite y filtros', taller: 'Taller Central RG', externo: false, ingreso: '02/03/2026', salida: '04/03/2026' },
+        { folio: 'OS-1972', eco: 'TRG-001', tipo: 'correctivo', desc: 'Cambio de turbo', taller: 'Diésel del Golfo S.A.', externo: true, ingreso: '11/12/2025', salida: '18/12/2025' },
+        { folio: 'OS-2001', eco: 'TRG-002', tipo: 'preventivo', desc: 'Afinación mayor', taller: 'Taller Central RG', externo: false, ingreso: '20/04/2026', salida: '21/04/2026' },
+        { folio: 'OS-1955', eco: 'TRG-007', tipo: 'correctivo', desc: 'Reparación de suspensión', taller: 'Taller Central RG', externo: false, ingreso: '05/11/2025', salida: '08/11/2025' },
+      ],
+      view: 'flota',
+      invFilter: 'todos',
+      filter: 'todos',
+      cliFilter: 'todos',
+      search: '',
+      drawerOpen: false,
+      isNew: false,
+      draft: null,
+      edit: null,
+      mantForm: null,
+      assignFolio: null,
+      histEco: '',
+      fotos: this.loadFotos(),
+    };
+  }
+
+  uid(p) { return p + '_' + Math.random().toString(36).slice(2, 8); }
+  hoyStr() { const d = this.HOY; return String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0') + '/' + d.getFullYear(); }
+
+  // ----- editor genérico (operador / cliente / equipo) -----
+  openEdit(type, data) { this.setState({ edit: { type, isNew: !data, data: data ? { ...data } : this.blankEntity(type) } }); }
+  blankEntity(type) {
+    if (type === 'operador') return { id: this.uid('o'), nombre: '', licencia: '', vence: '', tel: '' };
+    if (type === 'cliente') return { id: this.uid('c'), nombre: '', etiqueta: '', color: '#3B8EE6' };
+    if (type === 'trabajador') return { id: this.uid('t'), nombre: '', rol: 'mecanicoA', skills: '' };
+    return { key: this.uid('eq'), cat: 'tracto', eco: '', placa: '', modelo: '', tipo: 'Caja seca 53"' };
+  }
+  patchEdit(p) { this.setState(s => ({ edit: { ...s.edit, data: { ...s.edit.data, ...p } } })); }
+  closeEdit() { this.setState({ edit: null }); }
+  saveEdit() {
+    const e = this.state.edit; if (!e) return;
+    const d = e.data;
+    if (e.type === 'operador') {
+      if (!d.nombre.trim()) return;
+      this.setState(s => ({ operadores: e.isNew ? [...s.operadores, d] : s.operadores.map(o => o.id === d.id ? d : o), edit: null }));
+    } else if (e.type === 'cliente') {
+      if (!d.nombre.trim()) return;
+      const cd = { ...d, etiqueta: d.etiqueta.trim() || d.nombre.trim() };
+      this.setState(s => ({ clientes: e.isNew ? [...s.clientes, cd] : s.clientes.map(c => c.id === cd.id ? cd : c), edit: null }));
+    } else if (e.type === 'trabajador') {
+      if (!d.nombre.trim()) return;
+      this.setState(s => ({ trabajadores: e.isNew ? [...s.trabajadores, d] : s.trabajadores.map(t => t.id === d.id ? d : t), edit: null }));
+    } else {
+      if (!d.eco.trim()) return;
+      this.setState(s => {
+        const listKey = d.cat === 'tracto' ? 'tractos' : d.cat === 'remolque' ? 'remolques' : 'dollies';
+        const item = d.cat === 'tracto' ? { eco: d.eco.trim(), placa: d.placa.trim(), modelo: d.modelo.trim() }
+                    : d.cat === 'remolque' ? { eco: d.eco.trim(), placa: d.placa.trim(), tipo: d.tipo }
+                    : { eco: d.eco.trim(), placa: d.placa.trim() };
+        const arr = s[listKey];
+        const next = e.isNew ? [...arr, item] : arr.map(x => x.placa === (d._origPlaca || d.placa) ? item : x);
+        return { [listKey]: next, edit: null };
+      });
+    }
+  }
+  deleteEntity() {
+    const e = this.state.edit; if (!e || e.isNew) return;
+    const d = e.data;
+    if (e.type === 'operador') this.setState(s => ({ operadores: s.operadores.filter(o => o.id !== d.id), units: s.units.map(u => u.operadorId === d.id ? { ...u, operadorId: '' } : u), edit: null }));
+    else if (e.type === 'cliente') this.setState(s => ({ clientes: s.clientes.filter(c => c.id !== d.id), units: s.units.map(u => u.clienteId === d.id ? { ...u, clienteId: '' } : u), edit: null }));
+    else if (e.type === 'trabajador') this.setState(s => ({ trabajadores: s.trabajadores.filter(t => t.id !== d.id), ordenes: s.ordenes.map(o => ({ ...o, mecanicos: (o.mecanicos || []).filter(m => m !== d.id) })), edit: null }));
+    else {
+      const listKey = d.cat === 'tracto' ? 'tractos' : d.cat === 'remolque' ? 'remolques' : 'dollies';
+      this.setState(s => ({ [listKey]: s[listKey].filter(x => x.placa !== d.placa), edit: null }));
+    }
+  }
+
+  // ----- mantenimiento -----
+  openMantForm() {
+    const disp = this.state.tractos.filter(t => { const u = this.state.units.find(x => x.tractoPlaca === t.placa); return true; });
+    this.setState({ mantForm: { eco: '', tipo: 'preventivo', desc: '', taller: '', externo: false, mecanicos: [] } });
+  }
+  patchMant(p) { this.setState(s => ({ mantForm: { ...s.mantForm, ...p } })); }
+  toggleMantMec(id) { this.setState(s => { const m = s.mantForm.mecanicos || []; return { mantForm: { ...s.mantForm, mecanicos: m.includes(id) ? m.filter(x => x !== id) : [...m, id] } }; }); }
+  closeMant() { this.setState({ mantForm: null }); }
+  openAssign(folio) { this.setState({ assignFolio: folio }); }
+  closeAssign() { this.setState({ assignFolio: null }); }
+  toggleAssign(folio, id) {
+    this.setState(s => ({ ordenes: s.ordenes.map(o => {
+      if (o.folio !== folio) return o;
+      const m = o.mecanicos || [];
+      return { ...o, mecanicos: m.includes(id) ? m.filter(x => x !== id) : [...m, id] };
+    }) }));
+  }
+  saveMant() {
+    const f = this.state.mantForm; if (!f || !f.eco || !f.desc.trim()) return;
+    const folio = 'OS-' + (2046 + Math.floor(Math.random() * 900));
+    const orden = { folio, eco: f.eco, tipo: f.tipo, desc: f.desc.trim(), taller: f.taller.trim() || 'Taller Central RG', externo: !!f.externo, ingreso: this.hoyStr(), mecanicos: f.mecanicos || [] };
+    this.setState(s => ({
+      ordenes: [orden, ...s.ordenes],
+      units: s.units.map(u => u.tractoPlaca === f.eco || u.eco === f.eco ? { ...u, estatus: f.tipo } : u),
+      mantForm: null,
+    }));
+  }
+  concluirOrden(folio) {
+    this.setState(s => {
+      const o = s.ordenes.find(x => x.folio === folio); if (!o) return {};
+      const cerrada = { ...o, salida: this.hoyStr() };
+      return {
+        ordenes: s.ordenes.filter(x => x.folio !== folio),
+        historial: [cerrada, ...s.historial],
+        units: s.units.map(u => u.eco === o.eco ? { ...u, estatus: 'disponible' } : u),
+      };
+    });
+  }
+
+  loadFotos() {
+    try { return JSON.parse(localStorage.getItem('rg_fotos_operadores') || '{}') || {}; } catch (e) { return {}; }
+  }
+  setFoto(id, url) {
+    this.setState(s => {
+      const fotos = { ...s.fotos, [id]: url };
+      try { localStorage.setItem('rg_fotos_operadores', JSON.stringify(fotos)); } catch (e) {}
+      return { fotos };
+    });
+  }
+  removeFoto(id) {
+    this.setState(s => {
+      const fotos = { ...s.fotos }; delete fotos[id];
+      try { localStorage.setItem('rg_fotos_operadores', JSON.stringify(fotos)); } catch (e) {}
+      return { fotos };
+    });
+  }
+  readFoto(id, file) {
+    if (!file || !file.type.startsWith('image/')) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        const size = 200, c = document.createElement('canvas');
+        c.width = size; c.height = size;
+        const ctx = c.getContext('2d');
+        const s = Math.min(img.width, img.height), sx = (img.width - s) / 2, sy = (img.height - s) / 2;
+        ctx.drawImage(img, sx, sy, s, s, 0, 0, size, size);
+        this.setFoto(id, c.toDataURL('image/jpeg', 0.82));
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  rgba(hex, a) {
+    const n = parseInt(hex.slice(1), 16);
+    return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+  }
+  avatarColor(id) {
+    const p = ['#3B8EE6', '#E8792B', '#9B7BE0', '#35B36B', '#E5484D', '#4AA6A0', '#C0873B', '#B0577C'];
+    const i = id ? id.charCodeAt(id.length - 1) % p.length : 0;
+    return p[i];
+  }
+  initials(n) {
+    if (!n) return '—';
+    return n.split(' ').filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase();
+  }
+  opById(id) { return (this.state.operadores || this.operadores).find(o => o.id === id) || null; }
+  soonExpire(v) {
+    if (!v) return false;
+    const [m, y] = v.split('/').map(Number);
+    return (y < 2026) || (y === 2026 && m <= 9);
+  }
+
+  openUnit(id) {
+    const u = this.state.units.find(x => x.id === id);
+    this.setState({ drawerOpen: true, isNew: false, draft: { ...u } });
+  }
+  newUnit() {
+    this.setState({ drawerOpen: true, isNew: true, draft: { id: 'u' + Date.now(), clienteId: '', eco: '', tipo: 'sencillo', tractoPlaca: '', rem1Placa: '', dollyPlaca: '', rem2Placa: '', operadorId: '', estatus: 'disponible', km: 0, gpsSerie: '' } });
+  }
+  close() { this.setState({ drawerOpen: false, draft: null }); }
+  patch(p) { this.setState(s => ({ draft: { ...s.draft, ...p } })); }
+  save() {
+    const d = this.state.draft;
+    if (!d.eco.trim()) return;
+    this.setState(s => {
+      const exists = s.units.some(u => u.id === d.id);
+      return { units: exists ? s.units.map(u => u.id === d.id ? { ...d } : u) : [{ ...d }, ...s.units], drawerOpen: false, draft: null };
+    });
+  }
+  deleteUnit() {
+    const d = this.state.draft; if (!d) return;
+    this.setState(s => ({ units: s.units.filter(u => u.id !== d.id), drawerOpen: false, draft: null }));
+  }
+
+  renderVals() {
+    const S = this.STATUS, st = this.state, d = st.draft;
+    const operadores = st.operadores, clientes = st.clientes, tractos = st.tractos, remolques = st.remolques, dollies = st.dollies, ordenes = st.ordenes;
+    const trabajadores = st.trabajadores || [];
+    const trabById = {}; trabajadores.forEach(t => trabById[t.id] = t);
+    const R = this.ROLES;
+    const initialsOf = (n) => this.initials(n);
+    const fotos = st.fotos || {};
+    const tractoEco = {}; tractos.forEach(t => tractoEco[t.placa] = t.eco);
+    const remEco = {}; remolques.forEach(r => remEco[r.placa] = r.eco);
+    const dollyEco = {}; dollies.forEach(x => dollyEco[x.placa] = x.eco);
+    const ecoOf = (m, pl) => pl ? (m[pl] || pl) : '—';
+    const cliById = {}; clientes.forEach(c => cliById[c.id] = c);
+
+    // ---- navegación ----
+    const navBase = 'display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:8px;font-size:14px;cursor:pointer;transition:all .12s;';
+    const navActive = navBase + 'background:#1E2327;color:#fff;font-weight:600;';
+    const navIdle = navBase + 'color:#8A939B;font-weight:500;';
+    const dotOn = 'width:8px;height:8px;border-radius:2px;background:#F2A413;';
+    const dotOff = 'width:8px;height:8px;border-radius:2px;background:#3A4148;';
+    const isFlota = st.view === 'flota', isOperadores = st.view === 'operadores', isMantenimiento = st.view === 'mantenimiento', isInventario = st.view === 'inventario', isPrograma = st.view === 'programa', isTrabajadores = st.view === 'trabajadores', isEstatus = st.view === 'estatus';
+
+    // ---- vista operadores ----
+    const avLg = { width: '52px', height: '52px', flex: '0 0 52px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: '20px', color: '#fff', position: 'relative', overflow: 'hidden', cursor: 'pointer' };
+    const pill = (color) => ({ display: 'inline-flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap', fontWeight: 600, fontSize: '11.5px', padding: '4px 10px', borderRadius: '20px', background: this.rgba(color, 0.14), color, border: `1px solid ${this.rgba(color, 0.3)}` });
+    const opsList = operadores.map(o => {
+      const unit = st.units.find(u => u.operadorId === o.id);
+      const soon = this.soonExpire(o.vence);
+      const avOp = { ...avLg, background: this.avatarColor(o.id) };
+      if (fotos[o.id]) { avOp.backgroundImage = `url(${fotos[o.id]})`; avOp.backgroundSize = 'cover'; avOp.backgroundPosition = 'center'; avOp.color = 'transparent'; }
+      return {
+        id: o.id, nombre: o.nombre, initials: this.initials(o.nombre), telefono: o.tel, licencia: o.licencia, vence: o.vence,
+        avatarStyle: avOp,
+        onEdit: () => this.openEdit('operador', o),
+        hasFoto: !!fotos[o.id], fotoUrl: fotos[o.id] || '',
+        onFoto: (e) => { this.readFoto(o.id, e.target.files && e.target.files[0]); e.target.value = ''; },
+        onRemoveFoto: (e) => { e.preventDefault(); e.stopPropagation(); this.removeFoto(o.id); },
+        licLabel: soon ? 'Por vencer' : 'Vigente', licStyle: pill(soon ? '#E8792B' : '#35B36B'),
+        venceStyle: { fontFamily: "'IBM Plex Mono'", fontSize: '13px', fontWeight: soon ? 600 : 500, color: soon ? '#E8792B' : '#C5CBD0' },
+        unidadLabel: unit ? `${unit.eco} · ${unit.tipo === 'full' ? 'Full' : 'Sencillo'}` : 'Sin asignar',
+        unidadStyle: unit
+          ? { fontFamily: "'IBM Plex Mono'", fontWeight: 600, fontSize: '12px', whiteSpace: 'nowrap', color: '#E8EBED', background: '#121618', border: '1px solid #2A3036', borderRadius: '6px', padding: '5px 10px' }
+          : { fontFamily: "'Barlow'", fontWeight: 500, fontSize: '12px', whiteSpace: 'nowrap', color: '#6E767D', border: '1px dashed #2A3036', borderRadius: '6px', padding: '5px 10px' },
+      };
+    });
+    const opsSummary = [
+      { label: 'Operadores en plantilla', value: operadores.length, color: '#F2A413' },
+      { label: 'Con unidad asignada', value: operadores.filter(o => st.units.some(u => u.operadorId === o.id)).length, color: '#35B36B' },
+      { label: 'Licencia por vencer', value: operadores.filter(o => this.soonExpire(o.vence)).length, color: '#E8792B' },
+    ];
+    const counts = { todos: st.units.length };
+    Object.keys(S).forEach(k => counts[k] = st.units.filter(u => u.estatus === k).length);
+
+    // ---- vista mantenimiento ----
+    const dias = (f) => { const [d, m, y] = f.split('/').map(Number); return Math.max(0, Math.round((this.HOY - new Date(y, m - 1, d)) / 86400000)); };
+    const mtStats = ['preventivo', 'correctivo', 'accidentado', 'taller'].map(k => ({ label: S[k].label, value: counts[k], color: S[k].color }));
+    const mtTotal = mtStats.reduce((a, s) => a + s.value, 0);
+    const mtOrders = ordenes.map(o => {
+      const unit = st.units.find(u => u.eco === o.eco);
+      const op = unit ? this.opById(unit.operadorId) : null;
+      const c = S[o.tipo].color, dd = dias(o.ingreso);
+      return {
+        folio: o.folio, eco: o.eco, desc: o.desc, taller: o.taller, ingreso: o.ingreso,
+        tipoLabel: S[o.tipo].short, tipoStyle: { display: 'inline-flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap', fontWeight: 600, fontSize: '11.5px', padding: '4px 10px', borderRadius: '20px', background: this.rgba(c, 0.14), color: c, border: `1px solid ${this.rgba(c, 0.3)}` },
+        tipoDot: { width: '7px', height: '7px', borderRadius: '50%', background: c },
+        barStyle: { width: '4px', alignSelf: 'stretch', borderRadius: '3px', flex: '0 0 4px', background: c },
+        tallerLabel: o.externo ? 'Externo' : 'Interno',
+        tallerStyle: { fontFamily: "'Barlow'", fontWeight: 600, fontSize: '10.5px', letterSpacing: '.6px', textTransform: 'uppercase', color: o.externo ? '#9B7BE0' : '#8A939B' },
+        dias: dd, diasStyle: { fontFamily: "'IBM Plex Mono'", fontWeight: 600, fontSize: '15px', lineHeight: 1, color: dd > 7 ? '#E8792B' : '#E8EBED' },
+        operador: op ? op.nombre : 'Sin operador',
+        onConcluir: () => this.concluirOrden(o.folio),
+        onAssign: () => this.openAssign(o.folio),
+        mecs: (o.mecanicos || []).map(id => { const t = trabById[id]; const col = t ? R[t.rol].color : '#8A939B'; return { nombre: t ? t.nombre : '—', rol: t ? R[t.rol].label : '', style: { display: 'inline-flex', alignItems: 'center', gap: '5px', whiteSpace: 'nowrap', fontFamily: "'Barlow'", fontWeight: 600, fontSize: '11px', color: col, background: this.rgba(col, 0.14), border: `1px solid ${this.rgba(col, 0.3)}`, borderRadius: '20px', padding: '3px 9px' } }; }),
+        sinMec: (o.mecanicos || []).length === 0,
+      };
+    });
+    const prevList = st.units.filter(u => u.estatus === 'disponible' || u.estatus === 'activo').map(u => {
+      const ciclo = u.km % this.SERVICIO_KM, restante = this.SERVICIO_KM - ciclo, pct = Math.round((ciclo / this.SERVICIO_KM) * 100);
+      const due = restante <= 8000;
+      return {
+        eco: u.eco, km: u.km.toLocaleString('es-MX'), restante: restante.toLocaleString('es-MX'), pct,
+        barFill: { width: pct + '%', height: '100%', borderRadius: '4px', background: due ? '#E8792B' : '#3B8EE6' },
+        restStyle: { fontFamily: "'IBM Plex Mono'", fontWeight: 600, fontSize: '13px', color: due ? '#E8792B' : '#C5CBD0' },
+        due, _r: restante,
+      };
+    }).sort((a, b) => a._r - b._r);
+
+    // ---- vista estatus de flota (tablero) ----
+    const estatusGroups = [
+      { key: 'disponible',   label: 'Disponible',    color: '#35B36B', ests: ['disponible'] },
+      { key: 'activo',       label: 'Activo / Ruta', color: '#2FB8C6', ests: ['activo'] },
+      { key: 'mantenimiento',label: 'Mantenimiento', color: '#E8792B', ests: ['preventivo', 'correctivo'] },
+      { key: 'taller',       label: 'Taller externo',color: '#9B7BE0', ests: ['taller'] },
+      { key: 'accidentado',  label: 'Accidentado',   color: '#E5484D', ests: ['accidentado'] },
+      { key: 'rezago',       label: 'Rezago',        color: '#7C8390', ests: ['rezago'] },
+    ];
+    const estatusBoard = estatusGroups.map(g => {
+      const us = st.units.filter(u => g.ests.includes(u.estatus));
+      return {
+        label: g.label, color: g.color, count: us.length,
+        headStyle: { display: 'flex', alignItems: 'center', gap: '9px', padding: '11px 14px', borderBottom: '1px solid #23282C', background: this.rgba(g.color, 0.08) },
+        dotStyle: { width: '9px', height: '9px', borderRadius: '50%', flex: '0 0 9px', background: g.color },
+        countStyle: { marginLeft: 'auto', fontFamily: "'IBM Plex Mono'", fontWeight: 600, fontSize: '14px', color: g.color },
+        empty: us.length === 0,
+        units: us.map(u => {
+          const op = this.opById(u.operadorId); const cli = u.clienteId ? cliById[u.clienteId] : null; const s = S[u.estatus];
+          const parts = [{ tag: 'TRACTO', placa: ecoOf(tractoEco, u.tractoPlaca) }];
+          if (u.tipo === 'full') {
+            parts.push({ tag: 'REM 1', placa: ecoOf(remEco, u.rem1Placa) });
+            parts.push({ tag: 'DOLLY', placa: ecoOf(dollyEco, u.dollyPlaca) });
+            parts.push({ tag: 'REM 2', placa: ecoOf(remEco, u.rem2Placa) });
+          } else if (u.rem1Placa) {
+            parts.push({ tag: 'REM', placa: ecoOf(remEco, u.rem1Placa) });
+          }
+          const inShop = u.estatus !== 'disponible' && u.estatus !== 'activo';
+          const ord = inShop ? ordenes.find(o => o.eco === u.eco) : null;
+          const mecs = ord ? (ord.mecanicos || []).map(id => { const t = trabById[id]; const col = t ? R[t.rol].color : '#8A939B'; return { nombre: t ? t.nombre : '—', style: { display: 'inline-flex', alignItems: 'center', gap: '5px', whiteSpace: 'nowrap', fontFamily: "'Barlow'", fontWeight: 600, fontSize: '10px', color: col, background: this.rgba(col, 0.14), border: `1px solid ${this.rgba(col, 0.3)}`, borderRadius: '20px', padding: '2px 8px' } }; }) : [];
+          return {
+            eco: u.eco, tipoLabel: u.tipo === 'full' ? 'Full' : 'Sencillo',
+            operador: op ? op.nombre : 'Sin operador',
+            statusShort: s ? s.short : u.estatus,
+            statusStyle: { fontFamily: "'Barlow'", fontWeight: 600, fontSize: '10px', letterSpacing: '.4px', textTransform: 'uppercase', color: g.color },
+            hasCliente: !!cli, clienteLabel: cli ? cli.etiqueta : '',
+            clienteStyle: cli ? { fontFamily: "'Barlow'", fontWeight: 600, fontSize: '10px', whiteSpace: 'nowrap', color: cli.color, background: this.rgba(cli.color, 0.14), border: `1px solid ${this.rgba(cli.color, 0.3)}`, borderRadius: '4px', padding: '2px 6px' } : {},
+            parts,
+            gpsSerie: u.gpsSerie || '', hasGps: !!(u.gpsSerie && u.gpsSerie.trim()),
+            inShop, mecs, hasMecs: mecs.length > 0, sinMec: inShop && mecs.length === 0,
+            onClick: () => this.openUnit(u.id),
+          };
+        }),
+      };
+    });
+    const estatusTotal = st.units.length;
+
+    // ---- vista inventario ----
+    const catMeta = { tracto: { label: 'Tracto', color: '#F2A413' }, remolque: { label: 'Remolque', color: '#3B8EE6' }, dolly: { label: 'Dolly', color: '#9B7BE0' } };
+    const usoTracto = (pl) => st.units.filter(u => u.tractoPlaca === pl).map(u => u.eco);
+    const usoRem = (pl) => st.units.filter(u => u.rem1Placa === pl || u.rem2Placa === pl).map(u => u.eco);
+    const usoDolly = (pl) => st.units.filter(u => u.dollyPlaca === pl).map(u => u.eco);
+    const mkItem = (cat, eco, placa, detalle, ecos) => {
+      const enUso = ecos.length > 0, c = catMeta[cat];
+      return {
+        cat, eco, placa, detalle,
+        onEdit: () => this.openEdit('equipo', { key: this.uid('eq'), cat, eco, placa, modelo: cat === 'tracto' ? detalle : '', tipo: cat === 'remolque' ? detalle : 'Caja seca 53"', _origPlaca: placa }),
+        catLabel: c.label, catStyle: { fontFamily: "'Barlow'", fontWeight: 700, fontSize: '10px', letterSpacing: '.8px', textTransform: 'uppercase', color: c.color, background: this.rgba(c.color, 0.13), border: `1px solid ${this.rgba(c.color, 0.28)}`, borderRadius: '5px', padding: '3px 8px', whiteSpace: 'nowrap' },
+        enUso, asignado: enUso ? ecos.join(', ') : 'En patio',
+        estadoLabel: enUso ? 'En uso' : 'Disponible',
+        estadoStyle: { display: 'inline-flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap', fontWeight: 600, fontSize: '11.5px', padding: '4px 10px', borderRadius: '20px', background: this.rgba(enUso ? '#3B8EE6' : '#35B36B', 0.14), color: enUso ? '#3B8EE6' : '#35B36B', border: `1px solid ${this.rgba(enUso ? '#3B8EE6' : '#35B36B', 0.3)}` },
+        estadoDot: { width: '7px', height: '7px', borderRadius: '50%', background: enUso ? '#3B8EE6' : '#35B36B' },
+      };
+    };
+    const invAll = [
+      ...tractos.map(t => mkItem('tracto', t.eco, t.placa, t.modelo, usoTracto(t.placa))),
+      ...remolques.map(r => mkItem('remolque', r.eco, r.placa, r.tipo, usoRem(r.placa))),
+      ...dollies.map(x => mkItem('dolly', x.eco, x.placa, 'Convertidor 2 ejes', usoDolly(x.placa))),
+    ];
+    const catCount = (cat) => invAll.filter(i => i.cat === cat).length;
+    const dispCount = (cat) => invAll.filter(i => i.cat === cat && !i.enUso).length;
+    const invStats = [
+      { label: 'Tractocamiones', value: catCount('tracto'), sub: dispCount('tracto') + ' disponibles', color: '#F2A413' },
+      { label: 'Remolques', value: catCount('remolque'), sub: dispCount('remolque') + ' disponibles', color: '#3B8EE6' },
+      { label: 'Dollies', value: catCount('dolly'), sub: dispCount('dolly') + ' disponibles', color: '#9B7BE0' },
+      { label: 'Equipos disponibles', value: invAll.filter(i => !i.enUso).length, sub: 'de ' + invAll.length + ' en total', color: '#35B36B' },
+    ];
+    const invCounts = { todos: invAll.length, tracto: catCount('tracto'), remolque: catCount('remolque'), dolly: catCount('dolly') };
+    const invItems = invAll.filter(i => st.invFilter === 'todos' || i.cat === st.invFilter);
+    const invChipBase = 'display:inline-flex;align-items:center;gap:7px;border-radius:8px;padding:8px 14px;font-family:Barlow;font-weight:600;font-size:13px;cursor:pointer;transition:all .12s;white-space:nowrap;';
+    const mkInvChip = (key, label) => {
+      const active = st.invFilter === key;
+      return { label, count: invCounts[key], onClick: () => this.setState({ invFilter: key }),
+        style: active ? invChipBase + 'background:#F2A413;color:#0E1113;border:1px solid #F2A413;' : invChipBase + 'background:#181C1F;color:#8A939B;border:1px solid #262C31;' };
+    };
+    const invChips = [mkInvChip('todos', 'Todos'), mkInvChip('tracto', 'Tractocamiones'), mkInvChip('remolque', 'Remolques'), mkInvChip('dolly', 'Dollies')];
+
+    // ---- vista programa (clientes) ----
+    const programaList = clientes.map(c => {
+      const us = st.units.filter(u => u.clienteId === c.id);
+      return {
+        id: c.id, nombre: c.nombre, count: us.length,
+        onEdit: () => this.openEdit('cliente', c),
+        ini: c.etiqueta.replace(/[^A-Za-z]/g, '').slice(0, 2).toUpperCase(),
+        badgeStyle: { width: '48px', height: '48px', flex: '0 0 48px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: '17px', color: '#0E1113', background: c.color },
+        ecoChips: us.map(u => ({ eco: u.eco, style: { fontFamily: "'IBM Plex Mono'", fontWeight: 500, fontSize: '11.5px', whiteSpace: 'nowrap', color: c.color, background: this.rgba(c.color, 0.12), border: `1px solid ${this.rgba(c.color, 0.26)}`, borderRadius: '5px', padding: '3px 8px' } })),
+        empty: us.length === 0,
+      };
+    });
+    const progAsignadas = st.units.filter(u => u.clienteId).length;
+    const progStats = [
+      { label: 'Clientes / programas', value: clientes.length, color: '#F2A413' },
+      { label: 'Unidades con programa', value: progAsignadas, color: '#35B36B' },
+      { label: 'Unidades sin programa', value: st.units.length - progAsignadas, color: '#8A939B' },
+    ];
+
+    // ---- historial de mantenimiento (por tracto) ----
+    const histEcos = tractos.map(t => t.eco);
+    const histFiltered = st.historial.filter(h => !st.histEco || h.eco === st.histEco);
+    const histList = histFiltered.map(h => {
+      const c = S[h.tipo] ? S[h.tipo].color : '#8A939B';
+      return {
+        folio: h.folio, eco: h.eco, desc: h.desc, taller: h.taller, ingreso: h.ingreso, salida: h.salida,
+        tipoLabel: S[h.tipo] ? S[h.tipo].short : h.tipo,
+        tipoStyle: { display: 'inline-flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap', fontWeight: 600, fontSize: '11px', padding: '3px 9px', borderRadius: '20px', background: this.rgba(c, 0.14), color: c, border: `1px solid ${this.rgba(c, 0.3)}` },
+        barStyle: { width: '3px', alignSelf: 'stretch', borderRadius: '2px', flex: '0 0 3px', background: c },
+        tallerLabel: h.externo ? 'Externo' : 'Interno',
+      };
+    });
+    const histEcoOptions = [{ value: '', label: 'Todos los tractos' }, ...tractos.map(t => ({ value: t.eco, label: `${t.eco} · ${t.modelo}` }))];
+    const histEmpty = histList.length === 0;
+
+    // ---- formulario enviar a mantenimiento ----
+    const mf = st.mantForm;
+    let mantVals = { mantOpen: false };
+    if (mf) {
+      const tipoBtns = ['preventivo', 'correctivo', 'accidentado', 'taller'].map(k => {
+        const active = mf.tipo === k, c = S[k].color;
+        return { label: S[k].short, onClick: () => this.patchMant({ tipo: k }),
+          dotStyle: { width: '8px', height: '8px', borderRadius: '50%', background: c },
+          style: (active ? `background:${this.rgba(c, 0.16)};color:${c};border:1px solid ${this.rgba(c, 0.42)};` : 'background:#0E1113;color:#8A939B;border:1px solid #262C31;') + 'display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:9px 13px;font-family:Barlow;font-weight:600;font-size:13px;cursor:pointer;white-space:nowrap;' };
+      });
+      mantVals = {
+        mantOpen: true, mantForm: mf,
+        mantTractoOptions: tractos.map(t => ({ value: t.eco, label: `${t.eco} · ${t.modelo} · ${t.placa}` })),
+        mantTipoBtns: tipoBtns,
+        mantMecList: trabajadores.map(t => {
+          const r = R[t.rol] || { label: t.rol, color: '#8A939B' }; const on = (mf.mecanicos || []).includes(t.id);
+          return { nombre: t.nombre, rolLabel: r.label, ini: this.initials(t.nombre), check: on ? '✓' : '',
+            avatarStyle: { width: '34px', height: '34px', flex: '0 0 34px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: '13px', color: '#0E1113', background: r.color },
+            rowStyle: { display: 'flex', alignItems: 'center', gap: '11px', padding: '8px 11px', borderRadius: '9px', cursor: 'pointer', border: on ? '1px solid ' + r.color : '1px solid #262C31', background: on ? this.rgba(r.color, 0.1) : '#0E1113' },
+            checkStyle: { marginLeft: 'auto', fontFamily: "'Barlow'", fontWeight: 700, color: on ? r.color : '#3A4148', fontSize: '15px' },
+            onClick: () => this.toggleMantMec(t.id) };
+        }),
+        mantExternoStyle: mf.externo ? 'background:#1E2327;border:1px solid #9B7BE0;color:#9B7BE0;' : 'background:#0E1113;border:1px solid #262C31;color:#8A939B;',
+        onMantEco: (e) => this.patchMant({ eco: e.target.value }),
+        onMantDesc: (e) => this.patchMant({ desc: e.target.value }),
+        onMantTaller: (e) => this.patchMant({ taller: e.target.value }),
+        onMantExterno: () => this.patchMant({ externo: !mf.externo }),
+        onMantSave: () => this.saveMant(), onMantClose: () => this.closeMant(),
+      };
+    }
+
+    // ---- editor genérico ----
+    const ed = st.edit;
+    let editVals = { editOpen: false };
+    if (ed) {
+      const t = ed.type, dd = ed.data;
+      const titles = { operador: 'operador', cliente: 'cliente / programa', equipo: 'equipo', trabajador: 'trabajador' };
+      let fields = [];
+      if (t === 'operador') {
+        fields = [
+          { key: 'nombre', label: 'NOMBRE COMPLETO', value: dd.nombre || '', ph: 'Nombre y apellidos' },
+          { key: 'licencia', label: 'LICENCIA', value: dd.licencia || '', ph: 'A-00000', mono: true },
+          { key: 'vence', label: 'VENCIMIENTO (MM/AAAA)', value: dd.vence || '', ph: '01/2028', mono: true },
+          { key: 'tel', label: 'TELÉFONO', value: dd.tel || '', ph: '229-000-0000', mono: true },
+        ];
+      } else if (t === 'trabajador') {
+        fields = [
+          { key: 'nombre', label: 'NOMBRE COMPLETO', value: dd.nombre || '', ph: 'Nombre y apellidos' },
+        ];
+      } else if (t === 'cliente') {
+        fields = [
+          { key: 'nombre', label: 'NOMBRE DEL CLIENTE', value: dd.nombre || '', ph: 'Razón social' },
+          { key: 'etiqueta', label: 'ETIQUETA CORTA', value: dd.etiqueta || '', ph: 'ej. ASFK' },
+        ];
+      } else {
+        fields = [
+          { key: 'eco', label: 'ECONÓMICO', value: dd.eco || '', ph: 'TRG-000', mono: true },
+          { key: 'placa', label: 'PLACA / SERIE', value: dd.placa || '', ph: '00-AA-0A', mono: true },
+        ];
+        if (dd.cat === 'tracto') fields.push({ key: 'modelo', label: 'MODELO', value: dd.modelo || '', ph: 'Kenworth T680' });
+      }
+      const catBtns = ['tracto', 'remolque', 'dolly'].map(k => ({
+        label: catMeta[k].label, onClick: () => this.patchEdit({ cat: k }),
+        style: (dd.cat === k ? `background:${this.rgba(catMeta[k].color, 0.16)};color:${catMeta[k].color};border:1px solid ${this.rgba(catMeta[k].color, 0.42)};` : 'background:#0E1113;color:#8A939B;border:1px solid #262C31;') + 'flex:1;text-align:center;border-radius:8px;padding:9px;font-family:Barlow;font-weight:600;font-size:13px;cursor:pointer;',
+      }));
+      const remTipos = ['Caja seca 53"', 'Caja seca 48"', 'Plataforma', 'Caja refrigerada', 'Tolva'];
+      editVals = {
+        editOpen: true, editData: dd,
+        editKicker: (ed.isNew ? 'NUEVO ' : 'EDITAR ') + titles[t].toUpperCase(),
+        editTitle: t === 'operador' ? (dd.nombre || 'Nuevo operador') : t === 'cliente' ? (dd.nombre || 'Nuevo cliente') : t === 'trabajador' ? (dd.nombre || 'Nuevo trabajador') : (dd.eco || 'Nuevo equipo'),
+        editFields: fields.map(f => ({ ...f, onInput: (e) => this.patchEdit({ [f.key]: e.target.value }), inputStyle: { width: '100%', background: '#0E1113', border: '1px solid #2A3036', borderRadius: '8px', padding: '10px 12px', color: '#E8EBED', fontFamily: f.mono ? "'IBM Plex Mono'" : "'Barlow'", fontSize: f.mono ? '14px' : '13.5px', outline: 'none' } })),
+        editIsEquipo: t === 'equipo', editIsCliente: t === 'cliente', editIsTrabajador: t === 'trabajador',
+        editRolValue: dd.rol, editRolOptions: Object.keys(R).map(k => ({ value: k, label: R[k].label })), onEditRol: (e) => this.patchEdit({ rol: e.target.value }),
+        editSkills: dd.skills || '', onEditSkills: (e) => this.patchEdit({ skills: e.target.value }),
+        editCatBtns: catBtns, editCatIsRem: dd.cat === 'remolque',
+        editRemTipos: remTipos.map(x => ({ value: x, label: x })), editRemTipo: dd.tipo,
+        onEditRemTipo: (e) => this.patchEdit({ tipo: e.target.value }),
+        editColor: dd.color || '#3B8EE6',
+        editColorOptions: ['#3B8EE6', '#E8792B', '#35B36B', '#9B7BE0', '#D4A017', '#E5484D', '#4AA6A0', '#B0577C'].map(col => ({ col, onClick: () => this.patchEdit({ color: col }), style: { width: '30px', height: '30px', borderRadius: '7px', cursor: 'pointer', background: col, border: dd.color === col ? '2px solid #fff' : '2px solid transparent', boxShadow: dd.color === col ? '0 0 0 2px ' + col : 'none' } })),
+        editCanDelete: !ed.isNew,
+        editSaveLabel: ed.isNew ? 'Crear' : 'Guardar cambios',
+        onEditSave: () => this.saveEdit(), onEditClose: () => this.closeEdit(), onEditDelete: () => this.deleteEntity(),
+      };
+    }
+
+    // ---- vista trabajadores ----
+    const rolBadge = (rol) => { const r = R[rol] || { label: rol, color: '#8A939B' }; return { fontFamily: "'Barlow'", fontWeight: 700, fontSize: '10.5px', letterSpacing: '.5px', textTransform: 'uppercase', color: r.color, background: this.rgba(r.color, 0.14), border: `1px solid ${this.rgba(r.color, 0.3)}`, borderRadius: '5px', padding: '3px 9px', whiteSpace: 'nowrap' }; };
+    const trabList = trabajadores.map(t => {
+      const r = R[t.rol] || { label: t.rol, color: '#8A939B' };
+      const asignadas = ordenes.filter(o => (o.mecanicos || []).includes(t.id)).map(o => o.eco);
+      return {
+        id: t.id, nombre: t.nombre, rolLabel: r.label, rolStyle: rolBadge(t.rol),
+        ini: this.initials(t.nombre),
+        avatarStyle: { width: '46px', height: '46px', flex: '0 0 46px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: '17px', color: '#0E1113', background: r.color },
+        skills: (t.skills || '').split('\n').map(s => s.trim()).filter(Boolean),
+        noSkills: !(t.skills || '').trim(),
+        activo: asignadas.length > 0, asignadasLabel: asignadas.length ? asignadas.join(', ') : '',
+        onEdit: () => this.openEdit('trabajador', t),
+      };
+    });
+    const rolCount = (fam) => trabajadores.filter(t => t.rol.startsWith(fam)).length;
+    const trabStats = [
+      { label: 'Trabajadores en taller', value: trabajadores.length, color: '#F2A413' },
+      { label: 'Mecánicos', value: rolCount('mecanico'), color: '#E8792B' },
+      { label: 'Eléctricos', value: rolCount('electrico'), color: '#3B8EE6' },
+      { label: 'En orden activa', value: trabajadores.filter(t => ordenes.some(o => (o.mecanicos || []).includes(t.id))).length, color: '#35B36B' },
+    ];
+
+    // ---- drawer asignar mecánicos ----
+    const af = st.assignFolio;
+    let assignVals = { assignOpen: false };
+    if (af) {
+      const ord = ordenes.find(o => o.folio === af);
+      const sel = ord ? (ord.mecanicos || []) : [];
+      assignVals = {
+        assignOpen: true, assignEco: ord ? ord.eco : '', assignFolio: af,
+        assignList: trabajadores.map(t => {
+          const r = R[t.rol] || { label: t.rol, color: '#8A939B' }; const on = sel.includes(t.id);
+          return { nombre: t.nombre, rolLabel: r.label, ini: this.initials(t.nombre), on,
+            avatarStyle: { width: '36px', height: '36px', flex: '0 0 36px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: '14px', color: '#0E1113', background: r.color },
+            rowStyle: { display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 12px', borderRadius: '9px', cursor: 'pointer', border: on ? '1px solid ' + r.color : '1px solid #262C31', background: on ? this.rgba(r.color, 0.1) : '#0E1113' },
+            check: on ? '✓' : '', checkStyle: { marginLeft: 'auto', fontFamily: "'Barlow'", fontWeight: 700, color: on ? r.color : '#3A4148', fontSize: '15px' },
+            onClick: () => this.toggleAssign(af, t.id) };
+        }),
+        onAssignClose: () => this.closeAssign(),
+      };
+    }
+
+    const q = st.search.trim().toLowerCase();
+    const matches = (u) => {
+      if (st.filter !== 'todos' && u.estatus !== st.filter) return false;
+      if (st.cliFilter !== 'todos' && u.clienteId !== st.cliFilter) return false;
+      if (!q) return true;
+      const op = this.opById(u.operadorId);
+      return [u.eco, u.tractoPlaca, u.rem1Placa, u.rem2Placa, u.dollyPlaca, op ? op.nombre : ''].join(' ').toLowerCase().includes(q);
+    };
+
+    const shown = st.units.filter(matches).map(u => {
+      const s = S[u.estatus], op = this.opById(u.operadorId);
+      const cli = u.clienteId ? cliById[u.clienteId] : null;
+      const parts = [{ tag: 'TRACTO', placa: ecoOf(tractoEco, u.tractoPlaca) }];
+      if (u.tipo === 'full') {
+        parts.push({ tag: 'REM 1', placa: ecoOf(remEco, u.rem1Placa) });
+        parts.push({ tag: 'DOLLY', placa: ecoOf(dollyEco, u.dollyPlaca) });
+        parts.push({ tag: 'REM 2', placa: ecoOf(remEco, u.rem2Placa) });
+      } else {
+        parts.push({ tag: 'REM', placa: ecoOf(remEco, u.rem1Placa) });
+      }
+      const avBase = { width: '38px', height: '38px', flex: '0 0 38px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: '15px', color: '#fff', position: 'relative', overflow: 'hidden' };
+      let opAvatar;
+      if (op) {
+        opAvatar = { ...avBase, background: this.avatarColor(op.id) };
+        if (fotos[op.id]) { opAvatar.backgroundImage = `url(${fotos[op.id]})`; opAvatar.backgroundSize = 'cover'; opAvatar.backgroundPosition = 'center'; opAvatar.color = 'transparent'; }
+      } else opAvatar = { ...avBase, background: '#2A3036', color: '#6E767D' };
+      const enMant = u.estatus !== 'disponible' && u.estatus !== 'activo';
+      const ord = enMant ? ordenes.find(o => o.eco === u.eco) : null;
+      const mecs = ord ? (ord.mecanicos || []).map(id => { const t = trabById[id]; const col = t ? R[t.rol].color : '#8A939B'; return { nombre: t ? t.nombre : '—', style: { display: 'inline-flex', alignItems: 'center', gap: '5px', whiteSpace: 'nowrap', fontFamily: "'Barlow'", fontWeight: 600, fontSize: '10.5px', color: col, background: this.rgba(col, 0.14), border: `1px solid ${this.rgba(col, 0.3)}`, borderRadius: '20px', padding: '2px 8px' } }; }) : [];
+      return {
+        _mant: enMant,
+        eco: u.eco, tipo: u.tipo, tipoLabel: u.tipo === 'full' ? 'Full / Doble' : 'Sencillo',
+        statusLabel: s.short,
+        enMant, mecs, sinMec: enMant && mecs.length === 0,
+        badgeStyle: { display: 'inline-flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap', fontWeight: 600, fontSize: '12px', padding: '5px 11px', borderRadius: '20px', background: this.rgba(s.color, 0.14), color: s.color, border: `1px solid ${this.rgba(s.color, 0.3)}` },
+        dotStyle: { width: '7px', height: '7px', borderRadius: '50%', background: s.color },
+        opInitials: this.initials(op && op.nombre), opNombre: op ? op.nombre : 'Sin operador',
+        opLicencia: op ? op.licencia : '—', opVence: op ? op.vence : '—',
+        km: (u.km || 0).toLocaleString('es-MX'),
+        gpsSerie: u.gpsSerie || '', hasGps: !!(u.gpsSerie && u.gpsSerie.trim()),
+        avatarStyle: opAvatar,
+        venceStyle: op && this.soonExpire(op.vence) ? { color: '#E8792B', fontWeight: 600 } : {},
+        parts, onClick: () => this.openUnit(u.id),
+        hasCliente: !!cli, clienteLabel: cli ? cli.etiqueta : '',
+        clienteChipStyle: cli ? { display: 'inline-flex', alignItems: 'center', gap: '5px', whiteSpace: 'nowrap', fontFamily: "'Barlow'", fontWeight: 700, fontSize: '10px', letterSpacing: '.6px', textTransform: 'uppercase', color: cli.color, background: this.rgba(cli.color, 0.14), border: `1px solid ${this.rgba(cli.color, 0.32)}`, borderRadius: '5px', padding: '3px 8px' } : {},
+      };
+    });
+
+    const legend = Object.keys(S).map(k => ({ label: S[k].label, count: counts[k], dotStyle: { width: '9px', height: '9px', borderRadius: '50%', flex: '0 0 9px', background: S[k].color } }));
+
+    const chipBase = 'display:inline-flex;align-items:center;gap:7px;border-radius:8px;padding:8px 13px;font-family:Barlow;font-weight:600;font-size:13px;cursor:pointer;transition:all .12s;white-space:nowrap;';
+    const mkFilter = (key, label, color) => {
+      const active = st.filter === key;
+      return {
+        label, count: counts[key], onClick: () => this.setState({ filter: key }),
+        showDot: !!color, dotStyle: color ? { width: '8px', height: '8px', borderRadius: '50%', background: color } : {},
+        style: active
+          ? chipBase + `background:${color ? this.rgba(color, 0.16) : '#F2A413'};color:${color || '#0E1113'};border:1px solid ${color ? this.rgba(color, 0.4) : '#F2A413'};`
+          : chipBase + 'background:#181C1F;color:#8A939B;border:1px solid #262C31;',
+      };
+    };
+    const filterChips = [mkFilter('todos', 'Todas', null), ...Object.keys(S).map(k => mkFilter(k, S[k].short, S[k].color))];
+    const mkCli = (key, label, color) => {
+      const active = st.cliFilter === key;
+      const cnt = key === 'todos' ? st.units.length : st.units.filter(u => u.clienteId === key).length;
+      return { label, count: cnt, onClick: () => this.setState({ cliFilter: key }),
+        showDot: !!color, dotStyle: color ? { width: '8px', height: '8px', borderRadius: '50%', background: color } : {},
+        style: active ? chipBase + (color ? `background:${this.rgba(color, 0.16)};color:${color};border:1px solid ${this.rgba(color, 0.4)};` : 'background:#F2A413;color:#0E1113;border:1px solid #F2A413;') : chipBase + 'background:#181C1F;color:#8A939B;border:1px solid #262C31;' };
+    };
+    const cliFilterChips = [mkCli('todos', 'Todos', null), ...clientes.map(c => mkCli(c.id, c.etiqueta, c.color))];
+
+    // ---- drawer ----
+    let dv = {};
+    if (d) {
+      const isFull = d.tipo === 'full';
+      const op = this.opById(d.operadorId);
+      const typeBtn = 'flex:1;text-align:left;border-radius:9px;padding:11px 14px;cursor:pointer;transition:all .12s;';
+      const typeOptions = [
+        { key: 'sencillo', label: 'Sencillo', sub: 'Tracto + 1 remolque' },
+        { key: 'full', label: 'Full / Doble', sub: 'Tracto + dolly + 2 remolques' },
+      ].map(t => {
+        const active = d.tipo === t.key;
+        return { label: t.label, sub: t.sub, onClick: () => this.patch({ tipo: t.key }),
+          style: active ? typeBtn + 'background:' + this.rgba('#F2A413', 0.12) + ';border:1px solid #F2A413;color:#F2A413;' : typeBtn + 'background:#0E1113;border:1px solid #2A3036;color:#8A939B;' };
+      });
+      const sBtn = 'display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:9px 13px;font-family:Barlow;font-weight:600;font-size:13px;cursor:pointer;transition:all .12s;white-space:nowrap;';
+      const statusChips = Object.keys(S).map(k => {
+        const active = d.estatus === k, c = S[k].color;
+        return { label: S[k].short, dotStyle: { width: '8px', height: '8px', borderRadius: '50%', background: c }, onClick: () => this.patch({ estatus: k }),
+          style: active ? sBtn + `background:${this.rgba(c, 0.16)};color:${c};border:1px solid ${this.rgba(c, 0.42)};` : sBtn + 'background:#0E1113;color:#8A939B;border:1px solid #262C31;' };
+      });
+      dv = {
+        draft: d, draftIsFull: isFull, draftIsSencillo: !isFull,
+        draftHeaderKicker: st.isNew ? 'NUEVA UNIDAD' : 'EDITAR UNIDAD',
+        draftHeaderTitle: st.isNew ? (d.eco || 'Sin eco') : d.eco,
+        saveLabel: st.isNew ? 'Crear configuración' : 'Guardar cambios',
+        typeOptions, statusChips,
+        tractoOptions: tractos.map(t => ({ value: t.placa, label: `${t.eco} — ${t.modelo} · ${t.placa}` })),
+        remolqueOptions: remolques.map(r => ({ value: r.placa, label: `${r.eco} — ${r.tipo} · ${r.placa}` })),
+        dollyOptions: dollies.map(x => ({ value: x.placa, label: `${x.eco} · ${x.placa}` })),
+        operadorOptions: operadores.map(o => ({ value: o.id, label: `${o.nombre} · Lic. ${o.licencia}` })),
+        clienteOptions: clientes.map(c => ({ value: c.id, label: c.nombre })),
+        draftHasOp: !!op, draftNoOp: !op,
+        draftOpInitials: this.initials(op && op.nombre), draftOpNombre: op ? op.nombre : '',
+        draftOpFoto: op ? (fotos[op.id] || '') : '', draftOpHasFoto: !!(op && fotos[op.id]),
+        draftOpLicencia: op ? op.licencia : '', draftOpVence: op ? op.vence : '', draftOpTel: op ? op.tel : '',
+        draftOpAvatar: (() => { if (!op) return {}; const a = { width: '46px', height: '46px', flex: '0 0 46px', borderRadius: '9px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Barlow Condensed'", fontWeight: 700, fontSize: '18px', color: '#fff', position: 'relative', overflow: 'hidden', background: this.avatarColor(op.id) }; if (fotos[op.id]) { a.backgroundImage = `url(${fotos[op.id]})`; a.backgroundSize = 'cover'; a.backgroundPosition = 'center'; a.color = 'transparent'; } return a; })(),
+        onEco: (e) => this.patch({ eco: e.target.value }),
+        onKm: (e) => this.patch({ km: parseInt(e.target.value, 10) || 0 }),
+        onTracto: (e) => { const v = e.target.value; this.patch({ tractoPlaca: v, eco: tractoEco[v] || '' }); },
+        onRem1: (e) => this.patch({ rem1Placa: e.target.value }),
+        onRem2: (e) => this.patch({ rem2Placa: e.target.value }),
+        onDolly: (e) => this.patch({ dollyPlaca: e.target.value }),
+        onOperador: (e) => this.patch({ operadorId: e.target.value }),
+        onCliente: (e) => this.patch({ clienteId: e.target.value }),
+        onGps: (e) => this.patch({ gpsSerie: e.target.value }),
+      };
+    }
+
+    return {
+      shown, legend, filterChips, cliFilterChips, empty: shown.length === 0,
+      shownActivos: shown.filter(u => !u._mant), shownMant: shown.filter(u => u._mant),
+      hasActivos: shown.some(u => !u._mant), hasMant: shown.some(u => u._mant),
+      search: st.search, onSearch: (e) => this.setState({ search: e.target.value }),
+      onNew: () => this.newUnit(), onClose: () => this.close(), onSave: () => this.save(), onDeleteUnit: () => this.deleteUnit(), draftCanDelete: !!(d && !st.isNew),
+      drawerOpen: st.drawerOpen,
+      isFlota, isOperadores, isMantenimiento, isInventario, isPrograma, isTrabajadores, isEstatus,
+      navFlotaStyle: isFlota ? navActive : navIdle, navFlotaDot: isFlota ? dotOn : dotOff,
+      navEstatusStyle: isEstatus ? navActive : navIdle, navEstatusDot: isEstatus ? dotOn : dotOff,
+      navOperStyle: isOperadores ? navActive : navIdle, navOperDot: isOperadores ? dotOn : dotOff,
+      navProgStyle: isPrograma ? navActive : navIdle, navProgDot: isPrograma ? dotOn : dotOff,
+      navTrabStyle: isTrabajadores ? navActive : navIdle, navTrabDot: isTrabajadores ? dotOn : dotOff,
+      navMantStyle: isMantenimiento ? navActive : navIdle, navMantDot: isMantenimiento ? dotOn : dotOff,
+      navInvStyle: isInventario ? navActive : navIdle, navInvDot: isInventario ? dotOn : dotOff,
+      onViewFlota: () => this.setState({ view: 'flota' }), onViewOperadores: () => this.setState({ view: 'operadores' }), onViewMant: () => this.setState({ view: 'mantenimiento' }), onViewInv: () => this.setState({ view: 'inventario' }), onViewPrograma: () => this.setState({ view: 'programa' }), onViewTrabajadores: () => this.setState({ view: 'trabajadores' }), onViewEstatus: () => this.setState({ view: 'estatus' }),
+      estatusBoard, estatusTotal,
+      trabList, trabStats, onNewTrabajador: () => this.openEdit('trabajador', null),
+      ...assignVals,
+      opsList, opsSummary, mtStats, mtTotal, mtOrders, prevList,
+      invStats, invChips, invItems, invEmpty: invItems.length === 0,
+      programaList, progStats,
+      histList, histEcoOptions, histEmpty, histEco: st.histEco, onHistEco: (e) => this.setState({ histEco: e.target.value }),
+      onNewOperador: () => this.openEdit('operador', null),
+      onNewCliente: () => this.openEdit('cliente', null),
+      onNewEquipo: () => this.openEdit('equipo', null),
+      onOpenMantForm: () => this.openMantForm(),
+      ...mantVals, ...editVals,
+      ...dv,
+    };
+  }
+}
+</script>
+</body>
+</html>

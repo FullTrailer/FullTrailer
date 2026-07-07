@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-router-dom": "^6.30.4",
+    "this.gui": "^2.1.8",
+    "this.me": "^3.9.1"
+  }
+}

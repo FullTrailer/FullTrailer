@@ -1,0 +1,41 @@
+TRANSPORTES RÁFAGAS DEL GOLFO — Tablero de flota
+==================================================
+
+CÓMO CORRERLO LOCALMENTE
+------------------------
+1. Abre la carpeta "Rafagas del Golfo".
+2. Haz doble clic en "index.html".
+3. Se abre en tu navegador (Chrome, Edge o Firefox). No necesita internet
+   ni instalar nada — todo está incluido en ese solo archivo.
+
+QUÉ INCLUYE
+-----------
+- index.html  →  La aplicación completa, lista para usar (un solo archivo,
+                 funciona sin conexión).
+- /fuente     →  El código fuente editable, por si un desarrollador quiere
+                 modificar la app en el futuro:
+                   · Flota Rafagas del Golfo.dc.html  (la app)
+                   · TruckDiagram.dc.html             (el dibujo del camión)
+                   · support.js                       (motor de la interfaz)
+
+SECCIONES
+---------
+- Configuración de flota   : arma cada unidad (tracto, dolly, remolques,
+                             operador, programa, GPS Samsara, km).
+- Estatus de flota         : tablero general por estatus (Disponible, Activo,
+                             Mantenimiento, Taller externo, Accidentado, Rezago).
+- Operadores               : plantilla de conductores (con foto).
+- Personal de mantenimiento: mecánicos y sus habilidades.
+- Programa                 : clientes / cuentas.
+- Mantenimiento            : órdenes activas, asignar mecánicos, historial.
+- Inventario               : tractos, remolques y dollies.
+
+NOTA SOBRE GUARDADO
+-------------------
+Esta es una versión de demostración: los datos que edites (unidades,
+operadores, órdenes, etc.) se reinician al recargar la página, EXCEPTO las
+fotos de operadores, que sí se guardan en tu navegador.
+
+Para que TODOS los cambios se guarden de forma permanente y varias personas
+puedan usar la app al mismo tiempo, se necesita conectar una base de datos
+real (paso de desarrollo). El código de /fuente es el punto de partida para eso.
