@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "dev": "concurrently -n app,server -c blue,green \"npm run dev --prefix app\" \"npm run dev --prefix server\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
   "dependencies": {
     "react-router-dom": "^6.30.4",
     "this.gui": "^2.1.8",

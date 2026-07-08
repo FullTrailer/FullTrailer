@@ -12,4 +12,10 @@ export default defineConfig({
       'react-dom': fileURLToPath(new URL('./node_modules/react-dom', import.meta.url)),
     },
   },
+  server: {
+    proxy: {
+      '/api': 'http://localhost:4000',
+      '/uploads': 'http://localhost:4000',
+    },
+  },
 })

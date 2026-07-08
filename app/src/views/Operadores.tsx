@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import {
   Typography,
   Button,
@@ -15,6 +15,7 @@ import { Icon, Modal } from 'this.gui';
 import { Grid, Stack } from 'this.gui/molecules';
 import { useMeAction, useMeValue } from 'this.gui/react';
 import { OPERADORES, type Operador } from '../data/operadores';
+import { uploadImage } from '../data/uploads';
 
 const RECORDS_PATH = 'apps.fulltrailer.operadores.records';
 
@@ -62,6 +63,7 @@ function emptyDraft(operadores: Operador[]): Operador {
     activo: true,
     fechaIngreso: '',
     status: null,
+    foto: null,
   };
 }
 
@@ -76,7 +78,7 @@ function OperadorCard({ operador, onEdit }: { operador: Operador; onEdit: () => 
     <Card variant="outlined" sx={{ height: '100%' }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: 'action.selected', color: 'text.primary' }}>
+          <Avatar src={operador.foto ?? undefined} sx={{ bgcolor: 'action.selected', color: 'text.primary' }}>
             <span className="material-symbols-rounded" aria-hidden="true">
               badge
             </span>
@@ -134,19 +136,40 @@ export default function Operadores() {
   const [modalOpen, setModalOpen] = useState(false);
   const [editingClave, setEditingClave] = useState<string | null>(null);
   const [draft, setDraft] = useState<Operador>(() => emptyDraft(operadores));
+  const [uploadingFoto, setUploadingFoto] = useState(false);
+  const [fotoError, setFotoError] = useState<string | null>(null);
+  const fotoInputRef = useRef<HTMLInputElement>(null);
 
   const goHome = () => setRoute('home');
   const patch = (changes: Partial<Operador>) => setDraft((d) => ({ ...d, ...changes }));
 
+  const handleFotoChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    setFotoError(null);
+    setUploadingFoto(true);
+    try {
+      const url = await uploadImage(file);
+      patch({ foto: url });
+    } catch (err) {
+      setFotoError(err instanceof Error ? err.message : 'No se pudo subir la imagen');
+    } finally {
+      setUploadingFoto(false);
+    }
+  };
+
   const openAdd = () => {
     setEditingClave(null);
     setDraft(emptyDraft(operadores));
+    setFotoError(null);
     setModalOpen(true);
   };
 
   const openEdit = (operador: Operador) => {
     setEditingClave(operador.clave);
     setDraft(operador);
+    setFotoError(null);
     setModalOpen(true);
   };
 
@@ -211,6 +234,42 @@ export default function Operadores() {
         width={480}
       >
         <Stack spacing={2}>
+          <Stack direction="row" spacing={2} alignItems="center">
+            <Avatar src={draft.foto ?? undefined} sx={{ width: 64, height: 64, bgcolor: 'action.selected', color: 'text.primary' }}>
+              <span className="material-symbols-rounded" aria-hidden="true">
+                badge
+              </span>
+            </Avatar>
+            <Stack spacing={0.5}>
+              <Stack direction="row" spacing={1}>
+                <Button
+                  variant="outlined"
+                  size="small"
+                  onClick={() => fotoInputRef.current?.click()}
+                  disabled={uploadingFoto}
+                >
+                  {uploadingFoto ? 'Subiendo...' : draft.foto ? 'Cambiar foto' : 'Subir foto'}
+                </Button>
+                {draft.foto && (
+                  <Button variant="text" size="small" onClick={() => patch({ foto: null })} disabled={uploadingFoto}>
+                    Quitar
+                  </Button>
+                )}
+              </Stack>
+              {fotoError && (
+                <Typography variant="caption" sx={{ color: '#E5484D' }}>
+                  {fotoError}
+                </Typography>
+              )}
+            </Stack>
+            <input
+              ref={fotoInputRef}
+              type="file"
+              accept="image/*"
+              hidden
+              onChange={handleFotoChange}
+            />
+          </Stack>
           <TextField
             label="Nombre completo"
             value={draft.nombre}

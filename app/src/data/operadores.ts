@@ -11,6 +11,7 @@ export interface Operador {
   activo: boolean;
   fechaIngreso: string | null;
   status: string | null;
+  foto: string | null;
 }
 
 interface RawOperador {
@@ -24,6 +25,7 @@ interface RawOperador {
   Activo?: number | null;
   FechaIngreso?: string | null;
   Status?: string | null;
+  Foto?: string | null;
 }
 
 function normalize(raw: RawOperador): Operador {
@@ -38,6 +40,7 @@ function normalize(raw: RawOperador): Operador {
     activo: raw.Activo === 1,
     fechaIngreso: raw.FechaIngreso ?? null,
     status: raw.Status ?? null,
+    foto: raw.Foto ?? null,
   };
 }
 

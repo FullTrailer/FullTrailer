@@ -1,6 +1,6 @@
-import tractoCatalog from '../../../json/tracto.json';
+import remolqueCatalog from '../../../json/remolque.json';
 
-export interface Tracto {
+export interface Remolque {
   clave: string;
   descripcion: string;
   marca: string;
@@ -8,16 +8,12 @@ export interface Tracto {
   placas: string | null;
   numSerie: string;
   categoria: string;
-  tipo: string;
   activo: boolean;
   baseOperacion: string | null;
   status: string | null;
-  idRemolque1: string | null;
-  idDolly: string | null;
-  idRemolque2: string | null;
 }
 
-interface RawTracto {
+interface RawRemolque {
   Clave: string;
   Descripcion?: string | null;
   Marca?: string | null;
@@ -25,24 +21,12 @@ interface RawTracto {
   Placas?: string | null;
   NumSerie?: string | null;
   Categoria?: string | null;
-  Tipo?: string | null;
   Activo?: number | null;
   BaseOperacion?: string | null;
   Status?: string | null;
-  ID_Remolque1?: string | null;
-  ID_Dolly?: string | null;
-  ID_Remolque2?: string | null;
 }
 
-export type Configuracion = 'solo' | 'remolque' | 'doble';
-
-export function configuracionDe(tracto: Tracto): Configuracion {
-  if (tracto.idDolly && tracto.idRemolque2) return 'doble';
-  if (tracto.idRemolque1) return 'remolque';
-  return 'solo';
-}
-
-function normalize(raw: RawTracto): Tracto {
+function normalize(raw: RawRemolque): Remolque {
   return {
     clave: raw.Clave,
     descripcion: (raw.Descripcion ?? '').trim(),
@@ -51,14 +35,10 @@ function normalize(raw: RawTracto): Tracto {
     placas: raw.Placas ?? null,
     numSerie: raw.NumSerie ?? '',
     categoria: (raw.Categoria ?? '').trim() || 'SIN CATEGORÍA',
-    tipo: raw.Tipo ?? '',
     activo: raw.Activo === 1,
     baseOperacion: raw.BaseOperacion ?? null,
     status: raw.Status ?? null,
-    idRemolque1: raw.ID_Remolque1 ?? null,
-    idDolly: raw.ID_Dolly ?? null,
-    idRemolque2: raw.ID_Remolque2 ?? null,
   };
 }
 
-export const TRACTOS: Tracto[] = (tractoCatalog.datos as RawTracto[]).map(normalize);
+export const REMOLQUES: Remolque[] = (remolqueCatalog.datos as RawRemolque[]).map(normalize);
