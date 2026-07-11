@@ -4,6 +4,7 @@ import Tractos from './views/Tractos';
 import Operadores from './views/Operadores';
 import Remolques from './views/Remolques';
 import Dollies from './views/Dollies';
+import Facturas from './views/Facturas';
 
 const app = {
   id: 'fulltrailer',
@@ -17,6 +18,7 @@ const app = {
     operadores: Operadores,
     remolques: Remolques,
     dollies: Dollies,
+    facturas: Facturas,
   },
 };
 

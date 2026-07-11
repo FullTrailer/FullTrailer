@@ -51,6 +51,7 @@ const NAV_ITEMS = [
   { route: 'remolques', label: 'Remolques', icon: 'inventory_2' },
   { route: 'dollies', label: 'Dollies', icon: 'rv_hookup' },
   { route: 'operadores', label: 'Operadores', icon: 'badge' },
+  { route: 'facturas', label: 'Facturas', icon: 'receipt_long' },
 ];
 
 /**
