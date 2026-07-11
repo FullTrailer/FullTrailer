@@ -15,6 +15,7 @@ export interface Tracto {
   idRemolque1: string | null;
   idDolly: string | null;
   idRemolque2: string | null;
+  facturaFolio: string | null;
 }
 
 interface RawTracto {
@@ -58,6 +59,7 @@ function normalize(raw: RawTracto): Tracto {
     idRemolque1: raw.ID_Remolque1 ?? null,
     idDolly: raw.ID_Dolly ?? null,
     idRemolque2: raw.ID_Remolque2 ?? null,
+    facturaFolio: null,
   };
 }
 

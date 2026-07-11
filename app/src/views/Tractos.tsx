@@ -70,6 +70,15 @@ function nextClave(tractos: Tracto[]): string {
   return `TRG-${String(max + 1).padStart(3, '0')}`;
 }
 
+function nextFolio(tractos: Tracto[]): string {
+  const max = tractos.reduce((acc, t) => {
+    if (!t.facturaFolio) return acc;
+    const n = Number(t.facturaFolio.replace(/\D/g, ''));
+    return Number.isFinite(n) && n > acc ? n : acc;
+  }, 0);
+  return `F-${String(max + 1).padStart(7, '0')}`;
+}
+
 function emptyDraft(tractos: Tracto[]): Tracto {
   return {
     clave: nextClave(tractos),
@@ -86,6 +95,7 @@ function emptyDraft(tractos: Tracto[]): Tracto {
     idRemolque1: null,
     idDolly: null,
     idRemolque2: null,
+    facturaFolio: null,
   };
 }
 
@@ -182,6 +192,14 @@ function TractoCard({ tracto, onEdit, fuelPercent }: { tracto: Tracto; onEdit: (
             Base: <Typography component="span" variant="caption" sx={{ color: 'text.primary' }}>{tracto.baseOperacion || '—'}</Typography>
           </Typography>
         </Stack>
+        {tracto.facturaFolio && (
+          <Stack direction="row" spacing={1} alignItems="center" sx={{ marginTop: 1 }}>
+            <Typography variant="caption" sx={{ color: 'text.secondary' }}>
+              Factura: <Typography component="span" variant="caption" sx={{ color: 'text.primary' }}>{tracto.facturaFolio}</Typography>
+            </Typography>
+            <Chip label="Pendiente de timbrar" size="small" variant="outlined" sx={{ height: 18, fontSize: 10 }} />
+          </Stack>
+        )}
       </CardContent>
     </Card>
   );
@@ -220,10 +238,15 @@ export default function Tractos() {
 
   const saveDraft = () => {
     if (!draft.clave.trim()) return;
+    const tieneConfiguracion = configuracionDe(draft) !== 'solo';
+    const finalDraft: Tracto =
+      tieneConfiguracion && !draft.facturaFolio
+        ? { ...draft, facturaFolio: nextFolio(tractos) }
+        : draft;
     if (editingClave) {
-      setTractos(tractos.map((t: Tracto) => (t.clave === editingClave ? draft : t)));
+      setTractos(tractos.map((t: Tracto) => (t.clave === editingClave ? finalDraft : t)));
     } else {
-      setTractos([...tractos, draft]);
+      setTractos([...tractos, finalDraft]);
     }
     setModalOpen(false);
   };
@@ -413,6 +436,20 @@ export default function Tractos() {
                   </option>
                 ))}
               </select>
+            </Box>
+          )}
+
+          {configuracionDe(draft) !== 'solo' && (
+            <Box>
+              <label style={labelStyle}>FACTURA</label>
+              <Stack direction="row" spacing={1} alignItems="center">
+                <Typography variant="body2">
+                  {draft.facturaFolio ?? 'Se generará al guardar'}
+                </Typography>
+                {draft.facturaFolio && (
+                  <Chip label="Pendiente de timbrar" size="small" variant="outlined" />
+                )}
+              </Stack>
             </Box>
           )}
 
