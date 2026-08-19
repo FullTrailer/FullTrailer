@@ -37,6 +37,12 @@ yarn-error.log*
 .env*.local
 .env_example
 
+# FullTrailer's monad — generated per-machine identity, kernel state, and
+# private key. Never commit; .env.example + run.sh are the reusable parts.
+monad/self.json
+monad/self.keys.json
+monad/me-state/
+
 # vercel
 .vercel
 
