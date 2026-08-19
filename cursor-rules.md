@@ -1,15 +1,8 @@
-# Reglas para Cursor — FullTrailer
+# Reglas — FullTrailer
 
 ## Git
-- SIEMPRE trabajar en la rama "Cambios de Simon" (en Git sin espacios: `Cambios-de-Simon`)
-- NUNCA commitear a main o master
-- Commits en español, descriptivos
 
 ## Código
-- Rust idiomático: usar ? para propagación de errores, anyhow para error handling
-- Todo async/await con tokio
-- Loggear con tracing, no con println!
-- Responder 200 a Samsara SIEMPRE, procesar en background con tokio::spawn
 
 ## Samsara
 - Verificar firma HMAC antes de procesar cualquier webhook

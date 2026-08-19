@@ -13,7 +13,7 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^6.30.4",
-    "this.gui": "^2.1.8",
+    "this.gui": "file:../../../all.this/packages/GUI/Typescript",
     "this.me": "^3.9.1"
   },
   "devDependencies": {

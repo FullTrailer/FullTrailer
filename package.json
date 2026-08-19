@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "concurrently -n app,server -c blue,green \"npm run dev --prefix app\" \"npm run dev --prefix server\""
+    "dev": "concurrently -n app,server,monad -c blue,green,magenta \"npm run dev --prefix app\" \"npm run dev --prefix server\" \"bash monad/run.sh\""
   },
   "devDependencies": {
     "concurrently": "^9.1.0"

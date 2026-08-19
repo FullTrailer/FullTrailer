@@ -1,47 +1,71 @@
+import { Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Theme, Layout } from 'this.gui';
-import { MeRuntimeProvider, useMeAction, useMeValue } from 'this.gui/react';
-import { writeMeValue } from 'this.gui/runtime';
+import { MeRuntimeProvider, useMeAction, useMeValue, useOptionalMeRuntimeContext } from 'this.gui/react';
 import type { MeLike } from 'this.gui/react';
+import {
+  declareApp,
+  isSpecViewFactory,
+  SpecBoundary,
+  writeMeValue,
+} from 'this.gui/runtime';
+import type { AppDeclaration } from 'this.gui/runtime';
+import type { RuntimeAdapter } from 'this.gui/runtime';
 import ThemeLauncher from './components/ThemeLauncher';
 
-export interface AppDeclaration {
-  id: string;
-  namespace: string;
-  title: string;
-  theme?: string;
-  views: Record<string, React.ComponentType>;
-}
-
-/**
- * Writes the app's manifest + view registry into the given .me instance,
- * under its own namespace. Declares that this app exists in this space —
- * does not store executable code, only metadata/references.
- */
-export function declareApp(me: MeLike, app: AppDeclaration): void {
-  writeMeValue(me, `${app.namespace}.manifest`, {
-    id: app.id,
-    title: app.title,
-    theme: app.theme,
-  });
-  writeMeValue(me, `${app.namespace}.views`, Object.keys(app.views));
-}
+export type { AppDeclaration };
 
 export interface MountAppOptions {
   me: MeLike;
   app: AppDeclaration;
   target: string;
+  /**
+   * Optional runtime adapter — e.g. createWsMeRuntime() for a live monad
+   * connection. Falls back to MeRuntimeProvider's own default (a local-only
+   * createMeRuntime(me)) when omitted, same as before this option existed.
+   */
+  runtime?: RuntimeAdapter;
 }
 
 /**
  * Reads the current route from .me and renders the matching view. Route
  * changes (e.g. from a nav button calling writeMeValue) re-render this
  * automatically since useMeValue subscribes to that path.
+ *
+ * FullTrailer keeps this custom (the package's own mountApp() picks a view
+ * once from window.location.pathname at mount time — it has no equivalent
+ * to "route stored in .me, nav highlights the active item" reactivity) but
+ * defers to the real isSpecViewFactory()/SpecBoundary for anything tagged
+ * with defineSpecView(), the same way the package's own mountApp() does —
+ * without this branch, a spec-tree view would be called as `<View/>` and
+ * React would receive a plain GuiSpecNode object back instead of an
+ * element ("Objects are not valid as a React child").
+ *
+ * The Suspense wrapper is for app.ts's lazy()-wrapped views (see its own
+ * comment) — a plain component doesn't need it (lazy()'s own promise
+ * resolves before render either way), but a lazy one throws a promise on
+ * first render, and only a Suspense ancestor can catch that.
+ *
+ * SpecBoundary's `runtime` prop is explicit, not context-aware — passing
+ * nothing here silently falls back to the renderer's identity-passthrough
+ * defaultAdapter, so a spec view's {read: ...} tokens would just echo the
+ * raw path string back instead of resolving. Pull the real adapter (the
+ * one createWsMeRuntime() built in main.tsx) out of MeRuntimeProvider's own
+ * context and hand it down explicitly.
  */
 function ActiveView({ app }: { app: AppDeclaration }) {
   const route = useMeValue<string>(`${app.namespace}.route`);
-  const View = app.views[route ?? ''] ?? app.views.home;
-  return <View />;
+  const runtimeContext = useOptionalMeRuntimeContext();
+  const view = app.views[route ?? ''] ?? app.views.home;
+  if (isSpecViewFactory(view)) {
+    return <SpecBoundary spec={view()} runtime={runtimeContext?.runtime} />;
+  }
+  const View = view as React.ComponentType;
+  return (
+    <Suspense fallback={null}>
+      <View />
+    </Suspense>
+  );
 }
 
 const NAV_ITEMS = [
@@ -58,7 +82,7 @@ const NAV_ITEMS = [
  * Declares the app in .me, then mounts it: Theme -> MeRuntimeProvider ->
  * AppShell (nav + Layout) -> active view.
  */
-export function mountApp({ me, app, target }: MountAppOptions): void {
+export function mountApp({ me, app, target, runtime }: MountAppOptions): void {
   declareApp(me, app);
 
   const el = document.querySelector(target);
@@ -69,7 +93,7 @@ export function mountApp({ me, app, target }: MountAppOptions): void {
 
   createRoot(el).render(
     <Theme initialThemeId={app.theme}>
-      <MeRuntimeProvider me={me}>
+      <MeRuntimeProvider me={me} runtime={runtime}>
         <AppShell app={app} />
       </MeRuntimeProvider>
     </Theme>,

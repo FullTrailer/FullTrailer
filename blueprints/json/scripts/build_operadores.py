@@ -28,7 +28,11 @@ def split_numero_run(raw):
     tenga más de 10 dígitos: es un solo número, probablemente con prefijo."""
     digits = re.sub(r"\D", "", raw)
     has_separators = bool(re.search(r"[\s\-]", raw))
-    if not has_separators or len(digits) <= 11:
+    # Solo se parte cuando el total es múltiplo limpio de 10 dígitos y hay al
+    # menos 20 (dos números completos). Un total como 12 dígitos con
+    # separadores es un solo número con prefijo (ej. "01 272 72 4 85 49"),
+    # no dos números pegados — partirlo en 10+2 generaba un residuo basura.
+    if not has_separators or len(digits) < 20 or len(digits) % 10 != 0:
         return [re.sub(r"\s+", " ", raw).strip()]
     return [digits[i : i + 10] for i in range(0, len(digits), 10)]
 
@@ -100,6 +104,11 @@ def split_nombre(nombre_raw, idx):
         return apellidos, nombres, None
     if not nombre_raw:
         return "", "", "Registro sin nombre capturado."
+    if nombre_raw.upper().startswith("SIN NOMBRE"):
+        return "", nombre_raw, (
+            "Nombre marcado como 'SIN NOMBRE' en la fuente (candidato sin "
+            "identificar); texto original conservado en Nombres."
+        )
     if "," in nombre_raw:
         apellidos, _, nombres = nombre_raw.partition(",")
         return apellidos.strip(), nombres.strip(), None
@@ -119,6 +128,162 @@ def split_nombre(nombre_raw, idx):
     )
 
 
+def _info_score(o):
+    """Qué tan 'completo' está un registro — usado para elegir cuál conservar
+    cuando dos IDs reales distintos comparten RFC (mismo RFC = misma persona,
+    confirmado, así que sí se fusiona aunque los IDs no coincidan)."""
+    score = 0
+    if o["RFC"]:
+        score += 2
+    if o["ID"] is not None:
+        score += 1
+    score += len(o["Celulares"])
+    score += len(o["Emails"])
+    if o["Comentarios"]:
+        score += 1
+    if o["Licencia"]["Vigente"] or o["Licencia"]["Tipo"] not in (None, "Sin licencia registrada"):
+        score += 1
+    if o["Medico"]["Vigente"]:
+        score += 1
+    return score
+
+
+def _merge_group(canonical, duplicados, motivo):
+    """Fusiona 'duplicados' dentro de 'canonical' in-place: combina teléfonos,
+    RFC, licencia, médico, referencias, emails y comentarios. No decide cuál
+    es el canónico — eso lo hace quien llama."""
+    existentes = {re.sub(r"\D", "", c["Numero"] or "") for c in canonical["Celulares"]}
+    agregados = 0
+    for dup in duplicados:
+        for c in dup["Celulares"]:
+            digits = re.sub(r"\D", "", c["Numero"] or "")
+            if digits and digits not in existentes:
+                canonical["Celulares"].append(c)
+                existentes.add(digits)
+                agregados += 1
+
+    rfc_conflict = False
+    if not canonical["RFC"]:
+        for dup in duplicados:
+            if dup["RFC"]:
+                canonical["RFC"] = dup["RFC"]
+                break
+    else:
+        for dup in duplicados:
+            if dup["RFC"] and dup["RFC"] != canonical["RFC"]:
+                rfc_conflict = True
+
+    licencia_conflict = False
+    canonical_sin_info = not canonical["Licencia"]["Vigente"] and canonical["Licencia"]["Tipo"] in (
+        None,
+        "Sin licencia registrada",
+    )
+    if canonical_sin_info:
+        for dup in duplicados:
+            dl = dup["Licencia"]
+            if dl["Vigente"] or dl["Tipo"] not in (None, "Sin licencia registrada"):
+                canonical["Licencia"] = dl
+                break
+    else:
+        for dup in duplicados:
+            dt = dup["Licencia"]["Tipo"]
+            if dt not in (None, "Sin licencia registrada") and dt != canonical["Licencia"]["Tipo"]:
+                licencia_conflict = True
+
+    for dup in duplicados:
+        if dup["Medico"]["Vigente"]:
+            canonical["Medico"]["Vigente"] = True
+        if dup["ReferenciasVerificadas"]:
+            canonical["ReferenciasVerificadas"] = True
+        for e in dup["Emails"]:
+            if e not in canonical["Emails"]:
+                canonical["Emails"].append(e)
+
+    comentarios = []
+    if canonical["Comentarios"]:
+        comentarios.append(canonical["Comentarios"])
+    for dup in duplicados:
+        if dup["Comentarios"] and dup["Comentarios"] not in comentarios:
+            comentarios.append(dup["Comentarios"])
+    canonical["Comentarios"] = " | ".join(comentarios) if comentarios else None
+
+    nota = f"Fusionado con {len(duplicados)} registro(s) duplicado(s) ({motivo})."
+    if agregados:
+        nota += f" Se agregaron {agregados} teléfono(s) que no tenía."
+    canonical["Notas"].append(nota)
+    if rfc_conflict:
+        canonical["Observaciones"].append(
+            f"RFC en conflicto entre los duplicados fusionados ({motivo}) — verificar cuál es el correcto."
+        )
+    if licencia_conflict:
+        canonical["Observaciones"].append(
+            f"Estatus de licencia en conflicto entre los duplicados fusionados ({motivo}) — verificar cuál es el correcto."
+        )
+
+
+def merge_duplicate_names(operadores):
+    """Colapsa registros con el mismo Apellido+Nombres exacto en uno solo,
+    combinando teléfonos/RFC/licencia/etc. El ID no bloquea la fusión — si el
+    grupo tiene IDs distintos, simplemente se conserva el registro más
+    completo (ver _info_score) y el resto se descarta."""
+    from collections import defaultdict
+
+    by_name = defaultdict(list)
+    for o in operadores:
+        if o["ApellidoPaterno"] and o["Nombres"]:
+            by_name[(o["ApellidoPaterno"].lower(), o["Nombres"].lower())].append(o)
+
+    to_remove_ids = set()
+
+    for group in by_name.values():
+        if len(group) < 2:
+            continue
+
+        con_rfc = [o for o in group if o["RFC"]]
+        con_id = [o for o in group if o["ID"] is not None]
+        if con_rfc:
+            canonical = max(con_rfc, key=_info_score)
+        elif con_id:
+            canonical = max(con_id, key=_info_score)
+        else:
+            canonical = max(group, key=_info_score)
+
+        duplicados = [o for o in group if o is not canonical]
+        _merge_group(canonical, duplicados, "mismo nombre exacto")
+
+        for dup in duplicados:
+            to_remove_ids.add(id(dup))
+
+    return [o for o in operadores if id(o) not in to_remove_ids]
+
+
+def merge_duplicate_ids(operadores):
+    """Colapsa registros que comparten el mismo ID real aunque el nombre
+    capturado sea distinto (típicamente error de captura del apellido) — el
+    ID identifica el mismo expediente/persona, así que se fusiona igual."""
+    from collections import defaultdict
+
+    by_id = defaultdict(list)
+    for o in operadores:
+        if o["ID"] is not None:
+            by_id[o["ID"]].append(o)
+
+    to_remove_ids = set()
+
+    for group in by_id.values():
+        if len(group) < 2:
+            continue
+
+        canonical = max(group, key=_info_score)
+        duplicados = [o for o in group if o is not canonical]
+        _merge_group(canonical, duplicados, "mismo ID, nombre capturado distinto")
+
+        for dup in duplicados:
+            to_remove_ids.add(id(dup))
+
+    return [o for o in operadores if id(o) not in to_remove_ids]
+
+
 def to_titlecase(s):
     return " ".join(w.capitalize() for w in s.split(" ")) if s else s
 
@@ -128,7 +293,7 @@ def norm_estado(s):
     return s if s else None
 
 
-NO_LICENCIA_VALUES = {"sin licencia registrada", "por validar."}
+NO_LICENCIA_VALUES = {"sin licencia registrada", "por validar.", "licencia vencida."}
 
 
 def build_licencia(licencia_raw):
@@ -152,7 +317,12 @@ def build_licencia(licencia_raw):
 
 
 def parse_bool_flag(raw):
-    return (raw or "").strip() not in ("", "0")
+    val = (raw or "").strip().lower()
+    if val in ("", "0"):
+        return False
+    if val.startswith("no"):
+        return False
+    return True
 
 
 def build_medico(medico_raw):
@@ -206,11 +376,20 @@ def main():
             "Emails": [e.strip() for e in emails_raw.split(",") if e.strip()],
             "Comentarios": norm_comentarios(comentarios_raw),
             "Observaciones": [],
+            "Notas": [],
         }
         if nombre_obs:
             operador["Observaciones"].append(nombre_obs)
+        if any(c["Numero"] is None for c in operador["Celulares"]):
+            operador["Observaciones"].append(
+                "No se pudo extraer un número de teléfono válido del campo "
+                "CELULARES original (formato corrupto o no numérico) — revisar a mano."
+            )
         operadores.append(operador)
         data_idx += 1
+
+    operadores = merge_duplicate_names(operadores)
+    operadores = merge_duplicate_ids(operadores)
 
     # --- Validaciones automáticas cruzadas: todo lo inconsistente se marca
     # con una observación y _revisar=true, sin bloquear la generación. ---
@@ -254,6 +433,20 @@ def main():
                 otros = [g for g in uniq if g is not o]
                 nombres_otros = ", ".join(f"{g['ApellidoPaterno']} {g['Nombres']}".strip() or "(sin nombre)" for g in otros)
                 o["Observaciones"].append(f"Teléfono repetido en otro registro: {nombres_otros}.")
+
+    by_name = defaultdict(list)
+    for o in operadores:
+        if o["ApellidoPaterno"] and o["Nombres"]:
+            key = (o["ApellidoPaterno"].lower(), o["Nombres"].lower())
+            by_name[key].append(o)
+    for key, group in by_name.items():
+        if len(group) > 1:
+            for o in group:
+                otros = [g for g in group if g is not o]
+                ids_otros = ", ".join(str(g["ID"]) if g["ID"] is not None else "(sin ID)" for g in otros)
+                o["Observaciones"].append(
+                    f"Mismo nombre en {len(group)} registros (posible captura duplicada) — otros IDs: {ids_otros}."
+                )
 
     for o in operadores:
         if o["Observaciones"]:
