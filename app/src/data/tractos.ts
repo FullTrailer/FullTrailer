@@ -1,4 +1,4 @@
-import tractoCatalog from '../../../json/tracto.json';
+import tractoCatalog from '../../../blueprints/json/tracto.json';
 
 export interface Tracto {
   clave: string;

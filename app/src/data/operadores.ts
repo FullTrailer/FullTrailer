@@ -1,4 +1,4 @@
-import operadorCatalog from '../../../json/operador.json';
+import operadorCatalog from '../../../blueprints/json/operador.json';
 
 export interface Operador {
   clave: string;

@@ -1,4 +1,4 @@
-import dollyCatalog from '../../../json/dolly.json';
+import dollyCatalog from '../../../blueprints/json/dollies.json';
 
 export interface Dolly {
   clave: string;
@@ -12,30 +12,25 @@ export interface Dolly {
   status: string | null;
 }
 
+// blueprints/json/dollies.json only carries ID_Dolly + Descripcion — same
+// gap as remolques.ts, see that file's comment.
 interface RawDolly {
-  Clave: string;
+  ID_Dolly: string;
   Descripcion?: string | null;
-  Marca?: string | null;
-  Modelo?: string | number | null;
-  Placas?: string | null;
-  NumSerie?: string | null;
-  Activo?: number | null;
-  BaseOperacion?: string | null;
-  Status?: string | null;
 }
 
 function normalize(raw: RawDolly): Dolly {
   return {
-    clave: raw.Clave,
+    clave: raw.ID_Dolly,
     descripcion: (raw.Descripcion ?? '').trim(),
-    marca: raw.Marca ?? '',
-    modelo: raw.Modelo != null ? String(raw.Modelo) : '',
-    placas: raw.Placas ?? null,
-    numSerie: raw.NumSerie ?? '',
-    activo: raw.Activo === 1,
-    baseOperacion: raw.BaseOperacion ?? null,
-    status: raw.Status ?? null,
+    marca: '',
+    modelo: '',
+    placas: null,
+    numSerie: '',
+    activo: true,
+    baseOperacion: null,
+    status: null,
   };
 }
 
-export const DOLLIES: Dolly[] = (dollyCatalog.datos as RawDolly[]).map(normalize);
+export const DOLLIES: Dolly[] = (dollyCatalog as RawDolly[]).map(normalize);
