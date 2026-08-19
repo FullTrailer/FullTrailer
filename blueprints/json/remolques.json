@@ -1,0 +1,1402 @@
+[
+  {
+    "ID_Remolque": "ABM",
+    "Descripcion": "REMOLQUE TIPO TANQUE AB MAURI 1PR1233"
+  },
+  {
+    "ID_Remolque": "RENTA-04",
+    "Descripcion": "SEMIRREMOLQUETIPO TANQUE 03UJ9J"
+  },
+  {
+    "ID_Remolque": "TR-167",
+    "Descripcion": "REMOLQUE/TANQUE EN TRAMITE"
+  },
+  {
+    "ID_Remolque": "TRG-000",
+    "Descripcion": "SIN REMOLQUE"
+  },
+  {
+    "ID_Remolque": "TRG-070",
+    "Descripcion": "TANQUE ACERO AL CARBON 967WC5"
+  },
+  {
+    "ID_Remolque": "TRG-071",
+    "Descripcion": "TANQUE ACERO AL CARBON 196WC6"
+  },
+  {
+    "ID_Remolque": "TRG-072",
+    "Descripcion": "TANQUE ACERO AL CARBON 968WC5"
+  },
+  {
+    "ID_Remolque": "TRG-073",
+    "Descripcion": "TANQUE ACERO AL CARBON 969WC5"
+  },
+  {
+    "ID_Remolque": "TRG-074",
+    "Descripcion": "TANQUE ACERO AL CARBON 970WC5"
+  },
+  {
+    "ID_Remolque": "TRG-075",
+    "Descripcion": "TANQUE ACERO AL CARBON 971WC5"
+  },
+  {
+    "ID_Remolque": "TRG-076",
+    "Descripcion": "TANQUE ACERO AL CARBON 972WC5"
+  },
+  {
+    "ID_Remolque": "TRG-077",
+    "Descripcion": "TANQUE ACERO AL CARBON 159WC6"
+  },
+  {
+    "ID_Remolque": "TRG-078",
+    "Descripcion": "TANQUE ACERO AL CARBON 767WL8"
+  },
+  {
+    "ID_Remolque": "TRG-079",
+    "Descripcion": "TANQUE ACERO AL CARBON 160WC6"
+  },
+  {
+    "ID_Remolque": "TRG-081",
+    "Descripcion": "TANQUE ACERO AL CARBON 973WC5"
+  },
+  {
+    "ID_Remolque": "TRG-082",
+    "Descripcion": "TANQUE ACERO AL CARBON 162WC6"
+  },
+  {
+    "ID_Remolque": "TRG-083",
+    "Descripcion": "TANQUE ACERO AL CARBON 974WC5"
+  },
+  {
+    "ID_Remolque": "TRG-084",
+    "Descripcion": "TANQUE ACERO AL CARBON 975-WC5"
+  },
+  {
+    "ID_Remolque": "TRG-085",
+    "Descripcion": "TANQUE ACERO AL CARBON 163-WC6"
+  },
+  {
+    "ID_Remolque": "TRG-086",
+    "Descripcion": "TANQUE ACERO AL CARBON 976WC5"
+  },
+  {
+    "ID_Remolque": "TRG-087",
+    "Descripcion": "TANQUE ACERO AL CARBON 008WC6"
+  },
+  {
+    "ID_Remolque": "TRG-089",
+    "Descripcion": "TANQUE ACERO AL CARBON 009WC6"
+  },
+  {
+    "ID_Remolque": "TRG-090",
+    "Descripcion": "TANQUE ACERO AL CARBON 977WC5"
+  },
+  {
+    "ID_Remolque": "TRG-091",
+    "Descripcion": "TANQUE ACERO AL CARBON 164WC6"
+  },
+  {
+    "ID_Remolque": "TRG-092",
+    "Descripcion": "TANQUE ACERO AL CARBON 165WC6"
+  },
+  {
+    "ID_Remolque": "TRG-093",
+    "Descripcion": "TANQUE ACERO AL CARBON 190WC6"
+  },
+  {
+    "ID_Remolque": "TRG-094",
+    "Descripcion": "TANQUE ACERO AL CARBON 191WC6"
+  },
+  {
+    "ID_Remolque": "TRG-095",
+    "Descripcion": "TANQUE ACERO AL CARBON 167WC6"
+  },
+  {
+    "ID_Remolque": "TRG-096",
+    "Descripcion": "TANQUE ACERO AL CARBON 168WC6"
+  },
+  {
+    "ID_Remolque": "TRG-097",
+    "Descripcion": "TANQUE ACERO AL CARBON 285WC6"
+  },
+  {
+    "ID_Remolque": "TRG-098",
+    "Descripcion": "TANQUE ACERO AL CARBON 286WC6"
+  },
+  {
+    "ID_Remolque": "TRG-099",
+    "Descripcion": "REMOLQUE 82UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-100",
+    "Descripcion": "REMOLQUE/TANQUE 58UA9S"
+  },
+  {
+    "ID_Remolque": "TRG-101",
+    "Descripcion": "TANQUE ACERO AL CARBON 010WC6"
+  },
+  {
+    "ID_Remolque": "TRG-102",
+    "Descripcion": "TANQUE ACERO AL CARBON 195WC6"
+  },
+  {
+    "ID_Remolque": "TRG-103",
+    "Descripcion": "TANQUE ACERO AL CARBON 011WC6"
+  },
+  {
+    "ID_Remolque": "TRG-104",
+    "Descripcion": "TANQUE ACERO AL CARBON 012-WC6"
+  },
+  {
+    "ID_Remolque": "TRG-105",
+    "Descripcion": "TANQUE ACERO AL CARBON 013-WC6"
+  },
+  {
+    "ID_Remolque": "TRG-106",
+    "Descripcion": "TANQUE ACERO AL CARBON 482WC4"
+  },
+  {
+    "ID_Remolque": "TRG-107",
+    "Descripcion": "TANQUE ACERO AL CARBON 979WC5"
+  },
+  {
+    "ID_Remolque": "TRG-108",
+    "Descripcion": "TANQUE ACERO AL CARBON 48UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-109",
+    "Descripcion": "TANQUE ACERO AL CARBON 484WC4"
+  },
+  {
+    "ID_Remolque": "TRG-110",
+    "Descripcion": "TANQUE ACERO AL CARBON 480WC4"
+  },
+  {
+    "ID_Remolque": "TRG-111",
+    "Descripcion": "TANQUE ACERO AL CARBON 158-WC6"
+  },
+  {
+    "ID_Remolque": "TRG-112",
+    "Descripcion": "TANQUE ACERO AL CARBON 38UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-113",
+    "Descripcion": "TANQUE ACERO AL CARBON 169WC6"
+  },
+  {
+    "ID_Remolque": "TRG-114",
+    "Descripcion": "TANQUE ACERO AL CARBON 981WC5"
+  },
+  {
+    "ID_Remolque": "TRG-115",
+    "Descripcion": "TANQUE ACERO AL CARBON 476WC4"
+  },
+  {
+    "ID_Remolque": "TRG-116",
+    "Descripcion": "TANQUE ACERO AL CARBON 982-WC5"
+  },
+  {
+    "ID_Remolque": "TRG-117",
+    "Descripcion": "TANQUE ACERO AL CARBON 983WC5"
+  },
+  {
+    "ID_Remolque": "TRG-118",
+    "Descripcion": "REMOLQUE/TANQUE 20TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-119",
+    "Descripcion": "REMOLQUE/TANQUE 19TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-120",
+    "Descripcion": "REMOLQUE/TANQUE 81TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-121",
+    "Descripcion": "TANQUE ACERO AL CARBON 49UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-122",
+    "Descripcion": "REMOLQUE/TANQUE 42TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-123",
+    "Descripcion": "REMOLQUE/TANQUE 61UA2D"
+  },
+  {
+    "ID_Remolque": "TRG-124",
+    "Descripcion": "TANQUE ACERO AL CARBON 193WC6"
+  },
+  {
+    "ID_Remolque": "TRG-125",
+    "Descripcion": "TANQUE ACERO AL CARBON 986WC5"
+  },
+  {
+    "ID_Remolque": "TRG-126",
+    "Descripcion": "REMOLQUE/TANQUE 43TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-127",
+    "Descripcion": "TANQUE ACERO AL CARBON 987WC5"
+  },
+  {
+    "ID_Remolque": "TRG-128",
+    "Descripcion": "TANQUE ACERO AL CARBON 170WC6"
+  },
+  {
+    "ID_Remolque": "TRG-129",
+    "Descripcion": "REMOLQUE/TANQUE 44TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-130",
+    "Descripcion": "TANQUE ACERO AL CARBON 014WC6"
+  },
+  {
+    "ID_Remolque": "TRG-131",
+    "Descripcion": "REMOLQUE/TANQUE 41TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-132",
+    "Descripcion": "TANQUE ACERO AL CARBON 192WC6"
+  },
+  {
+    "ID_Remolque": "TRG-133",
+    "Descripcion": "REMOLQUE/TANQUE 24UJ9J"
+  },
+  {
+    "ID_Remolque": "TRG-134",
+    "Descripcion": "TANQUE ACERO AL CARBON 988WC5"
+  },
+  {
+    "ID_Remolque": "TRG-135",
+    "Descripcion": "TANQUE ACERO AL CARBON 477WC4"
+  },
+  {
+    "ID_Remolque": "TRG-136",
+    "Descripcion": "TANQUE ACERO AL CARBON 478WC4"
+  },
+  {
+    "ID_Remolque": "TRG-137",
+    "Descripcion": "REMOLQUE/TANQUE 02UB4X"
+  },
+  {
+    "ID_Remolque": "TRG-138",
+    "Descripcion": "REMOLQUE/TANQUE 74UA2D"
+  },
+  {
+    "ID_Remolque": "TRG-139",
+    "Descripcion": "REMOLQUE/TANQUE 96UA2G"
+  },
+  {
+    "ID_Remolque": "TRG-144",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA SECA 513WC6"
+  },
+  {
+    "ID_Remolque": "TRG-145",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA SECA 514WC6"
+  },
+  {
+    "ID_Remolque": "TRG-147",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA SECA 516WC6"
+  },
+  {
+    "ID_Remolque": "TRG-148",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA SECA 517WC6"
+  },
+  {
+    "ID_Remolque": "TRG-150",
+    "Descripcion": "SEMIREMOLQUE TIPO JAULA 189WC6"
+  },
+  {
+    "ID_Remolque": "TRG-151",
+    "Descripcion": "SEMIREMOLQUE TIPO JAULA 471WC4"
+  },
+  {
+    "ID_Remolque": "TRG-152",
+    "Descripcion": "SEMIREMOLQUE TIPO JAULA 472WC4"
+  },
+  {
+    "ID_Remolque": "TRG-153",
+    "Descripcion": "SEMIREMOLQUE TIPO JAULA 75UF5S"
+  },
+  {
+    "ID_Remolque": "TRG-154",
+    "Descripcion": "SEMIREMOLQUE TIPO JAULA 470WC4"
+  },
+  {
+    "ID_Remolque": "TRG-155",
+    "Descripcion": "SEMIREMOLQUE TIPO JAULA 473WC4"
+  },
+  {
+    "ID_Remolque": "TRG-160",
+    "Descripcion": "REMOLQUE/TANQUE 94UA2G"
+  },
+  {
+    "ID_Remolque": "TRG-161",
+    "Descripcion": "REMOLQUE/TANQUE 93UA2G"
+  },
+  {
+    "ID_Remolque": "TRG-162",
+    "Descripcion": "REMOLQUE/TANQUE 95UA2G"
+  },
+  {
+    "ID_Remolque": "TRG-164",
+    "Descripcion": "REMOLQUE/TANQUE 24UH8R"
+  },
+  {
+    "ID_Remolque": "TRG-165",
+    "Descripcion": "REMOLQUE/TANQUE 80TZ4K"
+  },
+  {
+    "ID_Remolque": "TRG-166",
+    "Descripcion": "REMOLQUE/TANQUE 68UB3L"
+  },
+  {
+    "ID_Remolque": "TRG-167",
+    "Descripcion": "REMOLQUE/TANQUE 69UB6F"
+  },
+  {
+    "ID_Remolque": "TRG-170",
+    "Descripcion": "TANQUE ACERO AL CARBON 989-WC5"
+  },
+  {
+    "ID_Remolque": "TRG-171",
+    "Descripcion": "TANQUE ACERO AL CARBON 990WC5"
+  },
+  {
+    "ID_Remolque": "TRG-172",
+    "Descripcion": "TANQUE ACERO AL CARBON 991WC5"
+  },
+  {
+    "ID_Remolque": "TRG-173",
+    "Descripcion": "TANQUE ACERO AL CARBON 992WC5"
+  },
+  {
+    "ID_Remolque": "TRG-174",
+    "Descripcion": "TANQUE ACERO AL CARBON 993WC5"
+  },
+  {
+    "ID_Remolque": "TRG-175",
+    "Descripcion": "TANQUE ACERO AL CARBON 994WC5"
+  },
+  {
+    "ID_Remolque": "TRG-176",
+    "Descripcion": "TANQUE ACERO AL CARBON 171WC6"
+  },
+  {
+    "ID_Remolque": "TRG-177",
+    "Descripcion": "TANQUE ACERO AL CARBON 995WC5"
+  },
+  {
+    "ID_Remolque": "TRG-179",
+    "Descripcion": "TANQUE ACERO AL CARBON 535XT4"
+  },
+  {
+    "ID_Remolque": "TRG-180",
+    "Descripcion": "TANQUE ACERO AL CARBON 998WC5"
+  },
+  {
+    "ID_Remolque": "TRG-181",
+    "Descripcion": "TANQUE ACERO AL CARBON 999WC5"
+  },
+  {
+    "ID_Remolque": "TRG-182",
+    "Descripcion": "TANQUE ACERO AL CARBON 710WC5"
+  },
+  {
+    "ID_Remolque": "TRG-183",
+    "Descripcion": "TANQUE ACERO AL CARBON 001WC6"
+  },
+  {
+    "ID_Remolque": "TRG-184",
+    "Descripcion": "TANQUE ACERO AL CARBON 002WC6"
+  },
+  {
+    "ID_Remolque": "TRG-185",
+    "Descripcion": "TANQUE ACERO AL CARBON 003-WC6"
+  },
+  {
+    "ID_Remolque": "TRG-186",
+    "Descripcion": "TANQUE ACERO AL CARBON 004-WC6"
+  },
+  {
+    "ID_Remolque": "TRG-187",
+    "Descripcion": "TANQUE ACERO AL CARBON 798 XT3"
+  },
+  {
+    "ID_Remolque": "TRG-188",
+    "Descripcion": "TANQUE ACERO AL CARBON 479WC4"
+  },
+  {
+    "ID_Remolque": "TRG-189",
+    "Descripcion": "tanque 475WC4"
+  },
+  {
+    "ID_Remolque": "TRG-190",
+    "Descripcion": "TANQUE ACERO AL CARBON 006WC6"
+  },
+  {
+    "ID_Remolque": "TRG-191",
+    "Descripcion": "TANQUE ACERO AL CARBON 157WC6"
+  },
+  {
+    "ID_Remolque": "TRG-192",
+    "Descripcion": "TANQUE ACERO AL CARBON 007WC6"
+  },
+  {
+    "ID_Remolque": "TRG-193",
+    "Descripcion": "TANQUE ACERO AL CARBON 015WC6"
+  },
+  {
+    "ID_Remolque": "TRG-194",
+    "Descripcion": "TANQUE ACERO AL CARBON 016WC6"
+  },
+  {
+    "ID_Remolque": "TRG-196",
+    "Descripcion": "TANQUE ACERO AL CARBON 017-WC6"
+  },
+  {
+    "ID_Remolque": "TRG-198",
+    "Descripcion": "TANQUE ACERO AL CARBON 172WC6"
+  },
+  {
+    "ID_Remolque": "TRG-199",
+    "Descripcion": "TANQUE ACERO AL CARBON"
+  },
+  {
+    "ID_Remolque": "TRG-200",
+    "Descripcion": "TANQUE ACERO AL CARBON"
+  },
+  {
+    "ID_Remolque": "TRG-201",
+    "Descripcion": "TANQUE TIPO TERMO 776WL8"
+  },
+  {
+    "ID_Remolque": "TRG-202",
+    "Descripcion": "TANQUE TIPO TERMO 777WL8"
+  },
+  {
+    "ID_Remolque": "TRG-203",
+    "Descripcion": "TANQUE TIPO TERMO 778WL8"
+  },
+  {
+    "ID_Remolque": "TRG-204",
+    "Descripcion": "TANQUE TIPO TERMO 779WL8"
+  },
+  {
+    "ID_Remolque": "TRG-205",
+    "Descripcion": "TANQUE TIPO TERMO 780WL8"
+  },
+  {
+    "ID_Remolque": "TRG-206",
+    "Descripcion": "TANQUE TIPO TERMO 770WL8"
+  },
+  {
+    "ID_Remolque": "TRG-207",
+    "Descripcion": "TANQUE TIPO TERMO 771WL8"
+  },
+  {
+    "ID_Remolque": "TRG-208",
+    "Descripcion": "TANQUE TIPO TERMO 772WL8"
+  },
+  {
+    "ID_Remolque": "TRG-209",
+    "Descripcion": "TANQUE TIPO TERMO 773WL8"
+  },
+  {
+    "ID_Remolque": "TRG-210",
+    "Descripcion": "TANQUE TIPO TERMO 774WL8"
+  },
+  {
+    "ID_Remolque": "TRG-211",
+    "Descripcion": "TANQUE TIPO TERMO 775WL8"
+  },
+  {
+    "ID_Remolque": "TRG-212",
+    "Descripcion": "TANQUE TIPO TERMO 786WL8"
+  },
+  {
+    "ID_Remolque": "TRG-213",
+    "Descripcion": "TANQUE TIPO TERMO 509WL7"
+  },
+  {
+    "ID_Remolque": "TRG-214",
+    "Descripcion": "TANQUE TIPO TERMO 556WL7"
+  },
+  {
+    "ID_Remolque": "TRG-215",
+    "Descripcion": "TANQUE TIPO TERMO 557WL7"
+  },
+  {
+    "ID_Remolque": "TRG-251",
+    "Descripcion": "TANQUE ACERO AL CARBON 173WC6"
+  },
+  {
+    "ID_Remolque": "TRG-252",
+    "Descripcion": "TANQUE ACERO AL CARBON 174WC6"
+  },
+  {
+    "ID_Remolque": "TRG-253",
+    "Descripcion": "TANQUE ACERO AL CARBON 175WC6"
+  },
+  {
+    "ID_Remolque": "TRG-254",
+    "Descripcion": "TANQUE ACERO AL CARBON 884XT3"
+  },
+  {
+    "ID_Remolque": "TRG-255",
+    "Descripcion": "TANQUE ACERO AL CARBON 019WC6"
+  },
+  {
+    "ID_Remolque": "TRG-256",
+    "Descripcion": "TANQUE ACERO AL CARBON 020WC6"
+  },
+  {
+    "ID_Remolque": "TRG-257",
+    "Descripcion": "TANQUE ACERO AL CARBON 021WC6"
+  },
+  {
+    "ID_Remolque": "TRG-258",
+    "Descripcion": "TANQUE ACERO AL CARBON 022WC6"
+  },
+  {
+    "ID_Remolque": "TRG-259",
+    "Descripcion": "TANQUE ACERO AL CARBON"
+  },
+  {
+    "ID_Remolque": "TRG-260",
+    "Descripcion": "TANQUE ACERO AL CARBON 814UZ3"
+  },
+  {
+    "ID_Remolque": "TRG-261",
+    "Descripcion": "TANQUE ACERO AL CARBON 166WC6"
+  },
+  {
+    "ID_Remolque": "TRG-262",
+    "Descripcion": "TANQUE ACERO AL CARBON 024WC6"
+  },
+  {
+    "ID_Remolque": "TRG-263",
+    "Descripcion": "TANQUE ACERO AL CARBON 025WC6"
+  },
+  {
+    "ID_Remolque": "TRG-264",
+    "Descripcion": "TANQUE ACERO AL CARBON 31UB9R"
+  },
+  {
+    "ID_Remolque": "TRG-265",
+    "Descripcion": "TANQUE ACERO AL CARBON 026WC6"
+  },
+  {
+    "ID_Remolque": "TRG-266",
+    "Descripcion": "TANQUE ACERO AL CARBON 027WC6"
+  },
+  {
+    "ID_Remolque": "TRG-267",
+    "Descripcion": "TANQUE ACERO AL CARBON 029WC6"
+  },
+  {
+    "ID_Remolque": "TRG-268",
+    "Descripcion": "TANQUE ACERO AL CARBON 030WC6"
+  },
+  {
+    "ID_Remolque": "TRG-269",
+    "Descripcion": "TANQUE ACERO AL CARBON 536XT4"
+  },
+  {
+    "ID_Remolque": "TRG-270",
+    "Descripcion": "TANQUE ACERO AL CARBON 028WC6"
+  },
+  {
+    "ID_Remolque": "TRG-271",
+    "Descripcion": "TANQUE ACERO AL CARBON 324WC4"
+  },
+  {
+    "ID_Remolque": "TRG-272",
+    "Descripcion": "TANQUE ACERO AL CARBON 325WC4"
+  },
+  {
+    "ID_Remolque": "TRG-281",
+    "Descripcion": "TANQUE ACERO AL CARBON 26UC3F"
+  },
+  {
+    "ID_Remolque": "TRG-283",
+    "Descripcion": "TANQUE ACERO AL CARBON 653XR8"
+  },
+  {
+    "ID_Remolque": "TRG-284",
+    "Descripcion": "TANQUE ACERO AL CARBON 98UC2F"
+  },
+  {
+    "ID_Remolque": "TRG-285",
+    "Descripcion": "TANQUE ACERO AL CARBON 654XR8"
+  },
+  {
+    "ID_Remolque": "TRG-286",
+    "Descripcion": "TANQUE ACERO AL CARBON 652XR8"
+  },
+  {
+    "ID_Remolque": "TRG-287",
+    "Descripcion": "TANQUE 08UB7H"
+  },
+  {
+    "ID_Remolque": "TRG-290",
+    "Descripcion": "TANQUE DE ACERO NEGRO 44UB9R"
+  },
+  {
+    "ID_Remolque": "TRG-291",
+    "Descripcion": "TANQUE DE ACERO NEGRO 42UB9R"
+  },
+  {
+    "ID_Remolque": "TRG-293",
+    "Descripcion": "TANQUE DE ACERO NEGRO 55UB9R"
+  },
+  {
+    "ID_Remolque": "TRG-298",
+    "Descripcion": "TANQUE FERBUS 782XB2"
+  },
+  {
+    "ID_Remolque": "TRG-301",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 308WC6"
+  },
+  {
+    "ID_Remolque": "TRG-302",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 717WL8"
+  },
+  {
+    "ID_Remolque": "TRG-303",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 310WC6"
+  },
+  {
+    "ID_Remolque": "TRG-304",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 311WC6"
+  },
+  {
+    "ID_Remolque": "TRG-305",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 312WC6"
+  },
+  {
+    "ID_Remolque": "TRG-306",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 313WC6"
+  },
+  {
+    "ID_Remolque": "TRG-307",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 314WC6"
+  },
+  {
+    "ID_Remolque": "TRG-308",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 716WL8"
+  },
+  {
+    "ID_Remolque": "TRG-309",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 135WC6"
+  },
+  {
+    "ID_Remolque": "TRG-310",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 316WC6"
+  },
+  {
+    "ID_Remolque": "TRG-312",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 136WC6"
+  },
+  {
+    "ID_Remolque": "TRG-313",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 053UZ1"
+  },
+  {
+    "ID_Remolque": "TRG-314",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 138WC6"
+  },
+  {
+    "ID_Remolque": "TRG-315",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 139WC6"
+  },
+  {
+    "ID_Remolque": "TRG-316",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 140WC6"
+  },
+  {
+    "ID_Remolque": "TRG-317",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 141WC6"
+  },
+  {
+    "ID_Remolque": "TRG-318",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 142WC6"
+  },
+  {
+    "ID_Remolque": "TRG-319",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 143WC6"
+  },
+  {
+    "ID_Remolque": "TRG-320",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 718WL8"
+  },
+  {
+    "ID_Remolque": "TRG-321",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 145WC6"
+  },
+  {
+    "ID_Remolque": "TRG-322",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 146WC6"
+  },
+  {
+    "ID_Remolque": "TRG-323",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 147WC6"
+  },
+  {
+    "ID_Remolque": "TRG-324",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 148WC6"
+  },
+  {
+    "ID_Remolque": "TRG-326",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 149WC6"
+  },
+  {
+    "ID_Remolque": "TRG-327",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 067UZ1"
+  },
+  {
+    "ID_Remolque": "TRG-328",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 151WC6"
+  },
+  {
+    "ID_Remolque": "TRG-329",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 410UA4"
+  },
+  {
+    "ID_Remolque": "TRG-330",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 153WC6"
+  },
+  {
+    "ID_Remolque": "TRG-331",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 154WC6"
+  },
+  {
+    "ID_Remolque": "TRG-332",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 155WC6"
+  },
+  {
+    "ID_Remolque": "TRG-335",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 156WC6"
+  },
+  {
+    "ID_Remolque": "TRG-338",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 392TZ7"
+  },
+  {
+    "ID_Remolque": "TRG-339",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 391TZ7"
+  },
+  {
+    "ID_Remolque": "TRG-351",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 179WC6"
+  },
+  {
+    "ID_Remolque": "TRG-354",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 182WC6"
+  },
+  {
+    "ID_Remolque": "TRG-356",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 183WC6"
+  },
+  {
+    "ID_Remolque": "TRG-357",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 330WC4"
+  },
+  {
+    "ID_Remolque": "TRG-359",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 332WC4"
+  },
+  {
+    "ID_Remolque": "TRG-360",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 333WC4"
+  },
+  {
+    "ID_Remolque": "TRG-361",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 334WC4"
+  },
+  {
+    "ID_Remolque": "TRG-362",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 335WC4"
+  },
+  {
+    "ID_Remolque": "TRG-363",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 336WC4"
+  },
+  {
+    "ID_Remolque": "TRG-366",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 339WC4"
+  },
+  {
+    "ID_Remolque": "TRG-367",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 496UC5"
+  },
+  {
+    "ID_Remolque": "TRG-368",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 556UM2"
+  },
+  {
+    "ID_Remolque": "TRG-369",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 341WC4"
+  },
+  {
+    "ID_Remolque": "TRG-370",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 342WC4"
+  },
+  {
+    "ID_Remolque": "TRG-372",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 540XT4"
+  },
+  {
+    "ID_Remolque": "TRG-374",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 346WC4"
+  },
+  {
+    "ID_Remolque": "TRG-375",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 870XT3"
+  },
+  {
+    "ID_Remolque": "TRG-376",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 348WC4"
+  },
+  {
+    "ID_Remolque": "TRG-377",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 539XT4"
+  },
+  {
+    "ID_Remolque": "TRG-378",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 431WC4"
+  },
+  {
+    "ID_Remolque": "TRG-379",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 350WC4"
+  },
+  {
+    "ID_Remolque": "TRG-380",
+    "Descripcion": "SEMIRREMOLQUE TIPO CAJA DE VOLTEO"
+  },
+  {
+    "ID_Remolque": "TRG-381",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 351WC4"
+  },
+  {
+    "ID_Remolque": "TRG-382",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 352WC4"
+  },
+  {
+    "ID_Remolque": "TRG-384",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 354WC4"
+  },
+  {
+    "ID_Remolque": "TRG-386",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 356WC4"
+  },
+  {
+    "ID_Remolque": "TRG-388",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 358WC4"
+  },
+  {
+    "ID_Remolque": "TRG-389",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 359WC4"
+  },
+  {
+    "ID_Remolque": "TRG-390",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 360WC4"
+  },
+  {
+    "ID_Remolque": "TRG-391",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 361WC4"
+  },
+  {
+    "ID_Remolque": "TRG-392",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 362WC4"
+  },
+  {
+    "ID_Remolque": "TRG-393",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 743WP7"
+  },
+  {
+    "ID_Remolque": "TRG-394",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 742WP7"
+  },
+  {
+    "ID_Remolque": "TRG-395",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 741WP7"
+  },
+  {
+    "ID_Remolque": "TRG-396",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 740WP7"
+  },
+  {
+    "ID_Remolque": "TRG-397",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 739WP7"
+  },
+  {
+    "ID_Remolque": "TRG-398",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 737WP7"
+  },
+  {
+    "ID_Remolque": "TRG-399",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 738WP7"
+  },
+  {
+    "ID_Remolque": "TRG-501",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 43UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-502",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 44UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-503",
+    "Descripcion": "SEMIREMOLQUE TANQUE ACERO INOXIDABLE 185WC6"
+  },
+  {
+    "ID_Remolque": "TRG-504",
+    "Descripcion": "SEMIREMOLQUE TANQUE ACERO INOXIDABLE 186WC6"
+  },
+  {
+    "ID_Remolque": "TRG-505",
+    "Descripcion": "SEMIREMOLQUE TANQUE ACERO INOXIDABLE 187WC6"
+  },
+  {
+    "ID_Remolque": "TRG-506",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 45UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-507",
+    "Descripcion": "SEMIREMOLQUE TANQUE ACERO INOXIDABLE 327WC4"
+  },
+  {
+    "ID_Remolque": "TRG-508",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 46UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-509",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 328WC4"
+  },
+  {
+    "ID_Remolque": "TRG-510",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 47UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-511",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 564WC4"
+  },
+  {
+    "ID_Remolque": "TRG-512",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 565WC4"
+  },
+  {
+    "ID_Remolque": "TRG-513",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 41UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-514",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 40UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-515",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 39UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-516",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 562WC4"
+  },
+  {
+    "ID_Remolque": "TRG-517",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 563WC4"
+  },
+  {
+    "ID_Remolque": "TRG-518",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 568WC4"
+  },
+  {
+    "ID_Remolque": "TRG-519",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 569WC4"
+  },
+  {
+    "ID_Remolque": "TRG-520",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 570WC4"
+  },
+  {
+    "ID_Remolque": "TRG-521",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 42UB8V"
+  },
+  {
+    "ID_Remolque": "TRG-522",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 571WC4"
+  },
+  {
+    "ID_Remolque": "TRG-523",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 434WC4"
+  },
+  {
+    "ID_Remolque": "TRG-525",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 435WC4"
+  },
+  {
+    "ID_Remolque": "TRG-526",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 436WC4"
+  },
+  {
+    "ID_Remolque": "TRG-527",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 437WC4"
+  },
+  {
+    "ID_Remolque": "TRG-528",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 438WC4"
+  },
+  {
+    "ID_Remolque": "TRG-529",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 439WC4"
+  },
+  {
+    "ID_Remolque": "TRG-530",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 440WC4"
+  },
+  {
+    "ID_Remolque": "TRG-531",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 441WC4"
+  },
+  {
+    "ID_Remolque": "TRG-532",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 442WC4"
+  },
+  {
+    "ID_Remolque": "TRG-533",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 444WC4"
+  },
+  {
+    "ID_Remolque": "TRG-534",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 445WC4"
+  },
+  {
+    "ID_Remolque": "TRG-535",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 443WC4"
+  },
+  {
+    "ID_Remolque": "TRG-537",
+    "Descripcion": "TANQUE ACERO INOXIDABLE"
+  },
+  {
+    "ID_Remolque": "TRG-538",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 18UA9Y"
+  },
+  {
+    "ID_Remolque": "TRG-539",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 43UB9R"
+  },
+  {
+    "ID_Remolque": "TRG-540",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 072TZ7"
+  },
+  {
+    "ID_Remolque": "TRG-541",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 073TZ7"
+  },
+  {
+    "ID_Remolque": "TRG-542",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 780UM2"
+  },
+  {
+    "ID_Remolque": "TRG-543",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 689UM2"
+  },
+  {
+    "ID_Remolque": "TRG-544",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 538WL7"
+  },
+  {
+    "ID_Remolque": "TRG-545",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 769XR8"
+  },
+  {
+    "ID_Remolque": "TRG-546",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 743XR8"
+  },
+  {
+    "ID_Remolque": "TRG-547",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 742XR8"
+  },
+  {
+    "ID_Remolque": "TRG-548",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 768XR8"
+  },
+  {
+    "ID_Remolque": "TRG-549",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 763XR8"
+  },
+  {
+    "ID_Remolque": "TRG-550",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 767XR8"
+  },
+  {
+    "ID_Remolque": "TRG-551",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 762XR8"
+  },
+  {
+    "ID_Remolque": "TRG-552",
+    "Descripcion": "TANQUE ACERO INOXIDABLE 47UE1V"
+  },
+  {
+    "ID_Remolque": "TRG-554",
+    "Descripcion": "SEMIRREMOLQUE TIPO TANQUE 01UB4X"
+  },
+  {
+    "ID_Remolque": "TRG-556",
+    "Descripcion": "TANQUE DE ACERO INOXIDABLE 34UJ4K"
+  },
+  {
+    "ID_Remolque": "TRG-807",
+    "Descripcion": "SEMIREMOLQUE TIPO PLANA 454WC4"
+  },
+  {
+    "ID_Remolque": "TRG-809",
+    "Descripcion": "SEMIREMOLQUE TIPO PLANA 452WC4"
+  },
+  {
+    "ID_Remolque": "TRG-810",
+    "Descripcion": "SEMIREMOLQUE TIPO PLANA 453WC4"
+  },
+  {
+    "ID_Remolque": "TRG-811",
+    "Descripcion": "SEMIREMOLQUE TIPO PLANA 450WC4"
+  },
+  {
+    "ID_Remolque": "TRG-812",
+    "Descripcion": "SEMIREMOLQUE TIPO PLANA 455WC4"
+  },
+  {
+    "ID_Remolque": "TRG-813",
+    "Descripcion": "SEMIREMOLQUE TIPO PLANA 456WC4"
+  },
+  {
+    "ID_Remolque": "TRG-851",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 384TZ7"
+  },
+  {
+    "ID_Remolque": "TRG-852",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 750WE3"
+  },
+  {
+    "ID_Remolque": "TRG-853",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 752WE3"
+  },
+  {
+    "ID_Remolque": "TRG-854",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 756WE3"
+  },
+  {
+    "ID_Remolque": "TRG-855",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 757WE3"
+  },
+  {
+    "ID_Remolque": "TRG-856",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 748WE3"
+  },
+  {
+    "ID_Remolque": "TRG-857",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 755WE3"
+  },
+  {
+    "ID_Remolque": "TRG-858",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 383TZ7"
+  },
+  {
+    "ID_Remolque": "TRG-859",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 754WE3"
+  },
+  {
+    "ID_Remolque": "TRG-860",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 751WE3"
+  },
+  {
+    "ID_Remolque": "TRG-861",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 749WE3"
+  },
+  {
+    "ID_Remolque": "TRG-862",
+    "Descripcion": "SEMIREMOLQUE TIPO CAJA TOLVA 753WE3"
+  },
+  {
+    "ID_Remolque": "TRG-900",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 736WP7"
+  },
+  {
+    "ID_Remolque": "TRG-901",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 735WP7"
+  },
+  {
+    "ID_Remolque": "TRG-902",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 734WP7"
+  },
+  {
+    "ID_Remolque": "TRG-903",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 733WP7"
+  },
+  {
+    "ID_Remolque": "TRG-905",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 073XN7"
+  },
+  {
+    "ID_Remolque": "TRG-906",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 072XN7"
+  },
+  {
+    "ID_Remolque": "TRG-907",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 071XN7"
+  },
+  {
+    "ID_Remolque": "TRG-908",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 070XN7"
+  },
+  {
+    "ID_Remolque": "TRG-909",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 069XN7"
+  },
+  {
+    "ID_Remolque": "TRG-910",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 077XN7"
+  },
+  {
+    "ID_Remolque": "TRG-911",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 076XN7"
+  },
+  {
+    "ID_Remolque": "TRG-912",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 075XN7"
+  },
+  {
+    "ID_Remolque": "TRG-913",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 048XN7"
+  },
+  {
+    "ID_Remolque": "TRG-914",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 049XN7"
+  },
+  {
+    "ID_Remolque": "TRG-915",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 050XN7"
+  },
+  {
+    "ID_Remolque": "TRG-916",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 051XN7"
+  },
+  {
+    "ID_Remolque": "TRG-917",
+    "Descripcion": "SEMIREMOLQUE TIPO VOLTEO 052XN7"
+  },
+  {
+    "ID_Remolque": "TRG-918",
+    "Descripcion": "VOLTEO"
+  },
+  {
+    "ID_Remolque": "TRG-950",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 498XR8"
+  },
+  {
+    "ID_Remolque": "TRG-951",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 440XR8"
+  },
+  {
+    "ID_Remolque": "TRG-952",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 497XR8"
+  },
+  {
+    "ID_Remolque": "TRG-953",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 496XR8"
+  },
+  {
+    "ID_Remolque": "TRG-954",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 451XR8"
+  },
+  {
+    "ID_Remolque": "TRG-955",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 450XR8"
+  },
+  {
+    "ID_Remolque": "TRG-956",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 793XT3"
+  },
+  {
+    "ID_Remolque": "TRG-957",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 447XR8"
+  },
+  {
+    "ID_Remolque": "TRG-958",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 438XR8"
+  },
+  {
+    "ID_Remolque": "TRG-959",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 441XR8"
+  },
+  {
+    "ID_Remolque": "TRG-960",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 439XR8"
+  },
+  {
+    "ID_Remolque": "TRG-961",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 555XT4"
+  },
+  {
+    "ID_Remolque": "TRG-962",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 449XR8"
+  },
+  {
+    "ID_Remolque": "TRG-963",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 448XR8"
+  },
+  {
+    "ID_Remolque": "TRG-964",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 495XR8"
+  },
+  {
+    "ID_Remolque": "TRG-965",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 442XR8"
+  },
+  {
+    "ID_Remolque": "TRG-966",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 792XT3"
+  },
+  {
+    "ID_Remolque": "TRG-967",
+    "Descripcion": "SEMIREMOLQUE TIPO TOLVA J 494XR8"
+  },
+  {
+    "ID_Remolque": "TRG-968",
+    "Descripcion": "TOLVA TIPO J 490XR8"
+  },
+  {
+    "ID_Remolque": "TRG-969",
+    "Descripcion": "TOLVA 491XR8"
+  },
+  {
+    "ID_Remolque": "TRG-970",
+    "Descripcion": "TOLVA 489XR8"
+  },
+  {
+    "ID_Remolque": "TRG-971",
+    "Descripcion": "TOLVA 556XT4"
+  },
+  {
+    "ID_Remolque": "TRG-972",
+    "Descripcion": "REMOLQUE 492XR8"
+  },
+  {
+    "ID_Remolque": "TRG-973",
+    "Descripcion": "REMOLQUE 479XR8"
+  },
+  {
+    "ID_Remolque": "TRG-974",
+    "Descripcion": "REMOLQUE 478XR8"
+  },
+  {
+    "ID_Remolque": "TRG-975",
+    "Descripcion": "REMOLQUE 480XR8"
+  },
+  {
+    "ID_Remolque": "TRG313T",
+    "Descripcion": "TANQUE 51UC3K"
+  }
+]
