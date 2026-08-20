@@ -1,10 +1,12 @@
 import { Suspense, useEffect } from 'react';
 import { Theme, Layout, ThemeLauncher } from 'this.gui';
 import { MeRuntimeProvider, useMeAction, useMeValue, useOptionalMeRuntimeContext } from 'this.gui/react';
+import { SelectionProvider, DevToolsLauncher, RuntimeInspector } from 'this.gui/devtools';
 import type { MeLike } from 'this.gui/react';
 import {
   declareApp,
   isSpecViewFactory,
+  RuntimeEnvironmentProvider,
   SpecBoundary,
   writeMeValue,
 } from 'this.gui/runtime';
@@ -89,9 +91,14 @@ export function FullTrailerApp({ me, app, runtime }: FullTrailerAppProps) {
 
   return (
     <Theme initialThemeId={app.theme}>
-      <MeRuntimeProvider me={me} runtime={runtime}>
-        <AppShell app={app} />
-      </MeRuntimeProvider>
+      <SelectionProvider>
+        <RuntimeEnvironmentProvider value={{ me, runtime }}>
+          <MeRuntimeProvider me={me} runtime={runtime}>
+            <AppShell app={app} />
+          </MeRuntimeProvider>
+          <RuntimeInspector />
+        </RuntimeEnvironmentProvider>
+      </SelectionProvider>
     </Theme>
   );
 }
@@ -121,6 +128,7 @@ function AppShell({ app }: { app: AppDeclaration }) {
         elements,
         footerElements: [
           { type: 'action', props: { element: <ThemeLauncher /> } },
+          { type: 'action', props: { element: <DevToolsLauncher /> } },
         ],
       }}
     >
