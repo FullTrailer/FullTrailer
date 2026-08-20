@@ -1,5 +1,5 @@
 import { Suspense, useEffect } from 'react';
-import { Theme, Layout } from 'this.gui';
+import { Theme, Layout, ThemeLauncher } from 'this.gui';
 import { MeRuntimeProvider, useMeAction, useMeValue, useOptionalMeRuntimeContext } from 'this.gui/react';
 import type { MeLike } from 'this.gui/react';
 import {
@@ -10,7 +10,6 @@ import {
 } from 'this.gui/runtime';
 import type { AppDeclaration } from 'this.gui/runtime';
 import type { RuntimeAdapter } from 'this.gui/runtime';
-import ThemeLauncher from './components/ThemeLauncher';
 
 export type { AppDeclaration };
 
