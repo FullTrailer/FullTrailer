@@ -303,6 +303,10 @@ export default function UnitsConfig() {
                 .filter(Boolean)
                 .map((placa) => ecoOf(placa, REMOLQUES))
                 .join(' + ');
+              // Records written before every Unit field existed (or via a
+              // partial external write) may be missing km/estatus — render
+              // '—' instead of crashing the whole table.
+              const status = STATUS[u.estatus];
               return (
                 <TableRow key={u.id}>
                   <TableCell>{u.eco}</TableCell>
@@ -312,14 +316,18 @@ export default function UnitsConfig() {
                   <TableCell>{u.dollyPlaca ? ecoOf(u.dollyPlaca, DOLLIES) : '—'}</TableCell>
                   <TableCell>{operador?.nombre || 'Sin operador'}</TableCell>
                   <TableCell>{cliente?.nombre || '—'}</TableCell>
-                  <TableCell>{u.km.toLocaleString('es-MX')}</TableCell>
+                  <TableCell>{typeof u.km === 'number' ? u.km.toLocaleString('es-MX') : '—'}</TableCell>
                   <TableCell>{u.gpsSerie || '—'}</TableCell>
                   <TableCell>
-                    <Chip
-                      label={STATUS[u.estatus].label}
-                      size="small"
-                      sx={{ backgroundColor: STATUS[u.estatus].color, color: '#0E1113', fontWeight: 600 }}
-                    />
+                    {status ? (
+                      <Chip
+                        label={status.label}
+                        size="small"
+                        sx={{ backgroundColor: status.color, color: '#0E1113', fontWeight: 600 }}
+                      />
+                    ) : (
+                      '—'
+                    )}
                   </TableCell>
                   <TableCell>
                     <Button size="small" variant="text" onClick={() => removeUnit(u.id)}>

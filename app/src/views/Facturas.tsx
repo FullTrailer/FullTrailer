@@ -136,7 +136,7 @@ export default function Facturas() {
                   <TableCell>{CONFIG_LABEL[f.configuracion]}</TableCell>
                   <TableCell>{[remolqueLabel(f.remolque1), remolqueLabel(f.remolque2)].filter((s) => s !== '—').join(' + ') || '—'}</TableCell>
                   <TableCell>{f.dolly ? f.dolly.clave : '—'}</TableCell>
-                  <TableCell>{detalle ? detalle.km.toLocaleString('es-MX') : '—'}</TableCell>
+                  <TableCell>{typeof detalle?.km === 'number' ? detalle.km.toLocaleString('es-MX') : '—'}</TableCell>
                   <TableCell>{importe ? money(importe.subtotal) : '—'}</TableCell>
                   <TableCell>{importe ? money(importe.iva) : '—'}</TableCell>
                   <TableCell>{importe ? money(importe.total) : '—'}</TableCell>
