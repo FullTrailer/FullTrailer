@@ -3,9 +3,9 @@ import { Typography, Button, TextField, Chip, Box, Paper } from 'this.gui/atoms'
 import { Table, TableHead, TableBody, TableRow, TableCell, Stack } from 'this.gui/molecules';
 import { Modal } from 'this.gui';
 import { useMeAction, useMeValue } from 'this.gui/react';
-import { TRACTOS, type Tracto, type Configuracion } from '../data/tractos';
-import { REMOLQUES, type Remolque } from '../data/remolques';
-import { DOLLIES, type Dolly } from '../data/dollies';
+import type { Tracto, Configuracion } from '../data/tractos';
+import type { Remolque } from '../data/remolques';
+import type { Dolly } from '../data/dollies';
 import {
   buildFacturables,
   importesDe,
@@ -41,11 +41,11 @@ function matches(f: Facturable, query: string): boolean {
 export default function Facturas() {
   const setRoute = useMeAction('apps.fulltrailer.route');
   const storedTractos = useMeValue<Tracto[]>(TRACTOS_RECORDS_PATH);
-  const tractos = storedTractos ?? TRACTOS;
+  const tractos = storedTractos ?? [];
   const storedRemolques = useMeValue<Remolque[]>(REMOLQUES_RECORDS_PATH);
-  const remolques = storedRemolques ?? REMOLQUES;
+  const remolques = storedRemolques ?? [];
   const storedDollies = useMeValue<Dolly[]>(DOLLIES_RECORDS_PATH);
-  const dollies = storedDollies ?? DOLLIES;
+  const dollies = storedDollies ?? [];
 
   const detalles = useMeValue<Record<string, FacturaDetalle>>(FACTURAS_RECORDS_PATH) ?? {};
   const setDetalles = useMeAction(FACTURAS_RECORDS_PATH);

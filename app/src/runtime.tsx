@@ -1,5 +1,4 @@
-import { Suspense } from 'react';
-import { createRoot } from 'react-dom/client';
+import { Suspense, useEffect } from 'react';
 import { Theme, Layout } from 'this.gui';
 import { MeRuntimeProvider, useMeAction, useMeValue, useOptionalMeRuntimeContext } from 'this.gui/react';
 import type { MeLike } from 'this.gui/react';
@@ -15,15 +14,9 @@ import ThemeLauncher from './components/ThemeLauncher';
 
 export type { AppDeclaration };
 
-export interface MountAppOptions {
+export interface FullTrailerAppProps {
   me: MeLike;
   app: AppDeclaration;
-  target: string;
-  /**
-   * Optional runtime adapter — e.g. createWsMeRuntime() for a live monad
-   * connection. Falls back to MeRuntimeProvider's own default (a local-only
-   * createMeRuntime(me)) when omitted, same as before this option existed.
-   */
   runtime?: RuntimeAdapter;
 }
 
@@ -79,24 +72,28 @@ const NAV_ITEMS = [
 ];
 
 /**
- * Declares the app in .me, then mounts it: Theme -> MeRuntimeProvider ->
- * AppShell (nav + Layout) -> active view.
+ * The authenticated FullTrailer app: declares itself in .me, seeds the
+ * initial route from the URL once, then renders Theme -> MeRuntimeProvider
+ * -> AppShell (nav + Layout) -> active view. Rendered declaratively by
+ * App.tsx once a SeedSession is authenticated — replaces the old imperative
+ * mountApp()/createRoot() call, which only ever had one caller (main.tsx).
  */
-export function mountApp({ me, app, target, runtime }: MountAppOptions): void {
-  declareApp(me, app);
+export function FullTrailerApp({ me, app, runtime }: FullTrailerAppProps) {
+  useEffect(() => {
+    declareApp(me, app);
+    const initialPath = window.location.pathname.replace(/^\/+/, '') || 'home';
+    writeMeValue(me, `${app.namespace}.route`, app.views[initialPath] ? initialPath : 'home');
+    // Runs once per mount (i.e. once per login) — me/app/runtime are stable
+    // for the lifetime of an authenticated session.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  const el = document.querySelector(target);
-  if (!el) throw new Error(`mountApp: target "${target}" not found`);
-
-  const initialPath = window.location.pathname.replace(/^\/+/, '') || 'home';
-  writeMeValue(me, `${app.namespace}.route`, app.views[initialPath] ? initialPath : 'home');
-
-  createRoot(el).render(
+  return (
     <Theme initialThemeId={app.theme}>
       <MeRuntimeProvider me={me} runtime={runtime}>
         <AppShell app={app} />
       </MeRuntimeProvider>
-    </Theme>,
+    </Theme>
   );
 }
 

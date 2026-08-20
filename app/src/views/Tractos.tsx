@@ -14,9 +14,9 @@ import {
 import { Icon, Modal } from 'this.gui';
 import { Grid, Stack } from 'this.gui/molecules';
 import { useMeAction, useMeValue } from 'this.gui/react';
-import { TRACTOS, configuracionDe, type Tracto, type Configuracion } from '../data/tractos';
-import { REMOLQUES, type Remolque } from '../data/remolques';
-import { DOLLIES, type Dolly } from '../data/dollies';
+import { configuracionDe, type Tracto, type Configuracion } from '../data/tractos';
+import type { Remolque } from '../data/remolques';
+import type { Dolly } from '../data/dollies';
 import { useFuelByClave } from '../data/samsaraFuel';
 
 const RECORDS_PATH = 'apps.fulltrailer.tractos.records';
@@ -209,12 +209,12 @@ export default function Tractos() {
   const setRoute = useMeAction('apps.fulltrailer.route');
   const stored = useMeValue<Tracto[]>(RECORDS_PATH);
   const setTractos = useMeAction(RECORDS_PATH);
-  const tractos = stored ?? TRACTOS;
+  const tractos = stored ?? [];
   const fuelByClave = useFuelByClave();
   const storedRemolques = useMeValue<Remolque[]>(REMOLQUES_RECORDS_PATH);
-  const remolques = storedRemolques ?? REMOLQUES;
+  const remolques = storedRemolques ?? [];
   const storedDollies = useMeValue<Dolly[]>(DOLLIES_RECORDS_PATH);
-  const dollies = storedDollies ?? DOLLIES;
+  const dollies = storedDollies ?? [];
 
   const [query, setQuery] = useState('');
   const [modalOpen, setModalOpen] = useState(false);

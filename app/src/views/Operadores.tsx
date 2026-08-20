@@ -14,7 +14,7 @@ import {
 import { Icon, Modal } from 'this.gui';
 import { Grid, Stack } from 'this.gui/molecules';
 import { useMeAction, useMeValue } from 'this.gui/react';
-import { OPERADORES, type Operador } from '../data/operadores';
+import type { Operador } from '../data/operadores';
 import { uploadImage } from '../data/uploads';
 
 const RECORDS_PATH = 'apps.fulltrailer.operadores.records';
@@ -130,7 +130,7 @@ export default function Operadores() {
   const setRoute = useMeAction('apps.fulltrailer.route');
   const stored = useMeValue<Operador[]>(RECORDS_PATH);
   const setOperadores = useMeAction(RECORDS_PATH);
-  const operadores = stored ?? OPERADORES;
+  const operadores = stored ?? [];
 
   const [query, setQuery] = useState('');
   const [modalOpen, setModalOpen] = useState(false);

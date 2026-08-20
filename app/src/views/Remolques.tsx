@@ -14,7 +14,7 @@ import {
 import { Icon, Modal } from 'this.gui';
 import { Grid, Stack } from 'this.gui/molecules';
 import { useMeAction, useMeValue } from 'this.gui/react';
-import { REMOLQUES, type Remolque } from '../data/remolques';
+import type { Remolque } from '../data/remolques';
 
 const RECORDS_PATH = 'apps.fulltrailer.remolques.records';
 
@@ -127,7 +127,7 @@ export default function Remolques() {
   const setRoute = useMeAction('apps.fulltrailer.route');
   const stored = useMeValue<Remolque[]>(RECORDS_PATH);
   const setRemolques = useMeAction(RECORDS_PATH);
-  const remolques = stored ?? REMOLQUES;
+  const remolques = stored ?? [];
 
   const [query, setQuery] = useState('');
   const [modalOpen, setModalOpen] = useState(false);

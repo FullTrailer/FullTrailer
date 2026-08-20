@@ -1,11 +1,10 @@
-import ME from 'this.me';
+import { createRoot } from 'react-dom/client';
 import { createWsMeRuntime } from 'this.gui/runtime';
+import { SeedSessionProvider } from 'this.gui/react';
 import app from './app';
-import { mountApp } from './runtime';
+import RootGate from './RootGate';
 import 'this.gui/style.css';
 import './index.css';
-
-const me = ME();
 
 // Talks to FullTrailer through netget's public /apps/:name route — no
 // dedicated subdomain, no new /etc/hosts entry. /apps/fulltrailer is the
@@ -17,9 +16,18 @@ const me = ME();
 // still resolves the right namespace regardless of which host/alias
 // reached it). Override via VITE_MONAD_ORIGIN if your local setup differs.
 const monadOrigin = import.meta.env.VITE_MONAD_ORIGIN || 'http://local.netget/apps/fulltrailer';
-const runtime = createWsMeRuntime(me, {
-  semanticNamespace: 'fulltrailer.suis-macbook-air.local',
-  transportOrigin: monadOrigin,
-});
 
-mountApp({ me, app, target: '#root', runtime });
+const el = document.querySelector('#root');
+if (!el) throw new Error('main: #root not found');
+
+createRoot(el).render(
+  <SeedSessionProvider
+    transportOrigin={monadOrigin}
+    // createSeedSession() defaults to createMeRuntime(me) — local-only, no
+    // network subscribe. Override with the WS-backed adapter so a real
+    // SeedSession still gets live cross-client updates over /nrp.
+    createRuntime={(me, ctx) => createWsMeRuntime(me, ctx)}
+  >
+    <RootGate app={app} />
+  </SeedSessionProvider>,
+);

@@ -14,7 +14,7 @@ import {
 import { Icon, Modal } from 'this.gui';
 import { Grid, Stack } from 'this.gui/molecules';
 import { useMeAction, useMeValue } from 'this.gui/react';
-import { DOLLIES, type Dolly } from '../data/dollies';
+import type { Dolly } from '../data/dollies';
 
 const RECORDS_PATH = 'apps.fulltrailer.dollies.records';
 
@@ -121,7 +121,7 @@ export default function Dollies() {
   const setRoute = useMeAction('apps.fulltrailer.route');
   const stored = useMeValue<Dolly[]>(RECORDS_PATH);
   const setDollies = useMeAction(RECORDS_PATH);
-  const dollies = stored ?? DOLLIES;
+  const dollies = stored ?? [];
 
   const [query, setQuery] = useState('');
   const [modalOpen, setModalOpen] = useState(false);
