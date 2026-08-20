@@ -1,0 +1,154 @@
+{
+  "mecanicos": [
+    {
+      "nombre_del_trabajador": "Serafico Zabaleta Roman",
+      "puesto": "Mecanico",
+      "categoria": "A",
+      "especialidad": "Especialidad en motores cummins, volvo y detroid"
+    },
+    {
+      "nombre_del_trabajador": "Palma Lopez Gabriel",
+      "puesto": "Mecanico",
+      "categoria": "A",
+      "especialidad": "TODO"
+    },
+    {
+      "nombre_del_trabajador": "Jose Ignacio Dominguez Santiago",
+      "puesto": "Mecanico",
+      "categoria": "B",
+      "especialidad": "Especialidad en cummins isx10"
+    },
+    {
+      "nombre_del_trabajador": "Flores Moran Erick Emanuel",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Perez Sanchez Salvador",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Mendez Mendoza Aldo Rafael",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Parra Perez Alvaro",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Yoshio Felipe Ortiz Sanchez",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Ulises Escalante Zafra",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Francisco",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Leonel Ivan Fernandez Garcia",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Willian Garcia Moreno",
+      "puesto": "Mecanico",
+      "categoria": "C",
+      "especialidad": "Actividades dadas por el maestro"
+    },
+    {
+      "nombre_del_trabajador": "Bringras Villan Rafael",
+      "puesto": "Electrico",
+      "categoria": "A",
+      "especialidad": "Sistema electrico kenworth"
+    },
+    {
+      "nombre_del_trabajador": "Jose Luis Romero",
+      "puesto": "Electrico",
+      "categoria": "A",
+      "especialidad": "Sistema electrico de Volvo y Cascadia"
+    },
+    {
+      "nombre_del_trabajador": "Linares Contla Julio",
+      "puesto": "Electrico",
+      "categoria": "C",
+      "especialidad": "luces en general"
+    },
+    {
+      "nombre_del_trabajador": "Reyes Hernandez Cesar Camerino",
+      "puesto": "Suspensionista",
+      "categoria": "B",
+      "especialidad": "Suspensiones en general"
+    },
+    {
+      "nombre_del_trabajador": "Reyes Ventura Camerino",
+      "puesto": "Suspensionista",
+      "categoria": "B",
+      "especialidad": "Suspensiones en general"
+    },
+    {
+      "nombre_del_trabajador": "Pineda Chavez Cesar Ivan",
+      "puesto": "Suspensionista",
+      "categoria": "B",
+      "especialidad": "Reparacion de bujes, yoyos, ejes y sistema de frenos en general"
+    },
+    {
+      "nombre_del_trabajador": "Mora Morales Israel",
+      "puesto": "Soldador",
+      "categoria": "B",
+      "especialidad": "Soldadura en general"
+    },
+    {
+      "nombre_del_trabajador": "Vera Nava José Ignacio",
+      "puesto": "Soldador",
+      "categoria": "B",
+      "especialidad": "Soldadura en general"
+    },
+    {
+      "nombre_del_trabajador": "Sanchez Espiritu Gilberto",
+      "puesto": "Talachero",
+      "categoria": "A",
+      "especialidad": null
+    },
+    {
+      "nombre_del_trabajador": "Arcos Gomez Ciro de Jesús",
+      "puesto": "Movedor/laminador",
+      "categoria": "B",
+      "especialidad": "movedor, reparaciones de quinta rueda"
+    },
+    {
+      "nombre_del_trabajador": "Gomez Sanchez Martin",
+      "puesto": "Laminador",
+      "categoria": "B",
+      "especialidad": "detalle esteticos en general"
+    },
+    {
+      "nombre_del_trabajador": "Lopez Sanchez Octavio Fausto",
+      "puesto": "Lavador/Movedor",
+      "categoria": "C",
+      "especialidad": "Movedor, Lavado, Ayudante general"
+    },
+    {
+      "nombre_del_trabajador": "Flores Moran Angel Gaspar",
+      "puesto": "Lavador",
+      "categoria": "C",
+      "especialidad": "lavado, Engrasado de unidas, Balatas"
+    }
+  ]
+}
