@@ -1,0 +1,756 @@
+{
+  "generado": "2026-09-18",
+  "unidades": [
+    {
+      "unidad": "TRG-048",
+      "total_eventos": 12,
+      "eventos": [
+        {
+          "primera_vez_visto": "4 sep 2026 09:50",
+          "ultima_vez_visto": "17 sep 2026 16:57",
+          "tx_id": null,
+          "spn": "4091",
+          "spn_descripcion": "NOx limits exceeded due to Deactivation of EGR",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "17 sep 2026 11:12",
+          "ultima_vez_visto": "17 sep 2026 13:27",
+          "tx_id": "11",
+          "spn": "789",
+          "spn_descripcion": "Wheel Sensor ABS Axle 1 Left",
+          "fmi": "1",
+          "fmi_descripcion": "Low (most severe)",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "14 sep 2026 07:11",
+          "ultima_vez_visto": "16 sep 2026 12:52",
+          "tx_id": null,
+          "spn": "411",
+          "spn_descripcion": "Engine EGR 1 Differential Pressure",
+          "fmi": "8",
+          "fmi_descripcion": "Abnormal Frequency, Pulse Width or Period",
+          "count": 1,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "16 sep 2026 10:31",
+          "ultima_vez_visto": "16 sep 2026 12:52",
+          "tx_id": null,
+          "spn": "2659",
+          "spn_descripcion": "Engine EGR 1 Mass Flow Rate",
+          "fmi": "16",
+          "fmi_descripcion": "High (moderate severity)",
+          "count": 1,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "4 sep 2026 09:38",
+          "ultima_vez_visto": "12 sep 2026 23:29",
+          "tx_id": null,
+          "spn": "110",
+          "spn_descripcion": "Engine Coolant Temperature",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 1,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "4 sep 2026 09:38",
+          "ultima_vez_visto": "12 sep 2026 20:45",
+          "tx_id": null,
+          "spn": "102",
+          "spn_descripcion": "Engine Intake Manifold #1 Pressure",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 9,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "4 sep 2026 09:38",
+          "ultima_vez_visto": "6 sep 2026 08:36",
+          "tx_id": "11",
+          "spn": "1807",
+          "spn_descripcion": "Steering Wheel Angle",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "4 sep 2026 09:38",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "790",
+          "spn_descripcion": "Wheel Sensor ABS Axle 1 Right",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 18,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "4 sep 2026 09:38",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "798",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 2 Right",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 18,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "4 sep 2026 09:38",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "806",
+          "spn_descripcion": "Dif 1 - ASR Valve",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 18,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "9 sep 2026 09:07",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "793",
+          "spn_descripcion": "Wheel Sensor ABS Axle 3 Left",
+          "fmi": "10",
+          "fmi_descripcion": "Abnormal Rate of Change",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "16 sep 2026 12:08",
+          "ultima_vez_visto": null,
+          "tx_id": null,
+          "spn": "641",
+          "spn_descripcion": "Engine Variable Geometry Turbocharger Actuator #1",
+          "fmi": "19",
+          "fmi_descripcion": "Data Error",
+          "count": 1,
+          "codigo_falla": "MIL"
+        }
+      ]
+    },
+    {
+      "unidad": "TRG-034",
+      "total_eventos": 7,
+      "eventos": [
+        {
+          "primera_vez_visto": "15 sep 2026 22:32",
+          "ultima_vez_visto": "18 sep 2026 12:37",
+          "tx_id": null,
+          "spn": "1077",
+          "spn_descripcion": "Engine Fuel Injection Pump Controller",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 35,
+          "codigo_falla": [
+            "AWL",
+            "MIL"
+          ]
+        },
+        {
+          "primera_vez_visto": "14 sep 2026 19:09",
+          "ultima_vez_visto": "18 sep 2026 10:33",
+          "tx_id": null,
+          "spn": "111",
+          "spn_descripcion": "Engine Coolant Level 1",
+          "fmi": "18",
+          "fmi_descripcion": "Low (moderate severity)",
+          "count": 22,
+          "codigo_falla": [
+            "AWL",
+            "MIL"
+          ]
+        },
+        {
+          "primera_vez_visto": "16 sep 2026 23:14",
+          "ultima_vez_visto": "18 sep 2026 10:30",
+          "tx_id": "25",
+          "spn": "1548",
+          "spn_descripcion": "HVAC Duct Temperature",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 22,
+          "codigo_falla": "OFF"
+        },
+        {
+          "primera_vez_visto": "15 sep 2026 22:35",
+          "ultima_vez_visto": "15 sep 2026 22:36",
+          "tx_id": "49",
+          "spn": "523543",
+          "spn_descripcion": "Manufacturer Assignable SPN",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 1,
+          "codigo_falla": "OFF"
+        },
+        {
+          "primera_vez_visto": "14 sep 2026 19:08",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "798",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 2 Right",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "14 sep 2026 19:09",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "789",
+          "spn_descripcion": "Wheel Sensor ABS Axle 1 Left",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 2,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "14 sep 2026 19:09",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "790",
+          "spn_descripcion": "Wheel Sensor ABS Axle 1 Right",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 2,
+          "codigo_falla": "AWL"
+        }
+      ]
+    },
+    {
+      "unidad": "TRG-482",
+      "total_eventos": 12,
+      "eventos": [
+        {
+          "primera_vez_visto": "18 ago 2026 14:44",
+          "ultima_vez_visto": "15 sep 2026 12:51",
+          "tx_id": "11",
+          "spn": "1067",
+          "spn_descripcion": "Brake Signal Sensor 1",
+          "fmi": "7",
+          "fmi_descripcion": "Not Responding Properly",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 13:07",
+          "ultima_vez_visto": "15 sep 2026 09:03",
+          "tx_id": null,
+          "spn": "608",
+          "spn_descripcion": "J1587",
+          "fmi": "19",
+          "fmi_descripcion": "Data Error",
+          "count": 127,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 17:33",
+          "ultima_vez_visto": "12 sep 2026 19:34",
+          "tx_id": null,
+          "spn": "2659",
+          "spn_descripcion": "Engine EGR 1 Mass Flow Rate",
+          "fmi": "17",
+          "fmi_descripcion": "Low (least severe)",
+          "count": 15,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "23 ago 2026 14:33",
+          "ultima_vez_visto": "10 sep 2026 12:25",
+          "tx_id": null,
+          "spn": "641",
+          "spn_descripcion": "Engine Variable Geometry Turbocharger Actuator #1",
+          "fmi": "7",
+          "fmi_descripcion": "Not Responding Properly",
+          "count": 127,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "5 sep 2026 07:09",
+          "ultima_vez_visto": "5 sep 2026 09:37",
+          "tx_id": null,
+          "spn": "4091",
+          "spn_descripcion": "NOx limits exceeded due to Deactivation of EGR",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "23 ago 2026 14:10",
+          "ultima_vez_visto": "4 sep 2026 11:07",
+          "tx_id": null,
+          "spn": "4092",
+          "spn_descripcion": "NOx limits exceeded due to Incorrect EGR flow",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 13:07",
+          "ultima_vez_visto": null,
+          "tx_id": null,
+          "spn": "171",
+          "spn_descripcion": "Ambient Air Temperature",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 1,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 13:07",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "611",
+          "spn_descripcion": "System Diagnostic Code #1",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 13:07",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "790",
+          "spn_descripcion": "Wheel Sensor ABS Axle 1 Right",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 13:07",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "797",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 2 Left",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 13:07",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "798",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 2 Right",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 13:07",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "806",
+          "spn_descripcion": "Dif 1 - ASR Valve",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 127,
+          "codigo_falla": "AWL"
+        }
+      ]
+    },
+    {
+      "unidad": "TRG-021",
+      "total_eventos": 13,
+      "eventos": [
+        {
+          "primera_vez_visto": "14 sep 2026 07:59",
+          "ultima_vez_visto": "18 sep 2026 11:11",
+          "tx_id": null,
+          "spn": "102",
+          "spn_descripcion": "Engine Intake Manifold #1 Pressure",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 1,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "15 sep 2026 17:07",
+          "ultima_vez_visto": "18 sep 2026 11:11",
+          "tx_id": null,
+          "spn": "4091",
+          "spn_descripcion": "NOx limits exceeded due to Deactivation of EGR",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "17 sep 2026 08:42",
+          "ultima_vez_visto": "18 sep 2026 11:11",
+          "tx_id": null,
+          "spn": "412",
+          "spn_descripcion": "Engine EGR 1 Temperature",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 1,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "3 sep 2026 04:15",
+          "ultima_vez_visto": "15 sep 2026 12:06",
+          "tx_id": null,
+          "spn": "641",
+          "spn_descripcion": "Engine Variable Geometry Turbocharger Actuator #1",
+          "fmi": "7",
+          "fmi_descripcion": "Not Responding Properly",
+          "count": 3,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "3 sep 2026 03:53",
+          "ultima_vez_visto": "14 sep 2026 18:08",
+          "tx_id": null,
+          "spn": "2659",
+          "spn_descripcion": "Engine EGR 1 Mass Flow Rate",
+          "fmi": "18",
+          "fmi_descripcion": "Low (moderate severity)",
+          "count": 2,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "12 sep 2026 20:25",
+          "ultima_vez_visto": "14 sep 2026 07:56",
+          "tx_id": null,
+          "spn": "4092",
+          "spn_descripcion": "NOx limits exceeded due to Incorrect EGR flow",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 12,
+          "codigo_falla": "MIL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 18:16",
+          "ultima_vez_visto": "31 ago 2026 07:33",
+          "tx_id": "11",
+          "spn": "639",
+          "spn_descripcion": "J1939 Network #1 Primary Vehicle Network",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 116,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 16:55",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "791",
+          "spn_descripcion": "Wheel Sensor ABS Axle 2 Left",
+          "fmi": "10",
+          "fmi_descripcion": "Abnormal Rate of Change",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 16:55",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "792",
+          "spn_descripcion": "Wheel Sensor ABS Axle 2 Right",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 126,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 16:55",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "794",
+          "spn_descripcion": "Wheel Sensor ABS Axle 3 Right",
+          "fmi": "10",
+          "fmi_descripcion": "Abnormal Rate of Change",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 16:55",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "795",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 1 Left",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 126,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 16:55",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "796",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 1 Right",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 126,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "18 ago 2026 16:55",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "798",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 2 Right",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 126,
+          "codigo_falla": "AWL"
+        }
+      ]
+    },
+    {
+      "unidad": "TRG-068",
+      "total_eventos": 21,
+      "eventos": [
+        {
+          "primera_vez_visto": "2 sep 2026 09:41",
+          "ultima_vez_visto": "18 sep 2026 10:00",
+          "tx_id": null,
+          "spn": "95",
+          "spn_descripcion": "Engine Fuel Filter Differential Pressure",
+          "fmi": "16",
+          "fmi_descripcion": "High (moderate severity)",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": "18 sep 2026 08:49",
+          "tx_id": "11",
+          "spn": "1059",
+          "spn_descripcion": "Axle Load Sensor",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "26 ago 2026 12:17",
+          "ultima_vez_visto": "17 sep 2026 08:42",
+          "tx_id": "11",
+          "spn": "789",
+          "spn_descripcion": "Wheel Sensor ABS Axle 1 Left",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "9 sep 2026 22:35",
+          "ultima_vez_visto": "14 sep 2026 22:00",
+          "tx_id": "11",
+          "spn": "793",
+          "spn_descripcion": "Wheel Sensor ABS Axle 3 Left",
+          "fmi": "1",
+          "fmi_descripcion": "Low (most severe)",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "26 ago 2026 20:39",
+          "ultima_vez_visto": "14 sep 2026 18:00",
+          "tx_id": null,
+          "spn": "647",
+          "spn_descripcion": "Engine Fan Clutch 1 Output Driver",
+          "fmi": "3",
+          "fmi_descripcion": "Voltage Above Normal",
+          "count": 3,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "14 sep 2026 10:21",
+          "ultima_vez_visto": "14 sep 2026 17:41",
+          "tx_id": null,
+          "spn": "412",
+          "spn_descripcion": "Engine EGR 1 Temperature",
+          "fmi": "3",
+          "fmi_descripcion": "Voltage Above Normal",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "14 sep 2026 10:21",
+          "ultima_vez_visto": "14 sep 2026 17:41",
+          "tx_id": null,
+          "spn": "2791",
+          "spn_descripcion": "Engine EGR 1 Valve 1 Control 1",
+          "fmi": "9",
+          "fmi_descripcion": "Abnormal Update Rate",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": "5 sep 2026 10:06",
+          "tx_id": "11",
+          "spn": "1067",
+          "spn_descripcion": "Brake Signal Sensor 1",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "26 ago 2026 15:32",
+          "ultima_vez_visto": "3 sep 2026 19:39",
+          "tx_id": null,
+          "spn": "563",
+          "spn_descripcion": "Anti-Lock Braking (ABS) Active",
+          "fmi": "9",
+          "fmi_descripcion": "Abnormal Update Rate",
+          "count": 88,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "26 ago 2026 12:17",
+          "ultima_vez_visto": "3 sep 2026 07:27",
+          "tx_id": "11",
+          "spn": "1808",
+          "spn_descripcion": "Yaw Rate",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "24 ago 2026 10:10",
+          "ultima_vez_visto": "25 ago 2026 11:49",
+          "tx_id": "11",
+          "spn": "639",
+          "spn_descripcion": "J1939 Network #1 Primary Vehicle Network",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "24 ago 2026 10:11",
+          "ultima_vez_visto": "24 ago 2026 18:29",
+          "tx_id": "11",
+          "spn": "1045",
+          "spn_descripcion": "Brake Light Switch 1",
+          "fmi": "7",
+          "fmi_descripcion": "Not Responding Properly",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": null,
+          "spn": "111",
+          "spn_descripcion": "Engine Coolant Level 1",
+          "fmi": "3",
+          "fmi_descripcion": "Voltage Above Normal",
+          "count": 1,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "1807",
+          "spn_descripcion": "Steering Wheel Angle",
+          "fmi": "9",
+          "fmi_descripcion": "Abnormal Update Rate",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "611",
+          "spn_descripcion": "System Diagnostic Code #1",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "790",
+          "spn_descripcion": "Wheel Sensor ABS Axle 1 Right",
+          "fmi": "14",
+          "fmi_descripcion": "Special instruction",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "794",
+          "spn_descripcion": "Wheel Sensor ABS Axle 3 Right",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "797",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 2 Left",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "798",
+          "spn_descripcion": "Pressure Modulation Valve ABS Axle 2 Right",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 12:29",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "806",
+          "spn_descripcion": "Dif 1 - ASR Valve",
+          "fmi": "5",
+          "fmi_descripcion": "Current Below Normal",
+          "count": 127,
+          "codigo_falla": "AWL"
+        },
+        {
+          "primera_vez_visto": "19 ago 2026 14:09",
+          "ultima_vez_visto": null,
+          "tx_id": "11",
+          "spn": "1068",
+          "spn_descripcion": "Brake Signal Sensor 2",
+          "fmi": "2",
+          "fmi_descripcion": "Erratic, Intermittent or Incorrect",
+          "count": 127,
+          "codigo_falla": "AWL"
+        }
+      ]
+    }
+  ]
+}
