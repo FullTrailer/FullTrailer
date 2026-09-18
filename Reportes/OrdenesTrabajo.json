@@ -1,0 +1,1087 @@
+[
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,549",
+    "datos_generales": {
+      "servicio_a_realizar": "(003) AUXILIO EN CARRETERA",
+      "fecha": "18-sep.-2026",
+      "responsable": "(239) SERAFICO ZAVALETA , ROMAN",
+      "vehiculo": "TRG-25 (Tractor)",
+      "kilometraje": "310,098",
+      "operador": "(4342) ALMEYDA SALAZAR, GUADALUPE",
+      "tiempo_estimado_horas": 16.0,
+      "costo_estimado": 4899.84,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:29:15p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(TUBERIA) TUBERIA DE COMBUSTIBLE",
+        "responsable": "(239) SERAFICO ZAVALETA , R",
+        "ultimo_servicio": {
+          "orden": "88,039",
+          "fecha": "27/jul./2024"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": 0.0,
+      "gran_total_costo": 306.24
+    },
+    "firmas": {
+      "autorizo": "(239) SERAFICO ZAVALETA , ROMAN",
+      "responsable_servicio": "(4342) ALMEYDA SALAZAR, GUADALUPE",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,556",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(338) FLORES MORAN, ANGEL GASPAR",
+      "vehiculo": "SINOTRUCK (Tractor)",
+      "kilometraje": "108,920",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 0.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:33:34p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "LAVADOR",
+        "actividad": "(14-01-03-IMAG) LAVADO A UTILITARIO",
+        "responsable": "(338) FLORES MORAN, ANGEL G",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 14.39
+    },
+    "notas": "LAVADO DE MAZDA ROJO LIC LETY.",
+    "firmas": {
+      "autorizo": "(338) FLORES MORAN, ANGEL GASPA",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,560",
+    "datos_generales": {
+      "servicio_a_realizar": "(022) USO TALLER",
+      "fecha": "18-sep.-2026",
+      "responsable": "(001) ARCOS GOMEZ, CIRO JESUS",
+      "vehiculo": "SINOTRUCK (Tractor)",
+      "kilometraje": "108,920",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 9.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:36:23p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "PATIO TRG",
+        "actividad": "(UNIDADES-VARIAS) MOVEDOR DE UNIDADES",
+        "responsable": "(001) ARCOS GOMEZ, CIRO JES",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 0.0
+    },
+    "firmas": {
+      "autorizo": "(001) ARCOS GOMEZ, CIRO JESUS",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,554",
+    "datos_generales": {
+      "servicio_a_realizar": "(007) MEJORAS",
+      "fecha": "18-sep.-2026",
+      "responsable": "(174) REYES VENTURA, JACINTO",
+      "vehiculo": "SINOTRUCK (Tractor)",
+      "kilometraje": "108,920",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 16.0,
+      "costo_estimado": 4899.84,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:32:44p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(02-01-10-CAJA) REPARACION GENERAL DE TRANSMISION",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "86,638",
+          "fecha": "23/may./2024"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 306.24
+    },
+    "firmas": {
+      "autorizo": "(174) REYES VENTURA, JACINTO",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,566",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(386) MASIN CASTILLO, VICENTE",
+      "vehiculo": "TRG-013 (Tractor)",
+      "kilometraje": "834,038",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 4.0,
+      "costo_estimado": 400.00,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:39:36p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "LAMINADOR",
+        "actividad": "(09-03-10-CHASIS-Y-CA) REPARACION DE DEFENSA A TRACTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "97,427",
+          "fecha": "24/feb./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 100.00
+    },
+    "firmas": {
+      "autorizo": "(386) MASIN CASTILLO, VICENTE",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,570",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(369) MORA MORALES, ISRAEL",
+      "vehiculo": "TRG-549 (Remolque) DEL TRACTOR SINOTRUCK",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 5.0,
+      "costo_estimado": 102.70,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:41:27p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "SOLDADOR",
+        "actividad": "(10-01-30-ESTRUCT-TQ) FABRICACION PLAFONERA A REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 20.54
+    },
+    "firmas": {
+      "autorizo": "(369) MORA MORALES, ISRAEL",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,569",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(238) PALMA LOPEZ , GABRIEL",
+      "vehiculo": "TRG-21 (Tractor)",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 6.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:41:03p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-06-11-TURBO) MONTAR Y DEMONTAR TURBO A UNIDAD",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 0.0
+    },
+    "firmas": {
+      "autorizo": "(238) PALMA LOPEZ , GABRIEL",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,568",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+      "vehiculo": "TRG-21 (Tractor)",
+      "kilometraje": "1,289,962",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 6.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:40:37p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-06-11-TURBO) MONTAR Y DEMONTAR TURBO A UNIDAD",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 0.0
+    },
+    "firmas": {
+      "autorizo": "(388) FERNANDEZ GARCIA, LEONEL I",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,558",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-026 (Tractor)",
+      "kilometraje": "966,194",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:35:17p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "92,654",
+          "fecha": "26/mar./2025"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 20.54
+    },
+    "firmas": {
+      "autorizo": "(361) LINARES, JOSE JULIO",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,551",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "vehiculo": "TRG-052 (Tractor)",
+      "kilometraje": "708,408",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 29.41,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:30:39p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-04-20-ELECTRIO) REVISAR LINEA DE DATOS ELECTRICO",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-03-ELECTRICO) CAMBIO DE FUSIBLES VARIOS",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "85,996",
+          "fecha": "27/abr./2024"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-05-ELECTRICO) CAMBIO DE RELEVADORES",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "92,785",
+          "fecha": "03/abr./2025"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-16-MOTOR) CHECAR Y/O REPARAR FRENO DE MOTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,161",
+          "fecha": "24/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 39.68
+    },
+    "firmas": {
+      "autorizo": "(365) CASTRO CRUZ, JESUS EMMANUE",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,557",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-058 (Tractor)",
+      "kilometraje": "1,003,576",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:34:29p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-20-ELECTRICO) BATERIAS Y/O ACUMULADOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "99,920",
+          "fecha": "03/jul./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 20.54
+    },
+    "firmas": {
+      "autorizo": "(361) LINARES, JOSE JULIO",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,552",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(375) BINGRAS VILLAN, RAFAEL",
+      "vehiculo": "TRG-068 (Tractor)",
+      "kilometraje": "1,314,639",
+      "operador": "(4456) BONILLA GONZALEZ, JONATHAN",
+      "tiempo_estimado_horas": 4.0,
+      "costo_estimado": 61.62,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:31:13p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,033",
+          "fecha": "17/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-04-03-ELECTRICO) CAMBIO DE TACOMETRO",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-23-ELECTRICO) REVISAR CAJA DE FUSIBLES (SIST. ELECTRICO)",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "50,843",
+          "fecha": "28/ene./2020"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-05-30-ENFRI) REPARACION DE FAN CLUTH Tractor",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "77,073",
+          "fecha": "02/may./2023"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 61.62
+    },
+    "firmas": {
+      "autorizo": "(375) BINGRAS VILLAN, RAFAEL",
+      "responsable_servicio": "(4456) BONILLA GONZALEZ, JONATHAN",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,562",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(316) PINEDA CHAVEZ, CESAR IVAN",
+      "vehiculo": "TRG-434 (Tractor)",
+      "kilometraje": "1,315,155",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 7.5,
+      "costo_estimado": 88.35,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:37:14p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(08-03-07-SUSPENSION) ENGRASAR EQUIPO",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,257",
+          "fecha": "28/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-04-10-LUBRI) REVISAR NIVELES DE ACEITE EN GRAL. Tractor",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "63,242",
+          "fecha": "09/sep./2021"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "96,036",
+          "fecha": "28/oct./2025"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-01-05-SUSPENSION) REVISAR Y REPARAR SUSPENSION Tractor",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,257",
+          "fecha": "28/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 67.62
+    },
+    "firmas": {
+      "autorizo": "(316) PINEDA CHAVEZ, CESAR IVAN",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": "Antonio Pérez Alvarez"
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,563",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(390) MEDINA, JUAN",
+      "vehiculo": "TRG-434 (Tractor)",
+      "kilometraje": "1,315,155",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 7.5,
+      "costo_estimado": 88.35,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:37:49p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(08-03-07-SUSPENSION) ENGRASAR EQUIPO",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,257",
+          "fecha": "28/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-04-10-LUBRI) REVISAR NIVELES DE ACEITE EN GRAL. Tractor",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "63,242",
+          "fecha": "09/sep./2021"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "96,036",
+          "fecha": "28/oct./2025"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-01-05-SUSPENSION) REVISAR Y REPARAR SUSPENSION Tractor",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,257",
+          "fecha": "28/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 88.35
+    },
+    "firmas": {
+      "autorizo": "(390) MEDINA, JUAN",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": null
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,564",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(376) DOMINGUEZ SANTIAGO, JOSE IGNACIO",
+      "vehiculo": "TRG-471 (Tractor)",
+      "kilometraje": "332,514",
+      "operador": "(4101) GARCIA RAMIREZ, ALFREDO",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:38:30p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-61-MOTOR) CAMBIO DE VALVULA EGR Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 0.0
+    },
+    "firmas": {
+      "autorizo": "(376) DOMINGUEZ SANTIAGO, JOSE IGNACIO",
+      "responsable_servicio": "(4101) GARCIA RAMIREZ, ALFREDO",
+      "operador": null
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,561",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(331) FLORES MORAN, ERICK EMANUEL",
+      "vehiculo": "TRG-482 (Tractor)",
+      "kilometraje": "1,147,065",
+      "operador": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 35.32,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:36:47p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "32,793",
+          "fecha": "25/abr./2018"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-06-FRENOS) REVISAR Y REPARAR BALATAS",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "39,908",
+          "fecha": "30/dic./2018"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,160",
+          "fecha": "24/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-08-FRENOS) REVISAR FRENOS EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "99,607",
+          "fecha": "21/jul./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 35.32
+    },
+    "firmas": {
+      "autorizo": "(331) FLORES MORAN, ERICK EMANUEL",
+      "responsable_servicio": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+      "operador": null
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,550",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(355) PEREZ SANCHEZ, SALVADOR",
+      "vehiculo": "TRG-482 (Tractor)",
+      "kilometraje": "1,147,065",
+      "operador": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+      "tiempo_estimado_horas": 5.0,
+      "costo_estimado": 90.44,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:30:06p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "32,793",
+          "fecha": "25/abr./2018"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-06-FRENOS) REVISAR Y REPARAR BALATAS",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "39,908",
+          "fecha": "30/dic./2018"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "100,160",
+          "fecha": "24/ago./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-08-FRENOS) REVISAR FRENOS EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "99,607",
+          "fecha": "21/jul./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 90.44
+    },
+    "firmas": {
+      "autorizo": "(355) PEREZ SANCHEZ, SALVADOR",
+      "responsable_servicio": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+      "operador": null
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,565",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(386) MASIN CASTILLO, VICENTE",
+      "vehiculo": "TRG-501 (Tractor)",
+      "kilometraje": "198,379",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:39:05p. m."
+    },
+    "actividades": [
+      {
+        "categoria": null,
+        "actividad": "(11-11-06-IMAG) ROTULAR TRACTO",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 0.0
+    },
+    "firmas": {
+      "autorizo": "(386) MASIN CASTILLO, VICENTE",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": null
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,553",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(387) LOPEZ AZAMAR, GABRIEL",
+      "vehiculo": "TRG-549 (Remolque) DEL TRACTOR SINOTRUCK Kilometraje: 0",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 9.0,
+      "costo_estimado": 565.56,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:31:58p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "SOLDADOR",
+        "actividad": "(10-01-04-ESTRUCT-TQ) CAMBIO DE ESCALERA A REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 565.56
+    },
+    "firmas": {
+      "autorizo": "(387) LOPEZ AZAMAR, GABRIEL",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": null
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,567",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(391) ALCANTARA VIDAL, SAUL",
+      "vehiculo": "TRG-549 (Remolque) DEL TRACTOR SINOTRUCK Kilometraje: 0",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 5.0,
+      "costo_estimado": 90.44,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:40:01p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-06-FRENOS) REVISAR Y REPARAR BALATAS",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "90,368",
+          "fecha": "15/nov./2024"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "98,833",
+          "fecha": "08/jun./2026"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-08-FRENOS) REVISAR FRENOS EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 90.44
+    },
+    "firmas": {
+      "autorizo": "(391) ALCANTARA VIDAL, SAUL",
+      "responsable_servicio": "(0000) N/A SIN, OPERADOR",
+      "operador": null
+    }
+  },
+  {
+    "tipo_documento": "ORDEN DE TRABAJO",
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100,559",
+    "datos_generales": {
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep.-2026",
+      "responsable": "(392) SANDOVAL, DAVID",
+      "vehiculo": "TRG-970 (Remolque) DEL TRACTOR TRG-482 Kilometraje: 0",
+      "kilometraje": "0",
+      "operador": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+      "tiempo_estimado_horas": 8.5,
+      "costo_estimado": 199.29,
+      "taller": "Interno",
+      "referencia": null,
+      "fecha_impresion": "18/09/2026 12:35:55p. m."
+    },
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-04-05-MAZA-REM) CAMBIO DE RETEN A REMOLQUE",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "95,393",
+          "fecha": "13/sep./2025"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-04-10-MAZA-REM) REVISAR Y/O REPARAR MAZA A REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-04-03-MAZA-REM) CAMBIO DE BALEROS A REMOLQUE",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "94,892",
+          "fecha": "11/ago./2025"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-04-08-MAZA-REM) ENGRASAR REMOLQUE",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "81,764",
+          "fecha": "12/nov./2023"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-03-14-FREN-REM) REVISAR Y REPARAR BALATAS A REMOLQUE",
+        "responsable": "(No asignado)",
+        "ultimo_servicio": {
+          "orden": "46,161",
+          "fecha": "21/jul./2019"
+        },
+        "inicio_fin": null,
+        "realizada_observaciones": null
+      }
+    ],
+    "insumos": [],
+    "costos": {
+      "total_costo": null,
+      "gran_total_costo": 199.29
+    },
+    "firmas": {
+      "autorizo": "(392) SANDOVAL, DAVID",
+      "responsable_servicio": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+      "operador": null
+    }
+  }
+]
