@@ -215,5 +215,42 @@
       ]
     },
     "observaciones": null
-  }
+  },
+  {
+  "pagina": 7,
+  "encabezado": {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+    "codigo": "REG-GM-009",
+    "revision": "01",
+    "fecha_emision": "12 ABRIL 2013",
+    "departamento": "MANTENIMIENTO",
+    "titulo": "REPORTE DE OPERADOR"
+  },
+  "datos_generales": {
+    "fecha": "15/9/26",
+    "operador": "FRANCISCO MURILLO",
+    "hora": "11:20",
+    "tractor": "52",
+    "remolque": "549",
+    "kms": null,
+    "folio": null
+  },
+  "reportes": {
+    "tracto": [
+      "1. CHECAR QUINTA TIENE JUEGO",
+      "2. FRENO DE MOTOR",
+      "3. CHECAR LUCES CUARTOS",
+      "4. CAMBIAR MACHO",
+      "5. NIVELAR BOLSAS DE AIRE TRAK CABINA Y TRACTO",
+      "6. CHECAR CUERPO DE ACELERACION MARIPOSA DE ATEZA",
+      "7. DAR MANTENIMIENTO A FSR"
+    ],
+    "remolque_1": [
+      "1. CHEC TORNILLO DERECHO DE AMORTIGUADOR"
+    ],
+    "dolly": [],
+    "remolque_2": []
+  },
+  "observaciones": null
+}
 ]
