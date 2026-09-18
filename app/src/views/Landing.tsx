@@ -7,7 +7,14 @@ import { seedFullTrailerCatalog } from '../data/seedCatalog';
 // localStorage right after using it (a different, pre-existing convention),
 // which would silently wipe our persisted seed on every login.
 const SEED_STORAGE_KEY = 'fulltrailer.operator.seed:v1';
-const MONAD_ROOT_NAMESPACE = 'fulltrailer.suis-macbook-air.local';
+// Must end in whatever this machine's monad actually has as ME_NAMESPACE
+// (see the class comment below) — hardcoding one developer's machine name
+// broke every other machine's login (ERR_NAME_NOT_RESOLVED trying to reach
+// a monad that only exists on the original author's laptop). Override per
+// machine via VITE_MONAD_ROOT_NAMESPACE, same convention as main.tsx's
+// VITE_MONAD_ORIGIN.
+const MONAD_ROOT_NAMESPACE =
+  import.meta.env.VITE_MONAD_ROOT_NAMESPACE || 'fulltrailer.suis-macbook-air.local';
 
 function readOrCreateSeed(): string {
   const existing = window.localStorage.getItem(SEED_STORAGE_KEY);
@@ -52,6 +59,9 @@ export default function Landing() {
     const seed = readOrCreateSeed();
     const handle = seed.slice(0, 8);
     const technicalNamespace = `${handle}.${MONAD_ROOT_NAMESPACE}`;
+    // Canonical identity drops the "fulltrailer." app prefix — same
+    // machine-root derivation as MONAD_ROOT_NAMESPACE, not a second literal.
+    const machineRoot = MONAD_ROOT_NAMESPACE.replace(/^fulltrailer\./, '');
 
     const session = await loginWithSeed({ seed, namespace: technicalNamespace, autoOpen: false });
     try {
@@ -63,7 +73,7 @@ export default function Landing() {
     await seedFullTrailerCatalog(session);
     await session.write(`apps.fulltrailer.operators.${handle}`, {
       handle,
-      identity: `${handle}.suis-macbook-air.local`,
+      identity: `${handle}.${machineRoot}`,
       lastSeenAt: Date.now(),
     });
     activateSession(session);

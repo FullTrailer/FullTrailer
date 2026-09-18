@@ -1,0 +1,219 @@
+[
+  {
+    "pagina": 1,
+    "encabezado": {
+      "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+      "codigo": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision": "12 ABRIL 2013",
+      "departamento": "MANTENIMIENTO",
+      "titulo": "REPORTE DE OPERADOR"
+    },
+    "datos_generales": {
+      "fecha": "17/09/26",
+      "operador": "Jose Manuel M te",
+      "hora": null,
+      "tractor": "48",
+      "remolque": null,
+      "kms": null,
+      "folio": null
+    },
+    "reportes": {
+      "tracto": [
+        "2. #48",
+        "4. No tiene potencia fuerza",
+        "8. Turbo Amarrado"
+      ],
+      "remolque_1": [],
+      "dolly": [],
+      "remolque_2": [
+        "2. #953",
+        "4. Poner manivela"
+      ]
+    },
+    "observaciones": null
+  },
+  {
+    "pagina": 2,
+    "encabezado": {
+      "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+      "codigo": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision": "12 ABRIL 2013",
+      "departamento": "MANTENIMIENTO",
+      "titulo": "REPORTE DE OPERADOR"
+    },
+    "datos_generales": {
+      "fecha": "12/04/26",
+      "operador": "Grad Pro deco",
+      "hora": null,
+      "tractor": "34",
+      "remolque": null,
+      "kms": null,
+      "folio": null
+    },
+    "reportes": {
+      "tracto": [
+        "Falla en faros no sienten",
+        "Freno directo",
+        "Desempeno / posicion los test",
+        "Achica de ATCCCR4",
+        "58 ACC",
+        "Frio al andar"
+      ],
+      "remolque_1": [],
+      "dolly": [],
+      "remolque_2": []
+    },
+    "observaciones": null
+  },
+  {
+    "pagina": 3,
+    "encabezado": {
+      "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+      "codigo": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision": "12 ABRIL 2013",
+      "departamento": "MANTENIMIENTO",
+      "titulo": "REPORTE DE OPERADOR"
+    },
+    "datos_generales": {
+      "fecha": "Sept 2026",
+      "operador": "VICENTE BENITEZ LUZMA",
+      "hora": "7:15 AM",
+      "tractor": "82",
+      "remolque": "SILOAS NOS 979 970",
+      "kms": "1032296",
+      "folio": null
+    },
+    "reportes": {
+      "tracto": [
+        "1. TABLERO TRAS corto",
+        "2. SE ANDA APAGANDO",
+        "3. CHECAR VALATAS Y MATRACAS",
+        "4. NO ENFRENA BIEN",
+        "8. CHECAR EL FRENO DE MOTOR, NO SE ACTIVA CUANDO LE",
+        "9. NESESITA UNO"
+      ],
+      "remolque_1": [
+        "1. FALTA BALATAS Y",
+        "2. CHECAR LAS MATRACAS",
+        "3. LE FALTA UNA"
+      ],
+      "dolly": [
+        "4. 076108 - Frena",
+        "5. 070109",
+        "6. 070106 Baleros"
+      ],
+      "remolque_2": [
+        "1. BALATAS Y",
+        "2. CHECAR LAS MATRACAS",
+        "3. LE FALTA UNA"
+      ]
+    },
+    "observaciones": null
+  },
+  {
+    "pagina": 4,
+    "encabezado": {
+      "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+      "codigo": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision": "12 ABRIL 2013",
+      "departamento": "MANTENIMIENTO",
+      "titulo": "REPORTE DE OPERADOR"
+    },
+    "datos_generales": {
+      "fecha": "16/09/26",
+      "operador": "Eduardo Cortes Blanco",
+      "hora": "09:20",
+      "tractor": "27",
+      "remolque": "21 0363 375",
+      "kms": "1330709",
+      "folio": null
+    },
+    "reportes": {
+      "tracto": [
+        "1. Buenos dias Favor de checar Perdida Fuersa",
+        "3. No se Aguanta ni vacio",
+        "4. Aserle Linpiesa a los bornes de las pilas y checar Los Tacones del Motor",
+        "7. Con prueba Al despegar seran Tacones",
+        "8. El Fallo es El Turbo Cambiarlo"
+      ],
+      "remolque_1": [
+        "1. Por Favor Calibrar equipo completo",
+        "4. Luces como direccionales e intermitentes"
+      ],
+      "dolly": [],
+      "remolque_2": [
+        "1. 375 favor de cambiar 1 llanta volada"
+      ]
+    },
+    "observaciones": null
+  },
+  {
+    "pagina": 5,
+    "encabezado": {
+      "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+      "codigo": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision": "12 ABRIL 2013",
+      "departamento": "MANTENIMIENTO",
+      "titulo": "REPORTE DE OPERADOR"
+    },
+    "datos_generales": {
+      "fecha": "17/09/26",
+      "operador": "Alfredo Barch",
+      "hora": "17:40",
+      "tractor": "471",
+      "remolque": "399",
+      "kms": "655913",
+      "folio": null
+    },
+    "reportes": {
+      "tracto": [
+        "1. Checar Perdida de Potencia y fallo en el acelerador (se corta andando como 10 segundos)",
+        "4. Alinear tanques de diesel"
+      ],
+      "remolque_1": [],
+      "dolly": [],
+      "remolque_2": []
+    },
+    "observaciones": "162"
+  },
+  {
+    "pagina": 6,
+    "encabezado": {
+      "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+      "codigo": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision": "12 ABRIL 2013",
+      "departamento": "MANTENIMIENTO",
+      "titulo": "REPORTE DE OPERADOR"
+    },
+    "datos_generales": {
+      "fecha": "18/09/20",
+      "operador": "Jazze than Bonilla",
+      "hora": "4:06",
+      "tractor": "068",
+      "remolque": null,
+      "kms": null,
+      "folio": null
+    },
+    "reportes": {
+      "tracto": [
+        "1. Reparar velocimetro",
+        "2. Reparar luces del carro en general",
+        "3. Reparar fan porque no prende por temperatura",
+        "5. Cambiar llanta posicion 10",
+        "9. Checar motor de elevacion del vidrio de copiloto"
+      ],
+      "remolque_1": [],
+      "dolly": [],
+      "remolque_2": [
+        "1. Cambiar llanta posicion 5"
+      ]
+    },
+    "observaciones": null
+  }
+]
