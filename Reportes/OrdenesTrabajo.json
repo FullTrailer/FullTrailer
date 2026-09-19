@@ -1083,5 +1083,1311 @@
       "responsable_servicio": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
       "operador": null
     }
-  }
+  },
+  {
+      "folio": "100,593",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(383) ROMERO, JOSE LUIS",
+      "vehiculo": "TRG-052 (Tractor)",
+      "kilometraje": "708,408",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 2.0,
+      "costo_estimado": 39.68,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:04:48 p.m.",
+      "fecha_estimada_terminacion": "18-9-26",
+      "actividades": [
+        {
+          "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "97,019",
+          "ultimo_servicio_fecha": "23/ene/2026",
+          "responsable": null,
+          "inicio_fin": "8:00/12:00",
+          "realizada_observaciones": "Terminado"
+        },
+        {
+          "actividad": "(01-01-16-MOTOR) CHECAR Y/O REPARAR FRENO DE MOTOR",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "100,161",
+          "ultimo_servicio_fecha": "24/ago/2025",
+          "responsable": null,
+          "inicio_fin": "8:00/12:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 39.68,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(383) ROMERO, JOSE LUIS",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,592",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(383) ROMERO, JOSE LUIS",
+      "vehiculo": "TRG-450 (Tractor)",
+      "kilometraje": "582,223",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 6.0,
+      "costo_estimado": 123.24,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:01:33 p.m.",
+      "fecha_estimada_terminacion": "18-9-26",
+      "actividades": [
+        {
+          "actividad": "(06-03-23-ELECTRICO) REVISAR CAJA DE FUSIBLES (SIST. ELECTRICO)",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "89,448",
+          "ultimo_servicio_fecha": "03/oct/2024",
+          "responsable": null,
+          "inicio_fin": "1:00/2:00 (aprox., manuscrito)",
+          "realizada_observaciones": "No Terminado"
+        }
+      ],
+      "insumos": [],
+      "notas": "Nota manuscrita parcialmente ilegible: 'falta por horario de comida y por aprobar [ilegible] 3H'",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(383) ROMERO, JOSE LUIS",
+      "operador_firma": null
+    },
+    {
+      "folio": "100,591",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(383) ROMERO, JOSE LUIS",
+      "vehiculo": "TRG-21 (Tractor)",
+      "kilometraje": "1,289,962",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 2.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:01:51 p.m.",
+      "fecha_estimada_terminacion": "18-9-26",
+      "actividades": [
+        {
+          "actividad": "(01-06-07-TURBO) MANO OBRA Y RECALIBRACION DE VALVULA VGT",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "83,717",
+          "ultimo_servicio_fecha": "24/ene/2024",
+          "responsable": null,
+          "inicio_fin": "12:00/1:00",
+          "realizada_observaciones": "Terminado"
+        },
+        {
+          "actividad": "(ESCANEO) ESCANEO DE UNIDAD",
+          "categoria": null,
+          "ultimo_servicio_orden": "94,090",
+          "ultimo_servicio_fecha": "23/jun/2025",
+          "responsable": null,
+          "inicio_fin": "12:00/1:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(383) ROMERO, JOSE LUIS",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,594",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(383) ROMERO, JOSE LUIS",
+      "vehiculo": "TRG-48 (Tractor)",
+      "kilometraje": "669,638",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:06:56 p.m.",
+      "fecha_estimada_terminacion": "18-9-26",
+      "actividades": [
+        {
+          "actividad": "(01-06-07-TURBO) MANO OBRA Y RECALIBRACION DE VALVULA VGT",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "6:00/6:30",
+          "realizada_observaciones": "No Terminado"
+        }
+      ],
+      "insumos": [],
+      "notas": "VGT se calibró porque otra vez venía diferente (manuscrito)",
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(383) ROMERO, JOSE LUIS",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,586",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(383) ROMERO, JOSE LUIS",
+      "vehiculo": "TRG-034 (Tractor)",
+      "kilometraje": "1,119,448",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 2.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:27:20 p.m.",
+      "fecha_estimada_terminacion": "18-9-26",
+      "actividades": [
+        {
+          "actividad": "(ACELERADOR) REVISAR Y/O REPARAR ACELERADOR Tractor",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "98,117",
+          "ultimo_servicio_fecha": "11/abr/2026",
+          "responsable": null,
+          "inicio_fin": "6:30/7:00",
+          "realizada_observaciones": "No Terminado"
+        },
+        {
+          "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "99,498",
+          "ultimo_servicio_fecha": "15/jul/2026",
+          "responsable": null,
+          "inicio_fin": "6:30/7:00",
+          "realizada_observaciones": "No Terminado"
+        }
+      ],
+      "insumos": [],
+      "notas": "Queda pendiente por refacciones",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(383) ROMERO, JOSE LUIS",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,551",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "vehiculo": "TRG-052 (Tractor)",
+      "kilometraje": "708,408",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 29.41,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 08:45:52 a.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(06-04-20-ELECTRIO) REVISAR LINEA DE DATOS ELECTRICO",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "8:00/10:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(06-03-03-ELECTRICO) CAMBIO DE FUSIBLES VARIOS",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "85,996",
+          "ultimo_servicio_fecha": "27/abr/2024",
+          "responsable": null,
+          "inicio_fin": "10:00/10:30",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(06-03-05-ELECTRICO) CAMBIO DE RELEVADORES",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "92,785",
+          "ultimo_servicio_fecha": "03/abr/2025",
+          "responsable": null,
+          "inicio_fin": "10:30/11:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(01-01-16-MOTOR) CHECAR Y/O REPARAR FRENO DE MOTOR",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "100,161",
+          "ultimo_servicio_fecha": "24/ago/2025",
+          "responsable": null,
+          "inicio_fin": "11:00/12:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 39.68,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,585",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "vehiculo": "TRG-058 (Tractor)",
+      "kilometraje": "1,003,576",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:20:55 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(06-03-20-ELECTRICO) BATERIAS Y/O ACUMULADOR",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "99,920",
+          "ultimo_servicio_fecha": "03/jul/2025",
+          "responsable": null,
+          "inicio_fin": "1:00/1:30",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,583",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "vehiculo": "TRG-549 (Remolque) del Tractor Sinotruck",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 2.0,
+      "costo_estimado": 41.08,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:17:10 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(10-05-02-ELECT-REM) CAMBIO DE PLAFONES A REMOLQUE",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "1:30-2:00 / hasta 5:00 (manuscrito, aprox.)",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(10-05-05-ELECT-REM) REVISAR Y REPARAR LUCES EN GRAL. REMOLQUE",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "99,926",
+          "ultimo_servicio_fecha": "10/ago/2026",
+          "responsable": null,
+          "inicio_fin": "5:30/6:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 41.08,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,584",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "vehiculo": "TRG-48 (Tractor)",
+      "kilometraje": "669,638",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:19:30 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(ESCANEO) ESCANEO DE UNIDAD",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "6:00/6:30",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,597",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "vehiculo": "TRG-034 (Tractor)",
+      "kilometraje": "1,119,448",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:15:59 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(06-03-26-ELECTRICO) CAMBIO DE MODULO DE LUCES A TRACTOR (Nva)",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "84,963",
+          "ultimo_servicio_fecha": "16/mar/2024",
+          "responsable": null,
+          "inicio_fin": "6:30/7:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,596",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+      "vehiculo": "SINOTRUCK (Tractor)",
+      "kilometraje": "108,920",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 0.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:14:46 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": null,
+          "categoria": null,
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "9:00/1:35",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Termine de bajar la caja de velocidades que se encontraba en el corralon las arrieras, se quitaron todos los tornillos de la campana y se desmonto (costo separar la caja debido al tiempo que tenia parada la unidad). Se desmonto por completo y se jalo hacia afuera para que la grua pudiera subirla, se desmonto el clutch y se intento desmontar el volante motriz pero no se pudo debido a que no tenia la herramienta que necesitaba (La caja es para la grua que se encuentra aqui en el taller)",
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,598",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+      "vehiculo": "TRG-450 (Tractor)",
+      "kilometraje": "582,223",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 6.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:18:04 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(01-06-11-TURBO) MONTAR Y DESMONTAR TURBO A UNIDAD",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "1:43/6:45",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "El turbo me lo entregaron a la 1:43 de la tarde pero no empece de inmediato por la falta de tornilleria ya que yo no quite el turbo desconocia la ubicacion de ellos, de ahi empece la hora de comida y empece a las 4 de la tarde pero subimos a junta la cual termino a las 5 de la tarde el turbo estaba montado 5:30 pero termine de armarlo por completo 6:40 (Quedo pendiente calibrar VGT) para finalizar por completo el TRG-450",
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,553",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(387) LOPEZ AZAMAR, GABRIEL",
+      "vehiculo": "TRG-?? (Remolque) del Tractor Sinotruck (numero de unidad parcialmente ilegible en el original)",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 9.0,
+      "costo_estimado": 565.56,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 11:14:06 a.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(10-01-04-ESTRUCT-TQ) CAMBIO DE ESCALERA A REMOLQUE",
+          "categoria": "SOLDADOR",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "9:00 a.m./1:30 p.m.",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [
+        {
+          "cantidad": 15,
+          "articulo": "pza. Soldadura Inoxidable"
+        }
+      ],
+      "notas": "Reparacion de escalera que estaba totalmente despegada por un tubo que lleva de soporte hacia el tanque que igual forma esta totalmente despegado",
+      "gran_total_costo": 62.84,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(387) LOPEZ AZAMAR, GABRIEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,573",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(387) LOPEZ AZAMAR, GABRIEL",
+      "vehiculo": "TRG-392 (Remolque) del Tractor Sinotruck",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 8.0,
+      "costo_estimado": 1005.44,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 05:39:48 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(10-01-20-ESTRUCT-TQ) REPARAR Y REFORZAR BASE DE PATINES A REMOLQUE",
+          "categoria": "SOLDADOR",
+          "ultimo_servicio_orden": "94,045",
+          "ultimo_servicio_fecha": "18/jun/2025",
+          "responsable": null,
+          "inicio_fin": "4:00/7:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [
+        {
+          "cantidad": 5,
+          "articulo": "Tornillos 5/8x1 1/2"
+        },
+        {
+          "cantidad": 3,
+          "articulo": "Tornillos 3/8x1 1/2"
+        }
+      ],
+      "notas": "Desmontar patin para poder reparar la fisura que tenia en la parte interna",
+      "gran_total_costo": 125.68,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(387) LOPEZ AZAMAR, GABRIEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,545",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(377) ESCALANTE, ULISES",
+      "vehiculo": "TRG-48 (Tractor)",
+      "kilometraje": "669,920",
+      "operador": "(1773) QUIJANO TORRES, JOSE MANUEL",
+      "tiempo_estimado_horas": 2.0,
+      "costo_estimado": 76.56,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 08:29:55 a.m.",
+      "fecha_estimada_terminacion": "depende de las refacciones",
+      "actividad_manuscrita": "Cambiar VGT",
+      "actividades": [
+        {
+          "actividad": "(01-06-06-TURBO) CAMBIO DE VALVULA VGT",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "92,678",
+          "ultimo_servicio_fecha": "28/mar/2025",
+          "responsable": "ULISES E.",
+          "inicio_fin": "8:40am/10:40am",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Me mandaron a cambiar la VGT y al desarmar me di cuenta que el turbo estaba trabado por el reporte, y me dijeron que lo desmontara",
+      "gran_total_costo": 38.28,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(377) ESCALANTE, ULISES",
+      "operador_firma": "(1773) QUIJANO TORRES, JOSE MANUEL",
+      "nota_folio_duplicado": "Este folio (100,545) aparece dos veces en el documento original con contenidos distintos; ver tambien la orden con referencia_timestamp 18/09/2026 04:08:11 p.m."
+    },
+    {
+      "folio": "100,571",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(377) ESCALANTE, ULISES",
+      "vehiculo": "TRG-034 (Tractor)",
+      "kilometraje": "1,119,448",
+      "operador": "(4239) REYES PACHECO, GERARDO JOSE",
+      "tiempo_estimado_horas": 2.0,
+      "costo_estimado": 13.78,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 04:07:05 p.m.",
+      "fecha_estimada_terminacion": "18/09/26",
+      "actividades": [
+        {
+          "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "87,932",
+          "ultimo_servicio_fecha": "21/jul/2024",
+          "responsable": null,
+          "inicio_fin": "10:20am/1:00pm",
+          "realizada_observaciones": "Checar fugas de tractor y cambiar sensor de nivel de anticongelante"
+        },
+        {
+          "actividad": "(01-05-17-ENFRI) CAMBIO DE SENSOR NIVEL DE REFRIGERANTE",
+          "categoria": null,
+          "ultimo_servicio_orden": "88,813",
+          "ultimo_servicio_fecha": "31/ago/2024",
+          "responsable": null,
+          "inicio_fin": null,
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Checo fugas de tractor y cambio sensor de nivel de anticongelante. Fue que sacarle el anticongelante para poder cambiarlo y al terminar de ponerlo echarle de nuevo el anticongelante, y en las fugas de aire cambio dos conexiones rapidas",
+      "gran_total_costo": 13.78,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(377) ESCALANTE, ULISES",
+      "operador_firma": "(4239) REYES PACHECO, GERARDO JOSE"
+    },
+    {
+      "folio": "100,545",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(377) ESCALANTE, ULISES",
+      "vehiculo": "TRG-48 (Tractor)",
+      "kilometraje": "669,920",
+      "operador": "(1773) QUIJANO TORRES, JOSE MANUEL",
+      "tiempo_estimado_horas": 4.0,
+      "costo_estimado": 153.12,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 04:08:11 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(01-06-05-TURBO) CAMBIO DE TURBO REPARADO",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "2:00pm/6:55pm",
+          "realizada_observaciones": "Cambiar turbo cargador y VGT"
+        },
+        {
+          "actividad": "(01-06-06-TURBO) CAMBIO DE VALVULA VGT",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "92,678",
+          "ultimo_servicio_fecha": "28/mar/2025",
+          "responsable": null,
+          "inicio_fin": null,
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se desmonto el turbo, mangueras y todo lo que conlleva para poder desmontarlo, a las 4pm subimos a junta regresando como a las 3pm empezamos a montar el nuevo/reparado armando todo. Termine de montar el turbo a las 6:05pm, para esperar al electrico para calibrar la VGT. 6:10pm se calibro la VGT desmontada, 6:30 quedo calibrado y al montarlo nos dimos cuenta que unas conexiones de anticongelante no coincidian, la cual se debe volver a desmontar otra vez para mandarla al proveedor. Termine 6:59 de desmontar de nuevo",
+      "gran_total_costo": 76.56,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(377) ESCALANTE, ULISES",
+      "operador_firma": "(1773) QUIJANO TORRES, JOSE MANUEL",
+      "nota_folio_duplicado": "Este folio (100,545) aparece dos veces en el documento original con contenidos distintos; ver tambien la orden con referencia_timestamp 18/09/2026 08:29:55 a.m."
+    },
+    {
+      "folio": "100,558",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-026 (Tractor)",
+      "kilometraje": "966,194",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 11:04:57 a.m.",
+      "fecha_estimada_terminacion": "18/sep/26",
+      "actividades": [
+        {
+          "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "92,654",
+          "ultimo_servicio_fecha": "26/mar/2025",
+          "responsable": null,
+          "inicio_fin": "08:10/13:30 y 13:50",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Revision luces general se localizo fallo intermitentes, algunos focos estaban desconectados. Me mandan a checar marcha del TRG-13. 08:25-08:45 checo pilas y cables. Me comentaron no arrancar por falta de anticongelante en deposito. Regrese a revisar unidad. Pido autorizacion para modificacion de una luz en cabina, quedo en espera al no recibir respuesta tomo iniciativa de proceder, le pido al soldador me corte y perfore una placa para poner foco, se pone capelin color rojo con un interruptor cola de rata para prender",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(361) LINARES, JOSE JULIO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,557",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-058 (Tractor)",
+      "kilometraje": "1,003,576",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 11:02:49 a.m.",
+      "fecha_estimada_terminacion": "18/sep/26",
+      "actividades": [
+        {
+          "actividad": "(06-03-20-ELECTRICO) BATERIAS Y/O ACUMULADOR",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": "99,920",
+          "ultimo_servicio_fecha": "03/jul/2026",
+          "responsable": null,
+          "inicio_fin": "11:05/11:20",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se ponen pilas a unidad, le faltaban 2 tuercas, tuve que buscar otras para poner celdas",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(361) LINARES, JOSE JULIO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,595",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-501 (Tractor)",
+      "kilometraje": "198,379",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:08:38 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "categoria": "ELECTRICO",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "17:00/19:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se le pone neblineros a unidad. Se le perfora la fibra para meter tornillos. Se le repara la fibra porque no daba el largo de los tornillos. Se busca linea para reversas. Se limpia cono porque no prende neblinero. Se le aplico limpiacontactos y se metio en alcuza para sacar suciedad que impedia pasar bien la corriente",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(361) LINARES, JOSE JULIO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,568",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+      "vehiculo": "TRG-21 (Tractor)",
+      "kilometraje": "1,289,962",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 6.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:32:42 p.m.",
+      "fecha_estimada_terminacion": "18/09/26",
+      "actividades": [
+        {
+          "actividad": "(01-06-11-TURBO) MONTAR Y DESMONTAR TURBO A UNIDAD",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "9:00/12:30 (aprox.)",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "12:30 a 02:00 se revisaron niveles de diferencial, transmision y motor, le falta rellenar un poco al motor",
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "Leonel Fernandez",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,587",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+      "vehiculo": "TRG-481 (Tractor)",
+      "kilometraje": "712,083",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 0.3,
+      "costo_estimado": 12.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:36:55 p.m.",
+      "fecha_estimada_terminacion": "18/04/26 (asi consta manuscrito, posible error por 18/09/26)",
+      "actividades": [
+        {
+          "actividad": "(01-04-10-LUBRI) REVISAR NIVELES DE ACEITE EN GRAL Tractor",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "98,399",
+          "ultimo_servicio_fecha": "06/may/2026",
+          "responsable": null,
+          "inicio_fin": "04:00/05:30",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se revisaron niveles de diferencial, el trasero le entro agua, habria que remplazar aceite motor y transmision a nivel",
+      "gran_total_costo": 40.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "Leonel Fernandez",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,589",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+      "vehiculo": "TRG-481 (Tractor)",
+      "kilometraje": "712,083",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 6.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:53:13 p.m.",
+      "fecha_estimada_terminacion": "19/09/26",
+      "actividades": [
+        {
+          "actividad": "(01-06-11-TURBO) MONTAR Y DESMONTAR TURBO A UNIDAD",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "05:30/07:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se subio turbo pero queda pendiente terminar de armar",
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "Leonel Fernandez",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,560",
+      "servicio": "(022) USO TALLER",
+      "fecha": "18-sep-2026",
+      "responsable": "(001) ARCOS GOMEZ, CIRO JESUS",
+      "vehiculo": "SINOTRUCK (Tractor)",
+      "kilometraje": "108,920",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 9.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:25:53 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(UNIDADES-VARIAS) MOVEDOR DE UNIDADES",
+          "categoria": "PATIO TRG",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": "(001) ARCOS GOMEZ, CIRO JESUS",
+          "inicio_fin": "8:00/19:24",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(001) ARCOS GOMEZ, CIRO JESUS",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,549",
+      "servicio": "(003) AUXILIO EN CARRETERA",
+      "fecha": "18-sep-2026",
+      "responsable": "(239) SERAFICO ZAVALETA, ROMAN",
+      "vehiculo": "TRG-25 (Tractor)",
+      "kilometraje": "310,098",
+      "operador": "(4342) ALMEYDA SALAZAR, GUADALUPE",
+      "tiempo_estimado_horas": 16.0,
+      "costo_estimado": 4899.84,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 08:39:43 a.m.",
+      "fecha_estimada_terminacion": "18/sep/2026",
+      "actividades": [
+        {
+          "actividad": "(TUBERIA) TUBERIA DE COMBUSTIBLE",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "88,039",
+          "ultimo_servicio_fecha": "27/jul/2024",
+          "responsable": "(239) SERAFICO ZAVALETA, R.",
+          "inicio_fin": "9:20am/2:20pm",
+          "realizada_observaciones": "Terminado"
+        }
+      ],
+      "insumos": [
+        {
+          "cantidad": null,
+          "articulo": "Daño en tornilleria de bomba baja presion. Se cambio bomba."
+        }
+      ],
+      "notas": "Liga rota, y se saco tornillo quebrado de bomba de alta presion. Se instalo bomba, se purgo. Se puso anticongelante. Se arranco, termino el trabajo 2:20pm. Se estuvo dando seguimiento al taller con los carros de operacion en el taller 8:06pm 18/9/26",
+      "gran_total_costo": 306.24,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(239) SERAFICO ZAVALETA, ROMAN",
+      "operador_firma": "(4342) ALMEYDA SALAZAR, GUADALUPE"
+    },
+    {
+      "folio": "100,564",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(376) DOMINGUEZ SANTIAGO, JOSE IGNACIO",
+      "vehiculo": "TRG-471 (Tractor)",
+      "kilometraje": "332,514",
+      "operador": "(4101) GARCIA RAMIREZ, ALFREDO",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 0.0,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:54:25 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(01-01-61-MOTOR) CAMBIO DE VALVULA EGR Tractor",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "8:30/7:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se puso unidad por caida de revoluciones. Se revisaron codigos de falla y no se emitieron codigos activos de EGR ni otro codigo. Se monitoreo la unidad hasta que alcance la presion y temperatura adecuada. Se realizaron pruebas a motor: corte de cilindros, desempeño de cilindro encontrandose bien los inyectores. Se revisan presion de combustible, se encuentra a 230 psi en altas y bajas revoluciones. Se pone codigo 2372, se sigue [texto ilegible]",
+      "gran_total_costo": 0.0,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(376) DOMINGUEZ SANTIAGO, JOSE IGNACIO",
+      "operador_firma": "(4101) GARCIA RAMIREZ, ALFREDO"
+    },
+    {
+      "folio": "100,562",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(316) PINEDA CHAVEZ, CESAR IVAN",
+      "vehiculo": "TRG-434 (Tractor)",
+      "kilometraje": "1,315,155",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 7.5,
+      "costo_estimado": 88.35,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:14:01 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(08-03-07-SUSPENSION) ENGRASAR EQUIPO",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "100,257",
+          "ultimo_servicio_fecha": "28/ago/2026",
+          "responsable": null,
+          "inicio_fin": "9:00/10:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(01-04-10-LUBRI) REVISAR NIVELES DE ACEITE EN GRAL Tractor",
+          "categoria": null,
+          "ultimo_servicio_orden": "63,242",
+          "ultimo_servicio_fecha": "09/sep/2021",
+          "responsable": null,
+          "inicio_fin": "10:00/11:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+          "categoria": null,
+          "ultimo_servicio_orden": "96,036",
+          "ultimo_servicio_fecha": "28/oct/2025",
+          "responsable": null,
+          "inicio_fin": "11:00/12:30",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(08-01-05-SUSPENSION) REVISAR Y REPARAR SUSPENSION Tractor",
+          "categoria": "MUELLERO",
+          "ultimo_servicio_orden": "100,257",
+          "ultimo_servicio_fecha": "28/ago/2026",
+          "responsable": null,
+          "inicio_fin": "12:30/5:00",
+          "realizada_observaciones": "Descargado en bases de abrazaderas, faltan bases de resortes"
+        }
+      ],
+      "insumos": [],
+      "notas": "Deben tomar bases del 488 por descargue irregular, precisamente ese trasero. Pendiente cambio de bases/suspension",
+      "gran_total_costo": 67.62,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(316) PINEDA CHAVEZ, CESAR IVAN",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,582",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(316) PINEDA CHAVEZ, CESAR IVAN",
+      "vehiculo": "TRG-611 (Dolly) del Tractor Sinotruck",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.5,
+      "costo_estimado": 31.01,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 06:15:00 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(12-01-07-MAZA-DOL) CAMBIO DE TAMBOR A DOLLY",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "6:00/7:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 20.67,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(316) PINEDA CHAVEZ, CESAR IVAN",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,559",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(392) SANDOVAL, DAVID",
+      "vehiculo": "TRG-970 (Remolque) del Tractor TRG-482",
+      "kilometraje": "0",
+      "operador": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+      "tiempo_estimado_horas": 8.5,
+      "costo_estimado": 199.29,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:11:46 p.m.",
+      "fecha_estimada_terminacion": "18-09-26",
+      "actividades": [
+        {
+          "actividad": "(10-04-05-MAZA-REM) CAMBIO DE RETEN A REMOLQUE",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "95,393",
+          "ultimo_servicio_fecha": "13/sep/2025",
+          "responsable": null,
+          "inicio_fin": "09:00/12:00 (aprox.)",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(10-04-10-MAZA-REM) REVISAR Y/O REPARAR MAZA A REMOLQUE",
+          "categoria": null,
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "04:00/06:20 (aprox.)",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(10-04-03-MAZA-REM) CAMBIO DE BALEROS A REMOLQUE",
+          "categoria": null,
+          "ultimo_servicio_orden": "94,892",
+          "ultimo_servicio_fecha": "11/ago/2025",
+          "responsable": null,
+          "inicio_fin": null,
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(10-04-08-MAZA-REM) ENGRASAR REMOLQUE",
+          "categoria": null,
+          "ultimo_servicio_orden": "81,764",
+          "ultimo_servicio_fecha": "12/nov/2023",
+          "responsable": null,
+          "inicio_fin": null,
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(10-03-14-FREN-REM) REVISAR Y REPARAR BALATAS A REMOLQUE",
+          "categoria": null,
+          "ultimo_servicio_orden": "46,161",
+          "ultimo_servicio_fecha": "21/jul/2019",
+          "responsable": null,
+          "inicio_fin": null,
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Cambio de reten, 2 eje izquierdo. Cadenas, tiras, rodillos, resortes",
+      "gran_total_costo": 102.26,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "David Sandoval",
+      "operador_firma": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO"
+    },
+    {
+      "folio": "100,588",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(392) SANDOVAL, DAVID",
+      "vehiculo": "TRG-972 (Remolque) del Tractor Sinotruck",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.5,
+      "costo_estimado": 43.07,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:11:09 p.m.",
+      "fecha_estimada_terminacion": "18-09-26",
+      "actividades": [
+        {
+          "actividad": "(10-04-05-MAZA-REM) CAMBIO DE RETEN A REMOLQUE",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "04:00/06:10 (aprox.)",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Cambio de reten",
+      "gran_total_costo": 28.71,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "David Sandoval",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,554",
+      "servicio": "(007) MEJORAS",
+      "fecha": "18-sep-2026",
+      "responsable": "(174) REYES VENTURA, JACINTO",
+      "vehiculo": "SINOTRUCK (Tractor)",
+      "kilometraje": "108,920",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 16.0,
+      "costo_estimado": 4899.84,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 09:06:25 a.m.",
+      "fecha_estimada_terminacion": null,
+      "actividad_manuscrita": "desarmar caja",
+      "actividades": [
+        {
+          "actividad": "(02-01-10-CAJA) REPARACION GENERAL DE TRANSMISION",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "86,638",
+          "ultimo_servicio_fecha": "23/may/2024",
+          "responsable": null,
+          "inicio_fin": "16-1-9 / 17sep-2026 (formato de fecha manuscrito inusual)",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "De desarmo caja auxiliar y se le quito la tapa y campana",
+      "gran_total_costo": 306.24,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "Jacinto Reyes Ventura",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,577",
+      "servicio": "(003) AUXILIO EN CARRETERA",
+      "fecha": "18-sep-2026",
+      "responsable": "(331) FLORES MORAN, ERICK EMANUEL",
+      "vehiculo": "TRG-25 (Tractor)",
+      "kilometraje": "310,638",
+      "operador": "(4342) ALMEYDA SALAZAR, GUADALUPE",
+      "tiempo_estimado_horas": 16.0,
+      "costo_estimado": 4899.84,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 05:56:17 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(TUBERIA) TUBERIA DE COMBUSTIBLE",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "88,039",
+          "ultimo_servicio_fecha": "27/jul/2024",
+          "responsable": null,
+          "inicio_fin": "9:00am/3:30pm",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Rescate carretero, cambio bomba de alta presion",
+      "gran_total_costo": 306.24,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(331) FLORES MORAN, ERICK EMANUEL",
+      "operador_firma": "(4342) ALMEYDA SALAZAR, GUADALUPE"
+    },
+    {
+      "folio": "100,567",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(391) ALCANTARA VIDAL, SAUL",
+      "vehiculo": "TRG-549 (Remolque) del Tractor Sinotruck",
+      "kilometraje": "0",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 5.0,
+      "costo_estimado": 90.44,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:12:37 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "8:30/9:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(07-01-06-FRENOS) REVISAR Y REPARAR BALATAS",
+          "categoria": null,
+          "ultimo_servicio_orden": "90,368",
+          "ultimo_servicio_fecha": "15/nov/2024",
+          "responsable": null,
+          "inicio_fin": "9:00/10:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+          "categoria": null,
+          "ultimo_servicio_orden": "98,833",
+          "ultimo_servicio_fecha": "08/jun/2026",
+          "responsable": null,
+          "inicio_fin": "10:00/11:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(07-01-08-FRENOS) REVISAR FRENOS EN GENERAL TRACTOR",
+          "categoria": null,
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable": null,
+          "inicio_fin": "11:00/12:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se engraso remolque 549, al igual que se le reparo un chamber de su bastago. Se le cambiaron dos conexiones en la suspension. Se apoyo en pintar plafonera trasera del remolque. Despues se apoyo en el area de los camiones a sacar el agua (transcripcion aproximada, texto manuscrito de dificil lectura)",
+      "gran_total_costo": 62.88,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(391) ALCANTARA VIDAL, SAUL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,563",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(390) MEDINA, JUAN",
+      "vehiculo": "TRG-434 (Tractor)",
+      "kilometraje": "1,315,155",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 7.5,
+      "costo_estimado": 88.35,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 07:28:12 p.m.",
+      "fecha_estimada_terminacion": null,
+      "actividades": [
+        {
+          "actividad": "(08-03-07-SUSPENSION) ENGRASAR EQUIPO",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "100,257",
+          "ultimo_servicio_fecha": "28/ago/2026",
+          "responsable": null,
+          "inicio_fin": "09:00/10:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(01-04-10-LUBRI) REVISAR NIVELES DE ACEITE EN GRAL Tractor",
+          "categoria": null,
+          "ultimo_servicio_orden": "63,242",
+          "ultimo_servicio_fecha": "09/sep/2021",
+          "responsable": null,
+          "inicio_fin": "10:00/11:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+          "categoria": null,
+          "ultimo_servicio_orden": "96,036",
+          "ultimo_servicio_fecha": "28/oct/2025",
+          "responsable": null,
+          "inicio_fin": "11:00/12:00",
+          "realizada_observaciones": null
+        },
+        {
+          "actividad": "(08-01-05-SUSPENSION) REVISAR Y REPARAR SUSPENSION Tractor",
+          "categoria": "MUELLERO",
+          "ultimo_servicio_orden": "100,257",
+          "ultimo_servicio_fecha": "28/ago/2026",
+          "responsable": null,
+          "inicio_fin": "12:00/14:00 y 17:00/18:00",
+          "realizada_observaciones": null
+        }
+      ],
+      "insumos": [],
+      "notas": null,
+      "gran_total_costo": 67.62,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(390) MEDINA, JUAN",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,547",
+      "servicio": "(001) MTTO. CORRECTIVO",
+      "fecha": "18-sep-2026",
+      "responsable": "(204) REYES HERNANDEZ, CESAR CAMERINO",
+      "vehiculo": "TRG-913 (Tractor)",
+      "kilometraje": "834,038",
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 19.14,
+      "taller": "Interno",
+      "referencia_timestamp": "18/09/2026 08:35:27 a.m.",
+      "fecha_estimada_terminacion": "18-09-26",
+      "actividades": [
+        {
+          "actividad": "(01-05-20-ENFRI) CAMBIAR ANTICONGELANTE",
+          "categoria": "MECANICA",
+          "ultimo_servicio_orden": "92,822",
+          "ultimo_servicio_fecha": "07/abr/2025",
+          "responsable": "(204) REYES HERNANDEZ, CESAR C.",
+          "inicio_fin": "9:00am/10:00am (aprox.)",
+          "realizada_observaciones": "Se rompio deposito. Le faltaban 5 lts"
+        }
+      ],
+      "insumos": [],
+      "notas": "Se le cambio el compresor secador de aire, un rotochamber, fugas de aire. Posteriormente reparo 2 penes de muelles traseros. Guardado para stock. 11am a 7pm",
+      "gran_total_costo": 19.14,
+      "autorizo": "Antonio Perez Alvarez",
+      "responsable_servicio": "(204) REYES HERNANDEZ, CESAR CAMERINO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    }
 ]
