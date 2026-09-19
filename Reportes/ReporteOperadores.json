@@ -252,5 +252,613 @@
     "remolque_2": []
   },
   "observaciones": null
-}
+}, 
+  {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "18/09/26 (parcialmente ilegible en el manuscrito)",
+      "operador": "Nombre manuscrito parcialmente ilegible (aprox. 'Bernardo S... C...')",
+      "hora": null,
+      "tractor": "Numero manuscrito ilegible",
+      "remolques": "916 - 915 (aproximado, manuscrito de dificil lectura)",
+      "kms": null,
+      "tracto": [
+        {
+          "num": 1,
+          "texto": "Texto manuscrito en rojo, en gran parte ilegible"
+        },
+        {
+          "num": 3,
+          "texto": "Texto manuscrito en rojo, en gran parte ilegible; menciona el nombre 'Israel'"
+        }
+      ],
+      "remolque_1": [],
+      "dolly": [],
+      "remolque_2": [],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (nombre ilegible)",
+        "vigilancia": null,
+        "logistica_trafico": "Firmado (nombre ilegible)",
+        "mantenimiento": null
+      },
+      "nota": "Formulario con caligrafia muy dificil de leer; varios campos se dejan como ilegibles en lugar de adivinar su contenido."
+    },
+    {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "19/09/26",
+      "operador": "Josue Zacahua Chavez",
+      "hora": "12:23",
+      "tractor": "01",
+      "remolques": "905-845-398",
+      "kms": null,
+      "tracto": [
+        {
+          "num": 1,
+          "texto": "Cambiar toberas"
+        },
+        {
+          "num": 2,
+          "texto": "del enfriador de"
+        },
+        {
+          "num": 3,
+          "texto": "aceite de la caja de"
+        },
+        {
+          "num": 4,
+          "texto": "velocidades y rellenar"
+        },
+        {
+          "num": 5,
+          "texto": "de aceite, se le rego"
+        },
+        {
+          "num": 6,
+          "texto": "un poco"
+        },
+        {
+          "num": 7,
+          "texto": "Apretar tornillos de"
+        },
+        {
+          "num": 8,
+          "texto": "los albardones"
+        },
+        {
+          "num": 9,
+          "texto": "Componer defensa"
+        },
+        {
+          "num": 10,
+          "texto": "lado derecho"
+        },
+        {
+          "num": 11,
+          "texto": "Revisar nivel de"
+        },
+        {
+          "num": 12,
+          "texto": "aceite de motor"
+        }
+      ],
+      "remolque_1": [
+        {
+          "num": 1,
+          "texto": "Poner llanta de refaccion"
+        },
+        {
+          "num": 2,
+          "texto": "(nombre manuscrito junto a flecha, parece 'Gil', ilegible con certeza)"
+        },
+        {
+          "num": 6,
+          "texto": "Marca de realizado (checkmark), nombre 'Ulises' junto a flecha"
+        }
+      ],
+      "dolly": [
+        {
+          "num": 1,
+          "texto": "Marca de realizado (checkmark), nombre ilegible"
+        }
+      ],
+      "remolque_2": [
+        {
+          "num": 1,
+          "texto": "Poner metraca 2do"
+        },
+        {
+          "num": 2,
+          "texto": "el lado derecho"
+        },
+        {
+          "num": 3,
+          "texto": "Cambiar barrilla de"
+        },
+        {
+          "num": 4,
+          "texto": "la valvula nivelado"
+        },
+        {
+          "num": 7,
+          "texto": "nombre manuscrito ilegible (posible 'Cesar')"
+        },
+        {
+          "num": 8,
+          "texto": "nombre manuscrito ilegible (posible 'Ivan')"
+        }
+      ],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (Josue Zacahua Chavez)",
+        "vigilancia": null,
+        "logistica_trafico": "Firmado",
+        "mantenimiento": null
+      },
+      "nota": "Varios nombres junto a flechas indican quien realizo cada tarea; algunos son ilegibles."
+    },
+    {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "19/09/26",
+      "operador": "Jose Ismael Gomez C.",
+      "hora": null,
+      "tractor": "060",
+      "remolques": "909",
+      "kms": null,
+      "tracto": [
+        {
+          "num": 1,
+          "texto": "Niveles en general"
+        },
+        {
+          "num": 2,
+          "texto": "Checar collarin o"
+        },
+        {
+          "num": 3,
+          "texto": "clutch (texto parcialmente ilegible, posible 'CLUTCH')"
+        },
+        {
+          "num": null,
+          "texto": "Nombre manuscrito 'Gaby' junto a flecha"
+        }
+      ],
+      "remolque_1": [
+        {
+          "num": 1,
+          "texto": "Fuga de aire (nombre 'Ulises' junto a flecha)"
+        },
+        {
+          "num": 3,
+          "texto": "Tolva 909 poner una"
+        },
+        {
+          "num": 4,
+          "texto": "mariposa"
+        },
+        {
+          "num": null,
+          "texto": "Nombre manuscrito en rojo 'Israel'"
+        }
+      ],
+      "dolly": [],
+      "remolque_2": [
+        {
+          "num": 1,
+          "texto": "Fuga de aire (nombre 'Ulises' junto a flecha)"
+        }
+      ],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (Jose Ismael Gomez C.)",
+        "vigilancia": "Firmado",
+        "logistica_trafico": "Firmado",
+        "mantenimiento": null
+      },
+      "nota": null
+    },
+    {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "18/9/26",
+      "operador": "Bardomiano Campos (nombre manuscrito, aproximado)",
+      "hora": "11:00",
+      "tractor": "S7",
+      "remolques": "900, 641, 906",
+      "kms": "37,1350 (numero manuscrito de dificil lectura, posible error de transcripcion en el original)",
+      "tracto": [
+        {
+          "num": null,
+          "texto": "Nombre manuscrito 'Israel' junto a flecha"
+        },
+        {
+          "num": null,
+          "texto": "Nombre manuscrito 'Cesar Ivan' junto a flecha"
+        }
+      ],
+      "remolque_1": [
+        {
+          "num": 1,
+          "texto": "Poner tornillo de"
+        },
+        {
+          "num": 2,
+          "texto": "amortiguador"
+        },
+        {
+          "num": 4,
+          "texto": "Soldar base de"
+        },
+        {
+          "num": 5,
+          "texto": "chamber de ganchos"
+        },
+        {
+          "num": 6,
+          "texto": "de puerta"
+        },
+        {
+          "num": 8,
+          "texto": "Checar alineacion"
+        },
+        {
+          "num": null,
+          "texto": "Nombres 'Israel' y 'Cesar Ivan' junto a flechas indicando responsables"
+        }
+      ],
+      "dolly": [
+        {
+          "num": 1,
+          "texto": "Soldar tanque de"
+        },
+        {
+          "num": 2,
+          "texto": "aire (texto en rojo)"
+        },
+        {
+          "num": null,
+          "texto": "Nombre 'Israel' junto a flecha"
+        }
+      ],
+      "remolque_2": [
+        {
+          "num": 1,
+          "texto": "Checar alineacion"
+        },
+        {
+          "num": null,
+          "texto": "Nombres 'Cesar' e 'Ivan' junto a flechas"
+        }
+      ],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (Bardomiano Campos)",
+        "vigilancia": null,
+        "logistica_trafico": "Firmado",
+        "mantenimiento": null
+      },
+      "nota": null
+    },
+  {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "18/09/26 (parcialmente ilegible en el manuscrito)",
+      "operador": "Nombre manuscrito parcialmente ilegible (aprox. 'Bernardo S... C...')",
+      "hora": null,
+      "tractor": "Numero manuscrito ilegible",
+      "remolques": "916 - 915 (aproximado, manuscrito de dificil lectura)",
+      "kms": null,
+      "tracto": [
+        {
+          "num": 1,
+          "texto": "Texto manuscrito en rojo, en gran parte ilegible"
+        },
+        {
+          "num": 3,
+          "texto": "Texto manuscrito en rojo, en gran parte ilegible; menciona el nombre 'Israel'"
+        }
+      ],
+      "remolque_1": [],
+      "dolly": [],
+      "remolque_2": [],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (nombre ilegible)",
+        "vigilancia": null,
+        "logistica_trafico": "Firmado (nombre ilegible)",
+        "mantenimiento": null
+      },
+      "nota": "Formulario con caligrafia muy dificil de leer; varios campos se dejan como ilegibles en lugar de adivinar su contenido."
+    },
+    {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "19/09/26",
+      "operador": "Josue Zacahua Chavez",
+      "hora": "12:23",
+      "tractor": "01",
+      "remolques": "905-845-398",
+      "kms": null,
+      "tracto": [
+        {
+          "num": 1,
+          "texto": "Cambiar toberas"
+        },
+        {
+          "num": 2,
+          "texto": "del enfriador de"
+        },
+        {
+          "num": 3,
+          "texto": "aceite de la caja de"
+        },
+        {
+          "num": 4,
+          "texto": "velocidades y rellenar"
+        },
+        {
+          "num": 5,
+          "texto": "de aceite, se le rego"
+        },
+        {
+          "num": 6,
+          "texto": "un poco"
+        },
+        {
+          "num": 7,
+          "texto": "Apretar tornillos de"
+        },
+        {
+          "num": 8,
+          "texto": "los albardones"
+        },
+        {
+          "num": 9,
+          "texto": "Componer defensa"
+        },
+        {
+          "num": 10,
+          "texto": "lado derecho"
+        },
+        {
+          "num": 11,
+          "texto": "Revisar nivel de"
+        },
+        {
+          "num": 12,
+          "texto": "aceite de motor"
+        }
+      ],
+      "remolque_1": [
+        {
+          "num": 1,
+          "texto": "Poner llanta de refaccion"
+        },
+        {
+          "num": 2,
+          "texto": "(nombre manuscrito junto a flecha, parece 'Gil', ilegible con certeza)"
+        },
+        {
+          "num": 6,
+          "texto": "Marca de realizado (checkmark), nombre 'Ulises' junto a flecha"
+        }
+      ],
+      "dolly": [
+        {
+          "num": 1,
+          "texto": "Marca de realizado (checkmark), nombre ilegible"
+        }
+      ],
+      "remolque_2": [
+        {
+          "num": 1,
+          "texto": "Poner metraca 2do"
+        },
+        {
+          "num": 2,
+          "texto": "el lado derecho"
+        },
+        {
+          "num": 3,
+          "texto": "Cambiar barrilla de"
+        },
+        {
+          "num": 4,
+          "texto": "la valvula nivelado"
+        },
+        {
+          "num": 7,
+          "texto": "nombre manuscrito ilegible (posible 'Cesar')"
+        },
+        {
+          "num": 8,
+          "texto": "nombre manuscrito ilegible (posible 'Ivan')"
+        }
+      ],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (Josue Zacahua Chavez)",
+        "vigilancia": null,
+        "logistica_trafico": "Firmado",
+        "mantenimiento": null
+      },
+      "nota": "Varios nombres junto a flechas indican quien realizo cada tarea; algunos son ilegibles."
+    },
+    {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "19/09/26",
+      "operador": "Jose Ismael Gomez C.",
+      "hora": null,
+      "tractor": "060",
+      "remolques": "909",
+      "kms": null,
+      "tracto": [
+        {
+          "num": 1,
+          "texto": "Niveles en general"
+        },
+        {
+          "num": 2,
+          "texto": "Checar collarin o"
+        },
+        {
+          "num": 3,
+          "texto": "clutch (texto parcialmente ilegible, posible 'CLUTCH')"
+        },
+        {
+          "num": null,
+          "texto": "Nombre manuscrito 'Gaby' junto a flecha"
+        }
+      ],
+      "remolque_1": [
+        {
+          "num": 1,
+          "texto": "Fuga de aire (nombre 'Ulises' junto a flecha)"
+        },
+        {
+          "num": 3,
+          "texto": "Tolva 909 poner una"
+        },
+        {
+          "num": 4,
+          "texto": "mariposa"
+        },
+        {
+          "num": null,
+          "texto": "Nombre manuscrito en rojo 'Israel'"
+        }
+      ],
+      "dolly": [],
+      "remolque_2": [
+        {
+          "num": 1,
+          "texto": "Fuga de aire (nombre 'Ulises' junto a flecha)"
+        }
+      ],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (Jose Ismael Gomez C.)",
+        "vigilancia": "Firmado",
+        "logistica_trafico": "Firmado",
+        "mantenimiento": null
+      },
+      "nota": null
+    },
+    {
+      "titulo": "REPORTE DE OPERADOR",
+      "codigo_formato": "REG-GM-009",
+      "revision": "01",
+      "fecha_emision_formato": "12 ABRIL 2013",
+      "area_generadora": "MANTENIMIENTO",
+      "folio": null,
+      "fecha": "18/9/26",
+      "operador": "Bardomiano Campos (nombre manuscrito, aproximado)",
+      "hora": "11:00",
+      "tractor": "S7",
+      "remolques": "900, 641, 906",
+      "kms": "37,1350 (numero manuscrito de dificil lectura, posible error de transcripcion en el original)",
+      "tracto": [
+        {
+          "num": null,
+          "texto": "Nombre manuscrito 'Israel' junto a flecha"
+        },
+        {
+          "num": null,
+          "texto": "Nombre manuscrito 'Cesar Ivan' junto a flecha"
+        }
+      ],
+      "remolque_1": [
+        {
+          "num": 1,
+          "texto": "Poner tornillo de"
+        },
+        {
+          "num": 2,
+          "texto": "amortiguador"
+        },
+        {
+          "num": 4,
+          "texto": "Soldar base de"
+        },
+        {
+          "num": 5,
+          "texto": "chamber de ganchos"
+        },
+        {
+          "num": 6,
+          "texto": "de puerta"
+        },
+        {
+          "num": 8,
+          "texto": "Checar alineacion"
+        },
+        {
+          "num": null,
+          "texto": "Nombres 'Israel' y 'Cesar Ivan' junto a flechas indicando responsables"
+        }
+      ],
+      "dolly": [
+        {
+          "num": 1,
+          "texto": "Soldar tanque de"
+        },
+        {
+          "num": 2,
+          "texto": "aire (texto en rojo)"
+        },
+        {
+          "num": null,
+          "texto": "Nombre 'Israel' junto a flecha"
+        }
+      ],
+      "remolque_2": [
+        {
+          "num": 1,
+          "texto": "Checar alineacion"
+        },
+        {
+          "num": null,
+          "texto": "Nombres 'Cesar' e 'Ivan' junto a flechas"
+        }
+      ],
+      "observaciones": null,
+      "firmas": {
+        "operador": "Firmado (Bardomiano Campos)",
+        "vigilancia": null,
+        "logistica_trafico": "Firmado",
+        "mantenimiento": null
+      },
+      "nota": null
+    }
 ]
