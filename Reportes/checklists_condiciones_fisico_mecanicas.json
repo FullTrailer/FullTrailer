@@ -1,0 +1,373 @@
+{
+  "empresa": "Transportes Rafagas del Golfo SA de CV",
+  "tipo_documento": "Check List: Condiciones Fisico-Mecanicas",
+  "total_checklists": 11,
+  "formato_resumido": true,
+  "nota_general": "Version resumida: por cada checklist se listan solo los puntos marcados como 'Malo' y las notas manuscritas relevantes, junto con los datos de encabezado (unidad TRG, conductor, ruta, fecha, hora, kilometraje, folio). No se incluyen los puntos marcados como 'Bueno' ni los que quedaron en blanco. La caligrafia en varios formularios es dificil de leer; los campos con incertidumbre se marcan como aproximados o ilegibles.",
+  "checklists": [
+    {
+      "unidad_trg": "30-542-C37-3E3 (lectura aproximada, manuscrito de dificil lectura)",
+      "fecha": "17-09-26",
+      "conductor": "Fabian Sanchez (nombre aproximado, manuscrito poco legible)",
+      "ruta": "Sayula - Santiago (aproximado, manuscrito poco legible)",
+      "entrada": null,
+      "salida": null,
+      "producto": null,
+      "hora": null,
+      "kilometraje": null,
+      "folio": null,
+      "revision_formato": "08",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [
+        {
+          "num": 49,
+          "seccion": "Llantas",
+          "punto": "Verificar fuga en las masa balero de las ruedas.",
+          "nota": null,
+          "certeza": "media - marca ambigua entre bueno y malo"
+        },
+        {
+          "num": 10,
+          "seccion": "Volteos",
+          "punto": "Engrasado gato hidraulico",
+          "nota": null,
+          "certeza": "alta"
+        }
+      ],
+      "notas_manuscritas": [
+        "'Listo' anotado cerca del punto 21 (Limpieza dentro de cabina)",
+        "Nota junto al punto 8 de Volteos (lonas/compuertas): 'Qutas de otras' (dificil de leer)"
+      ],
+      "firma_operador": null,
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "46-367-658-38X (lectura aproximada)",
+      "fecha": "16-09-26",
+      "conductor": "Jenny Almeyda",
+      "ruta": "Sayula - Cd. Chosum (aproximado)",
+      "entrada": null,
+      "salida": "marcado (check)",
+      "producto": null,
+      "hora": "14:47",
+      "kilometraje": "550645",
+      "folio": null,
+      "revision_formato": "08",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [
+        {
+          "num": 4,
+          "seccion": "Seguridad",
+          "punto": "Verificar el extintor, vigencia, base en condiciones, seguro sujetador.",
+          "nota": null,
+          "certeza": "alta"
+        },
+        {
+          "num": 10,
+          "seccion": "Volteos",
+          "punto": "Engrasado gato hidraulico",
+          "nota": null,
+          "certeza": "alta"
+        }
+      ],
+      "notas_manuscritas": [
+        "Punto 13 (Direccion, condicion de la direccion): 'regular checar'",
+        "Punto 15 (Lubricacion en general del equipo): 'regular'",
+        "Remolque punto 1 (frenos de los remolques): 'Regular checar'",
+        "Remolque punto 4 (conexion quinta rueda): 'regular'",
+        "Remolque punto 11 (guardafangos/loderas): 'Falta 1 del tracto'",
+        "Volteos puntos 1 y 4 marcados como N/A (no aplica)",
+        "Autotanques punto 9 (revision de rombos) marcado como N/A"
+      ],
+      "firma_operador": "Jenny Almeyda",
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "25-359-384-C3B (lectura aproximada)",
+      "fecha": "16-09-26",
+      "conductor": "Guadalupe Almeyda (nombre aproximado, manuscrito poco legible)",
+      "ruta": "Sayula - Santiago (aproximado)",
+      "entrada": null,
+      "salida": null,
+      "producto": "manuscrito ilegible",
+      "hora": null,
+      "kilometraje": null,
+      "folio": null,
+      "revision_formato": "08",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [],
+      "notas_manuscritas": [
+        "Autotanques punto 9 (revision de rombos de material que transporta) marcado como N/A",
+        "No se observan puntos marcados como Malo en esta unidad"
+      ],
+      "firma_operador": "Firmado (nombre ilegible)",
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "472-50X (lectura aproximada)",
+      "fecha": "12-09-26",
+      "conductor": "Eduardo Cordoba S.",
+      "ruta": "Esperanza - Mazatlan (aproximado, dificil de leer)",
+      "entrada": null,
+      "salida": null,
+      "producto": "manuscrito ilegible",
+      "hora": "19:49",
+      "kilometraje": "571,095.7 (aproximado)",
+      "folio": null,
+      "revision_formato": "07",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [
+        {
+          "num": 41,
+          "seccion": "Frenos",
+          "punto": "Frenos (sin fugas de aire)",
+          "nota": "fugas de aire",
+          "certeza": "alta"
+        }
+      ],
+      "notas_manuscritas": [
+        "Nota junto al punto 22 (Seguridad, presion de aire 90-110 psi): 'checar fugas. Baja el aire y tarda de salir minutos en cargar aire'",
+        "Nota manuscrita adicional al inicio de la hoja siguiente (poco legible): 'cluche, Joter, yoyos, asegurar amarrados, Sistema de aire'"
+      ],
+      "firma_operador": "Firmado (nombre ilegible)",
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "471-376-C20-3B0 (lectura aproximada)",
+      "fecha": "17-09-26",
+      "conductor": "Eduardo Cordoba S.",
+      "ruta": null,
+      "entrada": null,
+      "salida": null,
+      "producto": null,
+      "hora": null,
+      "kilometraje": null,
+      "folio": null,
+      "revision_formato": "08",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [
+        {
+          "num": 4,
+          "seccion": "Seguridad",
+          "punto": "Verificar el extintor, vigencia, base en condiciones, seguro sujetador.",
+          "nota": "No tiene (no cuenta con extintor)",
+          "certeza": "alta"
+        },
+        {
+          "num": 8,
+          "seccion": "Sistema Electrico",
+          "punto": "Condiciones del sistema de baterias, sujecion, limpieza de caja de baterias, capuchones.",
+          "nota": "nota manuscrita poco legible, posiblemente 'limpiar'",
+          "certeza": "media"
+        },
+        {
+          "num": 14,
+          "seccion": "Direccion",
+          "punto": "Verificar que no existan fugas.",
+          "nota": null,
+          "certeza": "alta"
+        },
+        {
+          "num": 21,
+          "seccion": "Cabina",
+          "punto": "Limpieza dentro de cabina (el extintor no debe de ir dentro de cabina).",
+          "nota": null,
+          "certeza": "alta"
+        }
+      ],
+      "notas_manuscritas": [
+        "Punto 5 (luces altas, bajas, alarma, torreta y claxon): 'Checar altas'",
+        "Punto 49 (llantas, fuga en masa balero): 'Levantar todos los mazas' (revisar todos los mazas)",
+        "Remolque punto 9 (revision de rombos) marcado N/A",
+        "Notas generales sueltas en la parte superior de la hoja (letra dificil de leer): 'cluche, joter, yoyos, asegurar amarrados, sistema de aire' y algo relacionado a nebulizadores con fugas"
+      ],
+      "firma_operador": null,
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "970",
+      "fecha": "17-09-26",
+      "conductor": "William Alvarado Orozco (nombre aproximado)",
+      "ruta": "Sayula - Orizaba",
+      "entrada": null,
+      "salida": null,
+      "producto": "Avena (aproximado, manuscrito poco legible)",
+      "hora": "5:10",
+      "kilometraje": "926,795.2",
+      "folio": null,
+      "revision_formato": "07",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [
+        {
+          "num": 24,
+          "seccion": "Motor",
+          "punto": "Verifique condicion de las grapas guias y cables del cofre.",
+          "nota": "Checar, una lado izquierdo",
+          "certeza": "alta"
+        }
+      ],
+      "notas_manuscritas": [],
+      "firma_operador": "Firmado",
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "58-551",
+      "fecha": "17-09-26",
+      "conductor": "Ignacio Morales Novelo",
+      "ruta": "La Yerbabuena - Sayula (aproximado, dificil de leer)",
+      "entrada": "16-09-26",
+      "salida": null,
+      "producto": null,
+      "hora": "11:22",
+      "kilometraje": "173,233.3",
+      "folio": null,
+      "revision_formato": "07",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [],
+      "notas_manuscritas": [
+        "Punto 41 (Frenos, sin fugas de aire): nota 'checar fuga de aire'",
+        "Punto 42 (Lineas de aire/manguera de aire): nota 'checar fuga de aire'",
+        "Otros punto 6 (guardafangos/loderas): 'Falta del tracto'",
+        "Autotanques punto 7 (revision de rombos de material que transporta): rotulo incompleto",
+        "Autotanques punto 8 (calcomanias y reflejantes): 'Cambiar calcomanias'",
+        "Nota al pie de la primera hoja: 'Se quedo pendiente lodera lado izquierdo, que a su regreso la colocarian. Dejo reporte de que va sonando el claxon, deben checar cluster' (transcripcion aproximada)",
+        "Nota al pie de la segunda hoja: 'Cambiar rotulo de Refacciones y Grado Alimenticio, estan incompletos. Tanques del aire estan purgados, se checaran'"
+      ],
+      "firma_operador": "Firmado (Ignacio Morales Novelo)",
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "055",
+      "fecha": "17-09-26 (el ultimo digito del año es dificil de leer)",
+      "conductor": "Alfredo Dominguez C.",
+      "ruta": "Cd. Chosum - Sayula (aproximado, dificil de leer)",
+      "entrada": null,
+      "salida": null,
+      "producto": null,
+      "hora": "manuscrito ilegible",
+      "kilometraje": null,
+      "folio": null,
+      "revision_formato": "07",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [],
+      "notas_manuscritas": [
+        "Nota al pie de la primera hoja (pendientes): 'Queda estribo arreglado / Queda de la balata suelta / Queda de la maraca (posible \"marcha\") / Queda de la parrilla'"
+      ],
+      "firma_operador": "Alfredo Dominguez G.",
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "48-255-644-953",
+      "fecha": "15-09-26",
+      "conductor": "Jose Manuel Martinez Rey (nombre aproximado, dificil de leer)",
+      "ruta": "Sayula - Orizaba",
+      "entrada": null,
+      "salida": null,
+      "producto": "Avena (aproximado, manuscrito poco legible)",
+      "hora": "17:58",
+      "kilometraje": "670,310 (aproximado)",
+      "folio": null,
+      "revision_formato": "08",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [
+        {
+          "num": 4,
+          "seccion": "Seguridad",
+          "punto": "Verificar el extintor, vigencia, base en condiciones, seguro sujetador.",
+          "nota": null,
+          "certeza": "alta"
+        },
+        {
+          "num": 13,
+          "seccion": "Direccion",
+          "punto": "Verificar otulas y barra de direccion",
+          "nota": null,
+          "certeza": "media"
+        },
+        {
+          "num": 15,
+          "seccion": "Direccion",
+          "punto": "Verificar la lubricacion en general del equipo.",
+          "nota": null,
+          "certeza": "media"
+        },
+        {
+          "num": 18,
+          "seccion": "Cabina",
+          "punto": "Estado y condicion del asiento (operador y copiloto)",
+          "nota": null,
+          "certeza": "media - marca ambigua"
+        }
+      ],
+      "notas_manuscritas": [
+        "Punto 49 (llantas, fuga en masa balero): nota 'limpiar todos'",
+        "Remolque punto 8 (calcomanias y reflejantes): posible 'no hay'"
+      ],
+      "firma_operador": "Firmado",
+      "firma_mantenimiento": null
+    },
+    {
+      "unidad_trg": "968 (numero de unidad dificil de leer con certeza)",
+      "fecha": "10-09-26 (aproximado, dificil de leer)",
+      "conductor": "Shancten Bonilla Gtz (nombre aproximado, dificil de leer)",
+      "ruta": "Char. - Cd. Sehagun (aproximado, dificil de leer)",
+      "entrada": null,
+      "salida": null,
+      "producto": "Avena (aproximado)",
+      "hora": "9:50",
+      "kilometraje": null,
+      "folio": null,
+      "revision_formato": "07",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [],
+      "notas_manuscritas": [
+        "Punto 5/6 (luces altas/bajas, faros): 'No prende una' / 'Un [algo] de uno' (nota sobre luces que no encienden, transcripcion aproximada)",
+        "Otros punto 5 (tanque de combustible sin fuga y con tapon): 'Mover tanque o enderezar'"
+      ],
+      "firma_operador": null,
+      "firma_mantenimiento": "Firmado"
+    },
+    {
+      "unidad_trg": "969",
+      "fecha": "05-09-26",
+      "conductor": "Rogelio Rodriguez",
+      "ruta": null,
+      "entrada": null,
+      "salida": null,
+      "producto": null,
+      "hora": null,
+      "kilometraje": "105,714",
+      "folio": null,
+      "revision_formato": "08",
+      "codigo_formato": "REG-GM-026",
+      "puntos_malo": [
+        {
+          "num": 4,
+          "seccion": "Seguridad",
+          "punto": "Verificar el extintor, vigencia, base en condiciones, seguro sujetador.",
+          "nota": null,
+          "certeza": "alta"
+        },
+        {
+          "num": 40,
+          "seccion": "Motor",
+          "punto": "Revisar que los tornillos de los perifericos del motor no esten flojos (tuercas)",
+          "nota": null,
+          "certeza": "alta"
+        },
+        {
+          "num": 41,
+          "seccion": "Motor",
+          "punto": "Revisar que todos los componentes de la unidad que tengan tornillos vayan ajustados correctamente.",
+          "nota": null,
+          "certeza": "alta"
+        }
+      ],
+      "notas_manuscritas": [
+        "Punto 23 (condicion de los espejos retrovisores y convexo): nota manuscrita sobre falta de cambiar espejo (texto dificil de leer)"
+      ],
+      "firma_operador": "Firmado",
+      "firma_mantenimiento": "Firmado"
+    }
+  ]
+}
