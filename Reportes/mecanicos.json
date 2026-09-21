@@ -1,0 +1,142 @@
+{
+  "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+  "documento": "Plantilla de taller",
+  "total_personas": 27,
+  "personal": [
+    {
+      "id": 1,
+      "nombre": "CASTRO CRUZ JESUS EMMANUEL",
+      "puesto": "AUX DE ELECTRICO"
+    },
+    {
+      "id": 2,
+      "nombre": "LINARES CONTLA JULIO",
+      "puesto": "AUX DE ELECTRICO"
+    },
+    {
+      "id": 3,
+      "nombre": "ROMERO MORENO JOSE LUIS",
+      "puesto": "ELECTRICO A"
+    },
+    {
+      "id": 4,
+      "nombre": "MACIN CASTILLO VICENTE",
+      "puesto": "FIBRERO"
+    },
+    {
+      "id": 5,
+      "nombre": "GOMEZ SANCHEZ MARTIN",
+      "puesto": "LAMINADOR"
+    },
+    {
+      "id": 6,
+      "nombre": "FLORES MORAN ANGEL GASPAR",
+      "puesto": "LAVADOR"
+    },
+    {
+      "id": 7,
+      "nombre": "FERNANDEZ GARCIA LEONEL",
+      "puesto": "MECANICO C"
+    },
+    {
+      "id": 8,
+      "nombre": "DOMINGUEZ SANTIAGO JOSE IGNACIO",
+      "puesto": "MECANICO A"
+    },
+    {
+      "id": 9,
+      "nombre": "PALMA LOPEZ GABRIEL",
+      "puesto": "MECANICO A"
+    },
+    {
+      "id": 10,
+      "nombre": "SERAFICO ZAVALETA ROMAN",
+      "puesto": "MECANICO A"
+    },
+    {
+      "id": 11,
+      "nombre": "ESCALANTE ZAFRA ULISES",
+      "puesto": "MECANICO B"
+    },
+    {
+      "id": 12,
+      "nombre": "FLORES MORAN ERICK EMMANUEL",
+      "puesto": "MECANICO B"
+    },
+    {
+      "id": 13,
+      "nombre": "ORTIZ SANCHEZ YOSHIO",
+      "puesto": "MECANICO B"
+    },
+    {
+      "id": 14,
+      "nombre": "PEREZ SANCHEZ SALVADOR",
+      "puesto": "MECANICO B"
+    },
+    {
+      "id": 15,
+      "nombre": "GARCIA MORENO WILLIAM",
+      "puesto": "MECANICO C"
+    },
+    {
+      "id": 16,
+      "nombre": "PINEDA CHAVEZ CESAR IVAN",
+      "puesto": "MECANICO C"
+    },
+    {
+      "id": 17,
+      "nombre": "ARCOS GOMEZ CIRO DE JESUS",
+      "puesto": "MOVEDOR"
+    },
+    {
+      "id": 18,
+      "nombre": "LOPEZ AZAMARR GABRIEL",
+      "puesto": "SOLDADOR"
+    },
+    {
+      "id": 19,
+      "nombre": "MORA MORALES ISRAEL",
+      "puesto": "SOLDADOR"
+    },
+    {
+      "id": 20,
+      "nombre": "REYES HERNANDEZ CESAR CAMERINO",
+      "puesto": "SUSPENSIONISTA"
+    },
+    {
+      "id": 21,
+      "nombre": "SANCHEZ ESPIRITU GILBERTO",
+      "puesto": "TALACHERO"
+    },
+    {
+      "id": 22,
+      "nombre": "ESCALANTE ZAFRA ROBERTO",
+      "puesto": "UTILITARIOS"
+    },
+    {
+      "id": 23,
+      "nombre": "BRINGAS VILLAN RAFAEL",
+      "puesto": "ELECTRICO"
+    },
+    {
+      "id": 24,
+      "nombre": "MEDINA CORDOBA JUAN",
+      "puesto": "MECANICO C"
+    },
+    {
+      "id": 25,
+      "nombre": "ALCANTARA VIDAL SAUL",
+      "puesto": "MECANICO C"
+    },
+    {
+      "id": 26,
+      "nombre": "VENTURA JACINTO",
+      "puesto": "SUSPENSIONISTA"
+    },
+    {
+      "id": 27,
+      "nombre": "HERNANDEZ SANDOVAL DAVID",
+      "puesto": "SUSPENSIONISTA"
+    }
+  ]
+}
