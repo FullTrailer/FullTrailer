@@ -860,5 +860,175 @@
         "mantenimiento": null
       },
       "nota": null
+    },
+  {
+  "formato": {
+    "codigo": "REG-GM-009",
+    "titulo": "Reporte de Operador",
+    "revision": "01",
+    "fecha_emision": "2013-04-12",
+    "departamento": "Mantenimiento",
+    "empresa": "Transportes Rafagas del Golfo SA de CV"
+  },
+  "reportes": [
+    {
+      "pagina": 1,
+      "fecha": "2026-09-20",
+      "operador": "Oscar Sanchez Rosas",
+      "hora": "19:47",
+      "tractor": "49",
+      "remolques": ["576"],
+      "kms": null,
+      "tracto": [
+        { "renglon": 1, "texto": "Componer escape" },
+        { "renglon": 3, "texto": "Poner sensor del fan (ojo: fan directo es consumo de combustible)" },
+        { "renglon": 7, "texto": "Checar pernos de dirección, se sacude el carro al frenar en pista" },
+        { "renglon": 12, "texto": "Con cabo derecho del cofre hace falta, es necesario" },
+        { "renglon": 5, "texto": "Componer controles de los vidrios eléctricos (no bajan)", "seccion_visual": "dolly" }
+      ],
+      "remolque_1": [],
+      "remolque_2": [],
+      "dolly": [],
+      "observaciones": null,
+      "anotaciones_mantenimiento": [
+        { "texto": "Cesar", "folio": "100634" },
+        { "texto": "William", "folio": "100635" },
+        { "texto": "Tongoo", "folio": "100636" },
+        { "texto": "Julio", "folio": "100637" }
+      ],
+      "firmas": { "operador": true, "vigilancia": false, "logistica_trafico": true, "mantenimiento": false },
+      "lecturas_dudosas": ["tractor (49)", "renglon 7 (pernos)", "renglon 12 (cabo/cofre)", "vidrios eléctricos (no bajan)", "nombre del mecánico del folio 100636"]
+    },
+    {
+      "pagina": 2,
+      "fecha": "2026-09-20",
+      "operador": "Juan Lorenzo Rodriguez",
+      "hora": "06:00",
+      "tractor": "501",
+      "remolques": ["549"],
+      "kms": null,
+      "tracto": [
+        { "renglon": 2, "texto": "Remachar lámina frontal, está suelta sin remaches" },
+        { "renglon": 6, "texto": "Arriba la pasarela está suelta a punto de desprenderse" },
+        { "renglon": 10, "texto": "Poner neblineros" },
+        { "renglon": 12, "texto": "Corregir manitas" }
+      ],
+      "remolque_1": [],
+      "remolque_2": [],
+      "dolly": [],
+      "observaciones": null,
+      "anotaciones_mantenimiento": [
+        { "texto": "Jacinto", "folio": null },
+        { "texto": "Gabriel Soldador", "folio": null },
+        { "texto": "Julio", "folio": null },
+        { "texto": "OK", "folio": null }
+      ],
+      "firmas": { "operador": true, "vigilancia": true, "logistica_trafico": true, "mantenimiento": false },
+      "lecturas_dudosas": ["tractor (501)"]
+    },
+    {
+      "pagina": 3,
+      "fecha": "2026-09-20",
+      "operador": "Rogelio Dominguez R.",
+      "hora": null,
+      "tractor": "469",
+      "remolques": [],
+      "kms": null,
+      "tracto": [
+        { "renglon": 1, "texto": "Echar aceite al diferencial" },
+        { "renglon": 2, "texto": "Ajustar cofre" }
+      ],
+      "remolque_1": [],
+      "remolque_2": [],
+      "dolly": [],
+      "observaciones": null,
+      "anotaciones_mantenimiento": [
+        { "texto": "Erick", "folio": null },
+        { "texto": "OK", "folio": null }
+      ],
+      "firmas": { "operador": true, "vigilancia": false, "logistica_trafico": true, "mantenimiento": false },
+      "lecturas_dudosas": ["nombre del operador", "renglon 2 (cofre/cobre)"]
+    },
+    {
+      "pagina": 4,
+      "fecha": "2026-09-20",
+      "operador": "William Murguia",
+      "hora": "09:00",
+      "tractor": "470",
+      "remolques": [],
+      "kms": "33213",
+      "tracto": [],
+      "remolque_1": [],
+      "remolque_2": [],
+      "dolly": [
+        { "renglon": 1, "texto": "Una llanta ponchada" }
+      ],
+      "observaciones": "Se ponchó aquí en la línea, entré ayer con todas bien. Estoy cargado, tengo que descargar en Orizaba hoy",
+      "anotaciones_mantenimiento": [
+        { "texto": "OK", "folio": null }
+      ],
+      "firmas": { "operador": true, "vigilancia": true, "logistica_trafico": true, "mantenimiento": false },
+      "lecturas_dudosas": ["observaciones (\"entré\" ayer)"]
+    },
+    {
+      "pagina": 5,
+      "fecha": "2026-09-20",
+      "operador": "Jenrry Almeida Isidro",
+      "hora": null,
+      "tractor": "461",
+      "remolques": ["367", "659", "388"],
+      "kms": null,
+      "tracto": [
+        { "renglon": 1, "texto": "Poner anticongelante" },
+        { "renglon": 3, "texto": "Checar reversero" },
+        { "renglon": 5, "texto": "Poner lodera del tracto" },
+        { "renglon": 7, "texto": "Luz en la cabina" },
+        { "renglon": 9, "texto": "Poner aceite hidráulico" }
+      ],
+      "remolque_1": [
+        { "renglon": 2, "texto": "Calibrar frenos del equipo" },
+        { "renglon": 4, "texto": "Poner balatas en (ilegible) que están sueltas" }
+      ],
+      "remolque_2": [
+        { "renglon": 2, "texto": "Calibrar frenos" }
+      ],
+      "dolly": [
+        { "renglon": 2, "texto": "Calibrar frenos" }
+      ],
+      "observaciones": null,
+      "anotaciones_mantenimiento": [
+        { "texto": "Julio", "folio": null },
+        { "texto": "Jacinto", "folio": null },
+        { "texto": "OK", "folio": null }
+      ],
+      "firmas": { "operador": true, "vigilancia": false, "logistica_trafico": false, "mantenimiento": false },
+      "lecturas_dudosas": ["renglon 3 del tracto (reversero)", "remolque 1 renglon 4 (balatas / palabra ilegible)", "segundo remolque (659)"]
+    },
+    {
+      "pagina": 6,
+      "fecha": "2026-09-20",
+      "operador": "Lazaro (apellido ilegible)",
+      "hora": "15:45",
+      "tractor": "56",
+      "remolques": ["350"],
+      "kms": null,
+      "tracto": [
+        { "renglon": 1, "texto": "Se apaga sin motivo aparente" },
+        { "renglon": 5, "texto": "Faro fundido" }
+      ],
+      "remolque_1": [
+        { "renglon": 2, "texto": "Plafón fundido" }
+      ],
+      "remolque_2": [],
+      "dolly": [],
+      "observaciones": null,
+      "anotaciones_mantenimiento": [
+        { "texto": "Jesús Eléctrico", "folio": "100631", "aplica_a": "tracto" },
+        { "texto": "Jesús Eléctrico", "folio": "100632", "aplica_a": "remolque_1" }
+      ],
+      "firmas": { "operador": true, "vigilancia": true, "logistica_trafico": true, "mantenimiento": false },
+      "lecturas_dudosas": ["apellido del operador", "hora (15:45)"]
     }
+  ]
+}
 ]
