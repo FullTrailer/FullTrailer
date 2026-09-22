@@ -2674,5 +2674,200 @@
       "actividades": [
         "RELLENO DE ACEITE PARA MOCHILA (TRACTOR)[cite: 1]"
       ]
-    }
+    },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100633",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(174) REYES VENTURA, JACINTO",
+    "vehiculo": "TRG-907 (Remolque) DEL TRACTOR SINOTRUCK",
+    "kilometraje": 0,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 13.78,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-03-20-FREN-REM) CAMBIO DE MANITAS A REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "9.4-9.40",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "se cambio la coneccion de la mangera de la manita la parte interna coneccion y reduccion",
+    "gran_total_costo": 13.78
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100502",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "14-sep.-2026",
+    "responsable": "(377) ESCALANTE, ULISES",
+    "vehiculo": "TRG-495 (Tractor)",
+    "kilometraje": 583728,
+    "operador": "(0710) SANCHEZ ROJAS, FABIAN",
+    "tiempo_estimado_horas": 6.8,
+    "costo_estimado": 2560.76,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-21-MOTOR) PERDIDA DE POTENCIA",
+        "responsable": "(No asignado)",
+        "inicio_fin": "8:45/11:20",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-16-MOTOR) CHECAR Y/O REPARAR FRENO DE MOTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(13-01-15-UTIL) CORREGIR PEDAL Y CHICOTE DE CLUTH U.I T. Externo",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(02-01-03-CLA) CAMBIO DE RETEN DELANTERO (transmision)",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-67-MOTOR) CAMBIO DE SOPORTE DE MOTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-21-MOTOR) PERDIDA DE POTENCIA",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-09-MOTOR) CAMBIO DE SENSOR DE TEMPERATURA DE MOTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [
+      {"cant": 1.5, "articulo": "(0111005236) TRAPO INDUSTRIAL", "cant_asignada": 1.5, "costo_un": 37.95, "costo_ext": 56.93},
+      {"cant": 4.0, "articulo": "(0101001002) TORNILLOS P/ TACON TRASERO VOLVO", "cant_asignada": 4.0, "costo_un": 56.56, "costo_ext": 226.24},
+      {"cant": 1.0, "articulo": "(0101001775) TERMOSTATO VOLVO 21613426 C1", "cant_asignada": 1.0, "costo_un": 1021.04, "costo_ext": 1021.04},
+      {"cant": 2.0, "articulo": "(0111005047) CINCHO DE PLASTICO LARGOS 550 X 8.8", "cant_asignada": 2.0, "costo_un": 4.26, "costo_ext": 8.53},
+      {"cant": 1.0, "articulo": "(0111003085) LIJA 150 DE AGUA", "cant_asignada": 1.0, "costo_un": 10.07, "costo_ext": 10.07},
+      {"cant": 10.0, "articulo": "(0111005696) CINCHO DE PLASTICO MEDIANO 30 CM", "cant_asignada": 10.0, "costo_un": 0.73, "costo_ext": 7.30},
+      {"cant": 10.0, "articulo": "(0101001034) ANTICONGELANTE 50/50", "cant_asignada": 10.0, "costo_un": 41.63, "costo_ext": 416.28},
+      {"cant": 1.0, "articulo": "(0106004142) RETEN 370036A", "cant_asignada": 1.0, "costo_un": 428.70, "costo_ext": 428.70},
+      {"cant": 2.0, "articulo": "(0106002105) CONEX. CODO 1/8 5/32", "cant_asignada": 2.0, "costo_un": 82.49, "costo_ext": 164.99},
+      {"cant": 2.0, "articulo": "(0111001265) TORNILLO DE 5/8 X 5 1/2 NC GRADO 8", "cant_asignada": 2.0, "costo_un": 31.60, "costo_ext": 63.20},
+      {"cant": 1.0, "articulo": "(0111001374) TUERCA DE SEGURIDAD 5/8 NC", "cant_asignada": 1.0, "costo_un": 4.20, "costo_ext": 4.20},
+      {"cant": 1.0, "articulo": "(0106002223) TAPON DE 3/8", "cant_asignada": 1.0, "costo_un": 16.11, "costo_ext": 16.11},
+      {"cant": 1.7, "articulo": "(0111009123) GASOLINA", "cant_asignada": 1.7, "costo_un": 21.03, "costo_ext": 35.74}
+    ],
+    "notas": "monto balatas, monte llantes y calibri los balatas echr aceite a diferencial demor- un poquito por que el del almacen estaba algo ocupe de pido derme el aceite",
+    "gran_total_costo": 2549.99
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100553",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "18-sep.-2026",
+    "responsable": "(387) LOPEZ AZAMAR, GABRIEL",
+    "vehiculo": "TRG-549 (Remolque) DEL TRACTOR SINOTRUCK",
+    "kilometraje": 0,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 9.0,
+    "costo_estimado": 1628.51,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "SOLDADOR",
+        "actividad": "(10-01-04-ESTRUCT-TQ) CAMBIO DE CALDERA REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "9:00-1:00",
+        "realizada_observaciones": "NOTA: Se repararon algunos Soportes que lleva la escalera. Se atornillaron los caminos de la parte Superior del tanque y remachar algunas de las laminas protectoras del tanque. Se desmonto escape para poder Resoldar y poder ponerle una abrazadera que requeria en la parte delantera"
+      }
+    ],
+    "insumos": [
+      {"cant": 3.0, "articulo": "(0110004516) DISCO DE CORTE PARA INOX. 4 1/2", "cant_asignada": 3.0, "costo_un": 29.15, "costo_ext": 87.46},
+      {"cant": 0.2, "articulo": "(0111002045) SOLDADURA ACERO INOX 308 3/32", "cant_asignada": 0.2, "costo_un": 372.63, "costo_ext": 55.89},
+      {"cant": 1.0, "articulo": "(0105003443) CINTA DE AISLAR 3M", "cant_asignada": 1.0, "costo_un": 19.80, "costo_ext": 19.80},
+      {"cant": 5.0, "articulo": "(0111002011) SOLDADURA 6010 1/8 INFRA", "cant_asignada": 5.0, "costo_un": 1.53, "costo_ext": 7.65},
+      {"cant": 1.0, "articulo": "(0111001493) DISCO LAMINADO 4\"", "cant_asignada": 1.0, "costo_un": 49.62, "costo_ext": 49.62},
+      {"cant": 2.0, "articulo": "(106002022) CONEXION RAPIDA CODO SQ 6PP 2-3/8", "cant_asignada": 2.0, "costo_un": 94.82, "costo_ext": 189.63},
+      {"cant": 2.0, "articulo": "(0106002207) REDUCCION 1/2 - 1/4", "cant_asignada": 2.0, "costo_un": 13.65, "costo_ext": 27.29},
+      {"cant": 2.0, "articulo": "(0105003249) PLAFON DE EMBUTIR ROJO 4\" 2250-1RA 5", "cant_asignada": 2.0, "costo_un": 85.42, "costo_ext": 170.83},
+      {"cant": 1.0, "articulo": "(0105003066) PLAFON DE EMBUTIR AMBAR 2\"", "cant_asignada": 1.0, "costo_un": 60.32, "costo_ext": 60.32},
+      {"cant": 1.5, "articulo": "(0105003399) MANGUERA POLIFLEX DE 3/4\"P/CUBRIR", "cant_asignada": 1.5, "costo_un": 10.33, "costo_ext": 15.50},
+      {"cant": 1.0, "articulo": "(0105003392) PLAFON ROJO OVALADO TRAKTOLAM D", "cant_asignada": 1.0, "costo_un": 218.10, "costo_ext": 218.10},
+      {"cant": 0.3, "articulo": "(0111003373) PRIMARIO UNIVERSAL GRIS", "cant_asignada": 0.3, "costo_un": 473.28, "costo_ext": 118.32},
+      {"cant": 1.0, "articulo": "(0111003020) BROCHA 3\"", "cant_asignada": 1.0, "costo_un": 31.90, "costo_ext": 31.90},
+      {"cant": 2.0, "articulo": "(0106001013) GOMAS P/ MANITA R- 711032", "cant_asignada": 2.0, "costo_un": 5.32, "costo_ext": 10.64}
+    ],
+    "notas": "",
+    "gran_total_costo": 1062.95
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100650",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(174) REYES VENTURA, JACINTO",
+    "vehiculo": "TRG-955 (Remolque) DEL TRACTOR SINOTRUCK",
+    "kilometraje": 0,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 5.5,
+    "costo_estimado": 327.02,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-04-11-MAZA-REM) RELLENO DE ACEITE A LAS MAZAS DE REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "10-10-14-",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-03-12-FREN-REM) REVISAR Y REPARAR FUGAS DE AIRE (Frenos) A REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(10-03-02-FREN-REM) CAMBIO DE BALATAS A REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(10-02-10-SUSP-REM) CAMBIO DE BUJES TRIFUNCIONALES A Remolque",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [
+      {"articulo": "2 balatas bule un portables", "cant": null, "cant_asignada": null, "costo_un": null, "costo_ext": null},
+      {"articulo": "3 resortes 1 carretillas 2 rodillos un gabilan bujes de rodillos", "cant": null, "cant_asignada": null, "costo_un": null, "costo_ext": null}
+    ],
+    "notas": "se cambio balatas yoyo #2 y se ajustaron las 4 masas se le checaron fugas de aire se cambio la mangera del rota chamber #3 y se calibraron frenos.",
+    "gran_total_costo": 133.12
+  }
 ]
