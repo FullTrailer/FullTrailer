@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "nombre": "CASTRO CRUZ JESUS EMMANUEL",
+    "puesto": "AUX DE ELECTRICO",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:57:00 a. m."
+  },
+  {
+    "id": 2,
+    "nombre": "LINARES CONTLA JULIO",
+    "puesto": "AUX DE ELECTRICO",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:52:00 a. m."
+  },
+  {
+    "id": 3,
+    "nombre": "ROMERO MORENO JOSE LUIS",
+    "puesto": "ELECTRICO A",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "08:05:00 a. m."
+  },
+  {
+    "id": 4,
+    "nombre": "MACIN CASTILLO VICENTE",
+    "puesto": "FIBRERO",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:35:00 a. m."
+  },
+  {
+    "id": 5,
+    "nombre": "GOMEZ SANCHEZ MARTIN",
+    "puesto": "LAMINADOR",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "08:30:00 a. m."
+  },
+  {
+    "id": 6,
+    "nombre": "FLORES MORAN ANGEL GASPAR",
+    "puesto": "LAVADOR",
+    "estatus": "ENFERMEDAD",
+    "hora_entrada": null
+  },
+  {
+    "id": 8,
+    "nombre": "FERNANDEZ GARCIA LEONEL",
+    "puesto": "MECANCO C",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "08:04:00 a. m."
+  },
+  {
+    "id": 9,
+    "nombre": "DOMINGUEZ SANTIAGO JOSE IGNACIO",
+    "puesto": "MECANICO A",
+    "estatus": "AUXILIO",
+    "hora_entrada": null
+  },
+  {
+    "id": 10,
+    "nombre": "PALMA LOPEZ GABRIEL",
+    "puesto": "MECANICO A",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:39:00 a. m."
+  },
+  {
+    "id": 11,
+    "nombre": "SERAFICO ZAVALETA ROMAN",
+    "puesto": "MECANICO A",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:50:00 a. m."
+  },
+  {
+    "id": 12,
+    "nombre": "ESCALANTE ZAFRA ULISES",
+    "puesto": "MECANICO B",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:46:00 a. m."
+  },
+  {
+    "id": 13,
+    "nombre": "FLORES MORAN ERICK EMMANUEL",
+    "puesto": "MECANICO B",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "08:30:00 a. m."
+  },
+  {
+    "id": 14,
+    "nombre": "ORTIZ SANCHEZ YOSHIO",
+    "puesto": "MECANICO B",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:58:00 a. m."
+  },
+  {
+    "id": 15,
+    "nombre": "PEREZ SANCHEZ SALVADOR",
+    "puesto": "MECANICO B",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:28:00 a. m."
+  },
+  {
+    "id": 16,
+    "nombre": "GARCIA MORENO WILLIAM",
+    "puesto": "MECANICO C",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:40:00 a. m."
+  },
+  {
+    "id": 17,
+    "nombre": "PINEDA CHAVEZ CESAR IVAN",
+    "puesto": "MECANICO C",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:49:00 a. m."
+  },
+  {
+    "id": 18,
+    "nombre": "ARCOS GOMEZ CIRO DE JESUS",
+    "puesto": "MOVEDOR",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:58:00 a. m."
+  },
+  {
+    "id": 19,
+    "nombre": "LOPEZ AZAMARR GABRIEL",
+    "puesto": "SOLDADOR",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:52:00 a. m."
+  },
+  {
+    "id": 20,
+    "nombre": "MORA MORALES ISRAEL",
+    "puesto": "SOLDADOR",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:50:00 a. m."
+  },
+  {
+    "id": 21,
+    "nombre": "REYES HERNANDEZ CESAR CAMERINO",
+    "puesto": "SUSPENSIONISTA",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "08:05:00 a. m."
+  },
+  {
+    "id": 22,
+    "nombre": "SANCHEZ ESPIRITU GILBERTO",
+    "puesto": "TALACHERO",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:40:00 a. m."
+  },
+  {
+    "id": 23,
+    "nombre": "ESCALANTE ZAFRA ROBERTO",
+    "puesto": "UTILITARIOS",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:50:00 a. m."
+  },
+  {
+    "id": 24,
+    "nombre": "BRINGAS VILLAN RAFAEL",
+    "puesto": "ELECTRICO",
+    "estatus": "AUXILIO",
+    "hora_entrada": null
+  },
+  {
+    "id": 25,
+    "nombre": "MEDINA CORDOBA JUAN",
+    "puesto": "MECANICO C",
+    "estatus": "FALTA",
+    "hora_entrada": null
+  },
+  {
+    "id": 26,
+    "nombre": "ALCANTARA VIDAL SAUL",
+    "puesto": "MECANICO C",
+    "estatus": "AUXILIO",
+    "hora_entrada": null
+  },
+  {
+    "id": 27,
+    "nombre": "VENTURA JACINTO",
+    "puesto": "SUSPENSIONISTA",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "07:50:00 a. m."
+  },
+  {
+    "id": 28,
+    "nombre": "HERNANDEZ SANDOVAL DAVID",
+    "puesto": "SUSPENSIONISTA",
+    "estatus": "ASISTENCIA",
+    "hora_entrada": "08:20"
+  }
+]

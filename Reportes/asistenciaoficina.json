@@ -1,0 +1,127 @@
+[
+  {
+    "fecha": "22/09/2020",
+    "registros": [
+      {
+        "nombre": "REYNA NAVA",
+        "puesto": "INTENDENCIA",
+        "estatus_hora": "05:05:31"
+      },
+      {
+        "nombre": "SANCHEZ GARCÍA MARIA DEL PILAR",
+        "puesto": "TESORERÍA",
+        "estatus_hora": "07:52:58"
+      },
+      {
+        "nombre": "GARCÍA GARCÍA MARIA SUSY",
+        "puesto": "COCINA",
+        "estatus_hora": "07:45:23"
+      },
+      {
+        "nombre": "KATIA CARRERA CANSECO",
+        "puesto": "LLANTAS",
+        "estatus_hora": "ENFERMEDAD"
+      },
+      {
+        "nombre": "KATHIA FLORES SÁNCHEZ",
+        "puesto": "RH",
+        "estatus_hora": "07:42:16"
+      },
+      {
+        "nombre": "MARIA DE LOS ÁNGELES CRUZ CASTILLO",
+        "puesto": "RH",
+        "estatus_hora": "07:52:23"
+      },
+      {
+        "nombre": "ISAURO DAMIAN HUESCA",
+        "puesto": "AUX. ALMACÉN",
+        "estatus_hora": "07:54:19"
+      },
+      {
+        "nombre": "HEREDIA GARCIA MARIA GUADALUPE",
+        "puesto": "LIQUIDACIONES",
+        "estatus_hora": "07:43:37"
+      },
+      {
+        "nombre": "MIGUEL ANGEL SOLIS MARIN",
+        "puesto": "ALMACÉN",
+        "estatus_hora": "07:56:30"
+      },
+      {
+        "nombre": "JOSUE MARTIN GUZMAN CORTÉS",
+        "puesto": "SISTEMAS",
+        "estatus_hora": "07:57:55"
+      },
+      {
+        "nombre": "SOTO VAZQUEZ MAIRA EDITH",
+        "puesto": "CUENTAS X PAGAR",
+        "estatus_hora": "08:00:05"
+      },
+      {
+        "nombre": "CALLEJA CONTRERAS FERMÍN",
+        "puesto": "CONTADOR",
+        "estatus_hora": "07:44:34"
+      },
+      {
+        "nombre": "ESCALANTE GONZALEZ MAURICIO",
+        "puesto": "GESTORÍA",
+        "estatus_hora": "08:02:04"
+      },
+      {
+        "nombre": "ALBERTO DE AQUINO CASTRO",
+        "puesto": "COMPRAS",
+        "estatus_hora": "08:06:25"
+      },
+      {
+        "nombre": "ALLENDE GOMEZ JOSE MANUEL",
+        "puesto": "TRÁFICO",
+        "estatus_hora": "08:03:07"
+      },
+      {
+        "nombre": "SUSANA CASAS CARIÑO",
+        "puesto": "CALIDAD",
+        "estatus_hora": "07:57:14"
+      },
+      {
+        "nombre": "MARITZA BAILEY MARCIAL",
+        "puesto": "AUX. SUBDIRECCION",
+        "estatus_hora": "07:53:40"
+      },
+      {
+        "nombre": "KARLA OSIRIS MENDOZA DORANTES",
+        "puesto": "VENTAS",
+        "estatus_hora": "07:57:55"
+      },
+      {
+        "nombre": "NOE RAMÍREZ ROSAS",
+        "puesto": "VIGILANCIA",
+        "estatus_hora": "SALIDA"
+      },
+      {
+        "nombre": "HÉCTOR AGUIRRE MELGAREJO",
+        "puesto": "VIGILANCIA",
+        "estatus_hora": "07:46:02"
+      },
+      {
+        "nombre": "JOSÉ ANTONIO PACHECO",
+        "puesto": "AUX. TRÁFICO",
+        "estatus_hora": "07:29:46"
+      },
+      {
+        "nombre": "DE LA LUZ JIMENEZ JAIME",
+        "puesto": "HANGAR",
+        "estatus_hora": "BAJA"
+      },
+      {
+        "nombre": "IVÁN ALEJANDRO SANCHEZ HEREDIA",
+        "puesto": "MONITOREO",
+        "estatus_hora": "07:59:16"
+      },
+      {
+        "nombre": "MARCO FAVIO CAPISTRÁN LÓPEZ",
+        "puesto": "MONITOREO",
+        "estatus_hora": "SALIDA"
+      }
+    ]
+  }
+]
