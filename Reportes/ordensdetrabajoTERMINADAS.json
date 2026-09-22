@@ -1,0 +1,857 @@
+[
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100681",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(394) SANCHEZ GONZALEZ, HUGO",
+    "vehiculo": "TRG-013 (Tractor)",
+    "kilometraje": 834038,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 0.00,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "X",
+        "actividad": "(001-008-ESTRIBO) PONER TORNILLOS A ESTRIBO",
+        "responsable": "(No asignado)",
+        "inicio_fin": "11:00",
+        "realizada_observaciones": "2:00"
+      }
+    ],
+    "insumos": [],
+    "notas": "Poner Tornillos a estribo. OK Sup. Yosnita Jr.",
+    "gran_total_costo": 0.00
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100673",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(394) SANCHEZ GONZALEZ, HUGO",
+    "vehiculo": "TRG-56 (Tractor)",
+    "kilometraje": 632271,
+    "operador": "(4271) GUEVARA SALAMANCA, LAZARO",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 28.78,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "LAVADOR",
+        "actividad": "(14-01-01-IMAG) LAVADO A TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "4:00",
+        "realizada_observaciones": "7:00"
+      }
+    ],
+    "insumos": [
+      {"articulo": "Lavado, exterior e interior"}
+    ],
+    "notas": "OK Sup. Yosnita Jr.",
+    "gran_total_costo": 14.39
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100644",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(239) SERAFICO ZAVALETA, ROMAN",
+    "vehiculo": "TRG-471 (Tractor)",
+    "kilometraje": 332514,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 0.00,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-61-MOTOR) CAMBIO DE VALVULA EGR Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": "4:00/4:30",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "CAMBIO SENSOR DE TEMPERATURA TRANSMISION arneses",
+    "gran_total_costo": 0.00
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100640",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(387) LOPEZ AZAMAR, GABRIEL",
+    "vehiculo": "TRG-042 (Tractor)",
+    "kilometraje": 1098331,
+    "operador": "(4255) SANCHEZ ROSAS, OSCAR",
+    "tiempo_estimado_horas": 1.5,
+    "costo_estimado": 26.53,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-07-05-ESCAP) REPARAR ESCAPE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "9:00 - 5:00 pm (am)",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [
+      {"cant": 1, "articulo": "Abrazadera 5\""}
+    ],
+    "notas": "Se Desmante lo un Costado para poder Trabajar comodamente y rapido, Se tuvo que soldar el pedazo de Escape y ir recortando el otro extremo del tubo para poder ajustar bien y Poder poner la abrazadera. Despues se armo todo Correctamente y Se apreto toda Tornilleria floja.",
+    "gran_total_costo": 17.69
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100653",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(377) ESCALANTE, ULISES",
+    "vehiculo": "TRG-034 (Tractor)",
+    "kilometraje": 1119730,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 12.0,
+    "costo_estimado": 2756.16,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-09-01-PTO-HID) INSTALACION DE TOMA DE FUERZA",
+        "responsable": "(No asignado)",
+        "inicio_fin": "1:35 / 7pm",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "desmontar tomo de fierro y bomba de 28 Galones y la mochila, para montar y adaptar todo a el 34. Todo se tomo de el 49 con autorisacion de el lic. en el 34 se monto mochila se apreto se monto tomo de fierro y mangueras y por ultimo empeso a montar la consola de el tomo de fierro no termino de ponerlo",
+    "gran_total_costo": 229.68
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100665",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(331) FLORES MORAN, ERICK EMANUEL",
+    "vehiculo": "TRG-431 (Tractor)",
+    "kilometraje": 712083,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 4.0,
+    "costo_estimado": 306.24,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-02-02-CABEZA) CAMBIO DE JUNTAS A CABEZAS DE MOTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "4:30 pm",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "MANTENIMIENTO Y CAMBIO JUNTA DE TAPA DE PUNTERIAS, FUGAS Y NIVELES",
+    "gran_total_costo": 76.56
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100646",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(338) FLORES MORAN, ANGEL GASPAR",
+    "vehiculo": "TRG-013 (Tractor)",
+    "kilometraje": 834038,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.5,
+    "costo_estimado": 26.53,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "LAMINADOR",
+        "actividad": "(09-01-04-CHASYS-Y-CA) REPARACION DE COFRE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "8:00 - 9:30 estuve limpiando el taller. 9:30 - 12:00 espere que la unidad fuera movida hacia el area del fibrero. mientras tanto yo armaba el faldon y el estribo junto a don vicente. 12:00 - 14:00 se monto el estribo y el faldon junto al nuevo lavador",
+    "gran_total_costo": 17.69
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100664",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(338) FLORES MORAN, ANGEL GASPAR",
+    "vehiculo": "TRG-56 (Tractor)",
+    "kilometraje": 632271,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 28.78,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "LAVADOR",
+        "actividad": "(14-01-01-IMAG) LAVADO A TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "5:48 / 7:02",
+        "realizada_observaciones": "terminado"
+      }
+    ],
+    "insumos": [],
+    "notas": "se lavo la unidad y se limpio por dentro. SAL",
+    "gran_total_costo": 14.39
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100662",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(338) FLORES MORAN, ANGEL GASPAR",
+    "vehiculo": "TRG-550 (Remolque) DEL TRACTOR SINOTRUCK",
+    "kilometraje": 0,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 28.78,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "LAVADOR",
+        "actividad": "(14-01-02-IMAG) LAVADO A REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "4:16 / 5:48",
+        "realizada_observaciones": "terminado"
+      }
+    ],
+    "insumos": [],
+    "notas": "Se lavo la unidad por fuera",
+    "gran_total_costo": 14.39
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100639",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(369) MORA MORALES, ISRAEL",
+    "vehiculo": "TRG-550 (Remolque) DEL TRACTOR SINOTRUCK",
+    "kilometraje": 0,
+    "operador": "(4271) GUEVARA SALAMANCA, LAZARO",
+    "tiempo_estimado_horas": 4.0,
+    "costo_estimado": 80.00,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "SOLDADOR",
+        "actividad": "(SOLDAREQUIPO) SOLDAR EQUIPO",
+        "responsable": "(No asignado)",
+        "inicio_fin": "9 17",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "",
+    "gran_total_costo": 20.00
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100683",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "fecha_estimada_terminacion": "22/09/26",
+    "responsable": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+    "vehiculo": "TRG-495 (Tractor)",
+    "kilometraje": 615415,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 3.0,
+    "costo_estimado": 172.26,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-03-01-INYECC) CAMBIO DE INYECTORES",
+        "responsable": "(No asignado)",
+        "inicio_fin": "09:00 / 12:00 | 12:00 / 02:00",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "se le desmontaron inyectores y se percato que la tapa de punterias tenia un agujero Por friccion de manguera suelta, se limpiaron mangueras balancin, y Punterias en general",
+    "gran_total_costo": 57.42
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100684",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "fecha_estimada_terminacion": "22/09/26",
+    "responsable": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+    "vehiculo": "TRG-163 (Tractor)",
+    "kilometraje": 109106,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 76.56,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-05-06-ENFRI) CAMBIO DE FAN CLUTCH",
+        "responsable": "(No asignado)",
+        "inicio_fin": "04:00 / 08:00",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "Se desmonto fancluch de unidad por exceso de corrosion y se instalo sensor fisico de temperatura de anticongelante",
+    "gran_total_costo": 38.28
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100635",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(381) GARCIA MORENO, WILLIAM",
+    "vehiculo": "TRC-042 (Tractor)",
+    "kilometraje": 0,
+    "operador": "(4255) SANCHEZ ROSAS, OSCAR",
+    "tiempo_estimado_horas": 9.0,
+    "costo_estimado": 907.71,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ALINEADOR",
+        "actividad": "(04-02-03-DIRECCION) CAMBIO DE PERNOS DE DIRECCION",
+        "responsable": "(No asignado)",
+        "inicio_fin": "9:00 AM",
+        "realizada_observaciones": "William Garcia"
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-01-05-SUSPENSION) REVISAR Y REPARAR SUSPENSION Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": "2:30 PM",
+        "realizada_observaciones": "Dañados"
+      }
+    ],
+    "insumos": [],
+    "notas": "Se tubo un poco de Retraso por detalles en Tambores. Tambien se calibraron balatas delanteras",
+    "gran_total_costo": 144.48
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100685",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(381) GARCIA MORENO, WILLIAM",
+    "vehiculo": "TRG-163 (Tractor)",
+    "kilometraje": 109106,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 41.46,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-02-06-SUSPENSION) CAMBIAR AMORTIGUADORES TRASEROS",
+        "responsable": "(No asignado)",
+        "inicio_fin": "16:30",
+        "realizada_observaciones": "Amortiguadores"
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-01-02-SUSPENSION) CAMBIO DE AMORTIGUADORES DELANTEROS Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": "17:00",
+        "realizada_observaciones": "Dañadas"
+      }
+    ],
+    "insumos": [],
+    "notas": "Se pidieron Amortiguadores Delanteros y Traseros. Queda pendiente Unidad por otros Detalles.",
+    "gran_total_costo": 41.46
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100688",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(369) MORA MORALES, ISRAEL",
+    "vehiculo": "TRG-955 (Remolque) DEL TRACTOR SINOTRUCK",
+    "kilometraje": 0,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 62.84,
+    "taller": "Interno",
+    "lectura_odometro": "12:00 / 5:30",
+    "actividades": [
+      {
+        "categoria": "SOLDADOR",
+        "actividad": "(10-01-18-ESTRUCT-TQ) REPARACION DE SALPICADERAS A REMOLQUES",
+        "responsable": "(No asignado)",
+        "inicio_fin": "12:00 / 5:30",
+        "realizada_observaciones": "TERMINADO"
+      }
+    ],
+    "insumos": [],
+    "notas": "BAJAR SALPICADERA DE ALUMINIO, ENDERESAR REPARAR BASE DE LA SALPICADERA",
+    "gran_total_costo": 31.42
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100689",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(369) MORA MORALES, ISRAEL",
+    "vehiculo": "TRG-163 (Tractor)",
+    "kilometraje": 109106,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 0.00,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-28-ELECTRICO) Instalar base para Baterias Tracto",
+        "responsable": "(No asignado)",
+        "inicio_fin": "5:30",
+        "realizada_observaciones": "EN PROSESO"
+      }
+    ],
+    "insumos": [],
+    "notas": "CORTAR PLACA Y DOBLAR PARA HACER BASE DE BATERIA",
+    "gran_total_costo": 0.00
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100669",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(174) REYES VENTURA, JACINTO",
+    "vehiculo": "TRG-163 (Tractor)",
+    "kilometraje": 109106,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 55.12,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "19",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [
+      {"articulo": "2 tambores, un rotachamber, carretilla, 4 cuatro resortes de camaron, 2 de campana"}
+    ],
+    "notas": "cambiaron 2 tambores y resortes se cambio un rotachamber #4 carretilla",
+    "gran_total_costo": 27.56
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100642",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(390) MEDINA, JUAN (Anotado a mano: Cesar Ivan Pineda Chavez)",
+    "vehiculo": "TRG-163 (Tractor)",
+    "kilometraje": 0,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 18.0,
+    "costo_estimado": 782.25,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-33-FRENOS) CAMBIO DE VALVULA PROTECTORA Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": "5:00 - 5:30",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-28-FRENOS) CAMBIO DE ROTOCHAMBER",
+        "responsable": "(No asignado)",
+        "inicio_fin": "4:00 - 5:00",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(05-01-02-BALEROS) CAMBIO DE BALEROS",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-03-FRENOS) CAMBIAR MATRACAS TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": "pendiente"
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-02-08-SUSPENSION) ALINEAR EJES A TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": "PENDIENTE"
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-01-05-SUSPENSION) REVISAR Y REPARAR SUSPENSION Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": "pendiente"
+      }
+    ],
+    "insumos": [],
+    "notas": "9:00-2:00 Se conectaron Mangueras Cambio de asientos Coneccon de pilas SE DECALIBEARON YOGOS de hecha arranse Falta De ojo 5:30-7:00 DE Relleno Tanque Disel se Cambiaron Tambores lado Derecho se cambio el herrage de las Balatas Se Desellanto con llave y tubo",
+    "gran_total_costo": 297.16
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100682",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+    "vehiculo": "TRG-034 (Tractor)",
+    "kilometraje": 1316133,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 20.54,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "8:30 / 11:00",
+        "realizada_observaciones": "No se concluye"
+      }
+    ],
+    "insumos": [
+      {"articulo": "revisar y reparar fan clutch Por falta de escaner para reprogramacion de fan clutch"}
+    ],
+    "notas": "",
+    "gran_total_costo": 20.54
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100631",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+    "vehiculo": "TRG-56 (Tractor)",
+    "kilometraje": 632271,
+    "operador": "(4271) GUEVARA SALAMANCA, LAZARO",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 34.32,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "11:00 / 11:30",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-01-17-MOTOR) CHECAR FALLO MOTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "11:30 / 12:00",
+        "realizada_observaciones": "No se concluye por falta de escaner para revisar fallas"
+      }
+    ],
+    "insumos": [],
+    "notas": "",
+    "gran_total_costo": 34.32
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100632",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+    "vehiculo": "TRG-550 (Remolque) DEL TRACTOR TRG-56",
+    "kilometraje": 0,
+    "operador": "(4271) GUEVARA SALAMANCA, LAZARO",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 20.54,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(10-05-05-ELECT-REM) REVISAR Y REPARAR LUCES EN GRAL. REMOLQUE",
+        "responsable": "(No asignado)",
+        "inicio_fin": "12:00 / 2:00",
+        "realizada_observaciones": "se cambian varios plafones a punto de fundirse"
+      }
+    ],
+    "insumos": [],
+    "notas": "",
+    "gran_total_costo": 20.54
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100686",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+    "vehiculo": "TRG-471 (Tractor)",
+    "kilometraje": 332514,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 20.54,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "4:00 / 5:30",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [
+      {"articulo": "Aislar cables expuestos y cables pelados"}
+    ],
+    "notas": "",
+    "gran_total_costo": 20.54
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100634",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(294) REYES HERNANDEZ, CESAR CAMERINO",
+    "vehiculo": "TRG-042 (Tractor)",
+    "kilometraje": 1098331,
+    "operador": "(4255) SANCHEZ ROSAS, OSCAR",
+    "tiempo_estimado_horas": 9.0,
+    "costo_estimado": 907.71,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ALINEADOR",
+        "actividad": "(04-02-03-DIRECCION) CAMBIO DE PERNOS DE DIRECCION",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": "Reparacion Eje delantero. Ajuste"
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-01-05-SUSPENSION) REVISAR Y REPARAR SUSPENSION Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": "Se Inicia El dia Domingo 20 alas 11am. Fin Dia lunes 21 3pm",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "Se cambian Los 4 valeros En las 2 masas. Se Encuentra que los tambores delanteros estan con mucho desgaste y Ruedan con desvalance esto genera la Vibracion que el chofer Reporta. Se solicitan 2 tambores nuevos a prontitud. El Reporte decia Falla en pernos pero los pernos estan con el minimo de juego Se lubrican y Ajustan",
+    "gran_total_costo": 144.48
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100649",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(361) LINARES, JOSE JULIO",
+    "vehiculo": "TRG-163 (Tractor)",
+    "kilometraje": 109106,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 20.54,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "08:10 / 14:00 | 16:00 / 17:00",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "Se realiza revision de cableado por faros principales en purgo a buscar una base de faros en el taller de faros. Se cambiaron dos faros inservibles. luces de cabina se le ponen faros de pellizcos en testigos y faros 1 polo en defensa",
+    "gran_total_costo": 20.54
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100677",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(361) LINARES, JOSE JULIO",
+    "vehiculo": "TRG-471 (Tractor)",
+    "kilometraje": 332514,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 20.54,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-22-ELECTRICO) REVISAR Y REPARAR TORRETA",
+        "responsable": "(No asignado)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "Pendiente",
+    "gran_total_costo": 20.54
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100678",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(361) LINARES, JOSE JULIO",
+    "vehiculo": "TRG-56 (Tractor)",
+    "kilometraje": 632271,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 0.5,
+    "costo_estimado": 5.14,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-08-ELECTRICO) CAMBIAR ALARMA REVERSERA",
+        "responsable": "(No asignado)",
+        "inicio_fin": "18:00 / 18:20",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "revision alarma reversera estaba suelta se coloca se conecta se cae base y a veces no suena se cambia por una nueva",
+    "gran_total_costo": 10.27
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100676",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(361) LINARES, JOSE JULIO",
+    "vehiculo": "TRG-48 (Tractor)",
+    "kilometraje": 669638,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 1.0,
+    "costo_estimado": 20.54,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "ELECTRICO",
+        "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "17:00 / 18:00",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "revision luces remolqueras y tracto se repara falso en noslimero se le coloca cinchos",
+    "gran_total_costo": 20.54
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100690",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+    "vehiculo": "TRG-034 (Tractor)",
+    "kilometraje": 1316133,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 14.0,
+    "costo_estimado": 2801.30,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-09-18-PTO) INSTALACION DE MOCHILA Hidraulico Tractor",
+        "responsable": "(No asignado)",
+        "inicio_fin": "12:00 / 2:00",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-09-01-PTO-HID) INSTALACION DE TOMA DE FUERZA",
+        "responsable": "(No asignado)",
+        "inicio_fin": "4:00 / 5:30",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(01-09-04-PTO-HID) CAMBIO DE BOMBA DE LEVANTE 27 GL. (TOMA FZA.)",
+        "responsable": "(No asignado)",
+        "inicio_fin": "5:30 / 7:00",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "Se quito la mochila, la toma de Fuerza, y la bomba de 27 galones del tracto 49, de ahi se instalo la mochila, la toma de Fuerza (se tubieron que cambiar todos los tornillos) y se monto la bomba de 27 galones y se trato de poner la palanca pero no se pudo por que abia que agrandar un oyo y no teniamos brocas",
+    "gran_total_costo": 274.82
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100648",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+    "vehiculo": "TRG-56 (Tractor)",
+    "kilometraje": 632271,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 3.0,
+    "costo_estimado": 63.87,
+    "taller": "Interno",
+    "actividades": [
+      {
+        "categoria": "MECANICA",
+        "actividad": "(03-01-04-DIFERENCIAL) APRETAR YUGOS Y CRUZETAS",
+        "responsable": "(No asignado)",
+        "inicio_fin": "10:20 / 12:00",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MECANICA",
+        "actividad": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+        "responsable": "(No asignado)",
+        "inicio_fin": "9:30 / 10:20",
+        "realizada_observaciones": ""
+      },
+      {
+        "categoria": "MUELLERO",
+        "actividad": "(08-02-04-SUSPENSION) CAMBIAR TENSORES TRACTOR",
+        "responsable": "(No asignado)",
+        "inicio_fin": "8:30 / 9:30",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "Se le cambio el tensor del tracto y se le reemplasaron tornillos, de ahi prosedimos a checar fugas y reemplasamos grifos de tanques y tomas de bolsas, se apreto la tuerca del yugo de la flecha Cardan y se checaron niveles en general",
+    "gran_total_costo": 51.77
+  },
+  {
+    "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+    "folio_orden": "100647",
+    "servicio": "(001) MTTO. CORRECTIVO",
+    "fecha": "21-sep.-2026",
+    "responsable": "(386) MASIN CASTILLO, VICENTE",
+    "vehiculo": "TRG-013 (Tractor)",
+    "kilometraje": 0,
+    "operador": "(0000) N/A SIN, OPERADOR",
+    "tiempo_estimado_horas": 2.0,
+    "costo_estimado": 200.00,
+    "taller": "Interno",
+    "lectura_odometro": "7:33 AM",
+    "actividades": [
+      {
+        "categoria": "LAMINADOR",
+        "actividad": "(09-03-10-CHASIS-Y-CA) REPARACION DE DEFENSA A TRACTOR",
+        "responsable": "(No asignado) (7:31 PM)",
+        "inicio_fin": "",
+        "realizada_observaciones": ""
+      }
+    ],
+    "insumos": [],
+    "notas": "hise cuatro reparaciones de fibra en el cofre de el Tractor N° 013 Restructure un Faldon Izquierdo y un estribo todo el dia",
+    "gran_total_costo": 100.00
+  }
+]
