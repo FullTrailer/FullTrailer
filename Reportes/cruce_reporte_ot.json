@@ -1,0 +1,440 @@
+{
+  "summary": {
+    "ATENDIDO": 4,
+    "SIN_OT": 2,
+    "OT_ABIERTA": 1,
+    "REPORTE_VACIO": 9
+  },
+  "rows": [
+    {
+      "fecha": "17/09/26",
+      "operador": "Jose Manuel M te",
+      "tractor": "48",
+      "unidades": [
+        "48",
+        "953"
+      ],
+      "reporte": "2. #48 | 4. No tiene potencia fuerza | 8. Turbo Amarrado   2. #953 | 4. Poner manivela",
+      "op_tags": [
+        "estructura",
+        "potencia",
+        "turbo"
+      ],
+      "overlap": [
+        "turbo"
+      ],
+      "ots": [
+        {
+          "unit": "48",
+          "folio": "100594",
+          "vehiculo": "TRG-48 (Tractor)",
+          "acts": "(01-06-07-TURBO) MANO OBRA Y RECALIBRACION DE VALVULA VGT",
+          "bit": true,
+          "notes": "VGT se calibró porque otra vez venía diferente (manuscrito) No Terminado",
+          "ot_tags": [
+            "turbo"
+          ]
+        },
+        {
+          "unit": "48",
+          "folio": "100584",
+          "vehiculo": "TRG-48 (Tractor)",
+          "acts": "(ESCANEO) ESCANEO DE UNIDAD",
+          "bit": true,
+          "notes": "",
+          "ot_tags": [
+            "motor"
+          ]
+        },
+        {
+          "unit": "48",
+          "folio": "100545",
+          "vehiculo": "TRG-48 (Tractor)",
+          "acts": "(01-06-06-TURBO) CAMBIO DE VALVULA VGT",
+          "bit": true,
+          "notes": "Me mandaron a cambiar la VGT y al desarmar me di cuenta que el turbo estaba trabado por el reporte, y me dijeron que lo desmontara",
+          "ot_tags": [
+            "turbo"
+          ]
+        },
+        {
+          "unit": "48",
+          "folio": "100611[cite: 1]",
+          "vehiculo": "TRG-48 (Tractor)[cite: 1]",
+          "acts": "",
+          "bit": false,
+          "notes": "",
+          "ot_tags": []
+        },
+        {
+          "unit": "48",
+          "folio": "100626[cite: 1]",
+          "vehiculo": "TRG-48 (Tractor)[cite: 1]",
+          "acts": "",
+          "bit": false,
+          "notes": "",
+          "ot_tags": []
+        },
+        {
+          "unit": "48",
+          "folio": "100624[cite: 1]",
+          "vehiculo": "TRG-48 (Tractor)[cite: 1]",
+          "acts": "",
+          "bit": false,
+          "notes": "",
+          "ot_tags": []
+        }
+      ],
+      "verdict": "ATENDIDO"
+    },
+    {
+      "fecha": "12/04/26",
+      "operador": "Grad Pro deco",
+      "tractor": "34",
+      "unidades": [
+        "34"
+      ],
+      "reporte": "Falla en faros no sienten | Freno directo | Desempeno / posicion los test | Achica de ATCCCR4 | 58 ACC | Frio al andar",
+      "op_tags": [
+        "frenos",
+        "luces"
+      ],
+      "overlap": [
+        "frenos",
+        "luces"
+      ],
+      "ots": [
+        {
+          "unit": "34",
+          "folio": "100586",
+          "vehiculo": "TRG-034 (Tractor)",
+          "acts": "(ACELERADOR) REVISAR Y/O REPARAR ACELERADOR Tractor; (06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "bit": true,
+          "notes": "Queda pendiente por refacciones No Terminado No Terminado",
+          "ot_tags": [
+            "electrico",
+            "luces"
+          ]
+        },
+        {
+          "unit": "34",
+          "folio": "100597",
+          "vehiculo": "TRG-034 (Tractor)",
+          "acts": "(06-03-26-ELECTRICO) CAMBIO DE MODULO DE LUCES A TRACTOR (Nva)",
+          "bit": true,
+          "notes": "",
+          "ot_tags": [
+            "electrico",
+            "luces"
+          ]
+        },
+        {
+          "unit": "34",
+          "folio": "100571",
+          "vehiculo": "TRG-034 (Tractor)",
+          "acts": "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos); (01-05-17-ENFRI) CAMBIO DE SENSOR NIVEL DE REFRIGERANTE",
+          "bit": true,
+          "notes": "Checo fugas de tractor y cambio sensor de nivel de anticongelante. Fue que sacarle el anticongelante para poder cambiarlo y al terminar de p",
+          "ot_tags": [
+            "frenos",
+            "fugas"
+          ]
+        },
+        {
+          "unit": "34",
+          "folio": "100612[cite: 1]",
+          "vehiculo": "TRG-034 (Tractor)[cite: 1]",
+          "acts": "",
+          "bit": false,
+          "notes": "",
+          "ot_tags": []
+        }
+      ],
+      "verdict": "ATENDIDO"
+    },
+    {
+      "fecha": "Sept 2026",
+      "operador": "VICENTE BENITEZ LUZMA",
+      "tractor": "82",
+      "unidades": [
+        "82"
+      ],
+      "reporte": "1. TABLERO TRAS corto | 2. SE ANDA APAGANDO | 3. CHECAR VALATAS Y MATRACAS | 4. NO ENFRENA BIEN | 8. CHECAR EL FRENO DE MOTOR, NO SE ACTIVA CUANDO LE | 9. NESESITA UNO 1. FALTA BALATAS Y | 2. CHECAR LAS MATRACAS | 3. LE FALTA UNA 4. 076108 ",
+      "op_tags": [
+        "frenos",
+        "motor",
+        "suspension"
+      ],
+      "overlap": [],
+      "ots": [],
+      "verdict": "SIN_OT"
+    },
+    {
+      "fecha": "16/09/26",
+      "operador": "Eduardo Cortes Blanco",
+      "tractor": "27",
+      "unidades": [
+        "27"
+      ],
+      "reporte": "1. Buenos dias Favor de checar Perdida Fuersa | 3. No se Aguanta ni vacio | 4. Aserle Linpiesa a los bornes de las pilas y checar Los Tacones del Motor | 7. Con prueba Al despegar seran Tacones | 8. El Fallo es El Turbo Cambiarlo 1. Por Fav",
+      "op_tags": [
+        "electrico",
+        "luces",
+        "motor",
+        "turbo"
+      ],
+      "overlap": [],
+      "ots": [],
+      "verdict": "SIN_OT"
+    },
+    {
+      "fecha": "17/09/26",
+      "operador": "Alfredo Barch",
+      "tractor": "471",
+      "unidades": [
+        "399",
+        "471"
+      ],
+      "reporte": "1. Checar Perdida de Potencia y fallo en el acelerador (se corta andando como 10 segundos) | 4. Alinear tanques de diesel    162",
+      "op_tags": [
+        "combustible",
+        "estructura",
+        "potencia"
+      ],
+      "overlap": [
+        "combustible",
+        "potencia"
+      ],
+      "ots": [
+        {
+          "unit": "471",
+          "folio": "100564",
+          "vehiculo": "TRG-471 (Tractor)",
+          "acts": "(01-01-61-MOTOR) CAMBIO DE VALVULA EGR Tractor",
+          "bit": true,
+          "notes": "Se puso unidad por caida de revoluciones. Se revisaron codigos de falla y no se emitieron codigos activos de EGR ni otro codigo. Se monitore",
+          "ot_tags": [
+            "combustible",
+            "motor",
+            "potencia"
+          ]
+        }
+      ],
+      "verdict": "ATENDIDO"
+    },
+    {
+      "fecha": "18/09/20",
+      "operador": "Jazze than Bonilla",
+      "tractor": "068",
+      "unidades": [
+        "68"
+      ],
+      "reporte": "1. Reparar velocimetro | 2. Reparar luces del carro en general | 3. Reparar fan porque no prende por temperatura | 5. Cambiar llanta posicion 10 | 9. Checar motor de elevacion del vidrio de copiloto   1. Cambiar llanta posicion 5",
+      "op_tags": [
+        "luces",
+        "motor"
+      ],
+      "overlap": [
+        "luces"
+      ],
+      "ots": [
+        {
+          "unit": "68",
+          "folio": "100552",
+          "vehiculo": "TRG-068 (Tractor)",
+          "acts": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR; (06-04-03-ELECTRICO) CAMBIO DE TACOMETRO; (06-03-23-ELECTRICO) REVISAR CAJA",
+          "bit": false,
+          "notes": "   ",
+          "ot_tags": [
+            "electrico",
+            "luces",
+            "transmision"
+          ]
+        }
+      ],
+      "verdict": "OT_ABIERTA"
+    },
+    {
+      "fecha": "15/9/26",
+      "operador": "FRANCISCO MURILLO",
+      "tractor": "52",
+      "unidades": [
+        "52",
+        "549"
+      ],
+      "reporte": "1. CHECAR QUINTA TIENE JUEGO | 2. FRENO DE MOTOR | 3. CHECAR LUCES CUARTOS | 4. CAMBIAR MACHO | 5. NIVELAR BOLSAS DE AIRE TRAK CABINA Y TRACTO | 6. CHECAR CUERPO DE ACELERACION MARIPOSA DE ATEZA | 7. DAR MANTENIMIENTO A FSR 1. CHEC TORNILLO",
+      "op_tags": [
+        "frenos",
+        "luces",
+        "motor"
+      ],
+      "overlap": [
+        "frenos",
+        "luces",
+        "motor"
+      ],
+      "ots": [
+        {
+          "unit": "52",
+          "folio": "100551",
+          "vehiculo": "TRG-052 (Tractor)",
+          "acts": "(06-04-20-ELECTRIO) REVISAR LINEA DE DATOS ELECTRICO; (06-03-03-ELECTRICO) CAMBIO DE FUSIBLES VARIOS; (06-03-05-ELECTRICO) CAMBIO DE RELEVAD",
+          "bit": true,
+          "notes": "",
+          "ot_tags": [
+            "electrico",
+            "frenos",
+            "motor"
+          ]
+        },
+        {
+          "unit": "52",
+          "folio": "100593",
+          "vehiculo": "TRG-052 (Tractor)",
+          "acts": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR; (01-01-16-MOTOR) CHECAR Y/O REPARAR FRENO DE MOTOR",
+          "bit": true,
+          "notes": "Terminado",
+          "ot_tags": [
+            "electrico",
+            "frenos",
+            "luces",
+            "motor"
+          ]
+        },
+        {
+          "unit": "549",
+          "folio": "100570",
+          "vehiculo": "TRG-549 (Remolque) DEL TRACTOR SINOTRUCK",
+          "acts": "(10-01-30-ESTRUCT-TQ) FABRICACION PLAFONERA A REMOLQUE",
+          "bit": false,
+          "notes": "",
+          "ot_tags": []
+        },
+        {
+          "unit": "549",
+          "folio": "100567",
+          "vehiculo": "TRG-549 (Remolque) del Tractor Sinotruck",
+          "acts": "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR; (07-01-06-FRENOS) REVISAR Y REPARAR BALATAS; (07-01-09-FRENOS) REVISAR Y REPARAR FUGAS ",
+          "bit": true,
+          "notes": "Se engraso remolque 549, al igual que se le reparo un chamber de su bastago. Se le cambiaron dos conexiones en la suspension. Se apoyo en pi",
+          "ot_tags": [
+            "frenos",
+            "fugas",
+            "suspension"
+          ]
+        },
+        {
+          "unit": "549",
+          "folio": "100583",
+          "vehiculo": "TRG-549 (Remolque) del Tractor Sinotruck",
+          "acts": "(10-05-02-ELECT-REM) CAMBIO DE PLAFONES A REMOLQUE; (10-05-05-ELECT-REM) REVISAR Y REPARAR LUCES EN GRAL. REMOLQUE",
+          "bit": true,
+          "notes": "",
+          "ot_tags": [
+            "luces"
+          ]
+        }
+      ],
+      "verdict": "ATENDIDO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    },
+    {
+      "fecha": null,
+      "operador": null,
+      "tractor": "",
+      "unidades": [],
+      "reporte": "",
+      "op_tags": [],
+      "overlap": [],
+      "ots": [],
+      "verdict": "REPORTE_VACIO"
+    }
+  ]
+}

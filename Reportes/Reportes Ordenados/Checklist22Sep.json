@@ -1,0 +1,175 @@
+{
+  "empresa": "TRANSPORTES RAFAGAS DEL GOLFO SA DE CV",
+  "documento": {
+    "titulo": "CHECK LIST: CONDICIONES FISICO - MECANICAS",
+    "codigo": "REG-GM-026",
+    "revision": "09",
+    "fecha_ultima_actualizacion": "17/09/2026",
+    "fecha_emision": "25/09/2024",
+    "departamento_area_generadora": "Gerencia de Mantenimiento"
+  },
+  "nota_transcripcion": "Algunos campos manuscritos (conductor, ruta, kilometraje, hora) son de lectura difícil por la caligrafía y calidad del escaneo; se transcribieron con la mejor interpretación posible y se marcan como 'incierto' donde aplica. Se recomienda verificar contra el documento físico.",
+  "checklists": [
+    {
+      "trg": "42",
+      "conductor": "Oscar Sanchez Rosas",
+      "ruta": "Cd. Sayula (lectura incierta)",
+      "entrada": null,
+      "salida": null,
+      "fecha": "22-09-26",
+      "producto": null,
+      "hora": null,
+      "kilometraje": "1,132,395 (lectura incierta)",
+      "folio": null,
+      "resultado_general": "Bueno, con observaciones",
+      "observaciones_destacadas": [
+        "Ítem 13 (Verificar otulas y barra de dirección): marcado como Malo",
+        "Ítem 20 (Alarmas activas - Check Engine): se anota 'Activas', marcado como Malo"
+      ],
+      "categorias": {
+        "Seguridad": [
+          {"num": 1, "descripcion": "Cinturon de seguridad (Piloto, copiloto)", "resultado": "Bueno"},
+          {"num": 2, "descripcion": "Freno de servicio & parking (Freno de motor o retardador)", "resultado": "No marcado"},
+          {"num": 3, "descripcion": "Funcionamiento del limpiaparabrisas", "resultado": "Bueno"},
+          {"num": 4, "descripcion": "Verificar el extintor, vigencia, base en condiciones, seguro sujetador", "resultado": "Bueno"},
+          {"num": 5, "descripcion": "Verificar luces altas, bajas, alarma reversa, torreta y claxon", "resultado": "Bueno"},
+          {"num": 6, "descripcion": "Verificar los faros principales que no estén opacos o impidan la visibilidad", "resultado": "Bueno"},
+          {"num": 7, "descripcion": "Verificar funcionamiento luces stop, reversa, direccionales e intermitentes", "resultado": "Bueno"}
+        ],
+        "Sistema_Electrico": [
+          {"num": 8, "descripcion": "Condiciones del sistema de baterías, sujeción, limpieza de caja de baterías, capuchones", "resultado": "Bueno"},
+          {"num": 9, "descripcion": "Condiciones de los cables y arneses, protección de arneses con chasis, arneses sin fricción", "resultado": "Bueno"},
+          {"num": 10, "descripcion": "Revisión de instalación del GPS que esté acomodado y cables ocultos", "resultado": "Bueno"},
+          {"num": 11, "descripcion": "Condiciones de conexiones eléctricas en general", "resultado": "Bueno"}
+        ],
+        "Direccion": [
+          {"num": 12, "descripcion": "Verificar nivel de aceite de dirección", "resultado": "Bueno"},
+          {"num": 13, "descripcion": "Verificar condición de la dirección, opere girando la llanta ambos lados", "resultado": "Bueno"},
+          {"num": "13b", "descripcion": "Verificar otulas y barra de dirección", "resultado": "Malo"},
+          {"num": 14, "descripcion": "Verificar que no existan fugas", "resultado": "Bueno"},
+          {"num": 15, "descripcion": "Verificar la lubricación en general del equipo", "resultado": "Bueno"},
+          {"num": 16, "descripcion": "Verificar condición de las mangueras en general", "resultado": "Bueno"},
+          {"num": 17, "descripcion": "Verificar cilindros hidráulicos que no exista fugas", "resultado": "Bueno"}
+        ],
+        "Cabina": [
+          {"num": 18, "descripcion": "Estado y condición del asiento (operador y copiloto)", "resultado": "Bueno"},
+          {"num": 19, "descripcion": "Verificar velocímetro y relojes en general", "resultado": "Bueno"},
+          {"num": 20, "descripcion": "Alarmas activas (Check Engine)", "resultado": "Malo", "anotacion": "Activas"},
+          {"num": 21, "descripcion": "Limpieza dentro de cabina (el extintor no debe ir dentro cabina)", "resultado": "Bueno"},
+          {"num": 22, "descripcion": "Suspensión de la cabina, evaluar condición", "resultado": "Bueno"},
+          {"num": 23, "descripcion": "Condición de los espejos retrovisores y convexo", "resultado": "Bueno"}
+        ],
+        "Motor": [
+          {"num": 30, "descripcion": "Verificar nivel de aceite de motor", "resultado": "Bueno"},
+          {"num": 31, "descripcion": "Verificar nivel de líquido de freno", "resultado": "Bueno"},
+          {"num": 32, "descripcion": "Verifique nivel de refrigerante", "resultado": "Bueno"},
+          {"num": 33, "descripcion": "Verifique condición de las grapas guías y cables del cofre", "resultado": "Bueno"},
+          {"num": 34, "descripcion": "Verificar sistema de escape que no presente fuga o modificaciones", "resultado": "Bueno"},
+          {"num": 35, "descripcion": "Condición de las bandas, alternador, radiador y tapón, ventilador, compresor A/C", "resultado": "Bueno"},
+          {"num": 36, "descripcion": "Verificar mangueras en general y que no presente fugas o estén húmedas", "resultado": "Bueno"},
+          {"num": 37, "descripcion": "Escudos y revestimientos térmicos en turbos y sistemas de escapes", "resultado": "Bueno"},
+          {"num": 38, "descripcion": "Checar la densidad del anticongelante (refractómetro)", "resultado": "No marcado"},
+          {"num": "38b", "descripcion": "Condición de las guardas protectoras de las bandas en general", "resultado": "Bueno"},
+          {"num": 39, "descripcion": "Revisar los tacones de motor estén apretados", "resultado": "Bueno"},
+          {"num": 40, "descripcion": "Revisar que los tornillos de los periféricos del motor no estén flojos (tuercas)", "resultado": "Bueno"},
+          {"num": 41, "descripcion": "Revisar tornillería de la campana de motor", "resultado": "Bueno"},
+          {"num": 42, "descripcion": "Revisar que todos los componentes de la unidad que tengan tornillos vayan ajustados correctamente, con el torque recomendado por el fabricante", "resultado": "Bueno"}
+        ],
+        "Transmision": [
+          {"num": 43, "descripcion": "Inspección de nivel de aceite", "resultado": "Bueno"},
+          {"num": 44, "descripcion": "Verificar fugas", "resultado": "Bueno"},
+          {"num": 45, "descripcion": "Condición de las flechas cardán (soportes)", "resultado": "Bueno"},
+          {"num": 46, "descripcion": "Verificar mangueras en general", "resultado": "Bueno"},
+          {"num": 47, "descripcion": "Verificar la condición del diferencial que no presente fugas ni tornillos faltantes", "resultado": "Bueno"},
+          {"num": 48, "descripcion": "Transmisión estándar arrancar y verificar clutch, ruidos extraños y altura pedal", "resultado": "Bueno"}
+        ],
+        "Llantas": [
+          {"num": 49, "descripcion": "Condición de los neumáticos", "resultado": "Bueno"},
+          {"num": 50, "descripcion": "Verificar fuga en las masas balero de las ruedas", "resultado": "Bueno"},
+          {"num": 51, "descripcion": "Verifique tuercas & birlos faltantes en cada rueda", "resultado": "Bueno"},
+          {"num": 52, "descripcion": "Verificar rines sin fisuras y/o doblados", "resultado": "No visible en la página"}
+        ]
+      }
+    },
+    {
+      "trg": "52-900 / 641-900 (lectura incierta, posible doble unidad)",
+      "conductor": "Nombre de lectura incierta (posible 'Deysimayo Campos')",
+      "ruta": "Cd. ___ - Sahuayo (lectura incierta)",
+      "entrada": null,
+      "salida": "1",
+      "fecha": "22-09-26",
+      "producto": "Urea (lectura incierta)",
+      "hora": "18:25 (lectura incierta)",
+      "kilometraje": "772,177 (lectura incierta)",
+      "folio": null,
+      "resultado_general": "Bueno, con observaciones",
+      "observaciones_destacadas": [
+        "Ítem 20 (Alarmas activas - Check Engine): se anota 'ABS', marcado como Malo"
+      ],
+      "categorias": {
+        "Seguridad": [
+          {"num": 1, "descripcion": "Cinturon de seguridad (Piloto, copiloto)", "resultado": "Bueno"},
+          {"num": 2, "descripcion": "Freno de servicio & parking (Freno de motor o retardador)", "resultado": "No marcado"},
+          {"num": 3, "descripcion": "Funcionamiento del limpiaparabrisas", "resultado": "Bueno"},
+          {"num": 4, "descripcion": "Verificar el extintor, vigencia, base en condiciones, seguro sujetador", "resultado": "No marcado"},
+          {"num": 5, "descripcion": "Verificar luces altas, bajas, alarma reversa, torreta y claxon", "resultado": "Bueno"},
+          {"num": 6, "descripcion": "Verificar los faros principales que no estén opacos o impidan la visibilidad", "resultado": "Bueno"},
+          {"num": 7, "descripcion": "Verificar funcionamiento luces stop, reversa, direccionales e intermitentes", "resultado": "Bueno"}
+        ],
+        "Sistema_Electrico": [
+          {"num": 8, "descripcion": "Condiciones del sistema de baterías, sujeción, limpieza de caja de baterías, capuchones", "resultado": "Bueno"},
+          {"num": 9, "descripcion": "Condiciones de los cables y arneses, protección de arneses con chasis, arneses sin fricción", "resultado": "Bueno"},
+          {"num": 10, "descripcion": "Revisión de instalación del GPS que esté acomodado y cables ocultos", "resultado": "Bueno"},
+          {"num": 11, "descripcion": "Condiciones de conexiones eléctricas en general", "resultado": "Bueno"}
+        ],
+        "Direccion": [
+          {"num": 12, "descripcion": "Verificar nivel de aceite de dirección", "resultado": "Bueno"},
+          {"num": 13, "descripcion": "Verificar condición de la dirección, opere girando la llanta ambos lados", "resultado": "Bueno"},
+          {"num": "13b", "descripcion": "Verificar otulas y barra de dirección", "resultado": "Bueno"},
+          {"num": 14, "descripcion": "Verificar que no existan fugas", "resultado": "Bueno"},
+          {"num": 15, "descripcion": "Verificar la lubricación en general del equipo", "resultado": "Bueno"},
+          {"num": 16, "descripcion": "Verificar condición de las mangueras en general", "resultado": "Bueno"},
+          {"num": 17, "descripcion": "Verificar cilindros hidráulicos que no exista fugas", "resultado": "Bueno"}
+        ],
+        "Cabina": [
+          {"num": 18, "descripcion": "Estado y condición del asiento (operador y copiloto)", "resultado": "Bueno"},
+          {"num": 19, "descripcion": "Verificar velocímetro y relojes en general", "resultado": "Bueno"},
+          {"num": 20, "descripcion": "Alarmas activas (Check Engine)", "resultado": "Malo", "anotacion": "ABS"},
+          {"num": 21, "descripcion": "Limpieza dentro de cabina (el extintor no debe ir dentro cabina)", "resultado": "Bueno"},
+          {"num": 22, "descripcion": "Suspensión de la cabina, evaluar condición", "resultado": "Bueno"},
+          {"num": 23, "descripcion": "Condición de los espejos retrovisores y convexo", "resultado": "Bueno"}
+        ],
+        "Motor": [
+          {"num": 30, "descripcion": "Verificar nivel de aceite de motor", "resultado": "Bueno"},
+          {"num": 31, "descripcion": "Verificar nivel de líquido de freno", "resultado": "Bueno"},
+          {"num": 32, "descripcion": "Verifique nivel de refrigerante", "resultado": "Bueno"},
+          {"num": 33, "descripcion": "Verifique condición de las grapas guías y cables del cofre", "resultado": "Bueno"},
+          {"num": 34, "descripcion": "Verificar sistema de escape que no presente fuga o modificaciones", "resultado": "Bueno"},
+          {"num": 35, "descripcion": "Condición de las bandas, alternador, radiador y tapón, ventilador, compresor A/C", "resultado": "Bueno"},
+          {"num": 36, "descripcion": "Verificar mangueras en general y que no presente fugas o estén húmedas", "resultado": "Bueno"},
+          {"num": 37, "descripcion": "Escudos y revestimientos térmicos en turbos y sistemas de escapes", "resultado": "Bueno"},
+          {"num": 38, "descripcion": "Checar la densidad del anticongelante (refractómetro)", "resultado": "No marcado"},
+          {"num": "38b", "descripcion": "Condición de las guardas protectoras de las bandas en general", "resultado": "Bueno"},
+          {"num": 39, "descripcion": "Revisar los tacones de motor estén apretados", "resultado": "Bueno"},
+          {"num": 40, "descripcion": "Revisar que los tornillos de los periféricos del motor no estén flojos (tuercas)", "resultado": "Bueno"},
+          {"num": 41, "descripcion": "Revisar tornillería de la campana de motor", "resultado": "Bueno"},
+          {"num": 42, "descripcion": "Revisar que todos los componentes de la unidad que tengan tornillos vayan ajustados correctamente, con el torque recomendado por el fabricante", "resultado": "Bueno"}
+        ],
+        "Transmision": [
+          {"num": 43, "descripcion": "Inspección de nivel de aceite", "resultado": "Bueno"},
+          {"num": 44, "descripcion": "Verificar fugas", "resultado": "Bueno"},
+          {"num": 45, "descripcion": "Condición de las flechas cardán (soportes)", "resultado": "Bueno"},
+          {"num": 46, "descripcion": "Verificar mangueras en general", "resultado": "Bueno"},
+          {"num": 47, "descripcion": "Verificar la condición del diferencial que no presente fugas ni tornillos faltantes", "resultado": "Bueno"},
+          {"num": 48, "descripcion": "Transmisión estándar arrancar y verificar clutch, ruidos extraños y altura pedal", "resultado": "Bueno"}
+        ],
+        "Llantas": [
+          {"num": 49, "descripcion": "Condición de los neumáticos", "resultado": "Bueno"},
+          {"num": 50, "descripcion": "Verificar fuga en las masas balero de las ruedas", "resultado": "Bueno"},
+          {"num": 51, "descripcion": "Verifique tuercas & birlos faltantes en cada rueda", "resultado": "Bueno"},
+          {"num": 52, "descripcion": "Verificar rines sin fisuras y/o doblados", "resultado": "Bueno"}
+        ]
+      }
+    }
+  ]
+}

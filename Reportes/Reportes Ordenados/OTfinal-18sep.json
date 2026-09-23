@@ -1,0 +1,516 @@
+{
+  "empresa": "TRANSPORTES RAFAGAS DEL GOLFO, S.A. DE C.V.",
+  "ordenes_de_trabajo": [
+    {
+      "folio": "100,645",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "21-sep-2026",
+      "responsable": "(238) PALMA LOPEZ, GABRIEL",
+      "vehiculo": "TRG-495 (Tractor)",
+      "kilometraje": 615415,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 8.0,
+      "costo_estimado": 459.36,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 06:45:52 p.m.",
+      "actividades": [
+        {
+          "categoria": "MECANICA",
+          "actividad": "(01-03-01-INYECC) CAMBIO DE INYECTORES",
+          "ultimo_servicio_orden": "91,722",
+          "ultimo_servicio_fecha": "04/feb/2025",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "8:00 AM / 8:30 PM"
+        }
+      ],
+      "insumos": [],
+      "notas": "Se lavó la barra de balancines y se limpiaron las camisas de los inyectores, se presionaron los inyectores reposados, se apretaron, se conectaron, se pesó la barra de balancines, se calibró el motor, se pesó la bomba del PARO de motor, la tapa de sensores, se pesó el filtro de aire y se presionaron todos los mangueras y tolas, se encendió el motor y se notó que no pesó a favor diesel por el escape, se apagó el motor y se notificó",
+      "gran_total_costo": 57.42,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(238) PALMA LOPEZ, GABRIEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,689",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "21-sep-2026",
+      "responsable": "(369) MORA MORALES, ISRAEL",
+      "vehiculo": "TRG-163 (Tractor)",
+      "kilometraje": 109106,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 0.00,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 04:03:34 p.m.",
+      "actividades": [
+        {
+          "categoria": "ELECTRICO",
+          "actividad": "(06-03-28-ELECTRICO) Instalar base para baterías Tracto",
+          "ultimo_servicio_orden": "52,974",
+          "ultimo_servicio_fecha": "12/abr/2020",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "21 SEP 5:00 / 22 SEP 4:00, TERMINADO"
+        }
+      ],
+      "insumos": [],
+      "notas": "Se cambió toda la base porque la existente ya no servía. Se puso placa 3/16 nueva. Se soldó y dobló.",
+      "gran_total_costo": 0.00,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(369) MORA MORALES, ISRAEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,714",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(369) MORA MORALES, ISRAEL",
+      "vehiculo": "TRG-469 (Tractor)",
+      "kilometraje": 332514,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 90.34,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 06:28:36 p.m.",
+      "actividades": [
+        {
+          "categoria": "MECANICA",
+          "actividad": "(03-01-04-DIFERENCIAL) APRETAR YUGOS Y CRUZETAS",
+          "ultimo_servicio_orden": "66,560",
+          "ultimo_servicio_fecha": "12/ene/2022",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "4:00 / 6:00, TERMINADO"
+        },
+        {
+          "categoria": "MECANICA",
+          "actividad": "(05-01-10-BALEROS) REVISAR Y REPARAR BALEROS DELANTEROS",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        }
+      ],
+      "insumos": [],
+      "notas": "Se cortó balero de cardán con soplete y la taza de balero con disco corte. Se calentó tuerca de yugo de diferencial con soplete.",
+      "gran_total_costo": 52.06,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(369) MORA MORALES, ISRAEL",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,695",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(174) REYES VENTURA, JACINTO",
+      "vehiculo": "TRG-469 (Tractor)",
+      "kilometraje": 332514,
+      "operador": "(4283) DOMINGUEZ RODRIGUEZ, ROGELIO",
+      "tiempo_estimado_horas": 5.5,
+      "costo_estimado": 70.88,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 09:04:48 a.m.",
+      "actividades": [
+        {
+          "categoria": "MECANICA",
+          "actividad": "(12-05-22-FREN-DOL) REVISAR MATRACAS",
+          "ultimo_servicio_orden": "38,935",
+          "ultimo_servicio_fecha": "30/nov/2018",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "9:10 / 10:10"
+        },
+        {
+          "categoria": "MECANICA",
+          "actividad": "(07-01-27-FRENOS) CAMBIO DE CHAMBER",
+          "ultimo_servicio_orden": "83,419",
+          "ultimo_servicio_fecha": "11/ene/2024",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        },
+        {
+          "categoria": "MECANICA",
+          "actividad": "(03-01-07-DIFERENCIAL) REPARAR FLECHA CARDAN TRACTO",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        },
+        {
+          "categoria": "MECANICA",
+          "actividad": "(03-02-09-DIFERENCIAL) REPARAR FUGAS DE ACEITE DIFERENCIAL INTER",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        },
+        {
+          "categoria": "MUELLERO",
+          "actividad": "(08-01-02-SUSPENSION) CAMBIO DE AMORTIGUADORES DELANTEROS Tractor",
+          "ultimo_servicio_orden": "77,819",
+          "ultimo_servicio_fecha": "29/may/2023",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        }
+      ],
+      "insumos": [
+        {"articulo": "Rotachamber", "cantidad_asignada": null, "costo_un": null, "costo_ext": null},
+        {"articulo": "Amortiguadores (2)", "cantidad_asignada": null, "costo_un": null, "costo_ext": null},
+        {"articulo": "Junta", "cantidad_asignada": null, "costo_un": null, "costo_ext": null},
+        {"articulo": "Puentebalero", "cantidad_asignada": null, "costo_un": null, "costo_ext": null},
+        {"articulo": "Retén", "cantidad_asignada": null, "costo_un": null, "costo_ext": null}
+      ],
+      "notas": "Se cambiaron 2 amortiguadores delanteros, un rotachamber, un balero del cardán, un retén del inter delantero. Se le checaron niveles de aceite caja y diferenciales. Se le checaron matracas, están bien.",
+      "gran_total_costo": 60.54,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(174) REYES VENTURA, JACINTO",
+      "operador_firma": "(4283) DOMINGUEZ RODRIGUEZ, ROGELIO"
+    },
+    {
+      "folio": "100,697",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(392) HERNANDEZ SANDOVAL, DAVID",
+      "vehiculo": "TRG-481 (Tractor)",
+      "kilometraje": 712083,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 0.00,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 10:24:09 a.m.",
+      "fecha_estimada_terminacion": "22-09-26",
+      "actividades": [
+        {
+          "categoria": "MECANICA",
+          "actividad": "(08-03-07-SUSPENSION) ENGRASAR EQUIPO",
+          "ultimo_servicio_orden": "100,248",
+          "ultimo_servicio_fecha": "23/ago/2026",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "10:30 / 11:15"
+        }
+      ],
+      "insumos": [],
+      "notas": "Engrasado de unidad. Engrase T42 08:09 9:30 AM. Amortiguadores de maestro, también se estuvo ayudando en el T321. Engrase T331 09:30-11 AM. Engrase T331 11:00-12 PM. Ayudó a cambiar. (firma David Hdz.)",
+      "gran_total_costo": 0.00,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(392) HERNANDEZ SANDOVAL, DAVID",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,685",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "21-sep-2026",
+      "responsable": "(381) GARCIA MORENO, WILLIAM",
+      "vehiculo": "TRG-163 (Tractor)",
+      "kilometraje": 109106,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 2.0,
+      "costo_estimado": 41.46,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 12:16:49 p.m.",
+      "actividades": [
+        {
+          "categoria": "MUELLERO",
+          "actividad": "(08-02-06-SUSPENSION) CAMBIAR AMORTIGUADORES TRASEROS",
+          "ultimo_servicio_orden": "19,384",
+          "ultimo_servicio_fecha": "17/mar/2017",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        },
+        {
+          "categoria": "MUELLERO",
+          "actividad": "(08-01-02-SUSPENSION) CAMBIO DE AMORTIGUADORES DELANTEROS Tractor",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "9:00 AM / 19:00 PM. Sigue pendiente"
+        }
+      ],
+      "insumos": [
+        {"articulo": "Suspensión delantera", "cantidad_asignada": null, "costo_un": null, "costo_ext": null}
+      ],
+      "notas": "Unidad queda pendiente de entrega por diversos detalles en suspensión delantera.",
+      "gran_total_costo": 41.46,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(381) GARCIA MORENO, WILLIAM",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,717",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-902 (Remolque) DEL TRACTOR SINOTRUCK",
+      "kilometraje": 0,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 07:06:52 p.m.",
+      "actividades": [
+        {
+          "categoria": "ELECTRICO",
+          "actividad": "(10-05-05-ELECT-REM) REVISAR Y REPARAR LUCES EN GRAL. REMOLQUE",
+          "ultimo_servicio_orden": "97,843",
+          "ultimo_servicio_fecha": "22/mar/2026",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "10:00 / 11:00"
+        }
+      ],
+      "insumos": [],
+      "notas": "Revisión luces en general, cambio de plafón rojo 4\".",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(361) LINARES, JOSE JULIO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,675",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "21-sep-2026",
+      "responsable": "(001) ARCOS GOMEZ, CIRO JESUS",
+      "vehiculo": "SINOTRUCK (Tractor)",
+      "kilometraje": 108920,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 9.0,
+      "costo_estimado": 0.00,
+      "taller": "Interno",
+      "fecha_registro": "21/09/2026 06:17:12 p.m.",
+      "actividades": [
+        {
+          "categoria": "PATIO TRG",
+          "actividad": "(UNIDADES-VARIAS) MOVEDOR DE UNIDADES",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "7:50 / 7:05"
+        }
+      ],
+      "insumos": [
+        {"articulo": "Surtiendo las áreas de trabajo del taller, saqué el TRG-13 y lo puse donde estaba el fibras al furgón - le puse el TRG-56-V el tanque 550 - al mecánico le metí la tolva 955 a la área de trabajo, medí el tongo que le echaría la mano con el TRG-13. Se le compuso la válvula nivel de aire de las bolsas de la cabina. Con el TRG-481 saqué la tolva 907. Con el TRG-481 acomodé el FUL 960-687-959 estorbaba con el TRG-481 acomodé el FUL 900-641-906. Acomodé el FUL de tolvas con el TRG-481-958-674-951 con el TRG-471 acomodé el FUL de tolvas-363-682-375", "cantidad_asignada": null, "costo_un": null, "costo_ext": null}
+      ],
+      "notas": "Ver detalle de insumos / movimiento de unidades en el taller.",
+      "gran_total_costo": 0.00,
+      "autorizo": null,
+      "responsable_servicio": "(001) ARCOS GOMEZ, CIRO JESUS",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,681",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "21-sep-2026",
+      "responsable": "(394) SANCHEZ GONZALEZ, HUGO",
+      "vehiculo": "TRG-013 (Tractor)",
+      "kilometraje": 834038,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 0.00,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 06:50:58 p.m.",
+      "actividades": [
+        {
+          "categoria": "X",
+          "actividad": "(001-008-ESTRIBO) PONER TORNILLOS A ESTRIBO",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "8:30 / 9:00"
+        }
+      ],
+      "insumos": [],
+      "notas": "Ponen remaches, lavado exterior, lijado.",
+      "gran_total_costo": 0.00,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(394) SANCHEZ GONZALEZ, HUGO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,683",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "21-sep-2026",
+      "responsable": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+      "vehiculo": "TRG-495 (Tractor)",
+      "kilometraje": 615415,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 3.0,
+      "costo_estimado": 172.26,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 06:48:44 p.m.",
+      "fecha_estimada_terminacion": "23/09/26",
+      "actividades": [
+        {
+          "categoria": "MECANICA",
+          "actividad": "(01-03-01-INYECC) CAMBIO DE INYECTORES",
+          "ultimo_servicio_orden": "91,722",
+          "ultimo_servicio_fecha": "04/feb/2025",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "09:00 / 07:00"
+        }
+      ],
+      "insumos": [],
+      "notas": "Se instalaron inyectores a unidad y se calibró el balancín de acuerdo a las especificaciones de fabricante. Se prendió unidad para probar y empezó a tirar bastante humo, se sospecha que los inyectores están defectuosos. Se vuelve a desarmar para checar calibración y están correctos.",
+      "gran_total_costo": 57.42,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(388) FERNANDEZ GARCIA, LEONEL I.",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,716",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+      "vehiculo": "TRG-471 (Tractor)",
+      "kilometraje": 332514,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 19.14,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 06:49:53 p.m.",
+      "actividades": [
+        {
+          "categoria": "MECANICA",
+          "actividad": "(01-06-04-TURBO) CAMBIO DE MANGUERA A TURBO",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "5:00 / 6:10"
+        }
+      ],
+      "insumos": [],
+      "notas": "Se tomó la manguera del turbo del 473 para montarsela a la unidad 471 que se encuentra descompuesta en carretera (se tomó más tiempo de lo debido por las condiciones climatológicas). También se apoyó a desmontar una parte de la suspensión al TRG-163.",
+      "gran_total_costo": 19.14,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(378) ORTIZ SANCHES, YOSHIO FELIP.",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,690",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "21-sep-2026",
+      "responsable": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+      "vehiculo": "TRG-034 (Tractor)",
+      "kilometraje": 1316133,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 14.0,
+      "costo_estimado": 2801.00,
+      "taller": "Externo",
+      "fecha_registro": "22/09/2026 08:41:32 a.m.",
+      "actividades": [
+        {
+          "categoria": "MECANICA",
+          "actividad": "(01-09-18-PTO) INSTALACION DE MOCHILA HIDRAULICO Tractor",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        },
+        {
+          "categoria": "MECANICA",
+          "actividad": "(01-09-01-PTO-H.D) INSTALACION DE TOMA DE FUERZA",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": null
+        },
+        {
+          "categoria": "MECANICA",
+          "actividad": "(01-09-04-PTO-HID) CAMBIO DE BOMBA DE PALANQUETA (TOMA FZA)",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "8:40 / 5:00"
+        }
+      ],
+      "insumos": [],
+      "notas": "Se terminó de instalar la palanqueta, se hicieron conexiones y se buscó la forma de poner una manguera en uno de los tanques (lo cual demoramos debido a que los tornillos no querían salir), también fuimos a ver otro tracto para poder poner en correcto orden todas las mangueras, se le puso aceite a la mochila y se probó en una tolva (salí también a comprar unos dados al centro lo cual me llevó aproximadamente 2 horas).",
+      "gran_total_costo": 274.82,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(378) ORTIZ SANCHES, YOSHIO FELIP.",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,713",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-20 (Tractor)",
+      "kilometraje": 583728,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 06:26:35 p.m.",
+      "actividades": [
+        {
+          "categoria": "ELECTRICO",
+          "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "ultimo_servicio_orden": "100,167",
+          "ultimo_servicio_fecha": "21/ago/2026",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "16:00 / 18:00"
+        }
+      ],
+      "insumos": [],
+      "notas": "Revisión luces general. Revisión fusilera, se cambian fusibles dañados. Se cambian luces intermitentes de faros principales, se dejaron un rato prendidas las luces ya que el operador indicó que se vuelan los fusibles.",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(361) LINARES, JOSE JULIO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,708",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-637 (Dolly) DEL TRACTOR SINOTRUCK",
+      "kilometraje": 0,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 01:37:47 p.m.",
+      "actividades": [
+        {
+          "categoria": "ELECTRICO",
+          "actividad": "(12-06-01-LUCES-DOL) CAMBIAR CABLE MACHO A DOLLY",
+          "ultimo_servicio_orden": "53,318",
+          "ultimo_servicio_fecha": "25/abr/2020",
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "13:05 / 14:08"
+        }
+      ],
+      "insumos": [],
+      "notas": "Revisión cable macho, se cambia el cable presenta daños abultamientos y agrietamiento en forro plástico y una conexión con daño de calentamiento.",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(361) LINARES, JOSE JULIO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    },
+    {
+      "folio": "100,707",
+      "servicio_a_realizar": "(001) MTTO. CORRECTIVO",
+      "fecha": "22-sep-2026",
+      "responsable": "(361) LINARES, JOSE JULIO",
+      "vehiculo": "TRG-393 (Remolque) DEL TRACTOR SINOTRUCK",
+      "kilometraje": 0,
+      "operador": "(0000) N/A SIN, OPERADOR",
+      "tiempo_estimado_horas": 1.0,
+      "costo_estimado": 20.54,
+      "taller": "Interno",
+      "fecha_registro": "22/09/2026 01:36:08 p.m.",
+      "actividades": [
+        {
+          "categoria": "ELECTRICO",
+          "actividad": "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "ultimo_servicio_orden": null,
+          "ultimo_servicio_fecha": null,
+          "responsable_actividad": "(No asignado)",
+          "inicio_fin": "12:06 / 13:06"
+        }
+      ],
+      "insumos": [],
+      "notas": "Revisión luces general, se cambia un plafón de 4\" que ya no prendía en luces. Se detectó calentamiento en cable de luces en chapón, se desprende, se limpia bien, se vuelve a conectar y ya no presenta el detalle.",
+      "gran_total_costo": 20.54,
+      "autorizo": "Antonio Pérez Álvarez",
+      "responsable_servicio": "(361) LINARES, JOSE JULIO",
+      "operador_firma": "(0000) N/A SIN, OPERADOR"
+    }
+  ]
+}

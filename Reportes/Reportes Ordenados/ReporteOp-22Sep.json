@@ -1,0 +1,164 @@
+[
+  {
+    "fecha": "22-09-26",
+    "operador": "Marcelino Murillo",
+    "tractor": "054",
+    "hora": "",
+    "kms": "",
+    "remolques": "394-668-395",
+    "reporte_mantenimiento": {
+      "tracto": [],
+      "dolly": [],
+      "remolque_1": [],
+      "remolque_2": [
+        "poner tornillo ala",
+        "bdsa asera",
+        "Lado derecho",
+        "so capo"
+      ]
+    },
+    "observaciones": ""
+  },
+  {
+    "fecha": "22/9/26",
+    "operador": "FRANCISCO MURILLO",
+    "tractor": "52",
+    "hora": "11:00",
+    "kms": "",
+    "remolques": "376-620-370",
+    "reporte_mantenimiento": {
+      "tracto": [],
+      "dolly": [],
+      "remolque_1": [
+        "CAMBIAR LLANTA",
+        "VOLADA.",
+        "CAMBIAR REFACION",
+        "ESTA VOLADA"
+      ],
+      "remolque_2": []
+    },
+    "observaciones": ""
+  },
+  {
+    "fecha": "22/09/26",
+    "operador": "SEISMEL GUEZ",
+    "tractor": "060",
+    "hora": "",
+    "kms": "",
+    "remolques": "",
+    "reporte_mantenimiento": {
+      "tracto": [
+        "RADIADOR DE CALEFACCIÓN",
+        "ROTA",
+        "NiVES IN GENERAL"
+      ],
+      "dolly": [],
+      "remolque_1": [],
+      "remolque_2": []
+    },
+    "observaciones": ""
+  },
+  {
+    "fecha": "20/09/26",
+    "operador": "Jose Reyes pacheco",
+    "tractor": "68",
+    "hora": "",
+    "kms": "",
+    "remolques": "",
+    "reporte_mantenimiento": {
+      "tracto": [
+        "En momentes desa de",
+        "Acclever",
+        "Se Apaga",
+        "Cambiar tacones"
+      ],
+      "dolly": [],
+      "remolque_1": [],
+      "remolque_2": []
+    },
+    "observaciones": ""
+  },
+  {
+    "fecha": "22-09-26",
+    "operador": "WILLIAM",
+    "tractor": "170",
+    "hora": "11:40 AM",
+    "kms": "9279 33",
+    "remolques": "",
+    "reporte_mantenimiento": {
+      "tracto": [
+        "REVISAR EL POR",
+        "QUE PRENDIO EL",
+        "CODIGO DE",
+        "FIGURA DE VNA",
+        "BATERIA",
+        "SERA QUE POR",
+        "CUESTA PARA",
+        "ARRANCAR",
+        "FUNDIDA UNIDA"
+      ],
+      "dolly": [
+        "NO TRAE Dony",
+        "UNA LLANTA Y",
+        "EN EL PORTA",
+        "LLANTAS TRAICO",
+        "LLANTA QUE UNA",
+        "NO SIRVE"
+      ],
+      "remolque_1": [],
+      "remolque_2": []
+    },
+    "observaciones": "SELE SE LE DESPREYPI LA MATRACA AL SEGUANDO REMOLQUE"
+  },
+  {
+    "fecha": "220926",
+    "operador": "FABIAN SANCHEZ R",
+    "tractor": "030",
+    "hora": "",
+    "kms": "1272500",
+    "remolques": "902-393",
+    "reporte_mantenimiento": {
+      "tracto": [
+        "CHECAR CORTO DE LUZ",
+        "Vuela fusible"
+      ],
+      "dolly": [
+        "637",
+        "CAMBIAR VOLSA DE AIRE",
+        "PRIMER EJE"
+      ],
+      "remolque_1": [],
+      "remolque_2": []
+    },
+    "observaciones": ""
+  },
+  {
+    "fecha": "22/09/26",
+    "operador": "Gerardo Reyes pacheco",
+    "tractor": "22",
+    "hora": "122",
+    "kms": "",
+    "remolques": "",
+    "reporte_mantenimiento": {
+      "tracto": [
+        "Componer mecanismo de toma",
+        "de Fuerz",
+        "Apretas tapones.",
+        "Copco Corto en luces.",
+        "en momentos no prenden",
+        "Cuartos",
+        "Jolio"
+      ],
+      "dolly": [],
+      "remolque_1": [
+        "100698",
+        "chava"
+      ],
+      "remolque_2": []
+    },
+    "observaciones": ""
+  }
+]
+```eof
+
+He creado el archivo JSON con el nombre solicitado. Los datos han sido estructurados agrupando las anomalías registradas línea por línea en sus respectivas secciones (tracto, dolly, remolques) para mantener la fidelidad de lo reportado por cada operador. Algunas imprecisiones del escaneo óptico se han ajustado ligeramente para mayor legibilidad. ¡Espero que te sea de mucha utilidad!

@@ -1,0 +1,842 @@
+{
+  "013": {
+    "days": 4,
+    "first": "2026-09-18T00:00:00",
+    "last": "2026-09-21T00:00:00",
+    "tags": [
+      "estructura/fibra"
+    ],
+    "ots": [
+      {
+        "folio": "100566",
+        "fecha": "18-sep.-2026",
+        "resp": "(386) MASIN CASTILLO, VICENTE",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(09-03-10-CHASIS-Y-CA) REPARACION DE DEFENSA A TRACTOR"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "A",
+        "has_b": false
+      },
+      {
+        "folio": "100566[cite: 1]",
+        "fecha": "18-sep.-2026[cite: 1]",
+        "resp": "(386) MASIN CASTILLO, VICENTE[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      },
+      {
+        "folio": "100616[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "(365) CASTRO CRUZ, JESUS EMMANUEL[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      },
+      {
+        "folio": "100621[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "William Garera[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      }
+    ],
+    "term": [
+      {
+        "folio": "100681",
+        "fecha": "21-sep.-2026",
+        "resp": "(394) SANCHEZ GONZALEZ, HUGO",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(001-008-ESTRIBO) PONER TORNILLOS A ESTRIBO"
+        ],
+        "horas": [
+          "11:00"
+        ],
+        "obs": [
+          "2:00"
+        ],
+        "notas": "Poner Tornillos a estribo. OK Sup. Yosnita Jr.",
+        "pend": false
+      },
+      {
+        "folio": "100646",
+        "fecha": "21-sep.-2026",
+        "resp": "(338) FLORES MORAN, ANGEL GASPAR",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(09-01-04-CHASYS-Y-CA) REPARACION DE COFRE"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "8:00 - 9:30 estuve limpiando el taller. 9:30 - 12:00 espere que la unidad fuera movida hacia el area del fibrero. mientras tanto yo armaba el faldon y el estribo junto a don vicente. 12:00 - 14:00 se monto el estribo y el faldon junto al nuevo lavador",
+        "pend": false
+      },
+      {
+        "folio": "100647",
+        "fecha": "21-sep.-2026",
+        "resp": "(386) MASIN CASTILLO, VICENTE",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(09-03-10-CHASIS-Y-CA) REPARACION DE DEFENSA A TRACTOR"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "hise cuatro reparaciones de fibra en el cofre de el Tractor N° 013 Restructure un Faldon Izquierdo y un estribo todo el dia",
+        "pend": false
+      }
+    ],
+    "ops": [],
+    "sam": null
+  },
+  "026": {
+    "days": 4,
+    "first": "2026-09-18T00:00:00",
+    "last": "2026-09-18T00:00:00",
+    "tags": [
+      "electrico/luces",
+      "enfriamiento/fan",
+      "inyeccion/EGR"
+    ],
+    "ots": [
+      {
+        "folio": "100558",
+        "fecha": "18-sep.-2026",
+        "resp": "(361) LINARES, JOSE JULIO",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "A",
+        "has_b": false
+      },
+      {
+        "folio": "100558",
+        "fecha": "18-sep-2026",
+        "resp": "(361) LINARES, JOSE JULIO",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR"
+        ],
+        "horas": [
+          "08:10/13:30 y 13:50"
+        ],
+        "obs": [],
+        "notas": "Revision luces general se localizo fallo intermitentes, algunos focos estaban desconectados. Me mandan a checar marcha del TRG-13. 08:25-08:45 checo pilas y cables. Me comentaron no arrancar por falta de anticongelante en deposito. Regrese a revisar unidad. Pido autorizacion para modificacion de una luz en cabina, quedo en espera al no recibir respuesta tomo iniciativa de proceder, le pido al sold",
+        "schema": "B",
+        "has_b": true
+      }
+    ],
+    "term": [],
+    "ops": [],
+    "sam": null
+  },
+  "034": {
+    "days": 163,
+    "first": "2026-04-12T00:00:00",
+    "last": "2026-09-21T00:00:00",
+    "tags": [
+      "potencia",
+      "electrico/luces",
+      "frenos/aire",
+      "enfriamiento/fan",
+      "inyeccion/EGR",
+      "fugas/aceite"
+    ],
+    "ots": [
+      {
+        "folio": "100586",
+        "fecha": "18-sep-2026",
+        "resp": "(383) ROMERO, JOSE LUIS",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(ACELERADOR) REVISAR Y/O REPARAR ACELERADOR Tractor",
+          "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR"
+        ],
+        "horas": [
+          "6:30/7:00",
+          "6:30/7:00"
+        ],
+        "obs": [
+          "No Terminado",
+          "No Terminado"
+        ],
+        "notas": "Queda pendiente por refacciones",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100597",
+        "fecha": "18-sep-2026",
+        "resp": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(06-03-26-ELECTRICO) CAMBIO DE MODULO DE LUCES A TRACTOR (Nva)"
+        ],
+        "horas": [
+          "6:30/7:00"
+        ],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100571",
+        "fecha": "18-sep-2026",
+        "resp": "(377) ESCALANTE, ULISES",
+        "op": "(4239) REYES PACHECO, GERARDO JOSE",
+        "acts": [
+          "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+          "(01-05-17-ENFRI) CAMBIO DE SENSOR NIVEL DE REFRIGERANTE"
+        ],
+        "horas": [
+          "10:20am/1:00pm"
+        ],
+        "obs": [
+          "Checar fugas de tractor y cambiar sensor de nivel de anticongelante"
+        ],
+        "notas": "Checo fugas de tractor y cambio sensor de nivel de anticongelante. Fue que sacarle el anticongelante para poder cambiarlo y al terminar de ponerlo echarle de nuevo el anticongelante, y en las fugas de aire cambio dos conexiones rapidas",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100612[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "(365) CASTRO CRUZ, JESUS EMMANUEL[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      }
+    ],
+    "term": [
+      {
+        "folio": "100653",
+        "fecha": "21-sep.-2026",
+        "resp": "(377) ESCALANTE, ULISES",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(01-09-01-PTO-HID) INSTALACION DE TOMA DE FUERZA"
+        ],
+        "horas": [
+          "1:35 / 7pm"
+        ],
+        "obs": [],
+        "notas": "desmontar tomo de fierro y bomba de 28 Galones y la mochila, para montar y adaptar todo a el 34. Todo se tomo de el 49 con autorisacion de el lic. en el 34 se monto mochila se apreto se monto tomo de fierro y mangueras y por ultimo empeso a montar la consola de el tomo de fierro no termino de ponerlo",
+        "pend": true
+      },
+      {
+        "folio": "100682",
+        "fecha": "21-sep.-2026",
+        "resp": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR"
+        ],
+        "horas": [
+          "8:30 / 11:00"
+        ],
+        "obs": [
+          "No se concluye"
+        ],
+        "notas": "",
+        "pend": false
+      },
+      {
+        "folio": "100690",
+        "fecha": "21-sep.-2026",
+        "resp": "(378) ORTIZ SANCHES, YOSHIO FELIPE",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(01-09-18-PTO) INSTALACION DE MOCHILA Hidraulico Tractor",
+          "(01-09-01-PTO-HID) INSTALACION DE TOMA DE FUERZA",
+          "(01-09-04-PTO-HID) CAMBIO DE BOMBA DE LEVANTE 27 GL. (TOMA FZA.)"
+        ],
+        "horas": [
+          "12:00 / 2:00",
+          "4:00 / 5:30",
+          "5:30 / 7:00"
+        ],
+        "obs": [],
+        "notas": "Se quito la mochila, la toma de Fuerza, y la bomba de 27 galones del tracto 49, de ahi se instalo la mochila, la toma de Fuerza (se tubieron que cambiar todos los tornillos) y se monto la bomba de 27 galones y se trato de poner la palanca pero no se pudo por que abia que agrandar un oyo y no teniamos brocas",
+        "pend": false
+      }
+    ],
+    "ops": [
+      {
+        "fecha": "12/04/26",
+        "operador": "Grad Pro deco",
+        "tractor": "34",
+        "remolque": null,
+        "kms": null,
+        "tracto": [
+          "Falla en faros no sienten",
+          "Freno directo",
+          "Desempeno / posicion los test",
+          "Achica de ATCCCR4",
+          "58 ACC",
+          "Frio al andar"
+        ],
+        "obs": null
+      }
+    ],
+    "sam": {
+      "unidad": "TRG-034",
+      "n": 7,
+      "top": [
+        "Engine Fuel Injection Pump Controller (Special instruction) x35",
+        "Engine Coolant Level 1 (Low (moderate severity)) x22",
+        "HVAC Duct Temperature (Current Below Normal) x22",
+        "Manufacturer Assignable SPN (Erratic, Intermittent or Incorrect) x1",
+        "Pressure Modulation Valve ABS Axle 2 Right (Current Below Normal) x1",
+        "Wheel Sensor ABS Axle 1 Left (Current Below Normal) x2",
+        "Wheel Sensor ABS Axle 1 Right (Current Below Normal) x2"
+      ]
+    }
+  },
+  "038": {
+    "days": null,
+    "first": null,
+    "last": null,
+    "tags": [],
+    "ots": [],
+    "term": [],
+    "ops": [],
+    "sam": null
+  },
+  "048": {
+    "days": 5,
+    "first": "2026-09-17T00:00:00",
+    "last": "2026-09-21T00:00:00",
+    "tags": [
+      "turbo/VGT",
+      "potencia",
+      "electrico/luces",
+      "enfriamiento/fan",
+      "inyeccion/EGR"
+    ],
+    "ots": [
+      {
+        "folio": "100594",
+        "fecha": "18-sep-2026",
+        "resp": "(383) ROMERO, JOSE LUIS",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(01-06-07-TURBO) MANO OBRA Y RECALIBRACION DE VALVULA VGT"
+        ],
+        "horas": [
+          "6:00/6:30"
+        ],
+        "obs": [
+          "No Terminado"
+        ],
+        "notas": "VGT se calibró porque otra vez venía diferente (manuscrito)",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100584",
+        "fecha": "18-sep-2026",
+        "resp": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(ESCANEO) ESCANEO DE UNIDAD"
+        ],
+        "horas": [
+          "6:00/6:30"
+        ],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100545",
+        "fecha": "18-sep-2026",
+        "resp": "(377) ESCALANTE, ULISES",
+        "op": "(1773) QUIJANO TORRES, JOSE MANUEL",
+        "acts": [
+          "(01-06-06-TURBO) CAMBIO DE VALVULA VGT"
+        ],
+        "horas": [
+          "8:40am/10:40am"
+        ],
+        "obs": [],
+        "notas": "Me mandaron a cambiar la VGT y al desarmar me di cuenta que el turbo estaba trabado por el reporte, y me dijeron que lo desmontara",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100545",
+        "fecha": "18-sep-2026",
+        "resp": "(377) ESCALANTE, ULISES",
+        "op": "(1773) QUIJANO TORRES, JOSE MANUEL",
+        "acts": [
+          "(01-06-05-TURBO) CAMBIO DE TURBO REPARADO",
+          "(01-06-06-TURBO) CAMBIO DE VALVULA VGT"
+        ],
+        "horas": [
+          "2:00pm/6:55pm"
+        ],
+        "obs": [
+          "Cambiar turbo cargador y VGT"
+        ],
+        "notas": "Se desmonto el turbo, mangueras y todo lo que conlleva para poder desmontarlo, a las 4pm subimos a junta regresando como a las 3pm empezamos a montar el nuevo/reparado armando todo. Termine de montar el turbo a las 6:05pm, para esperar al electrico para calibrar la VGT. 6:10pm se calibro la VGT desmontada, 6:30 quedo calibrado y al montarlo nos dimos cuenta que unas conexiones de anticongelante no",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100611[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "(365) CASTRO CRUZ, JESUS EMMANUEL[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      },
+      {
+        "folio": "100626[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "(238) PALMA LOPEZ, GABRIEL[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      },
+      {
+        "folio": "100624[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "(381) GARCIA MORENO, WILLIAM[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      }
+    ],
+    "term": [
+      {
+        "folio": "100676",
+        "fecha": "21-sep.-2026",
+        "resp": "(361) LINARES, JOSE JULIO",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR"
+        ],
+        "horas": [
+          "17:00 / 18:00"
+        ],
+        "obs": [],
+        "notas": "revision luces remolqueras y tracto se repara falso en noslimero se le coloca cinchos",
+        "pend": false
+      }
+    ],
+    "ops": [
+      {
+        "fecha": "17/09/26",
+        "operador": "Jose Manuel M te",
+        "tractor": "48",
+        "remolque": null,
+        "kms": null,
+        "tracto": [
+          "2. #48",
+          "4. No tiene potencia fuerza",
+          "8. Turbo Amarrado"
+        ],
+        "obs": null
+      }
+    ],
+    "sam": {
+      "unidad": "TRG-048",
+      "n": 12,
+      "top": [
+        "NOx limits exceeded due to Deactivation of EGR (Special instruction) x127",
+        "Wheel Sensor ABS Axle 1 Left (Low (most severe)) x1",
+        "Engine EGR 1 Differential Pressure (Abnormal Frequency, Pulse Width or Period) x1",
+        "Engine EGR 1 Mass Flow Rate (High (moderate severity)) x1",
+        "Engine Coolant Temperature (Current Below Normal) x1",
+        "Engine Intake Manifold #1 Pressure (Current Below Normal) x9",
+        "Steering Wheel Angle (Erratic, Intermittent or Incorrect) x1",
+        "Wheel Sensor ABS Axle 1 Right (Erratic, Intermittent or Incorrect) x18"
+      ]
+    }
+  },
+  "068": {
+    "days": 2195,
+    "first": "2020-09-18T00:00:00",
+    "last": "2026-09-18T00:00:00",
+    "tags": [
+      "electrico/luces",
+      "enfriamiento/fan",
+      "transmision"
+    ],
+    "ots": [
+      {
+        "folio": "100552",
+        "fecha": "18-sep.-2026",
+        "resp": "(375) BINGRAS VILLAN, RAFAEL",
+        "op": "(4456) BONILLA GONZALEZ, JONATHAN",
+        "acts": [
+          "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR",
+          "(06-04-03-ELECTRICO) CAMBIO DE TACOMETRO",
+          "(06-03-23-ELECTRICO) REVISAR CAJA DE FUSIBLES (SIST. ELECTRICO)",
+          "(01-05-30-ENFRI) REPARACION DE FAN CLUTH Tractor"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "A",
+        "has_b": false
+      }
+    ],
+    "term": [],
+    "ops": [
+      {
+        "fecha": "18/09/20",
+        "operador": "Jazze than Bonilla",
+        "tractor": "068",
+        "remolque": null,
+        "kms": null,
+        "tracto": [
+          "1. Reparar velocimetro",
+          "2. Reparar luces del carro en general",
+          "3. Reparar fan porque no prende por temperatura",
+          "5. Cambiar llanta posicion 10",
+          "9. Checar motor de elevacion del vidrio de copiloto"
+        ],
+        "obs": null
+      }
+    ],
+    "sam": {
+      "unidad": "TRG-068",
+      "n": 21,
+      "top": [
+        "Engine Fuel Filter Differential Pressure (High (moderate severity)) x1",
+        "Axle Load Sensor (Erratic, Intermittent or Incorrect) x127",
+        "Wheel Sensor ABS Axle 1 Left (Special instruction) x127",
+        "Wheel Sensor ABS Axle 3 Left (Low (most severe)) x127",
+        "Engine Fan Clutch 1 Output Driver (Voltage Above Normal) x3",
+        "Engine EGR 1 Temperature (Voltage Above Normal) x1",
+        "Engine EGR 1 Valve 1 Control 1 (Abnormal Update Rate) x1",
+        "Brake Signal Sensor 1 (Erratic, Intermittent or Incorrect) x127"
+      ]
+    }
+  },
+  "470": {
+    "days": null,
+    "first": null,
+    "last": null,
+    "tags": [],
+    "ots": [],
+    "term": [],
+    "ops": [],
+    "sam": null
+  },
+  "471": {
+    "days": 5,
+    "first": "2026-09-17T00:00:00",
+    "last": "2026-09-21T00:00:00",
+    "tags": [
+      "potencia",
+      "electrico/luces",
+      "transmision",
+      "inyeccion/EGR"
+    ],
+    "ots": [
+      {
+        "folio": "100564",
+        "fecha": "18-sep.-2026",
+        "resp": "(376) DOMINGUEZ SANTIAGO, JOSE IGNACIO",
+        "op": "(4101) GARCIA RAMIREZ, ALFREDO",
+        "acts": [
+          "(01-01-61-MOTOR) CAMBIO DE VALVULA EGR Tractor"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "A",
+        "has_b": false
+      },
+      {
+        "folio": "100564",
+        "fecha": "18-sep-2026",
+        "resp": "(376) DOMINGUEZ SANTIAGO, JOSE IGNACIO",
+        "op": "(4101) GARCIA RAMIREZ, ALFREDO",
+        "acts": [
+          "(01-01-61-MOTOR) CAMBIO DE VALVULA EGR Tractor"
+        ],
+        "horas": [
+          "8:30/7:00"
+        ],
+        "obs": [],
+        "notas": "Se puso unidad por caida de revoluciones. Se revisaron codigos de falla y no se emitieron codigos activos de EGR ni otro codigo. Se monitoreo la unidad hasta que alcance la presion y temperatura adecuada. Se realizaron pruebas a motor: corte de cilindros, desempeño de cilindro encontrandose bien los inyectores. Se revisan presion de combustible, se encuentra a 230 psi en altas y bajas revoluciones",
+        "schema": "B",
+        "has_b": true
+      }
+    ],
+    "term": [
+      {
+        "folio": "100644",
+        "fecha": "21-sep.-2026",
+        "resp": "(239) SERAFICO ZAVALETA, ROMAN",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(01-01-61-MOTOR) CAMBIO DE VALVULA EGR Tractor"
+        ],
+        "horas": [
+          "4:00/4:30"
+        ],
+        "obs": [],
+        "notas": "CAMBIO SENSOR DE TEMPERATURA TRANSMISION arneses",
+        "pend": false
+      },
+      {
+        "folio": "100686",
+        "fecha": "21-sep.-2026",
+        "resp": "(365) CASTRO CRUZ, JESUS EMMANUEL",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(06-03-14-ELECTRICO) REVISAR Y REPARAR LUCES EN GENERAL TRACTOR"
+        ],
+        "horas": [
+          "4:00 / 5:30"
+        ],
+        "obs": [],
+        "notas": "",
+        "pend": false
+      },
+      {
+        "folio": "100677",
+        "fecha": "21-sep.-2026",
+        "resp": "(361) LINARES, JOSE JULIO",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(06-03-22-ELECTRICO) REVISAR Y REPARAR TORRETA"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "Pendiente",
+        "pend": true
+      }
+    ],
+    "ops": [
+      {
+        "fecha": "17/09/26",
+        "operador": "Alfredo Barch",
+        "tractor": "471",
+        "remolque": "399",
+        "kms": "655913",
+        "tracto": [
+          "1. Checar Perdida de Potencia y fallo en el acelerador (se corta andando como 10 segundos)",
+          "4. Alinear tanques de diesel"
+        ],
+        "obs": "162"
+      }
+    ],
+    "sam": null
+  },
+  "472": {
+    "days": null,
+    "first": null,
+    "last": null,
+    "tags": [],
+    "ots": [],
+    "term": [],
+    "ops": [],
+    "sam": null
+  },
+  "477": {
+    "days": null,
+    "first": null,
+    "last": null,
+    "tags": [],
+    "ots": [],
+    "term": [],
+    "ops": [],
+    "sam": null
+  },
+  "481": {
+    "days": 4,
+    "first": "2026-09-18T00:00:00",
+    "last": "2026-09-19T00:00:00",
+    "tags": [
+      "turbo/VGT",
+      "transmision",
+      "fugas/aceite"
+    ],
+    "ots": [
+      {
+        "folio": "100587",
+        "fecha": "18-sep-2026",
+        "resp": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(01-04-10-LUBRI) REVISAR NIVELES DE ACEITE EN GRAL Tractor"
+        ],
+        "horas": [
+          "04:00/05:30"
+        ],
+        "obs": [],
+        "notas": "Se revisaron niveles de diferencial, el trasero le entro agua, habria que remplazar aceite motor y transmision a nivel",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100589",
+        "fecha": "18-sep-2026",
+        "resp": "(388) FERNANDEZ GARCIA, LEONEL IVAN",
+        "op": "(0000) N/A SIN, OPERADOR",
+        "acts": [
+          "(01-06-11-TURBO) MONTAR Y DESMONTAR TURBO A UNIDAD"
+        ],
+        "horas": [
+          "05:30/07:00"
+        ],
+        "obs": [],
+        "notas": "Se subio turbo pero queda pendiente terminar de armar",
+        "schema": "B",
+        "has_b": true
+      },
+      {
+        "folio": "100615[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "(355) CASTRO CRUZ, JESUS EMMANUEL[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      },
+      {
+        "folio": "100608[cite: 1]",
+        "fecha": "19-sep.-2026[cite: 1]",
+        "resp": "(383) ROMERO, JOSE LUIS[cite: 1]",
+        "op": "",
+        "acts": [],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "B",
+        "has_b": false
+      }
+    ],
+    "term": [],
+    "ops": [],
+    "sam": null
+  },
+  "482": {
+    "days": 4,
+    "first": "2026-09-18T00:00:00",
+    "last": "2026-09-18T00:00:00",
+    "tags": [
+      "frenos/aire",
+      "fugas/aceite"
+    ],
+    "ots": [
+      {
+        "folio": "100561",
+        "fecha": "18-sep.-2026",
+        "resp": "(331) FLORES MORAN, ERICK EMANUEL",
+        "op": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+        "acts": [
+          "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR",
+          "(07-01-06-FRENOS) REVISAR Y REPARAR BALATAS",
+          "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+          "(07-01-08-FRENOS) REVISAR FRENOS EN GENERAL TRACTOR"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "A",
+        "has_b": false
+      },
+      {
+        "folio": "100550",
+        "fecha": "18-sep.-2026",
+        "resp": "(355) PEREZ SANCHEZ, SALVADOR",
+        "op": "(4221) BENITEZ GUZMAN, VICENTE GUILLERMO",
+        "acts": [
+          "(05-01-12-BALEROS) CAMBIAR TAMBOR DE MAZA A TRACTOR",
+          "(07-01-06-FRENOS) REVISAR Y REPARAR BALATAS",
+          "(07-01-09-FRENOS) REVISAR Y REPARAR FUGAS DE AIRE (Frenos)",
+          "(07-01-08-FRENOS) REVISAR FRENOS EN GENERAL TRACTOR"
+        ],
+        "horas": [],
+        "obs": [],
+        "notas": "",
+        "schema": "A",
+        "has_b": false
+      }
+    ],
+    "term": [],
+    "ops": [],
+    "sam": {
+      "unidad": "TRG-482",
+      "n": 12,
+      "top": [
+        "Brake Signal Sensor 1 (Not Responding Properly) x127",
+        "J1587 (Data Error) x127",
+        "Engine EGR 1 Mass Flow Rate (Low (least severe)) x15",
+        "Engine Variable Geometry Turbocharger Actuator #1 (Not Responding Properly) x127",
+        "NOx limits exceeded due to Deactivation of EGR (Special instruction) x127",
+        "NOx limits exceeded due to Incorrect EGR flow (Special instruction) x127",
+        "Ambient Air Temperature (Erratic, Intermittent or Incorrect) x1",
+        "System Diagnostic Code #1 (Special instruction) x127"
+      ]
+    }
+  },
+  "483": {
+    "days": null,
+    "first": null,
+    "last": null,
+    "tags": [],
+    "ots": [],
+    "term": [],
+    "ops": [],
+    "sam": null
+  },
+  "493": {
+    "days": null,
+    "first": null,
+    "last": null,
+    "tags": [],
+    "ots": [],
+    "term": [],
+    "ops": [],
+    "sam": null
+  }
+}
