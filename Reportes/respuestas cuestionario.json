@@ -1,0 +1,124 @@
+[
+  {
+    "pagina_pdf": "2/10",
+    "fecha": "23 de septiembre de 2026",
+    "mecanico": "GARCIA MORENO, WILLIAM",
+    "total_ot_dia": 1,
+    "ordenes_trabajo": [
+      {
+        "folio": "100748",
+        "unidad": "Dol TRG-604",
+        "servicio": "MTTO. CORRECTIVO",
+        "horas": 1.00
+      }
+    ],
+    "respuestas_corroboracion": {
+      "sistema_intervenido": "Le cambio unas mangueras de aire.",
+      "sintoma_y_causa_raiz": "Unicamente las mangueras que se le indico.",
+      "prueba_realizada": "No se le realizo ninguna prueba, unicamente falta que lo pinten.",
+      "motivo_incompleta_o_duracion": "Termino lo que se le indica. 40 minutos."
+    },
+    "firma_mecanico": "Presente",
+    "firma_auditor": "Susana"
+  },
+  {
+    "pagina_pdf": "3/10",
+    "fecha": "23 de septiembre de 2026",
+    "mecanico": "LINARES, JOSE JULIO",
+    "total_ot_dia": 1,
+    "ordenes_trabajo": [
+      {
+        "folio": "100747",
+        "unidad": "Tra TRG-470",
+        "servicio": "MTTO. CORRECTIVO",
+        "horas": 0.50
+      }
+    ],
+    "respuestas_corroboracion": {
+      "falla_y_diagnostico": "Revision de baterias, limpieza, cambio de baterias. * El cambio no lo realizo porque almacen no tiene ya las pidio.",
+      "paso_a_paso": "Mtto. a pilas de TRG.",
+      "cobertura_de_tiempo": "Aproximadamente 1 hora.",
+      "motivo_pendiente": "cambio de pilas porque no hay en almacen. (10/24, 12/24, 02/25 Fechas de las pilas)"
+    },
+    "firma_mecanico": "Presente",
+    "firma_auditor": "Susana"
+  },
+  {
+    "pagina_pdf": "4/10",
+    "fecha": "23 de septiembre de 2026",
+    "mecanico": "LOPEZ AZAMAR, GABRIEL",
+    "total_ot_dia": 1,
+    "ordenes_trabajo": [
+      {
+        "folio": "100743",
+        "unidad": "Rem TRG-953",
+        "servicio": "MTTO. CORRECTIVO",
+        "horas": 2.00
+      }
+    ],
+    "respuestas_corroboracion": {
+      "falla_reportada_y_hallazgo": "Tenía una manibela quebrada eso encontro y reporto el op.",
+      "actividad_realizada": "Soldadura en la manibela.",
+      "comprobacion_operatividad": "La presento en el remolque e hizo pruebas para su funcionamiento.",
+      "motivo_incompleta_o_duracion": "Todo terminado, se llevo 1 hora y media."
+    },
+    "firma_mecanico": "Gabriel Ramos",
+    "firma_auditor": "Susana"
+  },
+  {
+    "pagina_pdf": "5/10",
+    "fecha": "23 de septiembre de 2026",
+    "mecanico": "MASIN CASTILLO, VICENTE",
+    "total_ot_dia": 3,
+    "ordenes_trabajo": [
+      {
+        "folio": "100754",
+        "unidad": "Tra TRG-001",
+        "servicio": "MTTO. CORRECTIVO",
+        "horas": 2.00
+      },
+      {
+        "folio": "100756",
+        "unidad": "Tra TRG-470",
+        "servicio": "MTTO. CORRECTIVO",
+        "horas": 2.00
+      },
+      {
+        "folio": "100757",
+        "unidad": "Tra TRG-013",
+        "servicio": "MTTO. CORRECTIVO",
+        "horas": 1.50
+      }
+    ],
+    "respuestas_corroboracion": {
+      "resumen_actividades": "470 bigotito pintado. 013- Pintar salpicadera. 001- Restauración de defensa, acarasada y fibrera.",
+      "pendientes": "Todo termino.",
+      "detalle_trg_001": "Se corroso y se hizo trabajo de fibra tuvo dificultad para apretar tornillos porque no hay rondanas.",
+      "detalle_trg_470": "Unicamente lo pinto y apreto tornillos. Dificultad porque no hay rondanas."
+    },
+    "firma_mecanico": "Presente",
+    "firma_auditor": "Susana"
+  },
+  {
+    "pagina_pdf": "6/10",
+    "fecha": "23 de septiembre de 2026",
+    "mecanico": "REYES HERNANDEZ, CESAR CAMERINO",
+    "total_ot_dia": 1,
+    "ordenes_trabajo": [
+      {
+        "folio": "100751",
+        "unidad": "Dol TRG-677",
+        "servicio": "MTTO. CORRECTIVO",
+        "horas": 3.50
+      }
+    ],
+    "respuestas_corroboracion": {
+      "sistema_intervenido": "Reportaron revisar las matracas. Diagnostico un roto chamber roto y una matraca atorada.",
+      "sintoma_y_causa_raiz": "Un roto chamber roto.",
+      "prueba_realizada": "Inyectandole aire lo probo y finalizado.",
+      "motivo_incompleta_o_duracion": "si la termino. 3 horas y media demoro el trabajo."
+    },
+    "firma_mecanico": "Presente",
+    "firma_auditor": "Susana"
+  }
+]
